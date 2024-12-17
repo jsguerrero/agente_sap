@@ -3,7 +3,7 @@ services:
     build: .
     environment:
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
-      - OUTPUT_PATH=/app/output/output.json
+      - OUTPUT_PATH=/app/output/__consolidated.json
     volumes:
       - ./output:/app/output
       - ./input:/app/input:ro

@@ -9,7 +9,10 @@ Automatizar la extracción y documentación de estructuras de tablas SAP, enriqu
 1. **Extracción**: Obtención de estructuras de tablas desde leanx.eu
 2. **Procesamiento**: Análisis y estructuración de la información técnica
 3. **Enriquecimiento**: Generación de documentación detallada mediante Gemini
-4. **Consolidación**: Creación de archivos JSON individuales y consolidados
+4. **Consolidación**: 
+    - Creación de archivos JSON individuales por tabla
+    - Archivo __consolidated.json con todas las tablas encontradas
+    - Archivo __not_found.csv con las tablas no encontradas
 
 ### Configuraciones Necesarias
 1. **API Key de Google**: Requerida para acceder a Gemini
@@ -63,8 +66,9 @@ Automatizar la extracción y documentación de estructuras de tablas SAP, enriqu
 ├── input/                    # Entrada de datos
 │   └── sap_tables.csv       # Configuración de tablas
 ├── output/                  # Resultados
-│   ├── consolidated.json   # Datos consolidados
-│   └── {table}.json       # Resultados individuales
+│   ├── __consolidated.json # Datos consolidados de tablas encontradas
+│   ├── __not_found.csv    # Lista de tablas no encontradas
+│   └── {table}.json       # Resultados individuales por tabla
 ├── main.py                 # Script principal
 ├── Dockerfile             # Configuración Docker
 └── docker-compose.yml    # Orquestación de contenedores
@@ -75,6 +79,13 @@ Automatizar la extracción y documentación de estructuras de tablas SAP, enriqu
 table_name,description
 MARC,Plant Data for Material
 MARA,General Material Data
+
+#### CSV de Tablas No Encontradas
+```csv
+table_name,description
+GLO_T001,''
+GLO_T002,''
+```
 
 #### JSON de Salida
 {

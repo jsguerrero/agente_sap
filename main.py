@@ -75,10 +75,9 @@ class SAPTableAgent:
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
             
-            print(f"\nArchivo JSON guardado exitosamente en: {output_path}")
             return True
         except Exception as e:
-            print(f"Error guardando el archivo JSON: {str(e)}")
+            logging.error(f"Error guardando el archivo JSON: {str(e)}")
             return False
     
     def process_url(self, url):
@@ -124,6 +123,7 @@ class SAPTableAgent:
         """Procesa múltiples tablas desde un archivo CSV"""
         try:
             results = []
+            not_found_tables = []
             with open(csv_path, 'r', encoding='utf-8') as csvfile:
                 reader = csv.DictReader(csvfile)
                 for row in reader:
@@ -132,18 +132,34 @@ class SAPTableAgent:
                     
                     url = self.base_url.format(table_name.lower())
                     result = self.process_url(url)
+                    
+                    if result.get("name") == "Table" and not result.get("fields"):
+                        logging.warning(f"Tabla no encontrada: {table_name}")
+                        not_found_tables.append([table_name, row.get('description', '')])
+                        continue
+                    
                     results.append(result)
                     
                     # Guardar resultado individual
                     output_path = os.path.join('output', f'{table_name.lower()}.json')
                     self.save_json(result, output_path)
             
-            # Guardar resultado consolidado
+            # Guardar resultado consolidado solo con tablas encontradas
             consolidated = {
                 "processed_at": datetime.datetime.now().isoformat(),
                 "tables": results
             }
-            self.save_json(consolidated, 'output/consolidated.json')
+            self.save_json(consolidated, 'output/__consolidated.json')
+            
+            # Guardar lista de tablas no encontradas
+            if not_found_tables:
+                not_found_path = os.path.join('output', '__not_found.csv')
+                with open(not_found_path, 'w', newline='', encoding='utf-8') as csvfile:
+                    writer = csv.writer(csvfile)
+                    writer.writerow(['table_name', 'description'])
+                    writer.writerows(not_found_tables)
+                logging.info(f"Se guardó la lista de tablas no encontradas en {not_found_path}")
+            
             return results
             
         except Exception as e:
@@ -185,8 +201,7 @@ def main():
         else:
             logging.error(f"Error en el proceso: {result['error']}")
             
-        print("\nEstructura(s) de tabla(s) SAP extraída(s):")
-        print(json.dumps(result, indent=2, ensure_ascii=False))
+        logging.info("Los resultados se han guardado en el directorio output/")
         
     except Exception as e:
         logging.error(f"Error en la ejecución: {e}")
