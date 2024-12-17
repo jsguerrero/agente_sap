@@ -1,0 +1,14 @@
+services:
+  agent:
+    build: .
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - OUTPUT_PATH=/app/output/output.json
+    volumes:
+      - ./output:/app/output
+      - ./input:/app/input:ro
+    command: ["python", "main.py", "--csv", "/app/input/sap_tables.csv"]
+    user: "1000:1000"
+
+volumes:
+  sap_output:
