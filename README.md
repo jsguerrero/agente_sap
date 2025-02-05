@@ -60,6 +60,18 @@ Automatizar la extracción y documentación de estructuras de tablas SAP, enriqu
    # Para procesar múltiples tablas
    python main.py --csv input/sap_tables.csv   ```
 
+#### Con Anaconda
+1. Crear y activar el entorno:   ```bash
+   conda env create -f environment.yml
+   conda activate agente_sap   ```
+
+2. Ejecutar script:   ```bash
+   # Para una tabla específica
+   python main.py --url https://leanx.eu/en/sap/table/marc.html
+
+   # Para procesar múltiples tablas
+   python main.py --csv input/sap_tables.csv   ```
+
 ### Estructura del Proyecto
 
 /agente_sap

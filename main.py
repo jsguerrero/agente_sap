@@ -59,10 +59,28 @@ class SAPTableAgent:
                     }
                     fields.append(field)
         
+        # Agregar extracción de foreign keys
+        foreign_keys = []
+        fk_table = soup.find_all('table')[1] if len(soup.find_all('table')) > 1 else None
+        if fk_table:
+            for row in fk_table.find_all('tr')[1:]:  # Skip header row
+                cols = row.find_all('td')
+                if len(cols) >= 6:
+                    fk = {
+                        "table": cols[0].text.strip(),
+                        "field": cols[1].text.strip(),
+                        "foreign_key_table": cols[2].text.strip(),
+                        "foreign_key_field": cols[3].text.strip(),
+                        "check_table": cols[4].text.strip(),
+                        "check_field": cols[5].text.strip()
+                    }
+                    foreign_keys.append(fk)
+        
         return {
             "name": table_name,
             "description": table_description,
-            "fields": fields
+            "fields": fields,
+            "foreign_keys": foreign_keys
         }
     
     def save_json(self, data, output_path):
@@ -93,10 +111,11 @@ class SAPTableAgent:
             Tabla: {table_info['name']}
             Descripción actual: {table_info['description']}
             Campos: {json.dumps(table_info['fields'], indent=2)}
+            Relaciones de clave foránea: {json.dumps(table_info['foreign_keys'], indent=2)}
             
             Genera una descripción técnica que incluya:
             1. Propósito principal de la tabla
-            2. Relaciones clave con otras tablas
+            2. Relaciones clave con otras tablas (basado en las foreign keys proporcionadas)
             3. Casos de uso comunes
             """
             
