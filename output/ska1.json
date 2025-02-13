@@ -1,0 +1,157 @@
+{
+  "name": "SKA1",
+  "description": "G/L Account Master (Chart of Accounts)",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOPL",
+      "description": "Chart of Accounts",
+      "data_element": "KTOPL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKNR",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XBILK",
+      "description": "Indicator: Account is a balance sheet account?",
+      "data_element": "XBILK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKAN",
+      "description": "G/L account number, significant length",
+      "data_element": "SAKAN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BILKT",
+      "description": "Group Account Number",
+      "data_element": "BILKT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Date on which the Record Was Created",
+      "data_element": "ERDAT_RF",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM_RF",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "GVTYP",
+      "description": "P&L statement account type",
+      "data_element": "GVTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOKS",
+      "description": "G/L Account Group",
+      "data_element": "KTOKS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MUSTR",
+      "description": "Number of the sample account",
+      "data_element": "MUSTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBUND",
+      "description": "Company ID of trading partner",
+      "data_element": "RASSC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XLOEV",
+      "description": "Indicator: Account marked for deletion?",
+      "data_element": "XLOEV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSPEA",
+      "description": "Indicator: account is blocked for creation ?",
+      "data_element": "XSPEA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSPEB",
+      "description": "Indicator: Is Account Blocked for Posting?",
+      "data_element": "XSPEB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSPEP",
+      "description": "Indicator: account blocked for planning ?",
+      "data_element": "XSPEP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MCOD1",
+      "description": "Search Term for Using Matchcode",
+      "data_element": "MCODF",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "FUNC_AREA",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The SKA1 table stores master data for general ledger (G/L) accounts within a company's chart of accounts. Each record represents a unique G/L account, providing information such as account type, account number, and account status. This table is critical for financial reporting, account reconciliation, and various accounting processes within the SAP system.",
+    "timestamp": "2025-02-13T13:44:20.630475",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

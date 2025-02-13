@@ -1,0 +1,29 @@
+{
+  "name": "TSPA",
+  "description": "Organizational Unit: Sales Divisions",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The TSPA table stores information about organizational sales divisions. It is used to manage and maintain sales divisions within an organization.\n2. The table does not have any foreign key relationships with other tables.\n3. Common use cases include creating, updating, and deleting sales divisions, as well as retrieving information about sales divisions.",
+    "timestamp": "2025-02-13T13:44:52.588082",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

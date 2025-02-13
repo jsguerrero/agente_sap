@@ -1,0 +1,589 @@
+{
+  "name": "RBCO",
+  "description": "Document Item, Incoming Invoice, Account Assignment",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Document Item in Invoice Document",
+      "data_element": "RBLGP",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "COBL_NR",
+      "description": "Four Character Sequential Number for Coding Block",
+      "data_element": "COBL_NR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WRBTR",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ANLN1",
+      "description": "Main Asset Number",
+      "data_element": "ANLN1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN2",
+      "description": "Asset Subnumber",
+      "data_element": "ANLN2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "DABRZ",
+      "description": "Reference Date for Settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FIPOS",
+      "description": "Commitment Item",
+      "data_element": "FIPOS",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "FISTL",
+      "description": "Funds Center",
+      "data_element": "FISTL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "FKBER",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "GEBER",
+      "description": "Fund",
+      "data_element": "BP_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GRANT_NBR",
+      "description": "Grant",
+      "data_element": "GM_GRANT_NBR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "IMKEY",
+      "description": "Internal Key for Real Estate Object",
+      "data_element": "IMKEY",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTRG",
+      "description": "Cost Object",
+      "data_element": "KSTRG",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PAOBJNR",
+      "description": "Profitability Segment Number (CO-PA)",
+      "data_element": "RKEOBJNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSP_PNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RECID",
+      "description": "Rules for Issuing an Invoice",
+      "data_element": "RECID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKNR",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP",
+      "description": "Sales document item",
+      "data_element": "VBELP",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VPTNR",
+      "description": "Partner account number",
+      "data_element": "JV_PART",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BPMNG",
+      "description": "Quantity in Purchase Order Price Unit",
+      "data_element": "BPMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "XUNPL",
+      "description": "Unplanned Account Assignment from Invoice Verification",
+      "data_element": "XUNPL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LSTAR",
+      "description": "Activity Type",
+      "data_element": "LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PRZNR",
+      "description": "Business Process",
+      "data_element": "CO_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SHKZG",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BZDAT",
+      "description": "Asset value date",
+      "data_element": "BZDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BNKAN_FW",
+      "description": "Delivery costs' share of item value",
+      "data_element": "BNK_ANTEIL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XNEGP",
+      "description": "Indicator: Negative posting",
+      "data_element": "XNEGP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERLKZ",
+      "description": "Used earmarked funds set to \"Complete\"",
+      "data_element": "REFSETERLK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FIKRS",
+      "description": "Financial Management Area",
+      "data_element": "FIKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLNR",
+      "description": "Document Number for Earmarked Funds",
+      "data_element": "KBLNR_FI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLPOS",
+      "description": "Earmarked Funds: Document Item",
+      "data_element": "KBLPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PARGB",
+      "description": "Trading partner's business area",
+      "data_element": "PARGB",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PERNR",
+      "description": "Personnel Number",
+      "data_element": "PERNR_D",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XSKRL",
+      "description": "Indicator: Line item not liable to cash discount?",
+      "data_element": "XSKRL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR",
+      "description": "Network Number for Account Assignment",
+      "data_element": "NPLNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VORNR",
+      "description": "Operation/Activity Number",
+      "data_element": "VORNR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUONR",
+      "description": "Assignment Number",
+      "data_element": "DZUONR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MWART",
+      "description": "Tax Type",
+      "data_element": "MWART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FWBAS",
+      "description": "Tax Base Amount in Document Currency",
+      "data_element": "FWBAS",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "HWBAS",
+      "description": "Tax Base Amount in Local Currency",
+      "data_element": "HWBAS",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ABPER",
+      "description": "Settlement period",
+      "data_element": "ABPER_RF",
+      "type": "ACCP",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LEDAT",
+      "description": "Delivery Creation Date",
+      "data_element": "LEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE_F",
+      "description": "Quantity (Floating Point Number - Internal Field)",
+      "data_element": "MENGE_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "BPMNG_F",
+      "description": "Quantity in PO Price Unit (as Floating Point No. - Int. Fld)",
+      "data_element": "BPMNG_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDGET_PD",
+      "description": "FM: Budget Period",
+      "data_element": "FM_BUDGET_PERIOD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MEASURE",
+      "description": "Funded Program",
+      "data_element": "FM_MEASURE",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "KOART",
+      "description": "Account Type",
+      "data_element": "KOART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRS",
+      "description": "Blocking Reason: Item Amount",
+      "data_element": "SPGRS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AA_FINAL_IND",
+      "description": "Final Account Assignment Indicator",
+      "data_element": "AA_FINAL_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AA_FINAL_QTY",
+      "description": "Final Account Assignment Quantity",
+      "data_element": "AA_FINAL_QTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AA_FINAL_QTY_F",
+      "description": "Final Account Assignment Quantity (Floating Point Number)",
+      "data_element": "AA_FINAL_QTY_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "PARKED_QTY",
+      "description": "Parked Invoice Quantity",
+      "data_element": "PARKED_QTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "PARKED_QTY_F",
+      "description": "Parked Invoice Quantity (Floating Point Number)",
+      "data_element": "PARKED_QTY_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description: RBCO Table** RBCO holds document items for incoming invoices with account assignments. It provides a link between accounting documents, assets, orders, and other financial objects. RBCO is used for processing invoices, financial reporting, and account reconciliation.",
+    "timestamp": "2025-02-13T13:42:06.955085",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

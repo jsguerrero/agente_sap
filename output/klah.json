@@ -1,0 +1,453 @@
+{
+  "name": "KLAH",
+  "description": "Class Header Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CLINT",
+      "description": "Internal Class Number",
+      "data_element": "CLINT",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KLART",
+      "description": "Class Type",
+      "data_element": "KLASSENART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CLASS",
+      "description": "Class number",
+      "data_element": "KLASSE_D",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "STATU",
+      "description": "Class status",
+      "data_element": "KLSTATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KLAGR",
+      "description": "Class Group",
+      "data_element": "KLASSENGR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BGRSE",
+      "description": "Authorization group for finding objects",
+      "data_element": "BGRSE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BGRKL",
+      "description": "Classification authorization group",
+      "data_element": "BGRKL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BGRKP",
+      "description": "Class maintenance authorization group",
+      "data_element": "BGRKP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANAME",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ADATU",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VDATU",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VONDT",
+      "description": "Valid-From Date",
+      "data_element": "VONDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BISDT",
+      "description": "Valid-to date",
+      "data_element": "BISDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZUO",
+      "description": "Number of Assignments",
+      "data_element": "ANZUOR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAUS",
+      "description": "Same classification",
+      "data_element": "GLKLAFZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SICHT",
+      "description": "Organizational Area",
+      "data_element": "ABTEILUNG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKNR",
+      "description": "Document number",
+      "data_element": "DOKNR",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKAR",
+      "description": "Document Type",
+      "data_element": "DOKAR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKTL",
+      "description": "Document Part",
+      "data_element": "DOKTL_D",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKVR",
+      "description": "Document Version",
+      "data_element": "DOKVR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DINKZ",
+      "description": "DIN class indicator",
+      "data_element": "DINKEN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NNORM",
+      "description": "Name of standards organization",
+      "data_element": "NORM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NORMN",
+      "description": "Standard Number",
+      "data_element": "NORMNR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "NORMB",
+      "description": "Industry Standard Description",
+      "data_element": "NORMBE",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "NRMT1",
+      "description": "Standard title",
+      "data_element": "NORMTITEL",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "NRMT2",
+      "description": "Standard title",
+      "data_element": "NORMTITEL",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSGD",
+      "description": "Issue date",
+      "data_element": "AUSGDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VERSD",
+      "description": "Version date",
+      "data_element": "VERSDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VERSI",
+      "description": "Version Number",
+      "data_element": "VERSIO",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LEIST",
+      "description": "Characteristics table",
+      "data_element": "LEISTE",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "VERWE",
+      "description": "Usage in superior classes",
+      "data_element": "VERWENDUNG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LREF3",
+      "description": "List object type for variable lists",
+      "data_element": "LISTOBJ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WWSKZ",
+      "description": "Merchandize management system class type",
+      "data_element": "WWS_KLTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WWSSI",
+      "description": "MMS view of collective material",
+      "data_element": "WWS_SICHT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "POTPR",
+      "description": "Resulting item category",
+      "data_element": "POTPR_CL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLOBK",
+      "description": "Required Component",
+      "data_element": "CLOBK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLMUL",
+      "description": "Multiple Selection Allowed",
+      "data_element": "CLMULT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CVIEW",
+      "description": "Organizational Area",
+      "data_element": "ABTEILUNG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DISST",
+      "description": "Low-Level Code",
+      "data_element": "DISST_CL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CLMOD",
+      "description": "Default Class Data - Can Be Overwritten in Component",
+      "data_element": "CLMOD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VWSTL",
+      "description": "Can Be Used in Bills of Material",
+      "data_element": "VWSTL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VWPLA",
+      "description": "Can Be Used in Task Lists",
+      "data_element": "VWPLA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLALT",
+      "description": "Alternative Display Format",
+      "data_element": "CLALT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LBREI",
+      "description": "Total width of list",
+      "data_element": "LBREITE",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BNAME",
+      "description": "Block name",
+      "data_element": "BLNAME",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "MAXBL",
+      "description": "Maximum display block for variable lists",
+      "data_element": "MAXBLOCK",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KNOBJ",
+      "description": "Number of Object with Assigned Dependencies",
+      "data_element": "KNOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCLA",
+      "description": "Local class",
+      "data_element": "LOCAL_CLASS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KATALOG",
+      "description": "Name of External Catalog",
+      "data_element": "KATALOGNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "KDOKAZ",
+      "description": "Always Display Document for Class",
+      "data_element": "KDOKAZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GENRKZ",
+      "description": "Table for Finding Objects: To Be Generated=X, Generated=R",
+      "data_element": "GENRKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The KLAH table stores header data for classification systems in SAP. It contains information such as class type, class number, status, and authorization groups. This data is used to manage and organize classification systems within the SAP system. FKs are not available.",
+    "timestamp": "2025-02-13T13:40:07.797473",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "TCURC",
+  "description": "Currency Codes",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS_CURC",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ISOCD",
+      "description": "ISO currency code",
+      "data_element": "ISOCD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ALTWR",
+      "description": "Alternative key for currencies",
+      "data_element": "ALTWR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GDATU",
+      "description": "Date until which the currency is valid",
+      "data_element": "DATUM_CURC",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XPRIMARY",
+      "description": "Primary SAP Currency Code for ISO Code",
+      "data_element": "XPRIMARY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The TCURC table stores currency codes and their ISO equivalents, validity dates, and additional information. It is used to maintain currency information for financial transactions and reporting. **Common Use Cases:** - Currency conversion\n- Currency validation\n- Financial reporting",
+    "timestamp": "2025-02-13T13:45:11.275465",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

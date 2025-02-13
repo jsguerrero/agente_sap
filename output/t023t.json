@@ -1,0 +1,86 @@
+{
+  "name": "T023T",
+  "description": "Material Group Descriptions",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL",
+      "description": "Material Group",
+      "data_element": "MATKL",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "WGBEZ",
+      "description": "Material Group Description",
+      "data_element": "WGBEZ",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "WGBEZ60",
+      "description": "Long text describing the material group",
+      "data_element": "WGBEZ60",
+      "type": "CHAR",
+      "length": "60",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T023T",
+      "field": "MANDT",
+      "foreign_key_table": "T023T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T023T",
+      "field": "MATKL",
+      "foreign_key_table": "T023T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T023",
+      "check_field": "Material Groups"
+    },
+    {
+      "table": "T023T",
+      "field": "MATKL",
+      "foreign_key_table": "T023T",
+      "foreign_key_field": "MATKL",
+      "check_table": "T023",
+      "check_field": "Material Groups"
+    },
+    {
+      "table": "T023T",
+      "field": "SPRAS",
+      "foreign_key_table": "T023T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. The purpose of table T023T is to store material group descriptions in multiple languages.\n2. T023T is linked to T023 (Material Groups), T000 (Clients), and T002 (Language Keys).\n3. This table is commonly used for maintaining material group descriptions and accessing language-specific descriptions.",
+    "timestamp": "2025-02-13T13:44:44.357363",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

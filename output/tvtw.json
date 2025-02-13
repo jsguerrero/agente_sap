@@ -1,0 +1,29 @@
+{
+  "name": "TVTW",
+  "description": "Organizational Unit: Distribution Channels",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description** TVTW maintains organizational unit distribution channels, providing a structure for assigning channels to clients. It has no direct foreign key relationships to other tables. **Common Use Cases** * Assigning distribution channels to clients for organizational purposes\n* Managing distribution channel hierarchies\n* Reporting on channel performance",
+    "timestamp": "2025-02-13T13:46:37.236139",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

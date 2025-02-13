@@ -1,0 +1,1469 @@
+{
+  "name": "BSAD",
+  "description": "Accounting: Secondary Index for Customers (Cleared Items)",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UMSKS",
+      "description": "Special G/L Transaction Type",
+      "data_element": "UMSKS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMSKZ",
+      "description": "Special G/L Indicator",
+      "data_element": "UMSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGDT",
+      "description": "Clearing Date",
+      "data_element": "AUGDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGBL",
+      "description": "Document Number of the Clearing Document",
+      "data_element": "AUGBL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUONR",
+      "description": "Assignment Number",
+      "data_element": "DZUONR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Number of Line Item Within Accounting Document",
+      "data_element": "BUZEI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUDT",
+      "description": "Day On Which Accounting Document Was Entered",
+      "data_element": "CPUDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BLART",
+      "description": "Document Type",
+      "data_element": "BLART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MONAT",
+      "description": "Fiscal Period",
+      "data_element": "MONAT",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BSCHL",
+      "description": "Posting Key",
+      "data_element": "BSCHL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUMSK",
+      "description": "Target Special G/L Indicator",
+      "data_element": "DZUMSK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SHKZG",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBTR",
+      "description": "Amount in Local Currency",
+      "data_element": "DMBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBTR",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSTS",
+      "description": "Tax Amount in Local Currency",
+      "data_element": "MWSTS",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WMWST",
+      "description": "Tax amount in document currency",
+      "data_element": "WMWST",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BDIFF",
+      "description": "Valuation Difference",
+      "data_element": "BDIFF",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BDIF2",
+      "description": "Valuation Difference for the Second Local Currency",
+      "data_element": "BDIF2",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "PROJN",
+      "description": "Old: Project number : No longer used --> PS_POSNR",
+      "data_element": "PROJN",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN1",
+      "description": "Main Asset Number",
+      "data_element": "ANLN1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN2",
+      "description": "Asset Subnumber",
+      "data_element": "ANLN2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKNR",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HKONT",
+      "description": "General Ledger Account",
+      "data_element": "HKONT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FKONT",
+      "description": "Financial Budget Item",
+      "data_element": "FIPLS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FILKD",
+      "description": "Account Number of the Branch",
+      "data_element": "FILKD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ZFBDT",
+      "description": "Baseline Date for Due Date Calculation",
+      "data_element": "DZFBDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZTERM",
+      "description": "Terms of Payment Key",
+      "data_element": "DZTERM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1T",
+      "description": "Cash discount days 1",
+      "data_element": "DZBD1T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD2T",
+      "description": "Cash discount days 2",
+      "data_element": "DZBD2T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD3T",
+      "description": "Net Payment Terms Period",
+      "data_element": "DZBD3T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1P",
+      "description": "Cash Discount Percentage 1",
+      "data_element": "DZBD1P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "ZBD2P",
+      "description": "Cash Discount Percentage 2",
+      "data_element": "DZBD2P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "SKFBT",
+      "description": "Amount Eligible for Cash Discount in Document Currency",
+      "data_element": "SKFBT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SKNTO",
+      "description": "Cash discount amount in local currency",
+      "data_element": "SKNTO",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WSKTO",
+      "description": "Cash discount amount in document currency",
+      "data_element": "WSKTO",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ZLSCH",
+      "description": "Payment Method",
+      "data_element": "DZLSCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZLSPR",
+      "description": "Payment Block Key",
+      "data_element": "DZLSPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBFIX",
+      "description": "Fixed Payment Terms",
+      "data_element": "DZBFIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HBKID",
+      "description": "Short Key for a House Bank",
+      "data_element": "HBKID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BVTYP",
+      "description": "Partner Bank Type",
+      "data_element": "BVTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZG",
+      "description": "Number of the Invoice the Transaction Belongs to",
+      "data_element": "REBZG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZJ",
+      "description": "Fiscal Year of the Relevant Invoice (for Credit Memo)",
+      "data_element": "REBZJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZZ",
+      "description": "Line Item in the Relevant Invoice",
+      "data_element": "REBZZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SAMNR",
+      "description": "Invoice List Number",
+      "data_element": "SAMNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANFBN",
+      "description": "Document Number of the Bill of Exchange Payment Request",
+      "data_element": "ANFBN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ANFBJ",
+      "description": "Fiscal Year of the Bill of Exchange Payment Request Document",
+      "data_element": "ANFBJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANFBU",
+      "description": "Company Code in Which Bill of Exch.Payment Request Is Posted",
+      "data_element": "ANFBU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANFAE",
+      "description": "Bill of Exchange Payment Request Due Date",
+      "data_element": "ANFAE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MANSP",
+      "description": "Dunning block",
+      "data_element": "MANSP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSCHL",
+      "description": "Dunning key",
+      "data_element": "MSCHL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MADAT",
+      "description": "Last dunned on",
+      "data_element": "MADAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MANST",
+      "description": "Dunning level",
+      "data_element": "MAHNS_D",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MABER",
+      "description": "Dunning Area",
+      "data_element": "MABER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XNETB",
+      "description": "Indicator: Document posted net ?",
+      "data_element": "XNETB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XANET",
+      "description": "Indicator: Down payment in net procedure ?",
+      "data_element": "XANET",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCPDD",
+      "description": "Indicator: Address and bank data set individually",
+      "data_element": "XCPDD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XINVE",
+      "description": "Indicator: Capital Goods Affected?",
+      "data_element": "XINVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XZAHL",
+      "description": "Indicator: Is the posting key used in a payment transaction?",
+      "data_element": "XZAHL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSK1",
+      "description": "Tax Code for Distribution",
+      "data_element": "MWSKX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBT1",
+      "description": "Amount in Local Currency for Tax Distribution",
+      "data_element": "DMBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBT1",
+      "description": "Amount in foreign currency for tax breakdown",
+      "data_element": "WRBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSK2",
+      "description": "Tax Code for Distribution",
+      "data_element": "MWSKX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBT2",
+      "description": "Amount in Local Currency for Tax Distribution",
+      "data_element": "DMBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBT2",
+      "description": "Amount in foreign currency for tax breakdown",
+      "data_element": "WRBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSK3",
+      "description": "Tax Code for Distribution",
+      "data_element": "MWSKX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBT3",
+      "description": "Amount in Local Currency for Tax Distribution",
+      "data_element": "DMBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBT3",
+      "description": "Amount in foreign currency for tax breakdown",
+      "data_element": "WRBTX",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BSTAT",
+      "description": "Document Status",
+      "data_element": "BSTAT_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBUND",
+      "description": "Company ID of trading partner",
+      "data_element": "RASSC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Billing Document",
+      "data_element": "VBELN_VF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZT",
+      "description": "Follow-On Document Type",
+      "data_element": "REBZT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INFAE",
+      "description": "Inverted Date for Net Due Date",
+      "data_element": "INFAE",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG",
+      "description": "VAT Registration Number",
+      "data_element": "STCEG",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "EGBLD",
+      "description": "Country of Destination for Delivery of Goods",
+      "data_element": "EGBLD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EGLLD",
+      "description": "Supplying Country for Delivery of Goods",
+      "data_element": "EGLLD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RSTGR",
+      "description": "Reason Code for Payments",
+      "data_element": "RSTGR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XNOZA",
+      "description": "Indicator: Account is not counted",
+      "data_element": "XNOZA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERTT",
+      "description": "Contract Type",
+      "data_element": "RANTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERTN",
+      "description": "Contract Number",
+      "data_element": "RANL",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    },
+    {
+      "name": "VBEWA",
+      "description": "Flow Type",
+      "data_element": "SBEWART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WVERW",
+      "description": "Bill of exchange usage type",
+      "data_element": "WVERW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PROJK",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FIPOS",
+      "description": "Commitment Item",
+      "data_element": "FIPOS",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR",
+      "description": "Network Number for Account Assignment",
+      "data_element": "NPLNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XEGDR",
+      "description": "Indicator: Triangular deal within the EU ?",
+      "data_element": "XEGDR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBE2",
+      "description": "Amount in Second Local Currency",
+      "data_element": "DMBE2",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMBE3",
+      "description": "Amount in Third Local Currency",
+      "data_element": "DMBE3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB21",
+      "description": "Amount in Second Local Currency for Tax Breakdown",
+      "data_element": "DMB2X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB22",
+      "description": "Amount in Second Local Currency for Tax Breakdown",
+      "data_element": "DMB2X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB23",
+      "description": "Amount in Second Local Currency for Tax Breakdown",
+      "data_element": "DMB2X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB31",
+      "description": "Amount in Third Local Currency for Tax Breakdown",
+      "data_element": "DMB3X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB32",
+      "description": "Amount in Third Local Currency for Tax Breakdown",
+      "data_element": "DMB3X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DMB33",
+      "description": "Amount in Third Local Currency for Tax Breakdown",
+      "data_element": "DMB3X",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BDIF3",
+      "description": "Valuation Difference for the Third Local Currency",
+      "data_element": "BDIF3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XRAGL",
+      "description": "Indicator: Clearing was Reversed",
+      "data_element": "XRAGL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UZAWE",
+      "description": "Payment Method Supplement",
+      "data_element": "UZAWE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XSTOV",
+      "description": "Indicator: Document is flagged for reversal",
+      "data_element": "XSTOV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MWST2",
+      "description": "Tax Amount in Second Local Currency",
+      "data_element": "MWST2",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWST3",
+      "description": "Tax Amount in Third Local Currency",
+      "data_element": "MWST3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SKNT2",
+      "description": "Cash Discount Amount in Second Local Currency",
+      "data_element": "SKNT2",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SKNT3",
+      "description": "Cash Discount Amount in Third Local Currency",
+      "data_element": "SKNT3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XREF1",
+      "description": "Business partner reference key",
+      "data_element": "XREF1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "XREF2",
+      "description": "Business partner reference key",
+      "data_element": "XREF2",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "XARCH",
+      "description": "Indicator: Document already archived ?",
+      "data_element": "XARCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PSWSL",
+      "description": "Update Currency for General Ledger Transaction Figures",
+      "data_element": "PSWSL",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "PSWBT",
+      "description": "Amount for Updating in General Ledger",
+      "data_element": "PSWBT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LZBKZ",
+      "description": "State Central Bank Indicator",
+      "data_element": "LZBKZ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDL",
+      "description": "Supplying Country",
+      "data_element": "LANDL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "IMKEY",
+      "description": "Internal Key for Real Estate Object",
+      "data_element": "IMKEY",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VBEL2",
+      "description": "Sales Document",
+      "data_element": "VBELN_VA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VPOS2",
+      "description": "Numeric field: Length 6",
+      "data_element": "NUM06",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "POSN2",
+      "description": "Sales Document Item",
+      "data_element": "POSNR_VA",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ETEN2",
+      "description": "Delivery Schedule Line Number",
+      "data_element": "ETENR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FISTL",
+      "description": "Funds Center",
+      "data_element": "FISTL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "GEBER",
+      "description": "Fund",
+      "data_element": "BP_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DABRZ",
+      "description": "Reference Date for Settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XNEGP",
+      "description": "Indicator: Negative posting",
+      "data_element": "XNEGP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RFZEI",
+      "description": "Payment Card Item",
+      "data_element": "RFZEI_CC",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KKBER",
+      "description": "Credit control area",
+      "data_element": "KKBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EMPFB",
+      "description": "Payee/Payer",
+      "data_element": "EMPFB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XREF3",
+      "description": "Reference key for line item",
+      "data_element": "XREF3",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "QSSKZ",
+      "description": "Withholding Tax Code",
+      "data_element": "QSSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZINKZ",
+      "description": "Exempted from interest calculation",
+      "data_element": "DZINKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTWS1",
+      "description": "Instruction key 1",
+      "data_element": "DTAT16",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTWS2",
+      "description": "Instruction key 2",
+      "data_element": "DTAT17",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTWS3",
+      "description": "Instruction key 3",
+      "data_element": "DTAT18",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTWS4",
+      "description": "Instruction key 4",
+      "data_element": "DTAT19",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XPYPR",
+      "description": "Indicator: Items from Payment Program Blocked",
+      "data_element": "XPYPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KIDNO",
+      "description": "Payment Reference",
+      "data_element": "KIDNO",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ABSBT",
+      "description": "Credit management: Hedged amount",
+      "data_element": "ABSBT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "CCBTC",
+      "description": "Payment cards: Settlement run",
+      "data_element": "CCBTC",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PYCUR",
+      "description": "Currency for Automatic Payment",
+      "data_element": "PYCUR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "PYAMT",
+      "description": "Amount in Payment Currency",
+      "data_element": "PYAMT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BUPLA",
+      "description": "Business Place",
+      "data_element": "BUPLA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SECCO",
+      "description": "Section Code",
+      "data_element": "SECCO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CESSION_KZ",
+      "description": "Accounts Receivable Pledging Indicator",
+      "data_element": "CESSION_KZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PPDIFF",
+      "description": "Realized Exchange Rate Gain/Loss 1.Loc.Curr.(Part Payments)",
+      "data_element": "PPDIFF",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "PPDIF2",
+      "description": "Realized Exchange Rate Gain/Loss 2.Loc. Curr.(Part Payments)",
+      "data_element": "PPDIF2",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "PPDIF3",
+      "description": "Realized Exchange Rate Gain/Loss 3.Loc.Curr.(Part Payments)",
+      "data_element": "PPDIF3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KBLNR",
+      "description": "Document Number for Earmarked Funds",
+      "data_element": "KBLNR_FI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLPOS",
+      "description": "Earmarked Funds: Document Item",
+      "data_element": "KBLPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GRANT_NBR",
+      "description": "Grant",
+      "data_element": "GM_GRANT_NBR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "GMVKZ",
+      "description": "Item is in Execution",
+      "data_element": "FM_GMVKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SRTYPE",
+      "description": "Type of Additional Receivable",
+      "data_element": "FM_SRTYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOTKZ",
+      "description": "Lot Number for Requests",
+      "data_element": "PSO_LOTKZ",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FKBER",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "INTRENO",
+      "description": "Internal Real Estate Master Data Code",
+      "data_element": "VVINTRENO",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRCT",
+      "description": "Partner Profit Center",
+      "data_element": "PPRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZID",
+      "description": "Identification of the Line Item",
+      "data_element": "BUZID",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGGJ",
+      "description": "Fiscal Year of Clearing Document",
+      "data_element": "AUGGJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HKTID",
+      "description": "ID for account details",
+      "data_element": "HKTID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDGET_PD",
+      "description": "FM: Budget Period",
+      "data_element": "FM_BUDGET_PERIOD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PAYS_PROV",
+      "description": "Payment Service Provider",
+      "data_element": "COM_WEC_PAYMENT_SRV_PROVIDER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PAYS_TRAN",
+      "description": "Payment Reference of Payment Service Provider",
+      "data_element": "FPS_TRANSACTION",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "MNDID",
+      "description": "Unique Referene to Mandate per Payment Recipient",
+      "data_element": "SEPA_MNDID",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "KONTT",
+      "description": "Account Assignment Category for Industry Solution",
+      "data_element": "KONTT_FI",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KONTL",
+      "description": "Acct assignment string for industry-specific acct assignmnts",
+      "data_element": "KONTL_FI",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "UEBGDAT",
+      "description": "Transfer date of an item to legal dunning proceeding",
+      "data_element": "UEBGDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Joint Venture",
+      "data_element": "JV_NAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "EGRUP",
+      "description": "Equity group",
+      "data_element": "JV_EGROUP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BTYPE",
+      "description": "Payroll Type",
+      "data_element": "JV_BILIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGNUM",
+      "description": "Exchange agreement number",
+      "data_element": "OIA_EXGNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OINETCYC",
+      "description": "Netting cycle (FI blocking indicator)",
+      "data_element": "OIA_NETCYC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGTYP",
+      "description": "Exchange type",
+      "data_element": "OIA_EXGTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PROPMANO",
+      "description": "Mandate, Mandate-Opening Contract",
+      "data_element": "REHORECNNRM",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Secondary index for customer accounts with cleared items.\n2. No foreign key relationships.\n3. Common use cases include analyzing customer balances and transactions for cleared items.",
+    "timestamp": "2025-02-13T13:45:54.073189",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

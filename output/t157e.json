@@ -1,0 +1,110 @@
+{
+  "name": "T157E",
+  "description": "Text Table: Reason for Movement",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GRUND",
+      "description": "Reason for Movement",
+      "data_element": "MB_GRBEW",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GRTXT",
+      "description": "Text: Reason for Goods Movement",
+      "data_element": "GRTXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T157E",
+      "field": "BWART",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "MANDT",
+      "check_table": "T156",
+      "check_field": "Movement Type"
+    },
+    {
+      "table": "T157E",
+      "field": "BWART",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "BWART",
+      "check_table": "T156",
+      "check_field": "Movement Type"
+    },
+    {
+      "table": "T157E",
+      "field": "GRUND",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "GRUND",
+      "check_table": "T157D",
+      "check_field": "Reason for Movement"
+    },
+    {
+      "table": "T157E",
+      "field": "GRUND",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "MANDT",
+      "check_table": "T157D",
+      "check_field": "Reason for Movement"
+    },
+    {
+      "table": "T157E",
+      "field": "GRUND",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "BWART",
+      "check_table": "T157D",
+      "check_field": "Reason for Movement"
+    },
+    {
+      "table": "T157E",
+      "field": "MANDT",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T157E",
+      "field": "SPRAS",
+      "foreign_key_table": "T157E",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The T157E SAP table stores text descriptions for the reasons for goods movement. It is linked to the T156 table for movement types and the T157D table for reasons for movement. It is used to display descriptions of the reasons for goods movements in various SAP modules.",
+    "timestamp": "2025-02-13T13:46:06.038085",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

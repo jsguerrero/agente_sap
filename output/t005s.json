@@ -1,0 +1,78 @@
+{
+  "name": "T005S",
+  "description": "Taxes: Region (Province) Key",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BLAND",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FPRCD",
+      "description": "Provincial tax code",
+      "data_element": "FPRCD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HERBL",
+      "description": "State of manufacture",
+      "data_element": "HERBL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T005S",
+      "field": "LAND1",
+      "foreign_key_table": "T005S",
+      "foreign_key_field": "MANDT",
+      "check_table": "T005",
+      "check_field": "Countries"
+    },
+    {
+      "table": "T005S",
+      "field": "LAND1",
+      "foreign_key_table": "T005S",
+      "foreign_key_field": "LAND1",
+      "check_table": "T005",
+      "check_field": "Countries"
+    },
+    {
+      "table": "T005S",
+      "field": "MANDT",
+      "foreign_key_table": "T005S",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. The SAP table T005S stores information about provincial taxes, including region (state, province, county), tax codes, and manufacturing state.\n2. It has relationships with T005 (Countries) and T000 (Clients) tables.\n3. Common use cases include tax calculations and regulatory compliance.",
+    "timestamp": "2025-02-13T13:45:13.464822",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

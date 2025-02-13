@@ -1,0 +1,134 @@
+{
+  "name": "TCURR",
+  "description": "Exchange Rates",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KURST",
+      "description": "Exchange Rate Type",
+      "data_element": "KURST_CURR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FCURR",
+      "description": "From currency",
+      "data_element": "FCURR_CURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "TCURR",
+      "description": "To-currency",
+      "data_element": "TCURR_CURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "GDATU",
+      "description": "Date As of Which the Exchange Rate Is Effective",
+      "data_element": "GDATU_INV",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "UKURS",
+      "description": "Exchange Rate",
+      "data_element": "UKURS_CURR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "FFACT",
+      "description": "Ratio for the \"From\" Currency Units",
+      "data_element": "FFACT_CURR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "TFACT",
+      "description": "Ratio for the \"To\" Currency Units",
+      "data_element": "TFACT_CURR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TCURR",
+      "field": "FCURR",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "FCURR",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURR",
+      "field": "FCURR",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURR",
+      "field": "KURST",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURR",
+      "field": "KURST",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "KURST",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURR",
+      "field": "MANDT",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "TCURR",
+      "field": "TCURR",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURR",
+      "field": "TCURR",
+      "foreign_key_table": "TCURR",
+      "foreign_key_field": "TCURR",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The TCURR table stores exchange rates for currency conversions. It is primarily used for maintaining exchange rates and conversion factors between currencies. The table is linked to other tables such as TCURR, TCURC, and TCURV, which provide information about currency codes, exchange rate types, and client-specific settings.",
+    "timestamp": "2025-02-13T13:45:03.234680",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,1005 @@
+{
+  "name": "MBEW",
+  "description": "Material Valuation",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation Area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Deletion flag for all material data of a valuation type",
+      "data_element": "LVOBA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LBKUM",
+      "description": "Total Valuated Stock",
+      "data_element": "LBKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SALK3",
+      "description": "Value of Total Valuated Stock",
+      "data_element": "SALK3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERPR",
+      "description": "Moving Average Price/Periodic Unit Price",
+      "data_element": "VERPR",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "STPRS",
+      "description": "Standard price",
+      "data_element": "STPRS",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "PEINH",
+      "description": "Price Unit",
+      "data_element": "PEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BKLAS",
+      "description": "Valuation Class",
+      "data_element": "BKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SALKV",
+      "description": "Value based on moving average price (only with price ctrl S)",
+      "data_element": "SALKV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VMKUM",
+      "description": "Total valuated stock in previous period",
+      "data_element": "VMKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMSAL",
+      "description": "Value of total valuated stock in previous period",
+      "data_element": "VMSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VMVPR",
+      "description": "Price Control Indicator in Previous Period",
+      "data_element": "VMVPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VMVER",
+      "description": "Moving Average Price/Periodic Unit Price in Previous Period",
+      "data_element": "VMVER",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VMSTP",
+      "description": "Standard price in the previous period",
+      "data_element": "VMSTP",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VMPEI",
+      "description": "Price unit of previous period",
+      "data_element": "VMPEI",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VMBKL",
+      "description": "Valuation Class in Previous Period",
+      "data_element": "VMBKL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VMSAV",
+      "description": "Value based on moving average price (previous period)",
+      "data_element": "VMSAV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VJKUM",
+      "description": "Total Valuated Stock in Previous Year",
+      "data_element": "VJKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VJSAL",
+      "description": "Value of total valuated stock in previous year",
+      "data_element": "VJSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VJVPR",
+      "description": "Price Control Indicator in Previous Year",
+      "data_element": "VJVPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VJVER",
+      "description": "Moving Average Price/Periodic Unit Price in Previous Year",
+      "data_element": "VJVER",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VJSTP",
+      "description": "Standard price in previous year",
+      "data_element": "VJSTP",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VJPEI",
+      "description": "Price unit of previous year",
+      "data_element": "VJPEI",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VJBKL",
+      "description": "Valuation Class in Previous Year",
+      "data_element": "VJBKL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VJSAV",
+      "description": "Value based on moving average price (previous year)",
+      "data_element": "VJSAV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTTY",
+      "description": "Valuation Category",
+      "data_element": "BWTTY_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STPRV",
+      "description": "Previous price",
+      "data_element": "STPRV",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "LAEPR",
+      "description": "Date of the last price change",
+      "data_element": "LAEPR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZKPRS",
+      "description": "Future price",
+      "data_element": "DZKPRS",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ZKDAT",
+      "description": "Date as of which the price is valid",
+      "data_element": "DZKDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TIMESTAMP",
+      "description": "UTC Time Stamp in Short Form (YYYYMMDDhhmmss)",
+      "data_element": "TIMESTAMP",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "BWPRS",
+      "description": "Valuation price based on tax law: level 1",
+      "data_element": "BWPRS",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "BWPRH",
+      "description": "Valuation price based on commercial law: level 1",
+      "data_element": "BWPRH",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VJBWS",
+      "description": "Valuation price based on tax law: level 3",
+      "data_element": "VJBWS",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VJBWH",
+      "description": "Valuation price based on commercial law: level 3",
+      "data_element": "VJBWH",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VVJSL",
+      "description": "Value of total valuated stock in year before last",
+      "data_element": "VVJSL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VVJLB",
+      "description": "Total valuated stock in year before last",
+      "data_element": "VVJLB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VVMLB",
+      "description": "Total valuated stock in period before last",
+      "data_element": "VVMLB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VVSAL",
+      "description": "Value of total valuated stock in period before last",
+      "data_element": "VVSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ZPLPR",
+      "description": "Future planned price",
+      "data_element": "DZPLPR",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ZPLP1",
+      "description": "Future Planned Price 1",
+      "data_element": "DZPLP1",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ZPLP2",
+      "description": "Future Planned Price 2",
+      "data_element": "DZPLP2",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ZPLP3",
+      "description": "Future Planned Price 3",
+      "data_element": "DZPLP3",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ZPLD1",
+      "description": "Date from Which Future Planned Price 1 Is Valid",
+      "data_element": "DZPLD1",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZPLD2",
+      "description": "Date from Which Future Planned Price 2 Is Valid",
+      "data_element": "DZPLD2",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZPLD3",
+      "description": "Date from Which Future Planned Price 3 Is Valid",
+      "data_element": "DZPLD3",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PPERZ",
+      "description": "Period for future standard cost estimate (deactivated)",
+      "data_element": "PPERZ",
+      "type": "ACCP",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PPERL",
+      "description": "Period for current standard cost estimate (deactivated)",
+      "data_element": "PPERL",
+      "type": "ACCP",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PPERV",
+      "description": "Period for previous standard cost estimate (deactivated)",
+      "data_element": "PPERV",
+      "type": "ACCP",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KALKZ",
+      "description": "Indicator: standard cost estimate for future period",
+      "data_element": "KAXKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALKL",
+      "description": "Standard Cost Estimate for Current Period",
+      "data_element": "KALKL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALKV",
+      "description": "Indicator: standard cost estimate for previous period",
+      "data_element": "KALKV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSC",
+      "description": "Overhead key (deactivated)",
+      "data_element": "KALSC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XLIFO",
+      "description": "LIFO/FIFO-Relevant",
+      "data_element": "XLIFO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MYPOL",
+      "description": "Pool number for LIFO valuation",
+      "data_element": "MYPOOL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWPH1",
+      "description": "Valuation price based on commercial law: level 2",
+      "data_element": "BWPH1",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "BWPS1",
+      "description": "Valuation price based on tax law: level 2",
+      "data_element": "BWPS1",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "ABWKZ",
+      "description": "Lowest value: devaluation indicator",
+      "data_element": "ABWKZ",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTAT",
+      "description": "Maintenance status",
+      "data_element": "PSTAT_D",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "KALN1",
+      "description": "Cost Estimate Number - Product Costing",
+      "data_element": "CK_KALNR1",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KALNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BWVA1",
+      "description": "Valuation Variant for Future Standard Cost Estimate",
+      "data_element": "CK_BWVA1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BWVA2",
+      "description": "Valuation Variant for Current Standard Cost Estimate",
+      "data_element": "CK_BWVA2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BWVA3",
+      "description": "Valuation Variant for Previous Standard Cost Estimate",
+      "data_element": "CK_BWVA3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VERS1",
+      "description": "Costing Version of Future Standard Cost Estimate",
+      "data_element": "CK_TVERS1",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VERS2",
+      "description": "Costing Version of Current Standard Cost Estimate",
+      "data_element": "CK_TVERS2",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VERS3",
+      "description": "Costing Version of Previous Standard Cost Estimate",
+      "data_element": "CK_TVERS3",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HRKFT",
+      "description": "Origin Group as Subdivision of Cost Element",
+      "data_element": "HRKFT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSGR",
+      "description": "Costing Overhead Group",
+      "data_element": "CK_KOSGR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRDZ",
+      "description": "Period of Future Standard Cost Estimate",
+      "data_element": "CK_PPRDZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRDL",
+      "description": "Period of Current Standard Cost Estimate",
+      "data_element": "CK_PPRDL",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRDV",
+      "description": "Period of Previous Standard Cost Estimate",
+      "data_element": "CK_PPRDV",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PDATZ",
+      "description": "Fiscal Year of Future Standard Cost Estimate",
+      "data_element": "CK_PDATZ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PDATL",
+      "description": "Fiscal Year of Current Standard Cost Estimate",
+      "data_element": "CK_PDATL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PDATV",
+      "description": "Fiscal Year of Previous Standard Cost Estimate",
+      "data_element": "CK_PDATV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKALR",
+      "description": "Material Is Costed with Quantity Structure",
+      "data_element": "CK_EKALREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VPLPR",
+      "description": "Previous planned price",
+      "data_element": "VPLPR",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "MLMAA",
+      "description": "Material ledger activated at material level",
+      "data_element": "CK_ML_MAAC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLAST",
+      "description": "Material Price Determination: Control",
+      "data_element": "CK_ML_ABST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LPLPR",
+      "description": "Current Planned Price",
+      "data_element": "CK_LPLPR",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VKSAL",
+      "description": "Value of Total Valuated Stock at Sales Price",
+      "data_element": "VKSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "HKMAT",
+      "description": "Material-related origin",
+      "data_element": "HKMAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPERW",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZIWL",
+      "description": "Phys. inventory indicator for  value-only material",
+      "data_element": "KZIWL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WLINL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ABCIW",
+      "description": "Physical inventory indicator for cycle counting",
+      "data_element": "ABCIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWSPA",
+      "description": "Valuation margin",
+      "data_element": "BWSPA",
+      "type": "DEC",
+      "length": "6",
+      "decimals": "2"
+    },
+    {
+      "name": "LPLPX",
+      "description": "Fixed Portion of Current Planned Price",
+      "data_element": "CK_LPLPX",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "VPLPX",
+      "description": "Fixed Portion of Previous Planned Price",
+      "data_element": "CK_VPLPX",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "FPLPX",
+      "description": "Fixed Portion of Future Planned Price",
+      "data_element": "CK_ZPLPX",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "LBWST",
+      "description": "Val. Strat. for Current Plan Price, Sales Order/Proj. Stock",
+      "data_element": "CK_LBWST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBWST",
+      "description": "Valuation Strategy for Previous Plan Price, Special Stock",
+      "data_element": "CK_VBWST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FBWST",
+      "description": "Valuation Strategy for Future Planned Price, Special Stock",
+      "data_element": "CK_ZBWST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EKLAS",
+      "description": "Valuation Class for Sales Order Stock",
+      "data_element": "EKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "QKLAS",
+      "description": "Valuation Class for Project Stock",
+      "data_element": "QKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MTUSE",
+      "description": "Usage of the material",
+      "data_element": "J_1BMATUSE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MTORG",
+      "description": "Origin of the material",
+      "data_element": "J_1BMATORG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OWNPR",
+      "description": "Produced in-house",
+      "data_element": "J_1BOWNPRO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBEWM",
+      "description": "Valuation based on the batch-specific unit of measure",
+      "data_element": "XBEWW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWPEI",
+      "description": "Price unit for valuation prices based on tax/commercial law",
+      "data_element": "BWPEI",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "MBRUE",
+      "description": "MBEWH rec. already exists for per. before last of MBEW per.",
+      "data_element": "MBRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OKLAS",
+      "description": "Valuation Class for Special Stock at the Vendor",
+      "data_element": "OKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OICURVAL",
+      "description": "Current value",
+      "data_element": "OIH_CURVAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OICURDATE",
+      "description": "Current date",
+      "data_element": "OIH_CURDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OICURQTY",
+      "description": "Current quantity",
+      "data_element": "OIH_CURQTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OICURUT",
+      "description": "Current unit of measure",
+      "data_element": "OIH_CURUT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFUTVAL",
+      "description": "Future value",
+      "data_element": "OIH_FUTVAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIFUTDATE",
+      "description": "Future date",
+      "data_element": "OIH_FUTDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFUTQTY",
+      "description": "Future quantity",
+      "data_element": "OIH_FUTQTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIFUTUT",
+      "description": "Future unit of measure",
+      "data_element": "OIH_FUTUT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OINVALQTY",
+      "description": "Not to be used!!!       (non valuated quantity)",
+      "data_element": "OIH_NVALQT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIREQUAT",
+      "description": "Quantity to be revaluated",
+      "data_element": "OIH_REQUAT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OITAXKEY",
+      "description": "Excise Duty Status",
+      "data_element": "OIH_TAXKEY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYP",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHMTXGR",
+      "description": "Material tax group",
+      "data_element": "OIH_J1B_MTXGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPPINV",
+      "description": "Prepaid Inventory Flag for Material Valuation Type Segment",
+      "data_element": "JV_PPINV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CON_FIN_VALLEVEL",
+      "description": "Valuation Level",
+      "data_element": "CON_FIN_VALLEVEL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CON_FIN_VALPROC",
+      "description": "Valuation Procedure",
+      "data_element": "CON_FIN_VALPROC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The main purpose of the MBEW table is to store material valuation data for different valuation areas, types, and periods.\n2. MBEW table does not have any foreign key relationships with other tables based on the provided information.\n3. Common use cases include:\n   - Getting material valuation data for a specific valuation area, type, and period.\n   - Calculating the total value of inventory for a particular material.",
+    "timestamp": "2025-02-13T13:41:27.449877",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

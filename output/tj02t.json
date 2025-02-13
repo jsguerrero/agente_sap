@@ -1,0 +1,62 @@
+{
+  "name": "TJ02T",
+  "description": "System status texts",
+  "fields": [
+    {
+      "name": "ISTAT",
+      "description": "System status",
+      "data_element": "J_ISTAT",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TXT04",
+      "description": "Individual status of an object (short form)",
+      "data_element": "J_TXT04",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TXT30",
+      "description": "Object status",
+      "data_element": "J_TXT30",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TJ02T",
+      "field": "ISTAT",
+      "foreign_key_table": "TJ02T",
+      "foreign_key_field": "ISTAT",
+      "check_table": "TJ02",
+      "check_field": "System status"
+    },
+    {
+      "table": "TJ02T",
+      "field": "SPRAS",
+      "foreign_key_table": "TJ02T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "TJ02T stores system status texts in different languages. It is related to TJ02 (System Statuses) and T002 (Language Keys). Common use cases include displaying system status messages in the user interface.",
+    "timestamp": "2025-02-13T13:40:50.040019",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

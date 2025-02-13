@@ -1,0 +1,141 @@
+{
+  "name": "ADR6",
+  "description": "E-Mail Addresses (Business Address Services)",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRNUMBER",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PERSNUMBER",
+      "description": "Person number",
+      "data_element": "AD_PERSNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_FROM",
+      "description": "Valid-from date - in current Release only 00010101 possible",
+      "data_element": "AD_DATE_FR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CONSNUMBER",
+      "description": "Sequence Number",
+      "data_element": "AD_CONSNUM",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FLGDEFAULT",
+      "description": "Flag: this address is the default address",
+      "data_element": "AD_FLGDFAD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLG_NOUSE",
+      "description": "Flag: This Communication Number is Not Used",
+      "data_element": "AD_FLNOUSE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HOME_FLAG",
+      "description": "Recipient address in this communication type (mail sys.grp)",
+      "data_element": "AD_FLGHOME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SMTP_ADDR",
+      "description": "E-Mail Address",
+      "data_element": "AD_SMTPADR",
+      "type": "CHAR",
+      "length": "241",
+      "decimals": "0"
+    },
+    {
+      "name": "SMTP_SRCH",
+      "description": "E-Mail Address Search Field",
+      "data_element": "AD_SMTPAD2",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "DFT_RECEIV",
+      "description": "Flag: Recipient is standard recipient for this address",
+      "data_element": "AD_DFTRCAD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "R3_USER",
+      "description": "Flag: Connected to an SAP System",
+      "data_element": "AD_R3_USER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ENCODE",
+      "description": "Desired Data Coding (E-Mail)",
+      "data_element": "AD_ENCODE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TNEF",
+      "description": "Flag: Receiver can receive TNEF coding via SMTP",
+      "data_element": "AD_TNEF6",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VALID_FROM",
+      "description": "Communication Data: Valid From (YYYYMMDDHHMMSS)",
+      "data_element": "AD_VALFROM",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "VALID_TO",
+      "description": "Communication Data: Valid To (YYYYMMDDHHMMSS)",
+      "data_element": "AD_VALTO",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The ADR6 table stores email addresses and related communication data for business partners in the SAP system. It is used to manage email communication between SAP and external parties, such as customers, suppliers, and employees. The table contains fields for email address, default address flag, validity period, and other communication-related information.",
+    "timestamp": "2025-02-13T13:43:48.626251",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

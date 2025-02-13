@@ -1,0 +1,78 @@
+{
+  "name": "T134T",
+  "description": "Material Type Descriptions",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MTART",
+      "description": "Material Type",
+      "data_element": "MTART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MTBEZ",
+      "description": "Description of material type",
+      "data_element": "MTBEZ",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T134T",
+      "field": "MANDT",
+      "foreign_key_table": "T134T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T134T",
+      "field": "MTART",
+      "foreign_key_table": "T134T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T134",
+      "check_field": "Material Types"
+    },
+    {
+      "table": "T134T",
+      "field": "MTART",
+      "foreign_key_table": "T134T",
+      "foreign_key_field": "MTART",
+      "check_table": "T134",
+      "check_field": "Material Types"
+    },
+    {
+      "table": "T134T",
+      "field": "SPRAS",
+      "foreign_key_table": "T134T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The T134T table stores descriptions for material types in multiple languages. It is linked to the T134 table, which contains the master material type data, and the T000 and T002 tables for client and language information. **Common Use Cases:** * Retrieving material type descriptions in different languages\n* Maintaining material type descriptions for various clients",
+    "timestamp": "2025-02-13T13:43:53.419228",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "FINSC_LEDGER",
+  "description": "FINSC_LEDGER is a standard SAP Table which is used to store Universal Journal Entry Ledger data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP FINSC_LEDGER table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: G - Customising table which is protected against SAP Update\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type)\nDictionary Type: Transparent table\nDatabase Table: FINSC_LEDGER\n\n\nFINSC_LEDGER table structure field list\nBelow is the full FINSC_LEDGER field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nMANDT\tClient\tMANDT\tCLNT\t3(0)\t\t\tMANDT\t\t\t\nRLDNR\tLedger in General Ledger Accounting\tFINS_LEDGER\tCHAR\t2(0)\t\tALPHA\tFINS_LEDGER\tGLN_FLEX\tFAGL_RLDNR\tRLDNR\nLEDGER_TYPE\tLedger Type\tFINS_LEDGER_TYPE\tCHAR\t1(0)\t\t\tFINS_LEDGER_TYPE\t\t\t\nEXT_LEDGER_TYPE\tExtension Ledger Type\tFINS_EXT_LEDGER_TYPE\tCHAR\t1(0)\t\t\tFINS_EXT_LEDGER_TYPE\t\t\t\nAPPL\tOwner application\tGLXAPPL\tCHAR\t2(0)\t\t\tGLXAPPL\tAPC\t\t\nSUBAPPL\tSubapplication\tGLXSUBAPPL\tCHAR\t3(0)\t\t\tGLXSUBAPPL\tSUC\t\t\nXLEADING\tIndicator: Leading Ledger\tFAGL_FLAG_LEADING\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nCORE\tUnderlying Ledger of an Extension Ledger\tFINS_CORE_LEDGER\tCHAR\t2(0)\t\tALPHA\tFINS_LEDGER\t\t\t\nVALUTYP\tValuation View\tFINS_VALUTYP_CHAR\tCHAR\t1(0)\t\t\tFINS_VALUTYP_CHAR\tVTP\t\t\nVALUSUBTYP\tSubtype of Valuation View (for Transfer Prices)\tFINS_VALUSUBTYP\tCHAR\t2(0)\tFINSC_VALUSUBTYP\t\tFINS_VALUSUBTYP\tVTP\t\t\nMAN_POST_NOT_ALLWD\tManual Postings Not Allowed To Ledger\tFINS_MANUAL_POST_NOT_ALLOWED\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nACC_PRINCIPLE\tAccounting Principle of Ledger\tACC_PRINCIPLE_LEDGER\tCHAR\t4(0)\tTACC_PRINCIPLE\t\tACCOUNTING_PRINCIPLE\t\t\t\n.INCLU--AP\t\t\t\t0(0)\t\t\t\t\t\t\nXCASH_LEDGER\tCash Ledger Indicator\tFAGL_CASH_LEDGER\tCHAR\t1(0)\t\t\tBOOLE",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger in General Ledger Accounting",
+      "data_element": "FINS_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LEDGER_TYPE",
+      "description": "Ledger Type",
+      "data_element": "FINS_LEDGER_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXT_LEDGER_TYPE",
+      "description": "Extension Ledger Type",
+      "data_element": "FINS_EXT_LEDGER_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "APPL",
+      "description": "Owner application",
+      "data_element": "GLXAPPL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBAPPL",
+      "description": "Subapplication",
+      "data_element": "GLXSUBAPPL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XLEADING",
+      "description": "Indicator: Leading Ledger",
+      "data_element": "FAGL_FLAG_LEADING",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CORE",
+      "description": "Underlying Ledger of an Extension Ledger",
+      "data_element": "FINS_CORE_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUTYP",
+      "description": "Valuation View",
+      "data_element": "FINS_VALUTYP_CHAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUSUBTYP",
+      "description": "Subtype of Valuation View (for Transfer Prices)",
+      "data_element": "FINS_VALUSUBTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MAN_POST_NOT_ALLWD",
+      "description": "Manual Postings Not Allowed To Ledger",
+      "data_element": "FINS_MANUAL_POST_NOT_ALLOWED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ACC_PRINCIPLE",
+      "description": "Accounting Principle of Ledger",
+      "data_element": "ACC_PRINCIPLE_LEDGER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": ".INCLU--AP",
+      "description": "",
+      "data_element": "",
+      "type": "",
+      "length": "0",
+      "decimals": "0"
+    },
+    {
+      "name": "XCASH_LEDGER",
+      "description": "Cash Ledger Indicator",
+      "data_element": "FAGL_CASH_LEDGER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Main purpose of the table: Stores general data\n2. Key Relationships with other tables: None provided\n3. Common use cases: Storing and retrieving data",
+    "timestamp": "2025-02-13T13:42:27.055353",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

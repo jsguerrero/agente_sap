@@ -1,0 +1,133 @@
+{
+  "name": "MBEWH",
+  "description": "Material Valuation: History",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation Area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LBKUM",
+      "description": "Total Valuated Stock",
+      "data_element": "LBKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SALK3",
+      "description": "Value of Total Valuated Stock",
+      "data_element": "SALK3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERPR",
+      "description": "Moving Average Price/Periodic Unit Price",
+      "data_element": "VERPR",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "STPRS",
+      "description": "Standard price",
+      "data_element": "STPRS",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "PEINH",
+      "description": "Price Unit",
+      "data_element": "PEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BKLAS",
+      "description": "Valuation Class",
+      "data_element": "BKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SALKV",
+      "description": "Value based on moving average price (only with price ctrl S)",
+      "data_element": "SALKV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VKSAL",
+      "description": "Value of Total Valuated Stock at Sales Price",
+      "data_element": "VKSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The MBEWH table stores historical valuation data for materials in different valuation areas. It provides a snapshot of material valuation at a specific point in time and is essential for financial reporting and analysis. The table is linked to other tables in the SAP system, such as the material master table (MARA) and the valuation area table (BWART), to provide a comprehensive view of material valuation and inventory management.",
+    "timestamp": "2025-02-13T13:46:43.459894",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

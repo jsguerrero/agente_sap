@@ -1,0 +1,325 @@
+{
+  "name": "FINSC_LD_CMP",
+  "description": "FINSC_LD_CMP is a standard SAP Table which is used to store CompCode-Dependent Settings for Univ. Journal Entry Ledger data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP FINSC_LD_CMP table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: C - Customising table, maintenance only by cust\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type)\nDictionary Type: Transparent table\nDatabase Table: FINSC_LD_CMP\n\n\nFINSC_LD_CMP table structure field list\nBelow is the full FINSC_LD_CMP field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nMANDT\tClient\tMANDT\tCLNT\t3(0)\tT000\t\tMANDT\t\t\t\nRLDNR\tLedger in General Ledger Accounting\tFINS_LEDGER\tCHAR\t2(0)\tFINSC_LEDGER\tALPHA\tFINS_LEDGER\tGLN_FLEX\tFAGL_RLDNR\tRLDNR\nBUKRS\tCompany Code\tBUKRS\tCHAR\t4(0)\tT001\t\tBUKRS\tBUK\tC_T001\tBUKRS\nCURTPH\tCurrency Type of Currency 1\tFINS_CURTYPE_H\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nMLRELINDH\tHSL is relevant in Material Ledger\tFINS_ML_CUR_IND_H\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPK\tCurrency Type of Currency 2\tFINS_CURTYPE_K\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSK\tCurrency position in NewGL for KSL\tFINS_CUR_POS_K\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDK\tKSL is relevant in Material Ledger\tFINS_ML_CUR_IND_K\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPO\tCurrency Type of Freely Defined Currency 1\tFINS_CURTYPE_O\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSO\tCurrency position in NewGL for OSL\tFINS_CUR_POS_O\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDO\tOSL is relevant in Material Ledger\tFINS_ML_CUR_IND_O\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPV\tCurrency Type of Freely Defined Currency 2\tFINS_CURTYPE_V\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSV\tCurrency position in NewGL for VSL\tFINS_CUR_POS_V\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDV\tVSL is relevant in Material Ledger\tFINS_ML_CUR_IND_V\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPB\tCurrency Type of Third Freely Defined Currency\tFINS_CURTYPE_B\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSB\tCurrency position in NewGL for BSL\tFINS_CUR_POS_B\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDB\tBSL is relevant in Material Ledger\tFINS_ML_CUR_IND_B\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPC\tCurrency Type of Freely Defined Currency 4\tFINS_CURTYPE_C\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSC\tCurrency position in NewGL for CSL\tFINS_CUR_POS_C\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDC\tCSL is relevant in Material Ledger\tFINS_ML_CUR_IND_C\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPD\tCurrency Type of Freely Defined Currency 5\tFINS_CURTYPE_D\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSD\tCurrency position in NewGL for DSL\tFINS_CUR_POS_D\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDD\tDSL is relevant in Material Ledger\tFINS_ML_CUR_IND_D\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPE\tCurrency Type of Freely Defined Currency 6\tFINS_CURTYPE_E\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSE\tCurrency position in NewGL for ESL\tFINS_CUR_POS_E\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDE\tESL is relevant in Material Ledger\tFINS_ML_CUR_IND_E\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPF\tCurrency Type of Freely Defined Currency 7\tFINS_CURTYPE_F\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSF\tCurrency position in NewGL for FSL\tFINS_CUR_POS_F\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDF\tFSL is relevant in Material Ledger\tFINS_ML_CUR_IND_F\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nCURTPG\tCurrency Type of Freely Defined Currency 8\tFINS_CURTYPE_G\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE\t\t\t\nCURPOSG\tCurrency position in NewGL for GSL\tFINS_CUR_POS_G\tCHAR\t1(0)\t\t\tFINS_CUR_POS\t\t\t\nMLRELINDG\tGSL is relevant in Material Ledger\tFINS_ML_CUR_IND_G\tCHAR\t1(0)\t\t\tXSDBOOLEAN\t\t\t\nPERIV\tFiscal Year Variant\tPERIV\tCHAR\t2(0)\tT009\t\tPERIV\t\t\t\nPARGLACCTS\tParallel Accounting Using Additional G/L Accounts\tFINS_PARALLEL_GLACCT\tCHAR\t1(0)\t\t\tBOOLE\t\t\t\nOPVAR\tPosting Period Variant\tOPVAR\tCHAR\t4(0)\tT010O\t\tOPVAR\t\t\t\nTOYEAR\tFiscal Year Until which a General Ledger Is Activated\tFAGL_TOYEAR\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nWRITE_DOCNR_LD\tProvide a ledger specific doc. number in universal journal\tFINS_WRITE_DOCNR_LD\tCHAR\t1(0)\t\t\tBOOLE\t\t\t\nACC_PRINCIPLE\tAccounting Principle for Ledger/Company Code\tACC_PRINCIPLE_LD_CMP\tCHAR\t4(0)\tTACC_PRINCIPLE\t\tACCOUNTING_PRINCIPLE\t\t\t\nFUNCTIONAL_CURRENCY\tFunctional Currency Type\tFINSC_FUNCTIONAL_CURTYPE\tCHAR\t2(0)\tFINSC_CURTYPE\t\tFINS_CURTYPE",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger in General Ledger Accounting",
+      "data_element": "FINS_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPH",
+      "description": "Currency Type of Currency 1",
+      "data_element": "FINS_CURTYPE_H",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDH",
+      "description": "HSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_H",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPK",
+      "description": "Currency Type of Currency 2",
+      "data_element": "FINS_CURTYPE_K",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSK",
+      "description": "Currency position in NewGL for KSL",
+      "data_element": "FINS_CUR_POS_K",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDK",
+      "description": "KSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_K",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPO",
+      "description": "Currency Type of Freely Defined Currency 1",
+      "data_element": "FINS_CURTYPE_O",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSO",
+      "description": "Currency position in NewGL for OSL",
+      "data_element": "FINS_CUR_POS_O",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDO",
+      "description": "OSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_O",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPV",
+      "description": "Currency Type of Freely Defined Currency 2",
+      "data_element": "FINS_CURTYPE_V",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSV",
+      "description": "Currency position in NewGL for VSL",
+      "data_element": "FINS_CUR_POS_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDV",
+      "description": "VSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPB",
+      "description": "Currency Type of Third Freely Defined Currency",
+      "data_element": "FINS_CURTYPE_B",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSB",
+      "description": "Currency position in NewGL for BSL",
+      "data_element": "FINS_CUR_POS_B",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDB",
+      "description": "BSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_B",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPC",
+      "description": "Currency Type of Freely Defined Currency 4",
+      "data_element": "FINS_CURTYPE_C",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSC",
+      "description": "Currency position in NewGL for CSL",
+      "data_element": "FINS_CUR_POS_C",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDC",
+      "description": "CSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_C",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPD",
+      "description": "Currency Type of Freely Defined Currency 5",
+      "data_element": "FINS_CURTYPE_D",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSD",
+      "description": "Currency position in NewGL for DSL",
+      "data_element": "FINS_CUR_POS_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDD",
+      "description": "DSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPE",
+      "description": "Currency Type of Freely Defined Currency 6",
+      "data_element": "FINS_CURTYPE_E",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSE",
+      "description": "Currency position in NewGL for ESL",
+      "data_element": "FINS_CUR_POS_E",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDE",
+      "description": "ESL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_E",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPF",
+      "description": "Currency Type of Freely Defined Currency 7",
+      "data_element": "FINS_CURTYPE_F",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSF",
+      "description": "Currency position in NewGL for FSL",
+      "data_element": "FINS_CUR_POS_F",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDF",
+      "description": "FSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_F",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTPG",
+      "description": "Currency Type of Freely Defined Currency 8",
+      "data_element": "FINS_CURTYPE_G",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURPOSG",
+      "description": "Currency position in NewGL for GSL",
+      "data_element": "FINS_CUR_POS_G",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLRELINDG",
+      "description": "GSL is relevant in Material Ledger",
+      "data_element": "FINS_ML_CUR_IND_G",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PERIV",
+      "description": "Fiscal Year Variant",
+      "data_element": "PERIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PARGLACCTS",
+      "description": "Parallel Accounting Using Additional G/L Accounts",
+      "data_element": "FINS_PARALLEL_GLACCT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OPVAR",
+      "description": "Posting Period Variant",
+      "data_element": "OPVAR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TOYEAR",
+      "description": "Fiscal Year Until which a General Ledger Is Activated",
+      "data_element": "FAGL_TOYEAR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WRITE_DOCNR_LD",
+      "description": "Provide a ledger specific doc. number in universal journal",
+      "data_element": "FINS_WRITE_DOCNR_LD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ACC_PRINCIPLE",
+      "description": "Accounting Principle for Ledger/Company Code",
+      "data_element": "ACC_PRINCIPLE_LD_CMP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FUNCTIONAL_CURRENCY",
+      "description": "Functional Currency Type",
+      "data_element": "FINSC_FUNCTIONAL_CURTYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "Table Table contains the data for an object that is stored in the database. It is commonly used to store data that is related to other objects in the database. The table is typically referenced by a foreign key in another table, which allows the data in the table to be accessed by other objects.",
+    "timestamp": "2025-02-13T13:46:45.275941",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

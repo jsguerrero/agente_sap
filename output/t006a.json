@@ -1,0 +1,102 @@
+{
+  "name": "T006A",
+  "description": "Assign Internal to Language-Dependent Unit",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEHI",
+      "description": "Unit of Measurement",
+      "data_element": "MSEHI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEH3",
+      "description": "External Unit of Measurement in Commercial Format (3-Char.)",
+      "data_element": "MSEH3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEH6",
+      "description": "External Unit of Measurement in Technical Format (6-Char.)",
+      "data_element": "MSEH6",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEHT",
+      "description": "Unit of Measurement Text (Maximum 10 Characters)",
+      "data_element": "MSEHT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEHL",
+      "description": "Unit of Measurement Text (Maximum 30 Characters)",
+      "data_element": "MSEHL",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T006A",
+      "field": "MANDT",
+      "foreign_key_table": "T006A",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T006A",
+      "field": "MSEHI",
+      "foreign_key_table": "T006A",
+      "foreign_key_field": "MSEHI",
+      "check_table": "T006",
+      "check_field": "Units of Measurement"
+    },
+    {
+      "table": "T006A",
+      "field": "MSEHI",
+      "foreign_key_table": "T006A",
+      "foreign_key_field": "MANDT",
+      "check_table": "T006",
+      "check_field": "Units of Measurement"
+    },
+    {
+      "table": "T006A",
+      "field": "SPRAS",
+      "foreign_key_table": "T006A",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. Purpose: To store internal to language-dependent unit assignments, including unit descriptions in multiple languages.\n2. Key Relationships: Units of Measurement (T006), Language Keys (T002), and Clients (T000)\n3. Use Cases: Defining and displaying unit of measurement descriptions in different languages.",
+    "timestamp": "2025-02-13T13:39:59.824455",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

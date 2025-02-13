@@ -1,0 +1,1693 @@
+{
+  "name": "LIKP",
+  "description": "SD Document: Delivery Header Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ERZET",
+      "description": "Entry time",
+      "data_element": "ERZET",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BZIRK",
+      "description": "Sales district",
+      "data_element": "BZIRK",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VSTEL",
+      "description": "Shipping Point/Receiving Point",
+      "data_element": "VSTEL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFART",
+      "description": "Delivery Type",
+      "data_element": "LFART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTLF",
+      "description": "Complete delivery defined for each sales order?",
+      "data_element": "AUTLF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZAZU",
+      "description": "Order Combination Indicator",
+      "data_element": "KZAZU_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WADAT",
+      "description": "Planned goods movement date",
+      "data_element": "WADAK",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LDDAT",
+      "description": "Loading Date",
+      "data_element": "LDDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TDDAT",
+      "description": "Transportation Planning Date",
+      "data_element": "TDDAT_D",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LFDAT",
+      "description": "Delivery Date",
+      "data_element": "LFDAT_V",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KODAT",
+      "description": "Picking Date",
+      "data_element": "KODAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ABLAD",
+      "description": "Unloading Point",
+      "data_element": "ABLAD",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO1",
+      "description": "Incoterms (Part 1)",
+      "data_element": "INCO1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO2",
+      "description": "Incoterms (Part 2)",
+      "data_element": "INCO2",
+      "type": "CHAR",
+      "length": "28",
+      "decimals": "0"
+    },
+    {
+      "name": "EXPKZ",
+      "description": "Export indicator",
+      "data_element": "EXPKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ROUTE",
+      "description": "Route",
+      "data_element": "ROUTE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "FAKSK",
+      "description": "Billing block in SD document",
+      "data_element": "FAKSK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFSK",
+      "description": "Delivery block (document header)",
+      "data_element": "LIFSK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYP",
+      "description": "SD document category",
+      "data_element": "VBTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNFAK",
+      "description": "Customer factory calendar",
+      "data_element": "KNFAK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TPQUA",
+      "description": "not currently in use",
+      "data_element": "TPQUA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TPGRP",
+      "description": "not currently in use",
+      "data_element": "TPGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LPRIO",
+      "description": "Delivery Priority",
+      "data_element": "LPRIO",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VSBED",
+      "description": "Shipping Conditions",
+      "data_element": "VSBED",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Ship-to party",
+      "data_element": "KUNWE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNAG",
+      "description": "Sold-to party",
+      "data_element": "KUNAG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDGRP",
+      "description": "Customer group",
+      "data_element": "KDGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STZKL",
+      "description": "Not Currently in Use",
+      "data_element": "STZKL",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "2"
+    },
+    {
+      "name": "STZZU",
+      "description": "not currently in use",
+      "data_element": "STZZU",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BTGEW",
+      "description": "Total Weight",
+      "data_element": "GSGEW",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "NTGEW",
+      "description": "Net weight",
+      "data_element": "NTGEW_15",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "GEWEI",
+      "description": "Weight Unit",
+      "data_element": "GEWEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VOLUM",
+      "description": "Volume",
+      "data_element": "VOLUM_15",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "VOLEH",
+      "description": "Volume unit",
+      "data_element": "VOLEH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZPK",
+      "description": "Total number of packages in delivery",
+      "data_element": "ANZPK",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BEROT",
+      "description": "Picked items location",
+      "data_element": "BEROT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "LFUHR",
+      "description": "Time of delivery",
+      "data_element": "LFUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GRULG",
+      "description": "Weight group for delivery (To group)",
+      "data_element": "GRULG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LSTEL",
+      "description": "Loading Point",
+      "data_element": "LSTEL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TRAGR",
+      "description": "Transportation Group",
+      "data_element": "TRAGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FKARV",
+      "description": "Proposed billing type for a delivery-related billing doc.",
+      "data_element": "FKARV",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FKDAT",
+      "description": "Billing date for billing index and printout",
+      "data_element": "FKDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PERFK",
+      "description": "Invoice dates (calendar identification)",
+      "data_element": "PERFK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ROUTA",
+      "description": "Route",
+      "data_element": "ROUTE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "STAFO",
+      "description": "Update group for statistics update",
+      "data_element": "STAFO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Procedure (Pricing, Output Control, Acct. Det., Costing,...)",
+      "data_element": "KALSM_D",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERK",
+      "description": "SD Document Currency",
+      "data_element": "WAERK",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VKBUR",
+      "description": "Sales Office",
+      "data_element": "VKBUR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VBEAK",
+      "description": "Shipping processing time for the entire document",
+      "data_element": "VBEAK",
+      "type": "DEC",
+      "length": "6",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUKRL",
+      "description": "Combination criteria for delivery",
+      "data_element": "DZUKRL",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "VERUR",
+      "description": "Distribution delivery",
+      "data_element": "VERUR_VL",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "COMMN",
+      "description": "Communication number for Q-API interface",
+      "data_element": "COMMN",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "STWAE",
+      "description": "Statistics currency",
+      "data_element": "STWAE",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "STCUR",
+      "description": "Exchange rate for statistics",
+      "data_element": "STCUR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "EXNUM",
+      "description": "Number of foreign trade data in MM and SD documents",
+      "data_element": "EXNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LGNUM",
+      "description": "Warehouse Number / Warehouse Complex",
+      "data_element": "LGNUM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LISPL",
+      "description": "Delivery within one warehouse",
+      "data_element": "LNSPL_LIKP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VKOIV",
+      "description": "Sales organization for intercompany billing",
+      "data_element": "VKOIV",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWIV",
+      "description": "Distribution channel for intercompany billing",
+      "data_element": "VTWIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPAIV",
+      "description": "Division for intercompany billing",
+      "data_element": "SPAIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FKAIV",
+      "description": "Billing type for intercompany billing",
+      "data_element": "FKAIV",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PIOIV",
+      "description": "Date for intercompany billing",
+      "data_element": "PIOIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FKDIV",
+      "description": "Billing date for intercompany billing",
+      "data_element": "FKDIV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNIV",
+      "description": "Customer number for intercompany billing",
+      "data_element": "KUNIV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KKBER",
+      "description": "Credit control area",
+      "data_element": "KKBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KNKLI",
+      "description": "Customer's account number with credit limit reference",
+      "data_element": "KNKLI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GRUPP",
+      "description": "Customer Credit Group",
+      "data_element": "GRUPP_CM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SBGRP",
+      "description": "Credit representative group for credit management",
+      "data_element": "SBGRP_CM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CTLPC",
+      "description": "Credit management: Risk category",
+      "data_element": "CTLPC_CM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CMWAE",
+      "description": "Currency key of credit control area",
+      "data_element": "WAERS_CM",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AMTBL",
+      "description": "Released credit value of the document",
+      "data_element": "AMTBL_CM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "BOLNR",
+      "description": "Bill of lading",
+      "data_element": "BOLNR",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Vendor Account Number",
+      "data_element": "ELIFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TRATY",
+      "description": "Means-of-Transport Type",
+      "data_element": "TRATY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TRAID",
+      "description": "Means of Transport ID",
+      "data_element": "TRAID",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "CMFRE",
+      "description": "Release date of the document determined by credit management",
+      "data_element": "CMFRE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CMNGV",
+      "description": "Next date",
+      "data_element": "CMNGV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XABLN",
+      "description": "Goods Receipt/Issue Slip Number",
+      "data_element": "XABLN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "WADAT_IST",
+      "description": "Actual Goods Movement Date",
+      "data_element": "WADAT_IST",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TRSPG",
+      "description": "Shipment Blocking Reason",
+      "data_element": "TRSPG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TPSID",
+      "description": "ID for external transport system",
+      "data_element": "TPSID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFEX",
+      "description": "External Identification of Delivery Note",
+      "data_element": "LIFEX",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "TERNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM_CH",
+      "description": "Search procedure for batch determination",
+      "data_element": "KALSMA_CH",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KLIEF",
+      "description": "Correction delivery",
+      "data_element": "KLIEF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSP",
+      "description": "Shipping: Pricing procedure",
+      "data_element": "KALSP",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMP",
+      "description": "Number of document condition - pricing",
+      "data_element": "KNUMP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NETWR",
+      "description": "Net Value of the Sales Order in Document Currency",
+      "data_element": "NETWR_AK",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "AULWE",
+      "description": "Route Schedule",
+      "data_element": "AULWE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Receiving plant for deliveries",
+      "data_element": "EMPFW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LCNUM",
+      "description": "Financial doc. processing: Internal financial doc. number",
+      "data_element": "LCNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ABSSC",
+      "description": "Payment guarantee procedure",
+      "data_element": "ABSSCHE_CM",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KOUHR",
+      "description": "Picking time (local time, with reference to a plant)",
+      "data_element": "KOUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TDUHR",
+      "description": "Transp. Planning Time (Local, Relating to a Shipping Point)",
+      "data_element": "TDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LDUHR",
+      "description": "Loading Time (Local Time Relating to a Shipping Point)",
+      "data_element": "LDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "WAUHR",
+      "description": "Time of Goods Issue (Local, Relating to a Plant)",
+      "data_element": "WAUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LGTOR",
+      "description": "Door for Warehouse Number",
+      "data_element": "LGTOR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LGBZO",
+      "description": "Staging Area for Warehouse Complex",
+      "data_element": "LGBZO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AKWAE",
+      "description": "Currency key for letter-of-credit procg in foreign trade",
+      "data_element": "AKWAE",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AKKUR",
+      "description": "Exchange rate for letter-of-credit procg in foreign trade",
+      "data_element": "AKKUR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "AKPRZ",
+      "description": "Depreciation percentage for financial document processing",
+      "data_element": "AKPRZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "PROLI",
+      "description": "Dangerous Goods Management Profile in SD Documents",
+      "data_element": "ADGE_PROLI",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR_LIKP",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDLE",
+      "description": "Worldwide unique key for LIKP-VBELN",
+      "data_element": "TSEGGUID_LIKP",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "TSEGFL",
+      "description": "Time segment exists",
+      "data_element": "TSEGEXISTS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TSEGTP",
+      "description": "Event group time segment delivery header",
+      "data_element": "TSEGTPLLIK",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TZONIS",
+      "description": "Time zone of delivering location",
+      "data_element": "TSEGZONISS",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TZONRC",
+      "description": "Time zone of recipient location",
+      "data_element": "TSEGZONREC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CONT_DG",
+      "description": "Indicator: Document contains dangerous goods",
+      "data_element": "ADGE_NCDG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERURSYS",
+      "description": "Distribution delivery: Original system",
+      "data_element": "VERURSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KZWAB",
+      "description": "Indicator for controlling goods movement",
+      "data_element": "KZWAB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VLSTK",
+      "description": "Distribution Status (Decentralized Warehouse Processing)",
+      "data_element": "VLSTK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TCODE",
+      "description": "Transaction Code",
+      "data_element": "TCODE",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "VSART",
+      "description": "Shipping type",
+      "data_element": "VSARTTR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TRMTYP",
+      "description": "Means of Transport",
+      "data_element": "TRMTYP",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SDABW",
+      "description": "Special processing indicator",
+      "data_element": "SDABW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VBUND",
+      "description": "Company ID",
+      "data_element": "VBUND",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XWOFF",
+      "description": "Calculation of val. open",
+      "data_element": "XWOFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIRTA",
+      "description": "Automatic TO Creation Immediately After TR Generation",
+      "data_element": "LVS_DIRTA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRVBE",
+      "description": "Production Supply Area",
+      "data_element": "PRVBE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FOLAR",
+      "description": "Delivery Type",
+      "data_element": "LFART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PODAT",
+      "description": "Date (proof of delivery)",
+      "data_element": "PODAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "POTIM",
+      "description": "Confirmation time",
+      "data_element": "POTIM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VGANZ",
+      "description": "Number of Delivery Items with Precedessor in Other System",
+      "data_element": "SHP_VGANZ",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "IMWRK",
+      "description": "Delivery has Status 'In Plant'",
+      "data_element": "IMWRK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_LOEKZ",
+      "description": "Document deletion indicator",
+      "data_element": "LOEKZ_BK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_LOC_SEQ",
+      "description": "Sequence of Intermediate Locations in Returns Process",
+      "data_element": "/SPE/RET_LOC_SEQ_D",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_ACC_APP_STS",
+      "description": "Delivery Confirmation Status",
+      "data_element": "/SPE/RET_ACC_APP_STS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_SHP_INF_STS",
+      "description": "Shipment Information Status",
+      "data_element": "/SPE/RET_SHP_INF_STS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_RET_CANC",
+      "description": "Returns: Flag showing that an ASN is cancelled",
+      "data_element": "/SPE/RET_CANC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_WAUHR_IST",
+      "description": "Time of Goods Issue (Local, Relating to a Plant)",
+      "data_element": "WAUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_WAZONE_IST",
+      "description": "Time Zone",
+      "data_element": "TZNZONE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_REV_VLSTK",
+      "description": "Distribution Status (Decentralized Warehouse Processing)",
+      "data_element": "VLSTK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_LE_SCENARIO",
+      "description": "Scenario Logistic Execution",
+      "data_element": "/SPE/LE_SCENARIO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_ORIG_SYS",
+      "description": "Original System Type",
+      "data_element": "/SPE/INB_ORIGIN_SYS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_CHNG_SYS",
+      "description": "Last Changer's System Type",
+      "data_element": "/SPE/INB_CHNG_SYS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_GEOROUTE",
+      "description": "Description of a Geographical Route",
+      "data_element": "/SPE/DE_ROUTE_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_GEOROUTEIND",
+      "description": "Change Indicator for the Route",
+      "data_element": "/SPE/DE_ROUTE_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_CARRIER_IND",
+      "description": "Change Indicator for the Carrier",
+      "data_element": "/SPE/DE_CARRIER_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_GTS_REL",
+      "description": "Goods Traffic Type",
+      "data_element": "/SPE/DE_LEG_GTS_CODE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_GTS_RT_CDE",
+      "description": "Route Code for SAP Global Trade Services",
+      "data_element": "/SPE/DE_ROUTE_GTS_CODE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_REL_TMSTMP",
+      "description": "Release Time Stamp",
+      "data_element": "/SPE/DE_RELEASE_TMSTMP",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_UNIT_SYSTEM",
+      "description": "Measurement Unit System",
+      "data_element": "/SPE/DE_UNIT_SYSTEM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_INV_BFR_GI",
+      "description": "Invoice Creation Before Goods Issue",
+      "data_element": "/SPE/INV_BFR_GI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_QI_STATUS",
+      "description": "Status of Quality Inspection for Returns Deliveries",
+      "data_element": "/SPE/RET_QI_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_RED_IND",
+      "description": "SPE indicator if redirecting has occured",
+      "data_element": "/SPE/RED_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKES",
+      "description": "SAP Global Trade Services: Storage Status of Delivery",
+      "data_element": "GTS_SAKES",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_LIFEX_TYPE",
+      "description": "Type of External Identification",
+      "data_element": "/SPE/DE_LIFEX_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_TTYPE",
+      "description": "Means of Transport",
+      "data_element": "/SPE/TTYPE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_PRO_NUMBER",
+      "description": "Partner Identification : Progressive Identification Number",
+      "data_element": "/SPE/PRO_NUMBER",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "LOC_GUID",
+      "description": "Akkreditiv (GUID)",
+      "data_element": "LOC_GUID16",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_BILLING_IND",
+      "description": "EWM Billing Indicator",
+      "data_element": "/SPE/DE_BILLING_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRINTER_PROFILE",
+      "description": "Description of print profile",
+      "data_element": "DRUCK_PROFIL_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MSR_ACTIVE",
+      "description": "Advanced Returns Management Active",
+      "data_element": "MSR_ACTIVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRTNR",
+      "description": "Confirmation number",
+      "data_element": "PRTNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STGE_LOC_CHANGE",
+      "description": "Temporary Change of Storage Locations in Delivery",
+      "data_element": "SHP_STGE_LOC_CHANGE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TM_CTRL_KEY",
+      "description": "Control Key for Document Transfer to TM",
+      "data_element": "TM_CTRL_KEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DLV_SPLIT_INITIA",
+      "description": "Delivery Split Initiator",
+      "data_element": "DLV_SPLIT_INITIATOR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DLV_VERSION",
+      "description": "Delivery Version",
+      "data_element": "DLV_VERSION",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERLOC",
+      "description": "Location for a physical handover of goods",
+      "data_element": "HANDOVER_LOC",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERDATE",
+      "description": "Handover Date at the Handover Location",
+      "data_element": "HANDOVER_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERTIME",
+      "description": "Handover time at the handover location",
+      "data_element": "HANDOVER_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERTZONE",
+      "description": "Time Zone of Handover Location",
+      "data_element": "HANDOVER_TIMEZONE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/LULEINH",
+      "description": "Loading Units",
+      "data_element": "/BEV1/LULEINH",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/RPFAESS",
+      "description": "Number Category 1",
+      "data_element": "/BEV1/RPFAESSER",
+      "type": "DEC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/RPKIST",
+      "description": "Number Category 2",
+      "data_element": "/BEV1/RPKISTEN",
+      "type": "DEC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/RPCONT",
+      "description": "Number Category 3",
+      "data_element": "/BEV1/RPONTAIN",
+      "type": "DEC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/RPSONST",
+      "description": "Number Category 4",
+      "data_element": "/BEV1/RPSONST",
+      "type": "DEC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/RPFLGNR",
+      "description": "Loading Sequence Number in the Tour",
+      "data_element": "/DSD/RP_SEQUENCENR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BORGR_GRP",
+      "description": "Inbound Dely Group: Multi-Level Goods Receipt Automotive",
+      "data_element": "BORGR_GRP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_EXTBOL",
+      "description": "External bill of lading",
+      "data_element": "OID_EXTBOL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_MISCDL",
+      "description": "Miscellaneous delivery number",
+      "data_element": "OID_MISCDL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_TIME",
+      "description": "Time for time-pricing",
+      "data_element": "OIC_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OIWATIM",
+      "description": "Actual goods issue time (for time pricing)",
+      "data_element": "OIC_WATIM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OILDTIM",
+      "description": "Loading time",
+      "data_element": "OIC_LDTIM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPIPEVAL",
+      "description": "Validation indicator for pipeline fields (X=ON, blank=OFF)",
+      "data_element": "OID_PIPEV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCITYC",
+      "description": "Destination city code",
+      "data_element": "OIC_DCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCOUNC",
+      "description": "Destination county code",
+      "data_element": "OIC_DCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DREGIO",
+      "description": "Destination region",
+      "data_element": "OIC_DREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DLAND1",
+      "description": "Destination country",
+      "data_element": "OIC_DLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCITYC",
+      "description": "Origin city code",
+      "data_element": "OIC_OCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCOUNC",
+      "description": "Origin county code",
+      "data_element": "OIC_OCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OREGIO",
+      "description": "Origin region",
+      "data_element": "OIC_OREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OLAND1",
+      "description": "Origin country",
+      "data_element": "OIC_OLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PORGIN",
+      "description": "Tax origin",
+      "data_element": "OIC_PORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PDESTN",
+      "description": "Tax destination",
+      "data_element": "OIC_PDESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PTRIP",
+      "description": "Pipeline trip number (external)",
+      "data_element": "OIC_PTRIP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PBATCH",
+      "description": "Pipeline operator�s external batch number",
+      "data_element": "OIC_PBATCH",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_MOT",
+      "description": "IS-OIL MAP external details mode of transport",
+      "data_element": "OIC_MOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_AORGIN",
+      "description": "Alternate origin",
+      "data_element": "OIC_AORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_ADESTN",
+      "description": "Alternate destination",
+      "data_element": "OIC_ADESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_TRUCKN",
+      "description": "Truck number",
+      "data_element": "OIC_TRUCKN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIA_BASELO",
+      "description": "Base location",
+      "data_element": "OIA_BASELO",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OICFKARTDI",
+      "description": "Differential invoice billing type proposal",
+      "data_element": "OICFKARTDI",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OICSDP_DVERNO",
+      "description": "Version number sequence",
+      "data_element": "OIC_SDP_DVERNO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHNOTWERKS",
+      "description": "Cross Excise Duty Plant",
+      "data_element": "OIH_SHADOWPL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHCOTDISCH",
+      "description": "Trigger Import Posting at Proof of Delivery Receipt",
+      "data_element": "OIHCOTDISCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PODKZ",
+      "description": "Relevant for POD processing",
+      "data_element": "PODKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIO_HOLD",
+      "description": "Indicator: Hold Delivery Onshore",
+      "data_element": "OIO_HOLD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIO_HOLD_ORIG",
+      "description": "Flag: Delivery was Originally Held at Base Location",
+      "data_element": "OIO_HOLD_ORIG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Main purpose of the table: To store header data for deliveries in the Sales and Distribution (SD) module.\n2. Key relationships with other tables: Not provided in the given information.\n3. Common use cases: \n   - Creating and managing deliveries for sales orders.\n   - Tracking the status of deliveries and goods movement.\n   - Generating invoices and other billing documents.",
+    "timestamp": "2025-02-13T13:42:25.565427",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

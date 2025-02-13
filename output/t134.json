@@ -1,0 +1,301 @@
+{
+  "name": "T134",
+  "description": "Material Types",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MTART",
+      "description": "Material Type",
+      "data_element": "MTART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MTREF",
+      "description": "Reference material type",
+      "data_element": "MTREF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MBREF",
+      "description": "Screen reference depending on the material type",
+      "data_element": "MBREF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FLREF",
+      "description": "Field reference for material master",
+      "data_element": "FLREF_MG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKI",
+      "description": "Number range",
+      "data_element": "NUMKR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKE",
+      "description": "Number range",
+      "data_element": "NUMKR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ENVOP",
+      "description": "External Number Assignment Without Validation",
+      "data_element": "ENVOP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BSEXT",
+      "description": "External Purchase Orders Allowed",
+      "data_element": "BSEXT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BSINT",
+      "description": "Internal purchase orders allowed",
+      "data_element": "BSINT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTAT",
+      "description": "Maintenance status",
+      "data_element": "PSTAT_D",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "KKREF",
+      "description": "Account category reference",
+      "data_element": "KKREF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVPR",
+      "description": "Price Control Mandatory",
+      "data_element": "KZVPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VMTPO",
+      "description": "Default value for material item category group",
+      "data_element": "VMTPO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKALR",
+      "description": "Material Is Costed with Quantity Structure",
+      "data_element": "CK_EKALREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZGRP",
+      "description": "Grouping indicator",
+      "data_element": "KZGRP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKFG",
+      "description": "Configurable Material",
+      "data_element": "KZKFG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEGRU",
+      "description": "Authorization group in the material master",
+      "data_element": "BEGRM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZPRC",
+      "description": "Material Master Record for a Process",
+      "data_element": "KZPRC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZPIP",
+      "description": "Pipeline Handling Mandatory",
+      "data_element": "KZPIP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRDRU",
+      "description": "Display price on cash register display and print on receipt",
+      "data_element": "POSPRDRUCK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ARANZ",
+      "description": "Display material on cash register display",
+      "data_element": "POSARTANZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WMAKG",
+      "description": "Material type ID",
+      "data_element": "WMAK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IZUST",
+      "description": "Initial status of a new batch",
+      "data_element": "IZUST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ARDEL",
+      "description": "Time in days until a material is deleted",
+      "data_element": "ARDEL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZMPN",
+      "description": "Manufacturer Part",
+      "data_element": "MPNMTART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSTAE",
+      "description": "Cross-Plant Material Status",
+      "data_element": "MSTAE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CCHIS",
+      "description": "Control (time) of history requirement: Material",
+      "data_element": "CC_HIST_MAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CTYPE",
+      "description": "Class Type",
+      "data_element": "KLASSENART_M",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CLASS",
+      "description": "Class number",
+      "data_element": "KLASSE_M",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "CHNEU",
+      "description": "Batch Creation Control (Automatic/Manual)",
+      "data_element": "CHNEU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VTYPE",
+      "description": "Version Category",
+      "data_element": "VERSIONTYPE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VNUMKI",
+      "description": "Number range",
+      "data_element": "NUMKR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VNUMKE",
+      "description": "Number range",
+      "data_element": "NUMKR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KZRAC",
+      "description": "Returnable Packaging Logistics is mandatory",
+      "data_element": "KZRAC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T134 table in SAP stores information about material types. It is used to classify materials and define their characteristics and behavior. This table is commonly used for:\n- Material type configuration\n- Material creation and maintenance\n- Inventory management and reporting",
+    "timestamp": "2025-02-13T13:41:51.046358",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

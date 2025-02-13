@@ -1,0 +1,797 @@
+{
+  "name": "ADRC",
+  "description": "Addresses (Business Address Services)",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRNUMBER",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_FROM",
+      "description": "Valid-from date - in current Release only 00010101 possible",
+      "data_element": "AD_DATE_FR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NATION",
+      "description": "Version ID for International Addresses",
+      "data_element": "AD_NATION",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_TO",
+      "description": "Valid-to date in current Release only 99991231 possible",
+      "data_element": "AD_DATE_TO",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE",
+      "description": "Form-of-Address Key",
+      "data_element": "AD_TITLE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME1",
+      "description": "Name 1",
+      "data_element": "AD_NAME1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME2",
+      "description": "Name 2",
+      "data_element": "AD_NAME2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME3",
+      "description": "Name 3",
+      "data_element": "AD_NAME3",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME4",
+      "description": "Name 4",
+      "data_element": "AD_NAME4",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_TEXT",
+      "description": "Converted name field (with form of address)",
+      "data_element": "AD_NAMETXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_CO",
+      "description": "c/o name",
+      "data_element": "AD_NAME_CO",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "CITY1",
+      "description": "City",
+      "data_element": "AD_CITY1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "CITY2",
+      "description": "District",
+      "data_element": "AD_CITY2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "CITY_CODE",
+      "description": "City code for city/street file",
+      "data_element": "AD_CITYNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CITYP_CODE",
+      "description": "District code for City and Street file",
+      "data_element": "AD_CITYPNM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HOME_CITY",
+      "description": "City (different from postal city)",
+      "data_element": "AD_CITY3",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "CITYH_CODE",
+      "description": "Different city for city/street file",
+      "data_element": "AD_CITYHNM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CHCKSTATUS",
+      "description": "City file test status",
+      "data_element": "AD_CHECKST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REGIOGROUP",
+      "description": "Regional structure grouping",
+      "data_element": "REGIOGROUP",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "POST_CODE1",
+      "description": "City postal code",
+      "data_element": "AD_PSTCD1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POST_CODE2",
+      "description": "PO Box Postal Code",
+      "data_element": "AD_PSTCD2",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POST_CODE3",
+      "description": "Company Postal Code (for Large Customers)",
+      "data_element": "AD_PSTCD3",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PCODE1_EXT",
+      "description": "(Not Supported)City Postal Code Extension, e.g. ZIP+4+2 Code",
+      "data_element": "AD_PST1XT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PCODE2_EXT",
+      "description": "(Not Supported) PO Box Postal Code Extension",
+      "data_element": "AD_PST2XT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PCODE3_EXT",
+      "description": "(Not Supported) Major Customer Postal Code Extension",
+      "data_element": "AD_PST3XT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX",
+      "description": "PO Box",
+      "data_element": "AD_POBX",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DONT_USE_P",
+      "description": "PO Box Address Undeliverable Flag",
+      "data_element": "AD_NO_USEP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX_NUM",
+      "description": "Flag: PO Box Without Number",
+      "data_element": "AD_POBXNUM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX_LOC",
+      "description": "PO Box city",
+      "data_element": "AD_POBXLOC",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "CITY_CODE2",
+      "description": "City PO box code (City file)",
+      "data_element": "AD_CIT2NUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX_REG",
+      "description": "Region for PO Box (Country, State, Province, ...)",
+      "data_element": "AD_POBXREG",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX_CTY",
+      "description": "PO box country",
+      "data_element": "AD_POBXCTY",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "POSTALAREA",
+      "description": "(Not Supported) Post Delivery District",
+      "data_element": "AD_PSTLAR",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "TRANSPZONE",
+      "description": "Transportation zone to or from which the goods are delivered",
+      "data_element": "LZONE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STREET",
+      "description": "Street",
+      "data_element": "AD_STREET",
+      "type": "CHAR",
+      "length": "60",
+      "decimals": "0"
+    },
+    {
+      "name": "DONT_USE_S",
+      "description": "Street Address Undeliverable Flag",
+      "data_element": "AD_NO_USES",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "STREETCODE",
+      "description": "Street Number for City/Street File",
+      "data_element": "AD_STRNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "STREETABBR",
+      "description": "(Not Supported) Abbreviation of Street Name",
+      "data_element": "AD_STRABBR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HOUSE_NUM1",
+      "description": "House Number",
+      "data_element": "AD_HSNM1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HOUSE_NUM2",
+      "description": "House number supplement",
+      "data_element": "AD_HSNM2",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HOUSE_NUM3",
+      "description": "(Not supported) House Number Range",
+      "data_element": "AD_HSNM3",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STR_SUPPL1",
+      "description": "Street 2",
+      "data_element": "AD_STRSPP1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "STR_SUPPL2",
+      "description": "Street 3",
+      "data_element": "AD_STRSPP2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "STR_SUPPL3",
+      "description": "Street 4",
+      "data_element": "AD_STRSPP3",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCATION",
+      "description": "Street 5",
+      "data_element": "AD_LCTN",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "BUILDING",
+      "description": "Building (Number or Code)",
+      "data_element": "AD_BLDNG",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "FLOOR",
+      "description": "Floor in building",
+      "data_element": "AD_FLOOR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ROOMNUMBER",
+      "description": "Room or Appartment Number",
+      "data_element": "AD_ROOMNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "COUNTRY",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REGION",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDR_GROUP",
+      "description": "Address Group (Key) (Business Address Services)",
+      "data_element": "AD_GROUP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGGROUPS",
+      "description": "Flag: There are more address group assignments",
+      "data_element": "AD_FLGGP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PERS_ADDR",
+      "description": "Flag: This is a personal address",
+      "data_element": "AD_PRSADDR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SORT1",
+      "description": "Search Term 1",
+      "data_element": "AD_SORT1",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "SORT2",
+      "description": "Search Term 2",
+      "data_element": "AD_SORT2",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "SORT_PHN",
+      "description": "(Not Supported) Phonetic Search Sort Field",
+      "data_element": "AD_SRTPHN",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "DEFLT_COMM",
+      "description": "Communication Method (Key) (Business Address Services)",
+      "data_element": "AD_COMM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TEL_NUMBER",
+      "description": "First telephone no.: dialling code+number",
+      "data_element": "AD_TLNMBR1",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "TEL_EXTENS",
+      "description": "First Telephone No.: Extension",
+      "data_element": "AD_TLXTNS1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FAX_NUMBER",
+      "description": "First fax no.: dialling code+number",
+      "data_element": "AD_FXNMBR1",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "FAX_EXTENS",
+      "description": "First fax no.: extension",
+      "data_element": "AD_FXXTNS1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM2",
+      "description": "Flag: Telephone number(s) maintained",
+      "data_element": "AD_FLGCM02",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM3",
+      "description": "Flag: Fax number(s) maintained",
+      "data_element": "AD_FLGCM03",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM4",
+      "description": "Flag: Teletex number(s) maintained",
+      "data_element": "AD_FLGCM04",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM5",
+      "description": "Flag: Telex number(s) maintained",
+      "data_element": "AD_FLGCM05",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM6",
+      "description": "Indicator: E-Mail Address(es) Maintained",
+      "data_element": "AD_FLGCM06",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM7",
+      "description": "Flag: RML (remote mail) addresse(s) maintained",
+      "data_element": "AD_FLGCM07",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM8",
+      "description": "Flag: X.400 addresse(s) maintained",
+      "data_element": "AD_FLGCM08",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM9",
+      "description": "Flag: RFC destination(s) maintained",
+      "data_element": "AD_FLGCM09",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM10",
+      "description": "Flag: Printer maintained",
+      "data_element": "AD_FLGCM10",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM11",
+      "description": "Flag: SSF maintained",
+      "data_element": "AD_FLGCM11",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM12",
+      "description": "Flag: URI/FTP address maintained",
+      "data_element": "AD_FLGCM12",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLAGCOMM13",
+      "description": "Flag: Pager address maintained",
+      "data_element": "AD_FLGCM13",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRORIGIN",
+      "description": "(Not Supported) Address Data Source (Key)",
+      "data_element": "AD_ORIGINA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_NAME1",
+      "description": "Name (field NAME1) in upper case for matchcode",
+      "data_element": "AD_MC_NAME",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_CITY1",
+      "description": "City name in upper case for search help",
+      "data_element": "AD_MC_CITY",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_STREET",
+      "description": "Street name in upper case for search help",
+      "data_element": "AD_MC_STRT",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "EXTENSION1",
+      "description": "Extension (only for data conversion) (e.g. data line)",
+      "data_element": "AD_EXTENS1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "EXTENSION2",
+      "description": "Extension (only for data conversion) (e.g. telebox)",
+      "data_element": "AD_EXTENS2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "TIME_ZONE",
+      "description": "Address time zone",
+      "data_element": "AD_TZONE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXJURCODE",
+      "description": "Tax Jurisdiction",
+      "data_element": "AD_TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRESS_ID",
+      "description": "(Not supported) Physical address ID",
+      "data_element": "AD_ADDR_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU_CREA",
+      "description": "Address record creation original language",
+      "data_element": "AD_LANGUCR",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRC_UUID",
+      "description": "UUID Used in the Address",
+      "data_element": "AD_UUID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "UUID_BELATED",
+      "description": "Indicator: UUID was generated later",
+      "data_element": "AD_UUID_BELATED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ID_CATEGORY",
+      "description": "Category of an Address ID",
+      "data_element": "AD_ID_CATEGORY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRC_ERR_STATUS",
+      "description": "Error Status of Address",
+      "data_element": "AD_ERR_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PO_BOX_LOBBY",
+      "description": "PO Box Lobby",
+      "data_element": "AD_PO_BOX_LBY",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "DELI_SERV_TYPE",
+      "description": "Type of Delivery Service",
+      "data_element": "AD_DELIVERY_SERVICE_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DELI_SERV_NUMBER",
+      "description": "Number of Delivery Service",
+      "data_element": "AD_DELIVERY_SERVICE_NUMBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "COUNTY_CODE",
+      "description": "County code for county",
+      "data_element": "AD_CNTYNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "COUNTY",
+      "description": "County",
+      "data_element": "AD_COUNTY",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "TOWNSHIP_CODE",
+      "description": "Township code for Township",
+      "data_element": "AD_TWSHPNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TOWNSHIP",
+      "description": "Township",
+      "data_element": "AD_TOWNSHIP",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_COUNTY",
+      "description": "County name in upper case for search help",
+      "data_element": "AD_MC_COUNTY",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_TOWNSHIP",
+      "description": "Township name in upper case for search help",
+      "data_element": "AD_MC_TWSHP",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The ADRC table in SAP is used to store the address data of business partners.\n2. It contains address information such as street address, city, postal code, country, and contact details.\n3. This data is used by various SAP modules, including sales, purchasing, and customer relationship management (CRM).",
+    "timestamp": "2025-02-13T13:45:01.154645",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

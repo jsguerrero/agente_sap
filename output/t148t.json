@@ -1,0 +1,70 @@
+{
+  "name": "T148T",
+  "description": "Special Stock Descriptions",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOTXT",
+      "description": "Description of special stock",
+      "data_element": "SOTXT_D",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T148T",
+      "field": "SOBKZ",
+      "foreign_key_table": "T148T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T148",
+      "check_field": "Special Stock Indicator"
+    },
+    {
+      "table": "T148T",
+      "field": "SOBKZ",
+      "foreign_key_table": "T148T",
+      "foreign_key_field": "SOBKZ",
+      "check_table": "T148",
+      "check_field": "Special Stock Indicator"
+    },
+    {
+      "table": "T148T",
+      "field": "SPRAS",
+      "foreign_key_table": "T148T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The T148T table provides descriptions for special stock indicators used in inventory management. It is linked to the T148 table via the SOBKZ field, and to the T002 table via the SPRAS field. Common use cases include:\n- Displaying descriptions of special stock indicators in reports and transactions\n- Implementing business rules based on special stock indicators",
+    "timestamp": "2025-02-13T13:44:30.110165",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

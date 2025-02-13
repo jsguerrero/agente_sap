@@ -1,0 +1,77 @@
+{
+  "name": "T156T",
+  "description": "Movement Type Text",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBEW",
+      "description": "Movement Indicator",
+      "data_element": "KZBEW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZZUG",
+      "description": "Receipt Indicator",
+      "data_element": "KZZUG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVBR",
+      "description": "Consumption Posting",
+      "data_element": "KZVBR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BTEXT",
+      "description": "Movement Type Text (Inventory Management)",
+      "data_element": "BWTXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T156T table stores the texts for inventory management movement types, including descriptions for special stock indicators and movement indicators. It is commonly used in conjunction with the T156 table to retrieve movement type data for display and processing.",
+    "timestamp": "2025-02-13T13:45:34.312794",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

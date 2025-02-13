@@ -1,0 +1,102 @@
+{
+  "name": "TKA02",
+  "description": "Controlling area assignment",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TKA02",
+      "field": "BUKRS",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "MANDT",
+      "check_table": "T001",
+      "check_field": "Company Codes"
+    },
+    {
+      "table": "TKA02",
+      "field": "BUKRS",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "BUKRS",
+      "check_table": "T001",
+      "check_field": "Company Codes"
+    },
+    {
+      "table": "TKA02",
+      "field": "GSBER",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "GSBER",
+      "check_table": "TGSB",
+      "check_field": "Business Areas"
+    },
+    {
+      "table": "TKA02",
+      "field": "GSBER",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "MANDT",
+      "check_table": "TGSB",
+      "check_field": "Business Areas"
+    },
+    {
+      "table": "TKA02",
+      "field": "KOKRS",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "MANDT",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "TKA02",
+      "field": "KOKRS",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "KOKRS",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "TKA02",
+      "field": "MANDT",
+      "foreign_key_table": "TKA02",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description of Table TKA02:** **Purpose:** The TKA02 table stores the assignment of controlling areas to company codes and business areas. **Key Relationships:**\n- T000: Client (MANDT)\n- T001: Company Codes (BUKRS)\n- TGSB: Business Areas (GSBER)\n- TKA01: Controlling Areas (KOKRS)",
+    "timestamp": "2025-02-13T13:45:15.754739",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

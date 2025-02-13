@@ -1,0 +1,757 @@
+{
+  "name": "BUT000",
+  "description": "BP: General data I",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PARTNER",
+      "description": "Business Partner Number",
+      "data_element": "BU_PARTNER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TYPE",
+      "description": "Business partner category",
+      "data_element": "BU_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BPKIND",
+      "description": "Business Partner Type",
+      "data_element": "BU_BPKIND",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BU_GROUP",
+      "description": "Business Partner Grouping",
+      "data_element": "BU_GROUP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BPEXT",
+      "description": "Business Partner Number in External System",
+      "data_element": "BU_BPEXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BU_SORT1",
+      "description": "Search term 1 for business partner",
+      "data_element": "BU_SORT1",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BU_SORT2",
+      "description": "Search term 2 for business partner",
+      "data_element": "BU_SORT2",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "SOURCE",
+      "description": "Data Origin Types",
+      "data_element": "BU_SOURCE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE",
+      "description": "Form-of-Address Key",
+      "data_element": "AD_TITLE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XDELE",
+      "description": "Central Archiving Flag",
+      "data_element": "BU_XDELE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLCK",
+      "description": "Central Block for Business Partner",
+      "data_element": "BU_XBLCK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGRP",
+      "description": "Authorization Group",
+      "data_element": "BU_AUGRP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE_LET",
+      "description": "Salutation",
+      "data_element": "BU_TITLE_LET",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "BU_LOGSYS",
+      "description": "Logical system",
+      "data_element": "LOGSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CONTACT",
+      "description": "Business Partner: Contact Permission",
+      "data_element": "BU_CONTACT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NOT_RELEASED",
+      "description": "Indicator: Not Released",
+      "data_element": "BU_XNOT_RELEASED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NOT_LG_COMPETENT",
+      "description": "Indicator: Not Legally Competent",
+      "data_element": "BU_NOT_LEG_COMPETENT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRINT_MODE",
+      "description": "Business Partner Print Format",
+      "data_element": "BU_PRINT_MODE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BP_EEW_DUMMY",
+      "description": "Dummy function in length 1",
+      "data_element": "DUMMY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NAPR",
+      "description": "Business Partner Is a Natural Person Under the Tax Laws",
+      "data_element": "BU_NATURAL_PERSON",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BBP_IPISP",
+      "description": "Tax Split",
+      "data_element": "BBP_J_1BINDEQU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RATE",
+      "description": "Cost Rate/Revenue Rate for Project Costing",
+      "data_element": "DPR_TV_RATE",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_ORG1",
+      "description": "Name 1 of organization",
+      "data_element": "BU_NAMEOR1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_ORG2",
+      "description": "Name 2 of organization",
+      "data_element": "BU_NAMEOR2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_ORG3",
+      "description": "Name 3 of organization",
+      "data_element": "BU_NAMEOR3",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_ORG4",
+      "description": "Name 4 of organization",
+      "data_element": "BU_NAMEOR4",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "LEGAL_ENTY",
+      "description": "BP: Legal form of organization",
+      "data_element": "BU_LEGENTY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "IND_SECTOR",
+      "description": "Industry sector",
+      "data_element": "BU_INDSECT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LEGAL_ORG",
+      "description": "Legal Entity of Organization",
+      "data_element": "BU_LEGAL_ORG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FOUND_DAT",
+      "description": "Date organization founded",
+      "data_element": "BU_FOUND_DAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LIQUID_DAT",
+      "description": "Liquidation date of organization",
+      "data_element": "BU_LIQUID_DAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCATION_1",
+      "description": "International location number  (part 1)",
+      "data_element": "BBBNR",
+      "type": "NUMC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCATION_2",
+      "description": "International location number (Part 2)",
+      "data_element": "BBSNR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCATION_3",
+      "description": "Check digit for the international location number",
+      "data_element": "BUBKZ",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_LAST",
+      "description": "Last name of business partner (person)",
+      "data_element": "BU_NAMEP_L",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_FIRST",
+      "description": "First name of business partner (person)",
+      "data_element": "BU_NAMEP_F",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_LST2",
+      "description": "Other Last Name of a Person",
+      "data_element": "BU_NAMEPL2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_LAST2",
+      "description": "Name at birth of business partner",
+      "data_element": "BU_BIRTHNM",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAMEMIDDLE",
+      "description": "Middle name or second forename of a person",
+      "data_element": "BU_NAMEMID",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE_ACA1",
+      "description": "Academic Title: Key",
+      "data_element": "AD_TITLE1",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE_ACA2",
+      "description": "Second academic title (key)",
+      "data_element": "AD_TITLE2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TITLE_ROYL",
+      "description": "Name supplement, e.g. noble title (key)",
+      "data_element": "AD_TITLES",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PREFIX1",
+      "description": "Name Prefix (Key)",
+      "data_element": "AD_PREFIX",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PREFIX2",
+      "description": "2nd name prefix (key)",
+      "data_element": "AD_PREFIX2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME1_TEXT",
+      "description": "Full Name",
+      "data_element": "BU_NAME1TX",
+      "type": "CHAR",
+      "length": "80",
+      "decimals": "0"
+    },
+    {
+      "name": "NICKNAME",
+      "description": "Nickname of Business Partner (Person)",
+      "data_element": "BU_NICKNAM",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "INITIALS",
+      "description": "\"Middle Initial\" or personal initials",
+      "data_element": "AD_INITS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NAMEFORMAT",
+      "description": "Name format",
+      "data_element": "AD_FORMAT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NAMCOUNTRY",
+      "description": "Country for name format rule",
+      "data_element": "AD_NAMCTRY",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU_CORR",
+      "description": "Business Partner: Correspondence Language",
+      "data_element": "BU_LANGU_CORR",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSEXM",
+      "description": "Selection: Business partner is male",
+      "data_element": "BU_XSEXM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSEXF",
+      "description": "Selection: Business partner is female",
+      "data_element": "BU_XSEXF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BIRTHPL",
+      "description": "Birthplace of business partner",
+      "data_element": "BU_BIRTHPL",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MARST",
+      "description": "Marital Status of Business Partner",
+      "data_element": "BU_MARST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EMPLO",
+      "description": "Name of Employer of a Natural Person",
+      "data_element": "BU_EMPLO",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "JOBGR",
+      "description": "Occupation/group",
+      "data_element": "BU_JOBGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NATIO",
+      "description": "Nationality",
+      "data_element": "BU_NATIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CNTAX",
+      "description": "Obsolete Field",
+      "data_element": "BU_CNTAX",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CNDSC",
+      "description": "Ctry of Origin: Non-Res. Companies",
+      "data_element": "BU_CNDSC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PERSNUMBER",
+      "description": "Person number",
+      "data_element": "AD_PERSNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XSEXU",
+      "description": "Selection: Sex of business partner is not known",
+      "data_element": "BU_XSEXU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XUBNAME",
+      "description": "Obsolete Field",
+      "data_element": "BU_XUBNAME",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BU_LANGU",
+      "description": "Business partner: Language",
+      "data_element": "BU_LANGU",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BIRTHDT",
+      "description": "Date of Birth of Business Partner",
+      "data_element": "BU_BIRTHDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DEATHDT",
+      "description": "Date of death of business partner",
+      "data_element": "BU_DEATHDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PERNO",
+      "description": "Personnel Number",
+      "data_element": "BU_PERNO",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CHILDREN",
+      "description": "Obsolete Field",
+      "data_element": "BU_CHILDREN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MEM_HOUSE",
+      "description": "Obsolete Field",
+      "data_element": "BU_MEM_HOUSE",
+      "type": "DEC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PARTGRPTYP",
+      "description": "Group type",
+      "data_element": "BU_GRPTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_GRP1",
+      "description": "Name 1 (group)",
+      "data_element": "BU_NAMEGR1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME_GRP2",
+      "description": "Name 2 (group)",
+      "data_element": "BU_NAMEGR2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_NAME1",
+      "description": "Search Help Field 1 (Name 1/Last Name)",
+      "data_element": "BU_MCNAME1",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "MC_NAME2",
+      "description": "Search Help Field 2 (Name 2/First Name)",
+      "data_element": "BU_MCNAME2",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "CRUSR",
+      "description": "User who created the object",
+      "data_element": "BU_CRUSR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CRDAT",
+      "description": "Date on which the object was created",
+      "data_element": "BU_CRDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CRTIM",
+      "description": "Time at which the object was created",
+      "data_element": "BU_CRTIM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CHUSR",
+      "description": "Last user to change object",
+      "data_element": "BU_CHUSR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CHDAT",
+      "description": "Date when object was last changed",
+      "data_element": "BU_CHDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CHTIM",
+      "description": "Time at which object was last changed",
+      "data_element": "BU_CHTIM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PARTNER_GUID",
+      "description": "Business Partner GUID",
+      "data_element": "BU_PARTNER_GUID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRCOMM",
+      "description": "Address Number",
+      "data_element": "BU_ADDRCOMM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TD_SWITCH",
+      "description": "Planned Change Documents for Partner Were Converted",
+      "data_element": "BU_TD_SWITCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IS_ORG_CENTRE",
+      "description": "Indicator: Business Partner Is Also an Organizational Center",
+      "data_element": "BU_IS_ORG_CENTRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DB_KEY",
+      "description": "UUID in X form (binary)",
+      "data_element": "SYSUUID_X",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "VALID_FROM",
+      "description": "Validity Start BUT000 BP Data",
+      "data_element": "BU_BP_VALID_FROM",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "VALID_TO",
+      "description": "Validity End BUT000 BP Data",
+      "data_element": "BU_BP_VALID_TO",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "XPCPT",
+      "description": "Business Purpose Completed Flag",
+      "data_element": "BU_XPCPT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NATPERS",
+      "description": "Business Partner Is a Natural Person Under the Tax Laws",
+      "data_element": "BU_NATURAL_PERSON",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PAR_REL",
+      "description": "Business Partner Released",
+      "data_element": "BP_PAR_REL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BP_SORT",
+      "description": "Sort Field for Phonetic Search; Obsolete",
+      "data_element": "BP_SORT_PH",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "KBANKS",
+      "description": "Bank country key",
+      "data_element": "BANKS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KBANKL",
+      "description": "Bank Keys",
+      "data_element": "BANKK",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The BUT000 table is the central table for storing general data about business partners. It contains information such as the business partner's name, address, contact information, and tax information. The table is used by various applications to manage business partner data and to perform business transactions.",
+    "timestamp": "2025-02-13T13:42:47.202149",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

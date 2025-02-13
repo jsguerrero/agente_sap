@@ -1,0 +1,45 @@
+{
+  "name": "T002",
+  "description": "Language Keys (Component BC-I18)",
+  "fields": [
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LASPEZ",
+      "description": "Language specifications",
+      "data_element": "LASPEZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LAHQ",
+      "description": "Degree of Translation of Language",
+      "data_element": "LAHQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LAISO",
+      "description": "2-Character SAP Language Code",
+      "data_element": "LAISO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description** The T002 table stores language keys used within the SAP system. It contains information about languages supported by the system, including their SAP language codes and degrees of translation. This table is primarily used to enable user interface text translations and ensure data consistency across different language versions of the system.",
+    "timestamp": "2025-02-13T13:41:06.518884",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

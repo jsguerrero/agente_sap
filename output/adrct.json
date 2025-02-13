@@ -1,0 +1,118 @@
+{
+  "name": "ADRCT",
+  "description": "Address Texts (Business Address Services)",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRNUMBER",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_FROM",
+      "description": "Valid-from date - in current Release only 00010101 possible",
+      "data_element": "AD_DATE_FR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NATION",
+      "description": "Version ID for International Addresses",
+      "data_element": "AD_NATION",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REMARK",
+      "description": "Address notes",
+      "data_element": "AD_REMARK1",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "ADRCT",
+      "field": "ADDRNUMBER",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "DATE_FROM",
+      "check_table": "ADRC",
+      "check_field": "Addresses (Business Address Services)"
+    },
+    {
+      "table": "ADRCT",
+      "field": "ADDRNUMBER",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "NATION",
+      "check_table": "ADRC",
+      "check_field": "Addresses (Business Address Services)"
+    },
+    {
+      "table": "ADRCT",
+      "field": "ADDRNUMBER",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "CLIENT",
+      "check_table": "ADRC",
+      "check_field": "Addresses (Business Address Services)"
+    },
+    {
+      "table": "ADRCT",
+      "field": "ADDRNUMBER",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "ADDRNUMBER",
+      "check_table": "ADRC",
+      "check_field": "Addresses (Business Address Services)"
+    },
+    {
+      "table": "ADRCT",
+      "field": "CLIENT",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "CLIENT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "ADRCT",
+      "field": "LANGU",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "LANGU",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "ADRCT",
+      "field": "NATION",
+      "foreign_key_table": "ADRCT",
+      "foreign_key_field": "NATION",
+      "check_table": "TSADV",
+      "check_field": "International versions of addresses"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** **Primary Purpose:** This table stores additional address information in various languages for addresses managed in table ADRC. **Key Relationships:** * ADRC: Related to the main address data table (one-to-many relationship based on fields ADDRNUMBER, NATION, CLIENT)\n* T000: Client data\n* T002: Language keys\n* TSADV: International versions of addresses",
+    "timestamp": "2025-02-13T13:41:56.306465",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

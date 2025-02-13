@@ -1,0 +1,213 @@
+{
+  "name": "AUSP",
+  "description": "Characteristic Values",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJEK",
+      "description": "Key of object to be classified",
+      "data_element": "OBJNUM",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "ATINN",
+      "description": "Internal characteristic",
+      "data_element": "ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ATZHL",
+      "description": "Characteristic value counter",
+      "data_element": "WZAEHL",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MAFID",
+      "description": "Indicator: Object/Class",
+      "data_element": "KLMAF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KLART",
+      "description": "Class Type",
+      "data_element": "KLASSENART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADZHL",
+      "description": "Internal counter for archiving objects via engin. chg. mgmt",
+      "data_element": "ADZHL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ATWRT",
+      "description": "Characteristic Value",
+      "data_element": "ATWRT",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFLV",
+      "description": "Internal floating point from",
+      "data_element": "ATFLV",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "ATAWE",
+      "description": "Unit of Measurement",
+      "data_element": "MSEHI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFLB",
+      "description": "Internal floating point value to",
+      "data_element": "ATFLB",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "ATAW1",
+      "description": "Unit of Measurement",
+      "data_element": "MSEHI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATCOD",
+      "description": "Code for value dependency",
+      "data_element": "ATCOD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATTLV",
+      "description": "Tolerance from",
+      "data_element": "ATTLV",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "ATTLB",
+      "description": "Tolerance to",
+      "data_element": "ATTLB",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "ATPRZ",
+      "description": "Indicator: Tolerance Shown as a Percentage",
+      "data_element": "ATPRZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATINC",
+      "description": "Increment Within a Specified Interval",
+      "data_element": "ATINC",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "ATAUT",
+      "description": "Classification: Author",
+      "data_element": "ATAUT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LKENZ",
+      "description": "Deletion Indicator",
+      "data_element": "LKENZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATIMB",
+      "description": "Characteristic Number of User-Defined Data Type",
+      "data_element": "ATIMB",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ATZIS",
+      "description": "Instance counter",
+      "data_element": "ATZIS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATSRT",
+      "description": "Sort field for AUSP char. values",
+      "data_element": "ATSRT",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ATVGLART",
+      "description": "Comparison Type for Char. Value: \" \" .. \"7\": Incl./Excl.",
+      "data_element": "ATVGLART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. **Primary Purpose**: The AUSP table stores characteristic values for objects in the SAP system.\n2. **Key Relationships**: This table does not have any foreign key relationships with other tables.\n3. **Common Usages**: This table is used to maintain and retrieve characteristic values for objects, such as materials, equipment, and vendors.",
+    "timestamp": "2025-02-13T13:42:09.156547",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

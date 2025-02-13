@@ -1,0 +1,1013 @@
+{
+  "name": "STPO",
+  "description": "BOM item",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STLTY",
+      "description": "BOM category",
+      "data_element": "STLTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STLNR",
+      "description": "Bill of material",
+      "data_element": "STNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "STLKN",
+      "description": "BOM item node number",
+      "data_element": "STLKN",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "STPOZ",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHV",
+      "description": "Technical status from",
+      "data_element": "TECHV",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LKENZ",
+      "description": "Deletion Indicator",
+      "data_element": "LKENZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VGKNT",
+      "description": "Predecessor Node",
+      "data_element": "VGKNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VGPZL",
+      "description": "Previous item counter",
+      "data_element": "VGPZL",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANDAT",
+      "description": "Date record created on",
+      "data_element": "ANDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANNAM",
+      "description": "User who created record",
+      "data_element": "ANNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "IDNRK",
+      "description": "BOM component",
+      "data_element": "IDNRK",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "PSWRK",
+      "description": "Issuing plant",
+      "data_element": "PSWRK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "POSTP",
+      "description": "Item Category (Bill of Material)",
+      "data_element": "POSTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "BOM Item Number",
+      "data_element": "SPOSN",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SORTF",
+      "description": "Sort String",
+      "data_element": "SORTP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MEINS",
+      "description": "Component unit of measure",
+      "data_element": "KMPME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Component quantity",
+      "data_element": "KMPMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "FMENG",
+      "description": "Fixed qty",
+      "data_element": "FMNGE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSCH",
+      "description": "Component scrap in percent",
+      "data_element": "KAUSF",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "AVOAU",
+      "description": "Operation scrap",
+      "data_element": "AVOAU",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "NETAU",
+      "description": "Indicator: Net scrap",
+      "data_element": "NETAU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SCHGT",
+      "description": "Indicator: Bulk Material",
+      "data_element": "SCHGT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEIKZ",
+      "description": "Material Provision Indicator",
+      "data_element": "BEIKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSKZ",
+      "description": "Indicator: spare part",
+      "data_element": "ERSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RVREL",
+      "description": "Indicator: item relevant to sales",
+      "data_element": "RVREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SANFE",
+      "description": "Indicator: item relevant to production",
+      "data_element": "SANFE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SANIN",
+      "description": "Indicator: item relevant to plant maintenance",
+      "data_element": "SANIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SANKA",
+      "description": "Indicator for relevancy to costing",
+      "data_element": "CS_SANKA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SANKO",
+      "description": "Indicator: item relevant to engineering",
+      "data_element": "SANKO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SANVS",
+      "description": "Indicator: high-level configuration",
+      "data_element": "SANVS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STKKZ",
+      "description": "PM assembly indicator",
+      "data_element": "STKKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REKRI",
+      "description": "Indicator: BOM is recursive",
+      "data_element": "REKRI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REKRS",
+      "description": "Indicator: recursiveness allowed",
+      "data_element": "REKRS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CADPO",
+      "description": "CAD Indicator",
+      "data_element": "CADPO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NFMAT",
+      "description": "Follow-up material in BOM item - NOT IN USE",
+      "data_element": "CS_NFMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "NLFZT",
+      "description": "Lead-time offset",
+      "data_element": "NLFZT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VERTI",
+      "description": "Distribution key for component consumption",
+      "data_element": "SA_VERTI",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ALPOS",
+      "description": "Indicator: alternative item",
+      "data_element": "ALPOS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EWAHR",
+      "description": "Usage probability in % (alternative item)",
+      "data_element": "EWAHR",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP",
+      "description": "Purchasing Group",
+      "data_element": "EKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFZT",
+      "description": "Delivery time in days",
+      "data_element": "LIFZT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PREIS",
+      "description": "Price",
+      "data_element": "CPREI",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "PEINH",
+      "description": "Price Unit",
+      "data_element": "PEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKTO",
+      "description": "Cost element",
+      "data_element": "SAKTO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ROANZ",
+      "description": "Number of variable-size items",
+      "data_element": "ROANZ",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMS1",
+      "description": "Size 1",
+      "data_element": "ROMS1",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMS2",
+      "description": "Size 2",
+      "data_element": "ROMS2",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMS3",
+      "description": "Size 3",
+      "data_element": "ROMS3",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMEI",
+      "description": "Unit of measure for sizes 1 to 3",
+      "data_element": "ROMEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ROMEN",
+      "description": "Quantity of variable-size item",
+      "data_element": "ROMEN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "RFORM",
+      "description": "Formula key",
+      "data_element": "RFORM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "UPSKZ",
+      "description": "Indicator: sub-items exist",
+      "data_element": "UPSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VALKZ",
+      "description": "Indicator: item in more than one alternative",
+      "data_element": "VALKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LTXSP",
+      "description": "Long Text Language, for Creation of a Change Document",
+      "data_element": "LTXSP_CP",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "POTX1",
+      "description": "BOM Item Text (Line 1)",
+      "data_element": "POTX1",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "POTX2",
+      "description": "BOM item text (line 2)",
+      "data_element": "POTX2",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJTY",
+      "description": "Object type (BOM item)",
+      "data_element": "OBJTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL",
+      "description": "Material Group",
+      "data_element": "MATKL",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "WEBAZ",
+      "description": "Goods Receipt Processing Time in Days",
+      "data_element": "WEBAZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKAR",
+      "description": "Document Type",
+      "data_element": "DOKAR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKNR",
+      "description": "Document number",
+      "data_element": "DOKNR",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKVR",
+      "description": "Document Version",
+      "data_element": "DOKVR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKTL",
+      "description": "Document Part",
+      "data_element": "DOKTL_D",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CSSTR",
+      "description": "Average material purity in %",
+      "data_element": "CSSTR",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "CLASS",
+      "description": "Class number",
+      "data_element": "KLASSE_D",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KLART",
+      "description": "Class Type",
+      "data_element": "KLASSENART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "POTPR",
+      "description": "Resulting item category",
+      "data_element": "POTPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AWAKZ",
+      "description": "Selection indicator for configurable BOMs",
+      "data_element": "AWAKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INSKZ",
+      "description": "Instance indicator",
+      "data_element": "INSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VCEKZ",
+      "description": "Indicator: not displayed in configuration editor",
+      "data_element": "VCEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VSTKZ",
+      "description": "Indicator: not displayed in single-level configuration",
+      "data_element": "VSTKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VACKZ",
+      "description": "Indicator: not displayed in automatic configuration",
+      "data_element": "VACKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EKORG",
+      "description": "Purchasing Organization",
+      "data_element": "EKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CLOBK",
+      "description": "Required Component",
+      "data_element": "CLOBK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLMUL",
+      "description": "Multiple Selection Allowed",
+      "data_element": "CLMULT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLALT",
+      "description": "Alternative Display Format",
+      "data_element": "CLALT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CVIEW",
+      "description": "Organizational Area",
+      "data_element": "ABTEILUNG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KNOBJ",
+      "description": "Number of Object with Assigned Dependencies",
+      "data_element": "KNOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Issue location for production order",
+      "data_element": "CSLGO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKUP",
+      "description": "Indicator: co-product",
+      "data_element": "KZKUP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INTRM",
+      "description": "Intra Material",
+      "data_element": "INTRM",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "TPEKZ",
+      "description": "Indicator: restrictions exist",
+      "data_element": "TPEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STVKN",
+      "description": "Inherited node number of BOM item",
+      "data_element": "STVKN",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DVDAT",
+      "description": "Date of last date shift",
+      "data_element": "DVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DVNAM",
+      "description": "Name of the user who carried out the date shift",
+      "data_element": "DVNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "DSPST",
+      "description": "Explosion type",
+      "data_element": "CS_DISPO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ALPST",
+      "description": "Alternative item: strategy",
+      "data_element": "CS_ALPST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ALPRF",
+      "description": "Alternative item: ranking order",
+      "data_element": "CS_ALPRF",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ALPGR",
+      "description": "Alternative item: group",
+      "data_element": "CS_ALPGR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KZNFP",
+      "description": "Indicator: Follow-Up Item",
+      "data_element": "CS_KZNFP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NFGRP",
+      "description": "Follow-up group",
+      "data_element": "CS_NFGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NFEAG",
+      "description": "Discontinuation group",
+      "data_element": "CS_NFEAG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KNDVB",
+      "description": "Indicator: manual change to sales order BOM",
+      "data_element": "CS_KNDVB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNDBZ",
+      "description": "Indicator: BOM item changed/selected via obj. dependencies",
+      "data_element": "CS_KNDBZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTTY",
+      "description": "BOM category of original sales order BOM item",
+      "data_element": "CS_KSTTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTNR",
+      "description": "Bill of material for original sales order BOM item",
+      "data_element": "CS_KSTNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTKN",
+      "description": "Node number of original sales order BOM item",
+      "data_element": "CS_KSTKN",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTPZ",
+      "description": "Counter for original sales order BOM item",
+      "data_element": "CS_KSTPZ",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CLSZU",
+      "description": "Classification number",
+      "data_element": "CS_CLSZU",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KZCLB",
+      "description": "Indicator: classification as selection condition",
+      "data_element": "CS_KZCLB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AEHLP",
+      "description": "Date Shift Hierarchy Indicator",
+      "data_element": "CC_AEHLP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRVBE",
+      "description": "Production Supply Area",
+      "data_element": "PRVBE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NLFZV",
+      "description": "Lead-time offset for operation",
+      "data_element": "CS_NLFZV",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "NLFMV",
+      "description": "Unit for lead-time offset for operation",
+      "data_element": "CS_NLFMV",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "IDPOS",
+      "description": "Item group",
+      "data_element": "CS_IDPOS",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "IDHIS",
+      "description": "History counter",
+      "data_element": "CS_IDHIS",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "IDVAR",
+      "description": "Component Variant",
+      "data_element": "CS_IDVAR",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ALEKZ",
+      "description": "ALE indicator",
+      "data_element": "CS_ALEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ITMID",
+      "description": "External identification of an item",
+      "data_element": "CS_ITMID",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GUID",
+      "description": "Temporarily not used",
+      "data_element": "CS_CHAR22",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "ITSOB",
+      "description": "Special procurement type for BOM item",
+      "data_element": "CS_SOBSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RFPNT",
+      "description": "Reference point for BOM transfer",
+      "data_element": "CN_RFPNT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "GUIDX",
+      "description": "Global identification of an item's change status",
+      "data_element": "CS_GUID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_RDS_PP",
+      "description": "Reference Designator (RDS-PP)",
+      "data_element": "Y_RDS_PP",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_PDMLINKID",
+      "description": "PDMLink BOM Component ID",
+      "data_element": "Y_PDMLINKID",
+      "type": "CHAR",
+      "length": "36",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_ITEM_COMMONID",
+      "description": "BOMCommonID",
+      "data_element": "Y_COMMONID",
+      "type": "CHAR",
+      "length": "36",
+      "decimals": "0"
+    },
+    {
+      "name": "CUFACTOR",
+      "description": "CU: Number of CU Instances",
+      "data_element": "/CUM/CUFACTOR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "FUNCID",
+      "description": "Function Identifier",
+      "data_element": "CCC_FUNCID",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Purpose:** The STPO table in SAP stores the data for items in a bill of materials (BOM). It contains information about the components, their quantities, and their relationships within the BOM.\n**Key Relationships:**\n- BOM category (STLTY)\n- BOM number (STLNR)\n- BOM item number (STLKN)\n- Component material number (IDNRK)\n- Plant (PSWRK)\n- Purchasing group (EKGRP)\n- Vendor number (LIFNR)\n**Common Use Cases:**\n- Creating and maintaining BOMs\n- Generating production orders\n- Calculating material requirements planning (MRP)\n- Costing and pricing",
+    "timestamp": "2025-02-13T13:44:07.305411",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

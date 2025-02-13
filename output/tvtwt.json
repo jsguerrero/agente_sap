@@ -1,0 +1,70 @@
+{
+  "name": "TVTWT",
+  "description": "Organizational Unit: Distribution Channels: Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VTEXT",
+      "description": "Name",
+      "data_element": "VTXTK",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TVTWT",
+      "field": "SPRAS",
+      "foreign_key_table": "TVTWT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "TVTWT",
+      "field": "VTWEG",
+      "foreign_key_table": "TVTWT",
+      "foreign_key_field": "VTWEG",
+      "check_table": "TVTW",
+      "check_field": "Organizational Unit: Distribution Channels"
+    },
+    {
+      "table": "TVTWT",
+      "field": "VTWEG",
+      "foreign_key_table": "TVTWT",
+      "foreign_key_field": "MANDT",
+      "check_table": "TVTW",
+      "check_field": "Organizational Unit: Distribution Channels"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. Purpose: Stores texts for distribution channels in the organizational unit.\n2. Foreign key relationships: Links to TVTW table for distribution channel and client information, and to T002 table for language keys.\n3. Use cases: Used for displaying distribution channel names in different languages and managing text translations for organizational units.",
+    "timestamp": "2025-02-13T13:46:25.302214",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

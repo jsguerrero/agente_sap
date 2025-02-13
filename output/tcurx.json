@@ -1,0 +1,29 @@
+{
+  "name": "TCURX",
+  "description": "Decimal Places in Currencies",
+  "fields": [
+    {
+      "name": "CURRKEY",
+      "description": "Currency Key",
+      "data_element": "SYCURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "CURRDEC",
+      "description": "Number of decimal places",
+      "data_element": "CURRDEC",
+      "type": "INT1",
+      "length": "3",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The TCURX table stores the number of decimal places to be used for each currency key. It is used in currency calculations and conversions, ensuring correct rounding and format.",
+    "timestamp": "2025-02-13T13:46:27.008037",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "name": "T001K",
+  "description": "Valuation area",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation Area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWMOD",
+      "description": "Valuation Grouping Code",
+      "data_element": "BWMOD",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XBKNG",
+      "description": "Negative stocks in valuation area allowed",
+      "data_element": "XBKNG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLBWA",
+      "description": "Material ledger activated in valuation area",
+      "data_element": "CK_ML_BWAC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLBWV",
+      "description": "Material ledger activated in valuation area (compulsory)",
+      "data_element": "CK_ML_BWAV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XVKBW",
+      "description": "Sales price valuation active",
+      "data_element": "XVKBW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERKLAERKOM",
+      "description": "Explanation Facility for Material Ledger Active/Inactive",
+      "data_element": "ERKLAERKOM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UPROF",
+      "description": "Retail revalution profile",
+      "data_element": "UPROF_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WBPRO",
+      "description": "Profile for value-based inventory management",
+      "data_element": "WBPRO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MLAST",
+      "description": "Material Price Determination: Control",
+      "data_element": "CK_ML_ABST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLASV",
+      "description": "Price Determination is Binding in Valuation Area",
+      "data_element": "CK_ML_ABSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BDIFP",
+      "description": "Stock correction tolerance",
+      "data_element": "BDIFP",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "XLBPD",
+      "description": "Price difference posting in GR for subcontract oder",
+      "data_element": "XLBPD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XEWRX",
+      "description": "Post purchase account with receipt value",
+      "data_element": "XEWRX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "X2FDO",
+      "description": "Two FI documents with purchase account",
+      "data_element": "X2FDO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRSFR",
+      "description": "Price Release",
+      "data_element": "PRSFRG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLCCS",
+      "description": "Active Actual Cost Component Split",
+      "data_element": "CK_MLCCS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XEFRE",
+      "description": "Del. costs to price diff. acct when purch. acct active",
+      "data_element": "XEFRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EFREJ",
+      "description": "Start of validity period f. del. costs in price diff. acct",
+      "data_element": "EFREJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/FMP/PRSFR",
+      "description": "Price Release Flexible Material Prices",
+      "data_element": "/FMP/MP_PRSFRG_N",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/FMP/PRFRGR",
+      "description": "Price Release Group",
+      "data_element": "/FMP/MP_PRRGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T001K table in SAP is used to maintain valuation areas, which are organizational units used for accounting purposes. It contains key information about each valuation area, such as its company code, valuation grouping code, and settings related to material ledger and sales price valuation.\nThis table is typically used in conjunction with other tables, such as T001 (Company Codes) and T003 (Plant), to manage the hierarchy of organizational units within an SAP system.",
+    "timestamp": "2025-02-13T13:43:51.094364",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

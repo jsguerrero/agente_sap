@@ -1,0 +1,1869 @@
+{
+  "name": "MARA",
+  "description": "General Material Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LAEDA",
+      "description": "Date of Last Change",
+      "data_element": "LAEDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VPSTA",
+      "description": "Maintenance status of complete material",
+      "data_element": "VPSTA",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTAT",
+      "description": "Maintenance status",
+      "data_element": "PSTAT_D",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Flag Material for Deletion at Client Level",
+      "data_element": "LVOMA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MTART",
+      "description": "Material Type",
+      "data_element": "MTART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MBRSH",
+      "description": "Industry sector",
+      "data_element": "MBRSH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL",
+      "description": "Material Group",
+      "data_element": "MATKL",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "BISMT",
+      "description": "Old material number",
+      "data_element": "BISMT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTME",
+      "description": "Purchase Order Unit of Measure",
+      "data_element": "BSTME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEINR",
+      "description": "Document number (without document management system)",
+      "data_element": "DZEINR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEIAR",
+      "description": "Document type (without Document Management system)",
+      "data_element": "DZEIAR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEIVR",
+      "description": "Document version (without Document Management system)",
+      "data_element": "DZEIVR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEIFO",
+      "description": "Page format of document (without Document Management system)",
+      "data_element": "DZEIFO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AESZN",
+      "description": "Document change number (without document management system)",
+      "data_element": "AESZN",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "BLATT",
+      "description": "Page number of document (without Document Management system)",
+      "data_element": "BLATT",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BLANZ",
+      "description": "Number of sheets (without Document Management system)",
+      "data_element": "BLANZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FERTH",
+      "description": "Production/inspection memo",
+      "data_element": "FERTH",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "FORMT",
+      "description": "Page Format of Production Memo",
+      "data_element": "FORMT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GROES",
+      "description": "Size/dimensions",
+      "data_element": "GROES",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "WRKST",
+      "description": "Basic Material",
+      "data_element": "WRKST",
+      "type": "CHAR",
+      "length": "48",
+      "decimals": "0"
+    },
+    {
+      "name": "NORMT",
+      "description": "Industry Standard Description (such as ANSI or ISO)",
+      "data_element": "NORMT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "LABOR",
+      "description": "Laboratory/design office",
+      "data_element": "LABOR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EKWSL",
+      "description": "Purchasing Value Key",
+      "data_element": "EKWSL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BRGEW",
+      "description": "Gross Weight",
+      "data_element": "BRGEW",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "NTGEW",
+      "description": "Net Weight",
+      "data_element": "NTGEW",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "GEWEI",
+      "description": "Weight Unit",
+      "data_element": "GEWEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VOLUM",
+      "description": "Volume",
+      "data_element": "VOLUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VOLEH",
+      "description": "Volume unit",
+      "data_element": "VOLEH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BEHVO",
+      "description": "Container requirements",
+      "data_element": "BEHVO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RAUBE",
+      "description": "Storage conditions",
+      "data_element": "RAUBE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TEMPB",
+      "description": "Temperature conditions indicator",
+      "data_element": "TEMPB",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DISST",
+      "description": "Low-Level Code",
+      "data_element": "DISST",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TRAGR",
+      "description": "Transportation Group",
+      "data_element": "TRAGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "STOFF",
+      "description": "Hazardous material number",
+      "data_element": "STOFF",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Competitor",
+      "data_element": "WETTB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EANNR",
+      "description": "European Article Number (EAN) - obsolete!!!!!",
+      "data_element": "EANNR",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    },
+    {
+      "name": "WESCH",
+      "description": "Quantity: Number of GR/GI slips to be printed",
+      "data_element": "WESCH",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BWVOR",
+      "description": "Procurement rule",
+      "data_element": "BWVOR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWSCL",
+      "description": "Source of Supply",
+      "data_element": "BWSCL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SAISO",
+      "description": "Season Category",
+      "data_element": "SAISO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ETIAR",
+      "description": "Label type",
+      "data_element": "ETIAR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ETIFO",
+      "description": "Label form",
+      "data_element": "ETIFO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ENTAR",
+      "description": "Deactivated",
+      "data_element": "DUMMYENTAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EAN11",
+      "description": "International Article Number (EAN/UPC)",
+      "data_element": "EAN11",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMTP",
+      "description": "Category of International Article Number (EAN)",
+      "data_element": "NUMTP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LAENG",
+      "description": "Length",
+      "data_element": "LAENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BREIT",
+      "description": "Width",
+      "data_element": "BREIT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "HOEHE",
+      "description": "Height",
+      "data_element": "HOEHE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MEABM",
+      "description": "Unit of Dimension for Length/Width/Height",
+      "data_element": "MEABM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PRDHA",
+      "description": "Product hierarchy",
+      "data_element": "PRODH_D",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "AEKLK",
+      "description": "Stock Transfer Net Change Costing",
+      "data_element": "CK_AEKLK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CADKZ",
+      "description": "CAD Indicator",
+      "data_element": "CADKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QMPUR",
+      "description": "QM in Procurement is Active",
+      "data_element": "QMPUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERGEW",
+      "description": "Allowed packaging weight",
+      "data_element": "ERGEW",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERGEI",
+      "description": "Unit of weight (allowed packaging weight)",
+      "data_element": "ERGEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ERVOL",
+      "description": "Allowed packaging volume",
+      "data_element": "ERVOL",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERVOE",
+      "description": "Volume unit (allowed packaging volume)",
+      "data_element": "ERVOE",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GEWTO",
+      "description": "Excess Weight Tolerance for Handling unit",
+      "data_element": "GEWTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "VOLTO",
+      "description": "Excess Volume Tolerance of the Handling Unit",
+      "data_element": "VOLTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "VABME",
+      "description": "Variable Purchase Order Unit Active",
+      "data_element": "VABME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZREV",
+      "description": "Revision Level Has Been Assigned to the Material",
+      "data_element": "KZREV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKFG",
+      "description": "Configurable Material",
+      "data_element": "KZKFG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCHPF",
+      "description": "Batch management requirement indicator",
+      "data_element": "XCHPF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VHART",
+      "description": "Packaging Material Type",
+      "data_element": "VHIART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FUELG",
+      "description": "Maximum level (by volume)",
+      "data_element": "FUELG",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STFAK",
+      "description": "Stacking factor",
+      "data_element": "STFAK",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "MAGRV",
+      "description": "Material Group: Packaging Materials",
+      "data_element": "MAGRV",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BEGRU",
+      "description": "Authorization Group",
+      "data_element": "BEGRU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DATAB",
+      "description": "Valid-From Date",
+      "data_element": "DATAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LIQDT",
+      "description": "Deletion date",
+      "data_element": "LIQDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SAISJ",
+      "description": "Season Year",
+      "data_element": "SAISJ",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PLGTP",
+      "description": "Price Band Category",
+      "data_element": "PLGTP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MLGUT",
+      "description": "Empties Bill of Material",
+      "data_element": "W_MITLEERG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXTWG",
+      "description": "External Material Group",
+      "data_element": "EXTWG",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SATNR",
+      "description": "Cross-Plant Configurable Material",
+      "data_element": "SATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ATTYP",
+      "description": "Material Category",
+      "data_element": "ATTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKUP",
+      "description": "Indicator: Material can be co-product",
+      "data_element": "KZKUPMAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZNFM",
+      "description": "Indicator: The material has a follow-up material",
+      "data_element": "KZNFM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PMATA",
+      "description": "Pricing Reference Material",
+      "data_element": "PMATN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "MSTAE",
+      "description": "Cross-Plant Material Status",
+      "data_element": "MSTAE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MSTAV",
+      "description": "Cross-distribution-chain material status",
+      "data_element": "MSTAV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MSTDE",
+      "description": "Date from which the cross-plant material status is valid",
+      "data_element": "MSTDE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MSTDV",
+      "description": "Date from which the X-distr.-chain material status is valid",
+      "data_element": "MSTDV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TAKLV",
+      "description": "Tax classification of the material",
+      "data_element": "TAKLV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RBNRM",
+      "description": "Catalog Profile",
+      "data_element": "RBNR",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "MHDRZ",
+      "description": "Minimum Remaining Shelf Life",
+      "data_element": "MHDRZ",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MHDHB",
+      "description": "Total shelf life",
+      "data_element": "MHDHB",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MHDLP",
+      "description": "Storage percentage",
+      "data_element": "MHDLP",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INHME",
+      "description": "Content unit",
+      "data_element": "INHME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INHAL",
+      "description": "Net contents",
+      "data_element": "INHAL",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VPREH",
+      "description": "Comparison price unit",
+      "data_element": "VPREH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ETIAG",
+      "description": "IS-R Labeling: material grouping (deactivated in 4.0)",
+      "data_element": "ETIAG",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "INHBR",
+      "description": "Gross contents",
+      "data_element": "INHBR",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "CMETH",
+      "description": "Quantity Conversion Method",
+      "data_element": "OIB_CMETH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBF",
+      "description": "Internal object number",
+      "data_element": "CUOBM",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KZUMW",
+      "description": "Environmentally Relevant",
+      "data_element": "KZUMW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSCH",
+      "description": "Product allocation determination procedure",
+      "data_element": "KOSCH",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SPROF",
+      "description": "Pricing profile for variants",
+      "data_element": "SPROF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NRFHG",
+      "description": "Material qualifies for discount in kind",
+      "data_element": "NRFHG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MFRPN",
+      "description": "Manufacturer Part Number",
+      "data_element": "MFRPN",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MFRNR",
+      "description": "Number of a Manufacturer",
+      "data_element": "MFRNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BMATN",
+      "description": "Number of firm's own (internal) inventory-managed material",
+      "data_element": "MPMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "MPROF",
+      "description": "Manufacturer Part Profile",
+      "data_element": "MPROF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZWSM",
+      "description": "Units of measure usage",
+      "data_element": "KZWSO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SAITY",
+      "description": "Rollout in a Season",
+      "data_element": "SAITY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PROFL",
+      "description": "Dangerous Goods Indicator Profile",
+      "data_element": "ADGE_PROFL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "IHIVI",
+      "description": "Indicator: Highly Viscous",
+      "data_element": "ADGE_IHIVI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ILOOS",
+      "description": "Indicator: In Bulk/Liquid",
+      "data_element": "ADGE_ILOOS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SERLV",
+      "description": "Level of Explicitness for Serial Number",
+      "data_element": "SERLV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZGVH",
+      "description": "Packaging Material is Closed Packaging",
+      "data_element": "KZGVH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XGCHP",
+      "description": "Indicator: Approved batch record required",
+      "data_element": "XGCHP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZEFF",
+      "description": "Assign effectivity parameter values/ override change numbers",
+      "data_element": "CC_MTEFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "COMPL",
+      "description": "Material completion level",
+      "data_element": "CSCP_COMP_LVL",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "IPRKZ",
+      "description": "Period Indicator for Shelf Life Expiration Date",
+      "data_element": "DATTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RDMHD",
+      "description": "Rounding rule for calculation of SLED",
+      "data_element": "RDMHD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRZUS",
+      "description": "Indicator: Product composition printed on packaging",
+      "data_element": "PRZUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MTPOS_MARA",
+      "description": "General item category group",
+      "data_element": "MTPOS_MARA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BFLME",
+      "description": "Generic Material with Logistical Variants",
+      "data_element": "BFLME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATFI",
+      "description": "Material Is Locked",
+      "data_element": "MATFI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CMREL",
+      "description": "Relevant for Configuration Management",
+      "data_element": "DE_CM_RELEVANCE_FLAG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BBTYP",
+      "description": "Assortment List Type",
+      "data_element": "BBTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SLED_BBD",
+      "description": "Expiration Date",
+      "data_element": "SLED_BBD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GTIN_VARIANT",
+      "description": "Global Trade Item Number Variant",
+      "data_element": "GTIN_VARIANT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "GENNR",
+      "description": "Material Number of the Generic Material in Prepack Materials",
+      "data_element": "WSTR_SATNR_PP",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "RMATP",
+      "description": "Reference material for materials packed in same way",
+      "data_element": "PL_RMATP",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "GDS_RELEVANT",
+      "description": "Indicator: Global Data Synchronization-Relevant",
+      "data_element": "GDS_RELEVANT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEORA",
+      "description": "Acceptance At Origin",
+      "data_element": "WEORA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HUTYP_DFLT",
+      "description": "Standard HU Type",
+      "data_element": "CIFHUTYPDF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PILFERABLE",
+      "description": "Pilferable",
+      "data_element": "CIFPILFRBL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WHSTC",
+      "description": "Warehouse Storage Condition",
+      "data_element": "CIFWHSTC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WHMATGR",
+      "description": "Warehouse Material Group",
+      "data_element": "CIFWHMATGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HNDLCODE",
+      "description": "Handling Indicator",
+      "data_element": "CIFHDLCODE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HAZMAT",
+      "description": "Relevant for Hazardous Substances",
+      "data_element": "CIFHAZMAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HUTYP",
+      "description": "Handling Unit Type",
+      "data_element": "CIFHUTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TARE_VAR",
+      "description": "Variable Tare Weight",
+      "data_element": "CIFTAREVAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAXC",
+      "description": "Maximum Allowed Capacity of Packaging Material",
+      "data_element": "CIFMAXC",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "MAXC_TOL",
+      "description": "Overcapacity Tolerance of the Handling Unit",
+      "data_element": "CIFMAXCTOL",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "MAXL",
+      "description": "Maximum Packing Length of Packaging Material",
+      "data_element": "CIFMAXL",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "MAXB",
+      "description": "Maximum Packing Width of Packaging Material",
+      "data_element": "CIFMAXB",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "MAXH",
+      "description": "Maximum Packing Height of Packaging Material",
+      "data_element": "CIFMAXH",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "MAXDIM_UOM",
+      "description": "Unit of Measure for Maximum Packing Length/Width/Height",
+      "data_element": "CIFMAXDUOM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKL",
+      "description": "Country of origin of the material",
+      "data_element": "HERKL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MFRGR",
+      "description": "Material freight group",
+      "data_element": "MFRGR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "QQTIME",
+      "description": "Quarantine Period",
+      "data_element": "CIFQQTIME",
+      "type": "QUAN",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "QQTIMEUOM",
+      "description": "Time Unit for Quarantine Period",
+      "data_element": "CIFQQTIMEUOM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "QGRP",
+      "description": "Quality Inspection Group",
+      "data_element": "CIFQGRP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SERIAL",
+      "description": "Serial Number Profile",
+      "data_element": "CIFSERIAL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_SMARTFORM",
+      "description": "Form Name",
+      "data_element": "CIFPSSFNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGUNIT",
+      "description": "EWM CW: Logistics Unit of Measure",
+      "data_element": "CIFLOGUNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CWQREL",
+      "description": "EWM CW: Material Is a Catch Weight Material",
+      "data_element": "CIFCWQREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CWQPROC",
+      "description": "EWM CW: Catch Weight Profile for Entering CW Quantity",
+      "data_element": "CIFCWQPROC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CWQTOLGR",
+      "description": "EWM-CW: Catch Weight Tolerance Group for EWM",
+      "data_element": "CIFCWQTOLGR",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "ADPROF",
+      "description": "Adjustment Profile",
+      "data_element": "CIFADPROF",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "IPMIPPRODUCT",
+      "description": "ID for an Intellectual Property (CRM Product)",
+      "data_element": "CRM_PRODUCT_ID_IP",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "ALLOW_PMAT_IGNO",
+      "description": "Variant Price Allowed (for Material Master)",
+      "data_element": "WPM_ALLOW_PMAT_IGNO_MAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MEDIUM",
+      "description": "Medium",
+      "data_element": "MEDIU",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "COMMODITY",
+      "description": "Physical Commodity",
+      "data_element": "TBA_STOEFFCHEN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ANIMAL_ORIGIN",
+      "description": "Indicator: Contains Non-Textile Parts of Animal Origin",
+      "data_element": "WRF_ANIMAL_ORIGIN_FLAG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TEXTILE_COMP_IND",
+      "description": "Indicator: New Textile Composition Function",
+      "data_element": "WRF_TEXTL_COMP_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANP",
+      "description": "ANP Code",
+      "data_element": "J_1BANP",
+      "type": "NUMC",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/LULEINH",
+      "description": "Loading Units",
+      "data_element": "/BEV1/LULEINH",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/LULDEGRP",
+      "description": "Loading Unit Group: IS Beverage",
+      "data_element": "/BEV1/LULDEGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/NESTRUCCAT",
+      "description": "Structure Category for Material Relationship",
+      "data_element": "/BEV1/NESTRUC_CAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/XCWMAT",
+      "description": "Material Is Activated for Catch Weight",
+      "data_element": "/CWM/XCWMAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/VALUM",
+      "description": "Valuation Unit of Measure",
+      "data_element": "/CWM/VALUM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/TOLGR",
+      "description": "Tolerance Group for Catch Weight Management",
+      "data_element": "/CWM/TOLGR",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/TARA",
+      "description": "Consider Complete Tare for each Reference Unit of Measure",
+      "data_element": "/CWM/TARA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/TARUM",
+      "description": "Reference Unit of Measure for the TARE Calculation",
+      "data_element": "/CWM/TARUM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/DSD/SL_TOLTYP",
+      "description": "Tolerance Type ID",
+      "data_element": "/DSD/SL_TOLTYP_ID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/DSD/SV_CNT_GRP",
+      "description": "Counting Group",
+      "data_element": "/DSD/SV_COUNT_GROUP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/DSD/VC_GROUP",
+      "description": "DSD Grouping",
+      "data_element": "/DSD/VC_GROUP",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_TILT_IND",
+      "description": "Material may be Tilted (Vehicle Space Optimization)",
+      "data_element": "/VSO/M_TILT_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_STACK_IND",
+      "description": "Stacking not Allowed (VSO)",
+      "data_element": "/VSO/M_STACK_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_BOT_IND",
+      "description": "Bottom Layer (Vehicle Space Optimization)",
+      "data_element": "/VSO/M_BOTTOM_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_TOP_IND",
+      "description": "Top Layer (VSO)",
+      "data_element": "/VSO/M_TOP_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_STACK_NO",
+      "description": "Stacking Factor (Vehicle Space Optimization)",
+      "data_element": "/VSO/M_STACK_NO",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_PAL_IND",
+      "description": "Load without Packaging Material (VSO)",
+      "data_element": "/VSO/M_PALLET_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_PAL_OVR_D",
+      "description": "Permissible Overhang (Depth) of Packaging Material (VSO)",
+      "data_element": "/VSO/R_PAL_OVR_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/VSO/R_PAL_OVR_W",
+      "description": "Permissible Overhang (Width) of Shipping Material (VSO)",
+      "data_element": "/VSO/R_PAL_OVR_W",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/VSO/R_PAL_B_HT",
+      "description": "Maximum Stacking Height of the Packaging Material (VSO)",
+      "data_element": "/VSO/R_PAL_BIN_HGT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/VSO/R_PAL_MIN_H",
+      "description": "Minimum Stacking Height of the Packaging Material (VSO)",
+      "data_element": "/VSO/R_PAL_MIN_HT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/VSO/R_TOL_B_HT",
+      "description": "Tolerance to Exceed the Max. Stacking Height (VSO)",
+      "data_element": "/VSO/R_TOL_BIN_HT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/VSO/R_NO_P_GVH",
+      "description": "Number of Materials for each Closed PKM (VSO)",
+      "data_element": "/VSO/M_ANZ_PER_GVH",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_QUAN_UNIT",
+      "description": "Unit of Measure Vehicle Space Optimization",
+      "data_element": "/VSO/R_QUAN_UNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_KZGVH_IND",
+      "description": "Closed Packaging Material Required (VSO)",
+      "data_element": "/VSO/M_KZGVH_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PACKCODE",
+      "description": "Packaging Code",
+      "data_element": "CBUNE_PACODE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DG_PACK_STATUS",
+      "description": "Dangerous Goods Packaging Status",
+      "data_element": "ADGE_DG_PACK_STATUS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MCOND",
+      "description": "Material Condition Management",
+      "data_element": "DFPS_MCOND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RETDELC",
+      "description": "Return Code",
+      "data_element": "DFPS_RETDELC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGLEV_RETO",
+      "description": "Return to Logistics Level",
+      "data_element": "DFPS_LOGLEV_RETO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NSNID",
+      "description": "NATO Stock Number",
+      "data_element": "DFPS_NSNID",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "ADSPC_SPC",
+      "description": "Spare Part Class Code",
+      "data_element": "ADSPC_SPC",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IMATN",
+      "description": "FFF class",
+      "data_element": "IMATN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "PICNUM",
+      "description": "Supersession chain number",
+      "data_element": "PIC_PICNUM_SUS",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTAT",
+      "description": "Creation Status - Seasonal Procurement",
+      "data_element": "WRFBSTAT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "COLOR_ATINN",
+      "description": "Internal Charactieristic Number for Color Characteristics",
+      "data_element": "WRF_COLOR_ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SIZE1_ATINN",
+      "description": "Internal Char. Number for Characteristics for Main Sizes",
+      "data_element": "WRF_SIZE1_ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SIZE2_ATINN",
+      "description": "Internal Char. Number for Characteristics for Second Sizes",
+      "data_element": "WRF_SIZE2_ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "COLOR",
+      "description": "Characteristic Value for Colors of Variants",
+      "data_element": "WRF_COLOR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SIZE1",
+      "description": "Characteristic Value for Main Sizes of Variants",
+      "data_element": "WRF_SIZE1",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SIZE2",
+      "description": "Characteristic Value for Second Size for Variants",
+      "data_element": "WRF_SIZE2",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "FREE_CHAR",
+      "description": "Characteristic Value for Evaluation Purposes",
+      "data_element": "WRF_FREE_CHAR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "CARE_CODE",
+      "description": "Care Codes (such as Washing Code, Ironing Code, etc.)",
+      "data_element": "WRF_CARE_CODE",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BRAND_ID",
+      "description": "Brand",
+      "data_element": "WRF_BRAND_ID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_CODE1",
+      "description": "Fiber Code for Textiles (Component 1)",
+      "data_element": "WRF_FIBER_CODE_1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_PART1",
+      "description": "Percentage Share of Fiber (Component 1)",
+      "data_element": "WRF_FIBER_PART_1",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_CODE2",
+      "description": "Fiber Code for Textiles (Component 2)",
+      "data_element": "WRF_FIBER_CODE_2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_PART2",
+      "description": "Percentage Share of Fiber (Component 2)",
+      "data_element": "WRF_FIBER_PART_2",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_CODE3",
+      "description": "Fiber Code for Textiles (Component 3)",
+      "data_element": "WRF_FIBER_CODE_3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_PART3",
+      "description": "Percentage Share of Fiber (Component 3)",
+      "data_element": "WRF_FIBER_PART_3",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_CODE4",
+      "description": "Fiber Code for Textiles (Component 4)",
+      "data_element": "WRF_FIBER_CODE_4",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_PART4",
+      "description": "Percentage Share of Fiber (Component 4)",
+      "data_element": "WRF_FIBER_PART_4",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_CODE5",
+      "description": "Fiber Code for Textiles (Component 5)",
+      "data_element": "WRF_FIBER_CODE_5",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FIBER_PART5",
+      "description": "Percentage Share of Fiber (Component 5)",
+      "data_element": "WRF_FIBER_PART_5",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FASHGRD",
+      "description": "Fashion Grade",
+      "data_element": "FASHGRD",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "COBJID",
+      "description": "Object ID",
+      "data_element": "HROBJID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "COTYPE",
+      "description": "Object Type",
+      "data_element": "OTYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIGROUPNAM",
+      "description": "TD product group",
+      "data_element": "OIG_PCG",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OITRIND",
+      "description": "Transfer sign for plant-to-plant transfers",
+      "data_element": "OIH_TRIND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHMTXGR",
+      "description": "Material tax group",
+      "data_element": "OIH_J1B_MTXGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZFDB_NDC",
+      "description": "SMX: FDB National Drug Code (NDC) Stored Raw",
+      "data_element": "ZFDB_NDC",
+      "type": "CHAR",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSMX_CMATN",
+      "description": "SMX: Clinical System MedID",
+      "data_element": "ZSMX_CMATN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSMX_FMLKZ",
+      "description": "SMX: Formulary Indicator",
+      "data_element": "ZSMX_FMLKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSMX_KNSKZ",
+      "description": "SMX: Preservative Free Indicator",
+      "data_element": "ZSMX_KNSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSMX_VRTKZ",
+      "description": "SMX: On Contract Indicator",
+      "data_element": "ZSMX_VRTKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The MARA table in SAP is the central table for material master data. It stores general information about materials, such as their description, unit of measure, weight, and dimensions. It also stores information about the material's availability, such as its stock status and reorder point. The MARA table is used by a variety of SAP modules, including Materials Management (MM), Sales and Distribution (SD), and Plant Maintenance (PM). It is also used by third-party applications that integrate with SAP. Common use cases for the MARA table include: * Creating new materials\n* Updating existing materials\n* Displaying material information\n* Searching for materials\n* Generating reports on materials",
+    "timestamp": "2025-02-13T13:46:35.167445",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

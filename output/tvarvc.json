@@ -1,0 +1,85 @@
+{
+  "name": "TVARVC",
+  "description": "Table of Variant Variables (Client-Specific)",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client ID",
+      "data_element": "SYMANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME",
+      "description": "ABAP: Name of Variant Variable",
+      "data_element": "RVARI_VNAM",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "TYPE",
+      "description": "ABAP: Type of selection",
+      "data_element": "RSSCR_KIND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMB",
+      "description": "ABAP: Current selection number",
+      "data_element": "TVARV_NUMB",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SIGN",
+      "description": "ABAP: ID: I/E (include/exclude values)",
+      "data_element": "TVARV_SIGN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OPTI",
+      "description": "ABAP: Selection option (EQ/BT/CP/...)",
+      "data_element": "TVARV_OPTI",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOW",
+      "description": "Low Field TVARV",
+      "data_element": "TVARV_LOW",
+      "type": "CHAR",
+      "length": "255",
+      "decimals": "0"
+    },
+    {
+      "name": "HIGH",
+      "description": "High Field TVARV",
+      "data_element": "TVARV_HGH",
+      "type": "CHAR",
+      "length": "255",
+      "decimals": "0"
+    },
+    {
+      "name": "CLIE_INDEP",
+      "description": "CHAR01 data element for SYST",
+      "data_element": "SYCHAR01",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. TVARVC stores client-specific variant variables for SAP selection screens.\n2. It has no foreign key relationships.\n3. Common use cases include managing user-defined filter criteria for reports and transactions.",
+    "timestamp": "2025-02-13T13:44:27.806322",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "SETLEAF",
+  "description": "Values in Sets",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "LINEID",
+      "description": "Set line counter",
+      "data_element": "SETLINE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VALSIGN",
+      "description": "SIGN field in creation of SELECT-OPTIONS tables",
+      "data_element": "RALDB_SIGN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VALOPTION",
+      "description": "OPTION field in structure of SELECT-OPTIONS tables",
+      "data_element": "RALDB_OPTI",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VALFROM",
+      "description": "From Value",
+      "data_element": "SETVALMIN",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "VALTO",
+      "description": "To value",
+      "data_element": "SETVALMAX",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "SEQNR",
+      "description": "Sequential number of set line",
+      "data_element": "SETLNSEQNR",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The SETLEAF table stores values for sets, which are used to define criteria for selecting data in SAP systems.\n2. This table does not have any foreign key relationships with other tables based on the provided information.\n3. Common use cases for this table include creating and managing sets of values for use in selection screens and reports.",
+    "timestamp": "2025-02-13T13:45:19.848033",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

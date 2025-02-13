@@ -1,0 +1,142 @@
+{
+  "name": "CSKT",
+  "description": "Cost Center Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATBI",
+      "description": "Valid To Date",
+      "data_element": "DATBI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KTEXT",
+      "description": "General Name",
+      "data_element": "KTEXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "LTEXT",
+      "description": "Description",
+      "data_element": "KLTXT",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MCTXT",
+      "description": "Search term for matchcode use",
+      "data_element": "MCDS3",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "CSKT",
+      "field": "KOKRS",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "MANDT",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "CSKT",
+      "field": "KOKRS",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "KOKRS",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "CSKT",
+      "field": "KOSTL",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "MANDT",
+      "check_table": "CSKS",
+      "check_field": "Cost Center Master Data"
+    },
+    {
+      "table": "CSKT",
+      "field": "KOSTL",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "KOKRS",
+      "check_table": "CSKS",
+      "check_field": "Cost Center Master Data"
+    },
+    {
+      "table": "CSKT",
+      "field": "KOSTL",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "KOSTL",
+      "check_table": "CSKS",
+      "check_field": "Cost Center Master Data"
+    },
+    {
+      "table": "CSKT",
+      "field": "KOSTL",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "DATBI",
+      "check_table": "CSKS",
+      "check_field": "Cost Center Master Data"
+    },
+    {
+      "table": "CSKT",
+      "field": "MANDT",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "CSKT",
+      "field": "SPRAS",
+      "foreign_key_table": "CSKT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The table CSKT stores cost center texts in SAP's Controlling module. It is linked to the cost center master data table CSKS and other tables for client, controlling area, and language information. It is commonly used to retrieve cost center descriptions in various reports and transactions.",
+    "timestamp": "2025-02-13T13:42:00.742792",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "name": "T006",
+  "description": "Units of Measurement",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEHI",
+      "description": "Unit of Measurement",
+      "data_element": "MSEHI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZEX3",
+      "description": "3-char indicator for external unit of measurement",
+      "data_element": "KZEX3",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZEX6",
+      "description": "6-char. ID for external unit of measurement",
+      "data_element": "KZEX6",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANDEC",
+      "description": "No. of decimal places to which rounding should be performed",
+      "data_element": "ANDEC",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKEH",
+      "description": "Commercial measurement unit ID",
+      "data_element": "KZKEH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZWOB",
+      "description": "Value-based commitment indicator",
+      "data_element": "KZWOB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZ1EH",
+      "description": "Indicator (1) unit (indicator not yet defined)",
+      "data_element": "KZ1EH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZ2EH",
+      "description": "Indicator (2) unit (indicator not yet defined)",
+      "data_element": "KZ2EH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIMID",
+      "description": "Dimension key",
+      "data_element": "DIMID",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEHL",
+      "description": "Numerator for conversion to SI unit",
+      "data_element": "DZAEHL",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NENNR",
+      "description": "Denominator for conversion into SI unit",
+      "data_element": "NENNR",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EXP10",
+      "description": "base ten exponent for conversion to SI unit",
+      "data_element": "EXP10",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDKO",
+      "description": "Additive constant for conversion to SI unit",
+      "data_element": "ADDKO",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "6"
+    },
+    {
+      "name": "EXPON",
+      "description": "Base ten exponent for floating-point display",
+      "data_element": "EXPON",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "DECAN",
+      "description": "Number of decimal places for number display",
+      "data_element": "DECAN",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ISOCODE",
+      "description": "ISO code for unit of measurement",
+      "data_element": "ISOCD_UNIT",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PRIMARY",
+      "description": "Selection field for conversion from ISO code to int. code",
+      "data_element": "ISOCD_MARK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TEMP_VALUE",
+      "description": "Temperature",
+      "data_element": "TEMP_VALUE",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "TEMP_UNIT",
+      "description": "Temperature unit",
+      "data_element": "TEMP_UNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FAMUNIT",
+      "description": "Unit of measurement family",
+      "data_element": "FAMUNIT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRESS_VAL",
+      "description": "Pressure Value",
+      "data_element": "PRESS_VAL",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "PRESS_UNIT",
+      "description": "Unit of Pressure",
+      "data_element": "PRESS_UNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T006 table in SAP stores master data for units of measurement, including their conversion factors, decimal places, and other attributes. This table is commonly used for managing and converting measurement units across different modules within SAP systems, ensuring data accuracy and consistency.",
+    "timestamp": "2025-02-13T13:45:38.572924",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

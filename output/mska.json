@@ -1,0 +1,269 @@
+{
+  "name": "MSKA",
+  "description": "Sales Order Stock",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Item number of the SD document",
+      "data_element": "POSNR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KASPR",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALAB",
+      "description": "Valuated Unrestricted-Use Stock",
+      "data_element": "LABST",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAINS",
+      "description": "Stock in Quality Inspection",
+      "data_element": "INSME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KASPE",
+      "description": "Blocked Stock",
+      "data_element": "SPEME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAVLA",
+      "description": "Valuated unrestricted-use stock in previous period",
+      "data_element": "VMLAB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAVIN",
+      "description": "Stock in Quality Inspection in Previous Period",
+      "data_element": "VMINS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAVSP",
+      "description": "Blocked stock of previous period",
+      "data_element": "VMSPE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAILL",
+      "description": "Physical inventory indicator for whse stock in current year",
+      "data_element": "KZILL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAILQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in current year",
+      "data_element": "KZILQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAILS",
+      "description": "Physical inventory indicator for blocked stock",
+      "data_element": "KZILS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAVLL",
+      "description": "Physical inventory indicator for stock in previous year",
+      "data_element": "KZVLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAVLQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+      "data_element": "KZVLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAVLS",
+      "description": "Phys. inventory indicator for blocked stock in prev. period",
+      "data_element": "KZVLS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAFLL",
+      "description": "Physical inventory indicator for stock in following year",
+      "data_element": "KZFLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAFLQ",
+      "description": "Physical inventory indicator, quality insp.stck, follow.yr.",
+      "data_element": "KZFLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAFLS",
+      "description": "Phys. inventory ind. for blocked stock in following period",
+      "data_element": "KZFLS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KADLL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KAEIN",
+      "description": "Total Stock of All Restricted Batches",
+      "data_element": "EINME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KAVEI",
+      "description": "Restricted-Use Stock in Previous Period",
+      "data_element": "VMEIN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KAJIN",
+      "description": "Fiscal year of current physical inventory indicator",
+      "data_element": "GJINV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KARUE",
+      "description": "MxxxH rec. already exists for per. before last of Mxxx per.",
+      "data_element": "SBRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The MSKA table stores information about sales order stock, including stock quantities, blocking indicators, and physical inventory indicators.\n2. No foreign key relationships are provided in the table structure.\n3. Common use cases include inventory management, stock analysis, and reporting.",
+    "timestamp": "2025-02-13T13:45:09.352650",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

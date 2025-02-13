@@ -1,0 +1,93 @@
+{
+  "name": "HRRP_NODET",
+  "description": "HRRP_NODET is a standard SAP Table which is used to store Hierarchy node texts data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP HRRP_NODET table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: A - Application table (master and transaction data)\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type or numeric)\nDictionary Type: Transparent table\nDatabase Table: HRRP_NODET\n\n\nHRRP_NODET table structure field list\nBelow is the full HRRP_NODET field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nMANDT\tClient\tMANDT\tCLNT\t3(0)\tT000\t\tMANDT\t\t\t\nSPRAS\tLanguage Key\tSPRAS\tLANG\t1(0)\tT002\tISOLA\tSPRAS\tSPR\tH_T002\tSPRAS\nHRYID\tHierarchy ID\tHRYID\tCHAR\t42(0)\tHRRP_DIRECTORY\t\tDHRYID\t\t\t\nHRYVER\tHierarchy version\tHRYVERSN\tNUMC\t15(0)\t\t\t\t\t\t\nNODECLS\tNode class\tNODECLS\tCHAR\t12(0)\t\t\t\t\t\t\nHRYNODE\tHierarchy node\tHRYNODE\tCHAR\t50(0)\tHRRP_NODE\t\t\t\t\t\nPARNODE\tHierarchy parent node\tPARNODE\tCHAR\t50(0)\t\t\t\t\t\t\nHRYVALTO\tValid To Date\tDATBI\tDATS\t8(0)\t\t\tDATUM\t\t\t\nHRYVALFROM\tValid-From Date\tDATAB\tDATS\t8(0)\t\t\tDATUM\t\t\t\nNODETXT\tHierarchy node description\tNODETXT\tCHAR\t50(0)\t\t\tTEXT50",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYID",
+      "description": "Hierarchy ID",
+      "data_element": "HRYID",
+      "type": "CHAR",
+      "length": "42",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVER",
+      "description": "Hierarchy version",
+      "data_element": "HRYVERSN",
+      "type": "NUMC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "NODECLS",
+      "description": "Node class",
+      "data_element": "NODECLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYNODE",
+      "description": "Hierarchy node",
+      "data_element": "HRYNODE",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "PARNODE",
+      "description": "Hierarchy parent node",
+      "data_element": "PARNODE",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVALTO",
+      "description": "Valid To Date",
+      "data_element": "DATBI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVALFROM",
+      "description": "Valid-From Date",
+      "data_element": "DATAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NODETXT",
+      "description": "Hierarchy node description",
+      "data_element": "NODETXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The Table table stores generic data in a structured format. It can be used to store various types of data, such as master data, transaction data, and configuration data. The table can be linked to other tables via foreign keys, allowing for data integration and analysis. Common use cases include data storage, data retrieval, and data analysis.",
+    "timestamp": "2025-02-13T13:45:17.685473",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "name": "T024E",
+  "description": "Purchasing Organizations",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EKORG",
+      "description": "Purchasing Organization",
+      "data_element": "EKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKOTX",
+      "description": "Description of Purchasing Organization",
+      "data_element": "EKOTX",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TXADR",
+      "description": "Text Name: Sender Line",
+      "data_element": "TXADR",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "TXKOP",
+      "description": "Text Name: Letter Heading",
+      "data_element": "TXKOP",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "TXFUS",
+      "description": "Text Name: Footer Lines",
+      "data_element": "TXFUS",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "TXGRU",
+      "description": "Text Name: Complimentary Close",
+      "data_element": "TXGRU",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSE",
+      "description": "Group for Calculation Schema (Purchasing Organization)",
+      "data_element": "KALSE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MKALS",
+      "description": "Calculation Schema for Market Price",
+      "data_element": "MKALS",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "BPEFF",
+      "description": "Effective Price",
+      "data_element": "BPEFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS_NTR",
+      "description": "Company code for subsequent settlement at plant level",
+      "data_element": "BUKRS_NTR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T024E table stores data about purchasing organizations. It contains information such as the purchasing organization code, name, and address. The table is used to maintain purchasing organization data and to establish relationships between purchasing organizations and other entities, such as company codes and plants.",
+    "timestamp": "2025-02-13T13:45:58.315142",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

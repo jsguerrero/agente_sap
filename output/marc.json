@@ -1,0 +1,1845 @@
+{
+  "name": "MARC",
+  "description": "Plant Data for Material",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTAT",
+      "description": "Maintenance status",
+      "data_element": "PSTAT_D",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Flag Material for Deletion at Plant Level",
+      "data_element": "LVOWK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTTY",
+      "description": "Valuation Category",
+      "data_element": "BWTTY_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCHAR",
+      "description": "Batch management indicator (internal)",
+      "data_element": "XCHAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MMSTA",
+      "description": "Plant-Specific Material Status",
+      "data_element": "MMSTA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MMSTD",
+      "description": "Date from which the plant-specific material status is valid",
+      "data_element": "MMSTD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MAABC",
+      "description": "ABC Indicator",
+      "data_element": "MAABC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKRI",
+      "description": "Indicator: Critical part",
+      "data_element": "KZKRI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP",
+      "description": "Purchasing Group",
+      "data_element": "EKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSME",
+      "description": "Unit of issue",
+      "data_element": "AUSME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DISPR",
+      "description": "Material: MRP profile",
+      "data_element": "DISPR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DISMM",
+      "description": "MRP Type",
+      "data_element": "DISMM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DISPO",
+      "description": "MRP Controller (Materials Planner)",
+      "data_element": "DISPO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZDIE",
+      "description": "Indicator: MRP controller is buyer (deactivated)",
+      "data_element": "KZDIE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLIFZ",
+      "description": "Planned Delivery Time in Days",
+      "data_element": "PLIFZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WEBAZ",
+      "description": "Goods Receipt Processing Time in Days",
+      "data_element": "WEBAZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PERKZ",
+      "description": "Period Indicator",
+      "data_element": "PERKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSSS",
+      "description": "Assembly scrap in percent",
+      "data_element": "AUSSS",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "DISLS",
+      "description": "Lot size (materials planning)",
+      "data_element": "DISLS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BESKZ",
+      "description": "Procurement Type",
+      "data_element": "BESKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBSL",
+      "description": "Special procurement type",
+      "data_element": "SOBSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MINBE",
+      "description": "Reorder Point",
+      "data_element": "MINBE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "EISBE",
+      "description": "Safety Stock",
+      "data_element": "EISBE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTMI",
+      "description": "Minimum Lot Size",
+      "data_element": "BSTMI",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTMA",
+      "description": "Maximum Lot Size",
+      "data_element": "BSTMA",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTFE",
+      "description": "Fixed lot size",
+      "data_element": "BSTFE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTRF",
+      "description": "Rounding value for purchase order quantity",
+      "data_element": "BSTRF",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MABST",
+      "description": "Maximum stock level",
+      "data_element": "MABST",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LOSFX",
+      "description": "Ordering costs",
+      "data_element": "LOSFX",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "SBDKZ",
+      "description": "Dependent requirements ind. for individual and coll. reqmts",
+      "data_element": "SBDKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LAGPR",
+      "description": "Storage costs indicator",
+      "data_element": "LAGPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ALTSL",
+      "description": "Method for Selecting Alternative Bills of Material",
+      "data_element": "ALTSL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZAUS",
+      "description": "Discontinuation indicator",
+      "data_element": "KZAUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSDT",
+      "description": "Effective-Out Date",
+      "data_element": "AUSDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NFMAT",
+      "description": "Follow-Up Material",
+      "data_element": "NFMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBED",
+      "description": "Indicator for Requirements Grouping",
+      "data_element": "KZBED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MISKZ",
+      "description": "Mixed MRP indicator",
+      "data_element": "MISKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FHORI",
+      "description": "Scheduling Margin Key for Floats",
+      "data_element": "FHORI",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PFREI",
+      "description": "Indicator: automatic fixing of planned orders",
+      "data_element": "PFREI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FFREI",
+      "description": "Release indicator for production orders",
+      "data_element": "FFREI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RGEKZ",
+      "description": "Indicator: Backflush",
+      "data_element": "RGEKM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FEVOR",
+      "description": "Production Supervisor",
+      "data_element": "FEVOR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BEARZ",
+      "description": "Processing time",
+      "data_element": "BEARZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "RUEZT",
+      "description": "Setup and teardown time",
+      "data_element": "RUEZT",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "TRANZ",
+      "description": "Interoperation time",
+      "data_element": "TRANZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "BASMG",
+      "description": "Base quantity",
+      "data_element": "BASMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DZEIT",
+      "description": "In-house production time",
+      "data_element": "DZEIT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MAXLZ",
+      "description": "Maximum Storage Period",
+      "data_element": "MAXLZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LZEIH",
+      "description": "Unit for maximum storage period",
+      "data_element": "LZEIH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZPRO",
+      "description": "Indicator: withdrawal of stock from production bin",
+      "data_element": "KZPRO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GPMKZ",
+      "description": "Indicator: Material Included in Rough-Cut Planning",
+      "data_element": "GPMKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UEETO",
+      "description": "Overdelivery tolerance limit",
+      "data_element": "UEETO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "UEETK",
+      "description": "Indicator: Unlimited Overdelivery Allowed",
+      "data_element": "UEETK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UNETO",
+      "description": "Underdelivery tolerance limit",
+      "data_element": "UNETO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "WZEIT",
+      "description": "Total replenishment lead time (in workdays)",
+      "data_element": "WZEIT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATPKZ",
+      "description": "Replacement part",
+      "data_element": "ATPKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VZUSL",
+      "description": "Surcharge factor for cost in percent",
+      "data_element": "VZUSL",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "HERBL",
+      "description": "State of manufacture",
+      "data_element": "HERBL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "INSMK",
+      "description": "Post to Inspection Stock",
+      "data_element": "INSMK_MAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPROZ",
+      "description": "Sample for quality inspection (in %) (deactivated)",
+      "data_element": "SPROZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "QUAZT",
+      "description": "Quarantine period (deactivated)",
+      "data_element": "QUAZT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SSQSS",
+      "description": "Control Key for Quality Management in Procurement",
+      "data_element": "QSSPUR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MPDAU",
+      "description": "Mean inspection duration (deactivated)",
+      "data_element": "MPDAU",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KZPPV",
+      "description": "Indicator for inspection plan (deactivated)",
+      "data_element": "KZPPV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZDKZ",
+      "description": "Documentation required indicator",
+      "data_element": "KZDKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WSTGH",
+      "description": "Active substance content (deactivated)",
+      "data_element": "WSTGH",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "PRFRQ",
+      "description": "Interval until next recurring inspection",
+      "data_element": "PRFRQ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "NKMPR",
+      "description": "Date according to check sampling inspection (deactivated)",
+      "data_element": "NKMPR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "UMLMC",
+      "description": "Stock in Transfer (Plant to Plant)",
+      "data_element": "UMLME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LADGR",
+      "description": "Loading Group",
+      "data_element": "LADGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XCHPF",
+      "description": "Batch management requirement indicator",
+      "data_element": "XCHPF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "USEQU",
+      "description": "Quota arrangement usage",
+      "data_element": "USEQU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LGRAD",
+      "description": "Service level",
+      "data_element": "LGRAD",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "AUFTL",
+      "description": "Splitting Indicator",
+      "data_element": "AUFTL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLVAR",
+      "description": "Plan Version",
+      "data_element": "PLVAR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OTYPE",
+      "description": "Object Type",
+      "data_element": "OTYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJID",
+      "description": "Object ID",
+      "data_element": "OBJEKTID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MTVFP",
+      "description": "Checking Group for Availability Check",
+      "data_element": "MTVFP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PERIV",
+      "description": "Fiscal Year Variant",
+      "data_element": "PERIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKFK",
+      "description": "Indicator: take correction factors into account",
+      "data_element": "KZKFK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VRVEZ",
+      "description": "Shipping setup time",
+      "data_element": "VRVEZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "VBAMG",
+      "description": "Base quantity for capacity planning in shipping",
+      "data_element": "VBAMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VBEAZ",
+      "description": "Shipping processing time",
+      "data_element": "VBEAZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "LIZYK",
+      "description": "Deactivated",
+      "data_element": "DUMMYLIZYK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWSCL",
+      "description": "Source of Supply",
+      "data_element": "BWSCL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KAUTB",
+      "description": "Indicator: \"automatic purchase order allowed\"",
+      "data_element": "KAUTB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KORDB",
+      "description": "Indicator: Source list requirement",
+      "data_element": "KORDB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STAWN",
+      "description": "Commodity Code/Import Code Number for Foreign Trade",
+      "data_element": "STAWN",
+      "type": "CHAR",
+      "length": "17",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKL",
+      "description": "Country of origin of the material",
+      "data_element": "HERKL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKR",
+      "description": "Region of origin of material (non-preferential origin)",
+      "data_element": "HERKR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EXPME",
+      "description": "Unit of measure for commodity code (foreign trade)",
+      "data_element": "EXPME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MTVER",
+      "description": "Export/import material group",
+      "data_element": "MTVER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TRAME",
+      "description": "Stock in Transit",
+      "data_element": "TRAME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MRPPP",
+      "description": "PPC planning calendar",
+      "data_element": "MRPPP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SAUFT",
+      "description": "Ind.: Repetitive mfg allowed",
+      "data_element": "SA_SAUFT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FXHOR",
+      "description": "Planning time fence",
+      "data_element": "FXHOR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VRMOD",
+      "description": "Consumption mode",
+      "data_element": "VRMOD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VINT1",
+      "description": "Consumption period: backward",
+      "data_element": "VINT1",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VINT2",
+      "description": "Consumption period: forward",
+      "data_element": "VINT2",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VERKZ",
+      "description": "Version Indicator",
+      "data_element": "CK_VERK1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAL",
+      "description": "Alternative BOM",
+      "data_element": "STALT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAN",
+      "description": "BOM Usage",
+      "data_element": "STLAN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNNR",
+      "description": "Key for Task List Group",
+      "data_element": "PLNNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "APLAL",
+      "description": "Group Counter",
+      "data_element": "PLNAL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOSGR",
+      "description": "Lot Size for Product Costing",
+      "data_element": "CK_LOSGR",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SOBSK",
+      "description": "Special Procurement Type for Costing",
+      "data_element": "CK_SOBSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FRTME",
+      "description": "Production unit",
+      "data_element": "FRTME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LGPRO",
+      "description": "Issue Storage Location",
+      "data_element": "LGPRO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DISGR",
+      "description": "MRP Group",
+      "data_element": "DISGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KAUSF",
+      "description": "Component scrap in percent",
+      "data_element": "KAUSF",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "QZGTP",
+      "description": "Certificate Type",
+      "data_element": "QZGTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "QMATV",
+      "description": "Inspection Setup Exists for Material/Plant",
+      "data_element": "QMATV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAKZT",
+      "description": "Takt time",
+      "data_element": "TAKZT",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RWPRO",
+      "description": "Range of coverage profile",
+      "data_element": "RWPRO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "COPAM",
+      "description": "Local field name for CO/PA link to SOP",
+      "data_element": "COPAM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ABCIN",
+      "description": "Physical inventory indicator for cycle counting",
+      "data_element": "ABCIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AWSLS",
+      "description": "Variance Key",
+      "data_element": "AWSLS",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SERNP",
+      "description": "Serial Number Profile",
+      "data_element": "SERAIL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ",
+      "description": "Internal object number",
+      "data_element": "CUOBM",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "STDPD",
+      "description": "Configurable material",
+      "data_element": "STDPD",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SFEPR",
+      "description": "Repetitive manufacturing profile",
+      "data_element": "SFEPR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XMCNG",
+      "description": "Negative stocks allowed in plant",
+      "data_element": "XMCNG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QSSYS",
+      "description": "Required QM System for Vendor",
+      "data_element": "QSSYS_SOLL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFRHY",
+      "description": "Planning cycle",
+      "data_element": "LFRHY",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RDPRF",
+      "description": "Rounding Profile",
+      "data_element": "RDPRF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VRBMT",
+      "description": "Reference material for consumption",
+      "data_element": "VRBMT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "VRBWK",
+      "description": "Reference plant for consumption",
+      "data_element": "VRBWK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VRBDT",
+      "description": "To date of the material to be copied for consumption",
+      "data_element": "VRBDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VRBFK",
+      "description": "Multiplier for reference material for consumption",
+      "data_element": "VRBFK",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "2"
+    },
+    {
+      "name": "AUTRU",
+      "description": "Reset Forecast Model Automatically",
+      "data_element": "AUTRU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PREFE",
+      "description": "Preference indicator in export/import",
+      "data_element": "PREFE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRENC",
+      "description": "Exemption certificate: Indicator for legal control",
+      "data_element": "PRENC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRENO",
+      "description": "Exemption certificate number for legal control",
+      "data_element": "PRENN",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PREND",
+      "description": "Exemption certificate: Issue date of exemption certificate",
+      "data_element": "PREND",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PRENE",
+      "description": "Indicator: Vendor declaration exists",
+      "data_element": "PRENE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRENG",
+      "description": "Validity date of vendor declaration",
+      "data_element": "PRENG",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ITARK",
+      "description": "Indicator: Military goods",
+      "data_element": "ITARK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVG",
+      "description": "IS-R service level",
+      "data_element": "W_SERVGRD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZKUP",
+      "description": "Indicator: Material can be co-product",
+      "data_element": "KZKUPMAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STRGR",
+      "description": "Planning strategy group",
+      "data_element": "STRGR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBV",
+      "description": "Internal object number of configurable material for planning",
+      "data_element": "CUOBV",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "LGFSB",
+      "description": "Default storage location for external procurement",
+      "data_element": "LGFSB",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SCHGT",
+      "description": "Indicator: Bulk Material",
+      "data_element": "SCHGT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CCFIX",
+      "description": "CC indicator is fixed",
+      "data_element": "CCFIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EPRIO",
+      "description": "Stock determination group",
+      "data_element": "BF_GROUP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "QMATA",
+      "description": "Material Authorization Group for Activities in QM",
+      "data_element": "QMATAUTH",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RESVP",
+      "description": "Period of adjustment for planned independent requirements",
+      "data_element": "RESVP",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNTY",
+      "description": "Task List Type",
+      "data_element": "PLNTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UOMGR",
+      "description": "Unit of Mearsure Group (Oil, Natural Gas,...)",
+      "data_element": "OIB_UOMGR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "UMRSL",
+      "description": "Conversion Group (Oil, Natural Gas,..)",
+      "data_element": "OIB_UMRSL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABFAC",
+      "description": "Air Bouyancy Factor",
+      "data_element": "OIL_ABFAC",
+      "type": "DEC",
+      "length": "2",
+      "decimals": "1"
+    },
+    {
+      "name": "SFCPF",
+      "description": "Production Scheduling Profile",
+      "data_element": "CO_PRODPRF",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SHFLG",
+      "description": "Safety time indicator (with or without safety time)",
+      "data_element": "SHFLG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SHZET",
+      "description": "Safety time (in workdays)",
+      "data_element": "SHZET",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MDACH",
+      "description": "Action control: planned order processing",
+      "data_element": "MDACH",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KZECH",
+      "description": "Determination of batch entry in the production/process order",
+      "data_element": "KZECH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MEGRU",
+      "description": "Unit of Measure Group",
+      "data_element": "MEGRU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MFRGR",
+      "description": "Material freight group",
+      "data_element": "MFRGR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VKUMC",
+      "description": "Stock transfer sales value (plant to plant) for VO material",
+      "data_element": "VKUMC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VKTRW",
+      "description": "Transit value at sales price for value-only material",
+      "data_element": "VKTRW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KZAGL",
+      "description": "Indicator: smooth promotion consumption",
+      "data_element": "KZAGL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FVIDK",
+      "description": "Production Version To Be Costed",
+      "data_element": "CK_VERID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FXPRU",
+      "description": "Fixed-Price Co-Product",
+      "data_element": "CK_FIXPRKU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGGR",
+      "description": "Logistics handling group for workload calculation",
+      "data_element": "LOGGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FPRFM",
+      "description": "Distribution profile of material in plant",
+      "data_element": "FPRFM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GLGMG",
+      "description": "Tied Empties Stock",
+      "data_element": "GLGMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VKGLG",
+      "description": "Sales value of tied empties stock",
+      "data_element": "VKGLG",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "INDUS",
+      "description": "Material CFOP category",
+      "data_element": "J_1BINDUS3",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MOWNR",
+      "description": "CAP: Number of CAP products list",
+      "data_element": "MOWNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "MOGRU",
+      "description": "Common Agricultural Policy: CAP products group-Foreign Trade",
+      "data_element": "MOGRU",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CASNR",
+      "description": "CAS number for pharmaceutical products in foreign trade",
+      "data_element": "CASNR",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "GPNUM",
+      "description": "Production statistics: PRODCOM number for foreign trade",
+      "data_element": "GPNUM",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "STEUC",
+      "description": "Control code for consumption taxes in foreign trade",
+      "data_element": "STEUC",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "FABKZ",
+      "description": "Indicator: Item Relevant to JIT Delivery Schedules",
+      "data_element": "FABKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATGR",
+      "description": "Group of Materials for Transition Matrix",
+      "data_element": "MATNRGROUP",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "VSPVB",
+      "description": "Proposed Supply Area in Material Master Record",
+      "data_element": "VSPVB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DPLFS",
+      "description": "Fair share rule",
+      "data_element": "DPLFS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DPLPU",
+      "description": "Indicator: push distribution",
+      "data_element": "DPLPU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DPLHO",
+      "description": "Deployment horizon in days",
+      "data_element": "DPLHO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MINLS",
+      "description": "Minimum lot size for Supply Demand Match",
+      "data_element": "CSCP_MINLOTSIZE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MAXLS",
+      "description": "Maximum lot size for Supply Demand Match",
+      "data_element": "CSCP_MAXLOTSIZE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "FIXLS",
+      "description": "Fixed lot size for Supply Demand Match",
+      "data_element": "CSCP_FIXLOTSIZE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LTINC",
+      "description": "Lot size increment for  Supply Demand Match",
+      "data_element": "CSCP_LOTINCREMENT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "COMPL",
+      "description": "This field is no longer used",
+      "data_element": "CSCP_DUMMY",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CONVT",
+      "description": "Conversion types for production figures",
+      "data_element": "CSCP_CONV_TYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SHPRO",
+      "description": "Period Profile for Safety Time",
+      "data_element": "SHPRO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AHDIS",
+      "description": "MRP relevancy for dependent requirements",
+      "data_element": "AHDIS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIBER",
+      "description": "Indicator: MRP area exists",
+      "data_element": "DIBER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZPSP",
+      "description": "Indicator for cross-project material",
+      "data_element": "KZPSP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OCMPF",
+      "description": "Overall profile for order change management",
+      "data_element": "OCM_GPROFILE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "APOKZ",
+      "description": "Indicator: Is material relevant for APO",
+      "data_element": "APOKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MCRUE",
+      "description": "MARDH rec. already exists for per. before last of MARD per.",
+      "data_element": "MCRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EISLO",
+      "description": "Minimum Safety Stock",
+      "data_element": "EISLO",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "NCOST",
+      "description": "Do Not Cost",
+      "data_element": "CK_NO_COSTING",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ROTATION_DATE",
+      "description": "Strategy for Putaway and Stock Removal",
+      "data_element": "ROTATION_DATE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UCHKZ",
+      "description": "Indicator for Original Batch Management",
+      "data_element": "UCHKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UCMAT",
+      "description": "Reference Material for Original Batches",
+      "data_element": "VBOB_OB_RFMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWESB",
+      "description": "Valuated Goods Receipt Blocked Stock",
+      "data_element": "BWESB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/MRSS/PROF_GUID",
+      "description": "GUID in 'CHAR' Format in Uppercase",
+      "data_element": "GUID_32",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/PROF_KEY",
+      "description": "Profile Key",
+      "data_element": "/MRSS/T_RSG_REQUID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/DATACHANGE",
+      "description": "Data was changed in the controls on the user screen",
+      "data_element": "/MRSS/T_USCREENCTL_DATACHANGED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/TOLPRPL",
+      "description": "Percentage Tolerance Plus",
+      "data_element": "/SAPMP/TOLPRPL",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "/SAPMP/TOLPRMI",
+      "description": "Percentage Tolerance Minus",
+      "data_element": "/SAPMP/TOLPRMI",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "/VSO/R_PKGRP",
+      "description": "Packing Group of the Material (VSO)",
+      "data_element": "/VSO/M_PKGRP",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_LANE_NUM",
+      "description": "Line within the Automatic Picking Zone (VSO)",
+      "data_element": "/VSO/M_LANE_NUM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_PAL_VEND",
+      "description": "Material No. of the Packaging Material of the Vendor (VSO)",
+      "data_element": "/VSO/R_MATNR_PAL_VEND",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "/VSO/R_FORK_DIR",
+      "description": "Pick Packaging Materials only Lengthwise (VSO)",
+      "data_element": "/VSO/M_FORK_DIR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IUID_RELEVANT",
+      "description": "IUID-Relevant",
+      "data_element": "IUID_RELEVANT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IUID_TYPE",
+      "description": "Structure Type of UII",
+      "data_element": "IUID_TYPE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UID_IEA",
+      "description": "External Allocation of UII",
+      "data_element": "UID_IEA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CONS_PROCG",
+      "description": "Consignment Control",
+      "data_element": "WRF_CONS_PROCG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GI_PR_TIME",
+      "description": "Goods Issue Processing Time in Days",
+      "data_element": "WRF_PSCD_WABAZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MULTIPLE_EKGRP",
+      "description": "Purchasing Across Purchasing Group",
+      "data_element": "WRF_POHF_OTHER_EKGRP_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REF_SCHEMA",
+      "description": "Reference Determination Schema",
+      "data_element": "WRF_REF_SCHEMA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MIN_TROC",
+      "description": "Minimum Target Range of Coverage",
+      "data_element": "WRF_FRE_TROC_MIN",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MAX_TROC",
+      "description": "Maximum Target Range of Coverage",
+      "data_element": "WRF_FRE_TROC_MAX",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TARGET_STOCK",
+      "description": "Target Stock",
+      "data_element": "WRF_FRE_TARGET_STOCK",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/XLOSGRBAS",
+      "description": "Costing Lot Size to be Interpreted in Base Unit of Measure",
+      "data_element": "/CWM/CK_VALORBAS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXGRP",
+      "description": "Excise Duty Group",
+      "data_element": "OIH_TAXGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIOILCON",
+      "description": "Oil content in a material as a percentage",
+      "data_element": "OIH_OILCON",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "OIEDCODE",
+      "description": "Customs tariff number",
+      "data_element": "OIH_EDCODE",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "FDICH",
+      "description": "Fixed Density",
+      "data_element": "OIB_FDICH",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "COEFF",
+      "description": "Quantity Conversion Coefficient",
+      "data_element": "OIB_COEFF",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The primary purpose of the MARC table is to store plant-specific data for materials.\n2. It is related to other tables via the WERKS (plant) field, which is a foreign key to the WERKS field in the T001W table.\n3. Common use cases include:\n   - Maintaining plant-specific material data, such as storage locations, MRP controllers, and procurement types.\n   - Generating reports on plant-specific material data.\n   - Performing MRP calculations for specific plants.",
+    "timestamp": "2025-02-13T13:43:35.178147",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

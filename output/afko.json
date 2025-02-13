@@ -1,0 +1,1333 @@
+{
+  "name": "AFKO",
+  "description": "Order Header Data PP Orders",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "GLTRP",
+      "description": "Basic finish date",
+      "data_element": "CO_GLTRP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GSTRP",
+      "description": "Basic Start Date",
+      "data_element": "PM_ORDGSTRP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FTRMS",
+      "description": "Scheduled release date",
+      "data_element": "CO_FTRMS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GLTRS",
+      "description": "Scheduled finish",
+      "data_element": "CO_GLTRS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GSTRS",
+      "description": "Scheduled start",
+      "data_element": "CO_GSTRS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GSTRI",
+      "description": "Actual start date",
+      "data_element": "CO_GSTRI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GETRI",
+      "description": "Confirmed Order Finish Date",
+      "data_element": "CO_GETRI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GLTRI",
+      "description": "Actual finish date",
+      "data_element": "CO_GLTRI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FTRMI",
+      "description": "Actual release date",
+      "data_element": "CO_FTRMI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FTRMP",
+      "description": "Planned release date",
+      "data_element": "CO_FTRMP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RSNUM",
+      "description": "Number of Reservation/Dependent Requirement",
+      "data_element": "RSNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GASMG",
+      "description": "Total scrap quantity in the order",
+      "data_element": "GASMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "GAMNG",
+      "description": "Total order quantity",
+      "data_element": "GAMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "GMEIN",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNBEZ",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNTY",
+      "description": "Task List Type",
+      "data_element": "PLNTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNNR",
+      "description": "Key for Task List Group",
+      "data_element": "PLNNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNAW",
+      "description": "Application of the task list",
+      "data_element": "PLNAW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNAL",
+      "description": "Group Counter",
+      "data_element": "PLNAL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PVERW",
+      "description": "Task list usage",
+      "data_element": "PLN_VERWE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLAUF",
+      "description": "Date for routing transfer",
+      "data_element": "CO_PLAUF",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PLSVB",
+      "description": "To lot size",
+      "data_element": "LOSGRBIS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "PLNME",
+      "description": "Task list unit of measure",
+      "data_element": "PLNME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLSVN",
+      "description": "From Lot Size",
+      "data_element": "LOSGRVON",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "PDATV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PAENR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PLGRP",
+      "description": "Responsible planner group/department",
+      "data_element": "VAGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LODIV",
+      "description": "Lot size divisor",
+      "data_element": "LOSDIV",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "STLTY",
+      "description": "BOM category",
+      "data_element": "STLTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STLBEZ",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "STLST",
+      "description": "BOM status",
+      "data_element": "STLST",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STLNR",
+      "description": "Bill of material",
+      "data_element": "STNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SDATV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SBMNG",
+      "description": "Base quantity",
+      "data_element": "BASMN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SBMEH",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SAENR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAL",
+      "description": "Alternative BOM",
+      "data_element": "STALT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAN",
+      "description": "BOM Usage",
+      "data_element": "STLAN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SLSVN",
+      "description": "From Lot Size",
+      "data_element": "LOSVN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SLSBS",
+      "description": "To Lot Size",
+      "data_element": "LOSBS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AUFLD",
+      "description": "Date of BOM Explosion/Routing Transfer",
+      "data_element": "CO_AUFLD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DISPO",
+      "description": "MRP controller for the order",
+      "data_element": "CO_DISPO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FEVOR",
+      "description": "Production Supervisor",
+      "data_element": "FEVOR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FHORI",
+      "description": "Scheduling Margin Key for Floats",
+      "data_element": "FHORI",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TERKZ",
+      "description": "Scheduling type",
+      "data_element": "TERMKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REDKZ",
+      "description": "Reduction indicator for scheduling",
+      "data_element": "REDKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "APRIO",
+      "description": "Order priority",
+      "data_element": "CO_APRIO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NTZUE",
+      "description": "Superior network number",
+      "data_element": "NETZ_UEBER",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VORUE",
+      "description": "Superior activity",
+      "data_element": "VORG_UEBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PROFID",
+      "description": "Network profile",
+      "data_element": "PROFIDNZPL",
+      "type": "CHAR",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "VORGZ",
+      "description": "Float before production (in days)",
+      "data_element": "VORGZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SICHZ",
+      "description": "Float after production (in days)",
+      "data_element": "SICHZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FREIZ",
+      "description": "Release period (in days)",
+      "data_element": "FREIZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "UPTER",
+      "description": "Indicator: Change to Scheduled Dates",
+      "data_element": "CO_UPTER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEDID",
+      "description": "ID of the capacity requirements record",
+      "data_element": "BEDID",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PRONR",
+      "description": "Project definition",
+      "data_element": "PS_PSP_PRO",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEHL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MZAEHL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZKRIZ",
+      "description": "Counter for additional criteria",
+      "data_element": "DZKRIZ",
+      "type": "NUMC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "PRUEFLOS",
+      "description": "Inspection Lot Number",
+      "data_element": "QPLOS",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KLVARP",
+      "description": "Costing variant for planned costs",
+      "data_element": "KALKVARPLN",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KLVARI",
+      "description": "Costing variant for actual costs",
+      "data_element": "KALKVARIST",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RGEKZ",
+      "description": "Indicator: Backflushing for order",
+      "data_element": "CO_RGEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLART",
+      "description": "Basis for scheduling",
+      "data_element": "PS_PLART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLG_AOB",
+      "description": "Indicator: relationships",
+      "data_element": "FLG_AOB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLG_ARBEI",
+      "description": "Indicator: Default value work is relevant",
+      "data_element": "FLG_ARBEI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GLTPP",
+      "description": "Finish date (forecast)",
+      "data_element": "CO_GLTPP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GSTPP",
+      "description": "Forecast start date",
+      "data_element": "CO_GSTPP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GLTPS",
+      "description": "Scheduled forecast finish",
+      "data_element": "CO_GLTPS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GSTPS",
+      "description": "Scheduled forecast start",
+      "data_element": "CO_GSTPS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FTRPS",
+      "description": "Scheduled release date (forecast)",
+      "data_element": "CO_FTRPS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RDKZP",
+      "description": "Reduction indicator for scheduling (forecast)",
+      "data_element": "REDKZP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TRKZP",
+      "description": "Scheduling type (forecast)",
+      "data_element": "TERMKZP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RUECK",
+      "description": "Completion confirmation number for the operation",
+      "data_element": "CO_RUECK",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RMZHL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IGMNG",
+      "description": "Yield confirmed from order confirmation",
+      "data_element": "CO_IGMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "RATID",
+      "description": "ID of the capacity requirements record",
+      "data_element": "BEDID",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "GROID",
+      "description": "ID of the capacity requirements record",
+      "data_element": "BEDID",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "GLUZS",
+      "description": "Scheduled finish time",
+      "data_element": "CO_GLUZS",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GSUZS",
+      "description": "Scheduled Start (Time)",
+      "data_element": "CO_GSUZS",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "REVLV",
+      "description": "Revision Level",
+      "data_element": "REVLV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RSHTY",
+      "description": "Object types of the CIM resource",
+      "data_element": "CR_OBJTY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RSHID",
+      "description": "Object ID of the resource",
+      "data_element": "CR_OBJID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RSNTY",
+      "description": "Object types of the CIM resource",
+      "data_element": "CR_OBJTY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RSNID",
+      "description": "Object ID of the resource",
+      "data_element": "CR_OBJID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NAUTERM",
+      "description": "Indicator: Do not schedule automatically",
+      "data_element": "CO_NAUTERM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NAUCOST",
+      "description": "Indicator: Do not cost automatically",
+      "data_element": "CO_NAUCOST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STUFE",
+      "description": "Level (in multi-level BOM explosions)",
+      "data_element": "HISTU",
+      "type": "DEC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WEGXX",
+      "description": "Path (for multi-level BOM explosions)",
+      "data_element": "WEGXX",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VWEGX",
+      "description": "Path (for multi-level BOM explosions)",
+      "data_element": "WEGXX",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ARSNR",
+      "description": "Number of Reservation/Dependent Requirement",
+      "data_element": "RSNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ARSPS",
+      "description": "Order Item Number",
+      "data_element": "CO_POSNR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MAUFNR",
+      "description": "Number of superior order",
+      "data_element": "MAUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LKNOT",
+      "description": "Left node in collective order",
+      "data_element": "CO_LKNOT",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "RKNOT",
+      "description": "Right node of a collective order",
+      "data_element": "CO_RKNOT",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PRODNET",
+      "description": "Indicator: Order is part of collective order",
+      "data_element": "CO_PRODNET",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IASMG",
+      "description": "Scrap confirmed for order",
+      "data_element": "CO_IASMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ABARB",
+      "description": "Confirmation: Degree of processing",
+      "data_element": "CO_ABARB",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNT",
+      "description": "Number of superior network",
+      "data_element": "CO_TEILNET",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPT",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZT",
+      "description": "General counter for order",
+      "data_element": "CO_APLZL",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NO_DISP",
+      "description": "Effective for Materials Planning",
+      "data_element": "NO_DISP_PLUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CSPLIT",
+      "description": "Apportionment Structure",
+      "data_element": "CSPLIT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CY_SEQNR",
+      "description": "Seq. number order",
+      "data_element": "CY_SEQNR",
+      "type": "NUMC",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "BREAKS",
+      "description": "Indicator:  Scheduling allowing for breaks",
+      "data_element": "BREAKS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VORGZ_TRM",
+      "description": "Scheduled float before production in days",
+      "data_element": "VORGZ_TRM",
+      "type": "DEC",
+      "length": "6",
+      "decimals": "3"
+    },
+    {
+      "name": "SICHZ_TRM",
+      "description": "Scheduled float after production in days",
+      "data_element": "SICHZ_TRM",
+      "type": "DEC",
+      "length": "6",
+      "decimals": "3"
+    },
+    {
+      "name": "TRMDT",
+      "description": "Date of the last scheduling",
+      "data_element": "TRMDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GLUZP",
+      "description": "Basic finish (time)",
+      "data_element": "CO_GLUZP",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GSUZP",
+      "description": "Basic start time",
+      "data_element": "CO_GSUZP",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GSUZI",
+      "description": "Actual start time",
+      "data_element": "CO_GSUZI",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GEUZI",
+      "description": "Confirmed order finish (time)",
+      "data_element": "CO_GEUZI",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GLUPP",
+      "description": "Forecast finish (time)",
+      "data_element": "CO_GLUPP",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GSUPP",
+      "description": "Forecast start (time)",
+      "data_element": "CO_GSUPP",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GLUPS",
+      "description": "Scheduled forecast finish time",
+      "data_element": "CO_GLUPS",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "GSUPS",
+      "description": "Scheduled start time (Forecast)",
+      "data_element": "CO_GSUPS",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CHSCH",
+      "description": "Search procedure for batch determination",
+      "data_element": "KALSMA_CH",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPT_VORGZ",
+      "description": "Float (bef. production) remaining after finite scheduling",
+      "data_element": "KAPT_VORGZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPT_SICHZ",
+      "description": "Remaining float after finite scheduling",
+      "data_element": "KAPT_SICHZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LEAD_AUFNR",
+      "description": "Leading order in current processing",
+      "data_element": "CO_LAUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PNETSTARTD",
+      "description": "Outline start of collective network (date)",
+      "data_element": "CO_PSTARTD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PNETSTARTT",
+      "description": "Start time of a collective order",
+      "data_element": "CO_PSTARTT",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PNETENDD",
+      "description": "Outline finish of collective order (date)",
+      "data_element": "CO_PENDD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PNETENDT",
+      "description": "Outline finish time",
+      "data_element": "CO_PENDT",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KBED",
+      "description": "Ind: do not create capacity requirements",
+      "data_element": "KBED_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KKALKR",
+      "description": "Indicator: Components will not be costed",
+      "data_element": "COMP_CALC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SFCPF",
+      "description": "Production Scheduling Profile",
+      "data_element": "CO_PRODPRF",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RMNGA",
+      "description": "Total confirmed rework quantity",
+      "data_element": "RMNGA",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "GSBTR",
+      "description": "Overall commitment date",
+      "data_element": "CO_GSBTR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VFMNG",
+      "description": "Committed quantity for order acc. to ATP check components",
+      "data_element": "CO_VFMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "NOPCOST",
+      "description": "Do not calculate planned costs for order",
+      "data_element": "CO_NOPCOST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NETZKONT",
+      "description": "Indicator for the account assignment of a network(hdr/act.)",
+      "data_element": "NETZKONT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATRKZ",
+      "description": "Request ID",
+      "data_element": "ATRKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJTYPE",
+      "description": "Change indicator",
+      "data_element": "OCM_OBJ_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CH_PROC",
+      "description": "Process that has lead to the change of an object",
+      "data_element": "OCM_CH_PROC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPVERSA",
+      "description": "Version of Available Capacity",
+      "data_element": "KAPVERSA",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "COLORDPROC",
+      "description": "Collective order with/without automatic goods movement",
+      "data_element": "CO_COLORDPRC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZERB",
+      "description": "Indicator: Project summarization via master data charact.",
+      "data_element": "PS_KZERB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CONF_KEY",
+      "description": "Identical object",
+      "data_element": "CC_CONF_KEY",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ST_ARBID",
+      "description": "Object ID",
+      "data_element": "OBJEKTID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VSNMR_V",
+      "description": "Sales document version number",
+      "data_element": "VSNMR_V",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "TERHW",
+      "description": "Scheduling note from order scheduling",
+      "data_element": "TERHW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPLSTAT",
+      "description": "Status of an order in a split hierarchy",
+      "data_element": "SPLIT_STAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "COSTUPD",
+      "description": "Costs are updated",
+      "data_element": "CN_COSTUPD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAX_GAMNG",
+      "description": "Maximum Value of Total Order Quantity After Distribution",
+      "data_element": "CO_MES_MAX_GAMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MES_ROUTINGID",
+      "description": "Key of a Routing from an ME System",
+      "data_element": "CO_MES_INT_ROUTINGID",
+      "type": "CHAR",
+      "length": "64",
+      "decimals": "0"
+    },
+    {
+      "name": "ADPSP",
+      "description": "PM/PS Reference Element",
+      "data_element": "ADCOMPARE",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "RMANR",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR_RMA",
+      "description": "Item number of the SD document",
+      "data_element": "POSNR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNV_RMA",
+      "description": "Item number of the SD document",
+      "data_element": "POSNR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CFB_MAXLZ",
+      "description": "Maximum Storage Period",
+      "data_element": "MAXLZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "CFB_LZEIH",
+      "description": "Unit for maximum storage period",
+      "data_element": "LZEIH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CFB_ADTDAYS",
+      "description": "Additional Days",
+      "data_element": "CFB_ADTDAYS",
+      "type": "DEC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CFB_DATOFM",
+      "description": "Date of Manufacture",
+      "data_element": "CFB_DATOFM",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CFB_BBDPI",
+      "description": "Best-Before Date (BBD)/ Shelf Life Expiration Date (SLED)",
+      "data_element": "CFB_BBD_PPPI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYP",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MILL_RATIO",
+      "description": "Factor for Quantity-Based Settlement",
+      "data_element": "MILL_RATIO",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BMEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BMENGE",
+      "description": "Base quantity",
+      "data_element": "BASMN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MILL_OC_ZUSKZ",
+      "description": "Combination Indicator",
+      "data_element": "MILL_OC_ZUSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The AFKO table is the header table for production orders in the SAP system. It contains general information, such as the order number, order type, and order status. The table also contains information about the material being produced, the quantity being produced, and the start and end dates of the production order. The AFKO table is used by a variety of SAP modules, including Production Planning (PP), Materials Management (MM), and Sales and Distribution (SD). The table is also used by a number of third-party applications.",
+    "timestamp": "2025-02-13T13:40:12.725636",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

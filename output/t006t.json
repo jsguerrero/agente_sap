@@ -1,0 +1,78 @@
+{
+  "name": "T006T",
+  "description": "Dimension Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIMID",
+      "description": "Dimension key",
+      "data_element": "DIMID",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TXDIM",
+      "description": "Dimension text",
+      "data_element": "TXDIM",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T006T",
+      "field": "DIMID",
+      "foreign_key_table": "T006T",
+      "foreign_key_field": "DIMID",
+      "check_table": "T006D",
+      "check_field": "Dimensions"
+    },
+    {
+      "table": "T006T",
+      "field": "DIMID",
+      "foreign_key_table": "T006T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T006D",
+      "check_field": "Dimensions"
+    },
+    {
+      "table": "T006T",
+      "field": "MANDT",
+      "foreign_key_table": "T006T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T006T",
+      "field": "SPRAS",
+      "foreign_key_table": "T006T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The purpose of the T006T table is to store dimension texts in different languages. It is related to the T006D table (Dimensions) through the DIMID field, and to the T000 table (Clients) and T002 table (Language Keys) through the MANDT and SPRAS fields respectively. Common use cases include accessing dimension descriptions in different languages for reporting or display purposes.",
+    "timestamp": "2025-02-13T13:42:35.614182",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

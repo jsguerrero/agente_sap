@@ -1,0 +1,125 @@
+{
+  "name": "SETHANAHIER0106",
+  "description": "Hierarchy table for Profit Center Groups",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "HIERBASE",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "SUCC",
+      "description": "Node number in hierarchy table",
+      "data_element": "SETHANANODE",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRED",
+      "description": "Node number in hierarchy table",
+      "data_element": "SETHANANODE",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HLEVEL",
+      "description": "Level of the entry",
+      "data_element": "SETLEV",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SETID",
+      "description": "Identification of a set",
+      "data_element": "SETID",
+      "type": "CHAR",
+      "length": "34",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "VCOUNT",
+      "description": "Counter: Value table",
+      "data_element": "SETCNTVAL",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SEARCHFLD",
+      "description": "Search help field for set",
+      "data_element": "SETSEARCH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OLD_LINE",
+      "description": "Set line counter",
+      "data_element": "SETLINE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUE_FROM",
+      "description": "From Value",
+      "data_element": "SETVALMIN",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUE_TO",
+      "description": "To value",
+      "data_element": "SETVALMAX",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The SETHANAHIER0106 table is a hierarchy table that defines the structure of profit center groups within an SAP system. It stores the relationships between profit center groups, allowing for the hierarchical organization and management of these groups. Common use cases include:\n- Defining the profit center group structure for an organization\n- Assigning profit centers to groups\n- Reporting on profit center group performance and profitability",
+    "timestamp": "2025-02-13T13:42:55.268586",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "name": "KSML",
+  "description": "Characteristics of a Class",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CLINT",
+      "description": "Internal Class Number",
+      "data_element": "CLINT",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Item number",
+      "data_element": "KPOSNR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADZHL",
+      "description": "Internal counter for archiving objects via engin. chg. mgmt",
+      "data_element": "ADZHL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABTEI",
+      "description": "Organizational Area",
+      "data_element": "ABTEILUNG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DINKB",
+      "description": "Code letter",
+      "data_element": "DINKENNBU",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKU",
+      "description": "Characteristic origin",
+      "data_element": "HERKUNFT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "IMERK",
+      "description": "Internal characteristic",
+      "data_element": "ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OMERK",
+      "description": "Object-Dependent Characteristic",
+      "data_element": "ATINO",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KLART",
+      "description": "Class Type",
+      "data_element": "KLASSENART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RELEV",
+      "description": "Relevancy Indicator",
+      "data_element": "RELEVANZKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHV",
+      "description": "Indicator: changed with new effectivity",
+      "data_element": "KZEFFE",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LKENZ",
+      "description": "Deletion Indicator",
+      "data_element": "LKENZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VMERK",
+      "description": "New characteristic without values",
+      "data_element": "VMERK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DPLEN",
+      "description": "Field output length",
+      "data_element": "DPLENG",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OFFST",
+      "description": "Offset in work area",
+      "data_element": "OFFSET",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BLLIN",
+      "description": "Line Number in Block",
+      "data_element": "BLZEIL",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DPTXT",
+      "description": "Display Text Instead of Content",
+      "data_element": "ANZTEXT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CUSTR",
+      "description": "Text, 40 Characters Long",
+      "data_element": "TEXT40",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "JUSTR",
+      "description": "Display right-justified",
+      "data_element": "RECHTS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "COLOR",
+      "description": "Color",
+      "data_element": "FARBE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INTSF",
+      "description": "Highlighted",
+      "data_element": "INTSF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INVER",
+      "description": "Inverse",
+      "data_element": "INVER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CKBOX",
+      "description": "Checkbox",
+      "data_element": "CKBOX",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INPUT",
+      "description": "Entry",
+      "data_element": "EINGAB",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AMERK",
+      "description": "Relevancy indicator (print, search, display)",
+      "data_element": "RELEVKZ",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MKENN",
+      "description": "Standard Code Letter",
+      "data_element": "DINKENN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "Purpose: Store characteristics for classification objects. Common use cases: \n- Maintaining the characteristics of classification objects\n- Linking classification objects to characteristics",
+    "timestamp": "2025-02-13T13:41:58.651099",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

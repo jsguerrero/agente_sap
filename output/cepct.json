@@ -1,0 +1,158 @@
+{
+  "name": "CEPCT",
+  "description": "Texts for Profit Center Master Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATBI",
+      "description": "Valid To Date",
+      "data_element": "DATBI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KTEXT",
+      "description": "General Name",
+      "data_element": "KTEXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "LTEXT",
+      "description": "Long Text",
+      "data_element": "LTEXT",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MCTXT",
+      "description": "Search term for matchcode search",
+      "data_element": "MCPCT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "CEPCT",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "KOKRS",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "MANDT",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "PRCTR",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "DATBI",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "MANDT",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "CEPCT",
+      "field": "PRCTR",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "MANDT",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "PRCTR",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "PRCTR",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "PRCTR",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "DATBI",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "PRCTR",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "KOKRS",
+      "check_table": "CEPC",
+      "check_field": "Profit Center Master Data Table"
+    },
+    {
+      "table": "CEPCT",
+      "field": "SPRAS",
+      "foreign_key_table": "CEPCT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The CEPCT table stores text-related information for profit center master data, including general names, long texts, and search terms. It is linked to the CEPC table via foreign keys, providing a comprehensive view of profit center data. **Common Use Cases:** * Retrieving profit center texts for reporting purposes\n* Searching for profit centers based on their text attributes\n* Maintaining language-specific profit center descriptions",
+    "timestamp": "2025-02-13T13:43:27.638841",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

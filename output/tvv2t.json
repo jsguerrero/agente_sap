@@ -1,0 +1,78 @@
+{
+  "name": "TVV2T",
+  "description": "Customer group 2: Description",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR2",
+      "description": "Customer group 2",
+      "data_element": "KVGR2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BEZEI",
+      "description": "Description",
+      "data_element": "BEZEI20",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TVV2T",
+      "field": "KVGR2",
+      "foreign_key_table": "TVV2T",
+      "foreign_key_field": "MANDT",
+      "check_table": "TVV2",
+      "check_field": "Customer Group 2"
+    },
+    {
+      "table": "TVV2T",
+      "field": "KVGR2",
+      "foreign_key_table": "TVV2T",
+      "foreign_key_field": "KVGR2",
+      "check_table": "TVV2",
+      "check_field": "Customer Group 2"
+    },
+    {
+      "table": "TVV2T",
+      "field": "MANDT",
+      "foreign_key_table": "TVV2T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "TVV2T",
+      "field": "SPRAS",
+      "foreign_key_table": "TVV2T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The TVV2T table in SAP stores descriptions for customer group 2, providing multilingual support. It is related to the TVV2 and T000 tables through customer group 2 and client fields, respectively, and to the T002 table through the language key field. Common use cases include retrieving customer group 2 descriptions in various languages and managing customer group translations.",
+    "timestamp": "2025-02-13T13:44:00.034905",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

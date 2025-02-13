@@ -1,0 +1,294 @@
+{
+  "name": "T023",
+  "description": "Material Groups",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL",
+      "description": "Material Group",
+      "data_element": "MATKL",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LREF3",
+      "description": "Material group-related supply relat. between plants /DEACT.",
+      "data_element": "LREF3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WWGDA",
+      "description": "Material group reference material",
+      "data_element": "WWGDA",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WWGPA",
+      "description": "Material group material",
+      "data_element": "WWGPA",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ABTNR",
+      "description": "Department number",
+      "data_element": "ABTNR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BEGRU",
+      "description": "Authorization Group",
+      "data_element": "BEGRU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GEWEI",
+      "description": "Default unit of weight in the material master",
+      "data_element": "GEWEI_V",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1BNBM",
+      "description": "Brazilian NCM Code",
+      "data_element": "J_1BNBMCO1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BKLAS",
+      "description": "Valuation Class",
+      "data_element": "BKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKWSL",
+      "description": "Purchasing Value Key",
+      "data_element": "EKWSL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLKL",
+      "description": "Default: Asset Class for Creation of Asset",
+      "data_element": "MEVAK",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DEF_SCHDSC",
+      "description": "Event Scenario",
+      "data_element": "EXP_SCHDSC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PRICE_GROUP",
+      "description": "Price Level Group",
+      "data_element": "PRICE_GROUP",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T023",
+      "field": "ABTNR",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "TSAB",
+      "check_field": "Contact persons: standard departments"
+    },
+    {
+      "table": "T023",
+      "field": "ABTNR",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "ABTNR",
+      "check_table": "TSAB",
+      "check_field": "Contact persons: standard departments"
+    },
+    {
+      "table": "T023",
+      "field": "ANLKL",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "ANKA",
+      "check_field": "Asset classes:  general data"
+    },
+    {
+      "table": "T023",
+      "field": "ANLKL",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "ANLKL",
+      "check_table": "ANKA",
+      "check_field": "Asset classes:  general data"
+    },
+    {
+      "table": "T023",
+      "field": "BKLAS",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "T025",
+      "check_field": "Valuation Classes"
+    },
+    {
+      "table": "T023",
+      "field": "BKLAS",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "BKLAS",
+      "check_table": "T025",
+      "check_field": "Valuation Classes"
+    },
+    {
+      "table": "T023",
+      "field": "EKWSL",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "T405",
+      "check_field": "Purchasing Value Key"
+    },
+    {
+      "table": "T023",
+      "field": "EKWSL",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "EKWSL",
+      "check_table": "T405",
+      "check_field": "Purchasing Value Key"
+    },
+    {
+      "table": "T023",
+      "field": "GEWEI",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "T006",
+      "check_field": "Units of Measurement"
+    },
+    {
+      "table": "T023",
+      "field": "GEWEI",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "GEWEI",
+      "check_table": "T006",
+      "check_field": "Units of Measurement"
+    },
+    {
+      "table": "T023",
+      "field": "J_1BNBM",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "T604F",
+      "check_field": "Import Processing: Control Code"
+    },
+    {
+      "table": "T023",
+      "field": "J_1BNBM",
+      "foreign_key_table": "'BR'",
+      "foreign_key_field": "",
+      "check_table": "T604F",
+      "check_field": "Import Processing: Control Code"
+    },
+    {
+      "table": "T023",
+      "field": "J_1BNBM",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "J_1BNBM",
+      "check_table": "T604F",
+      "check_field": "Import Processing: Control Code"
+    },
+    {
+      "table": "T023",
+      "field": "MANDT",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T023",
+      "field": "SPART",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "TSPA",
+      "check_field": "Organizational Unit: Sales Divisions"
+    },
+    {
+      "table": "T023",
+      "field": "SPART",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "SPART",
+      "check_table": "TSPA",
+      "check_field": "Organizational Unit: Sales Divisions"
+    },
+    {
+      "table": "T023",
+      "field": "WWGDA",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    },
+    {
+      "table": "T023",
+      "field": "WWGDA",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "WWGDA",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    },
+    {
+      "table": "T023",
+      "field": "WWGPA",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "MANDT",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    },
+    {
+      "table": "T023",
+      "field": "WWGPA",
+      "foreign_key_table": "T023",
+      "foreign_key_field": "WWGPA",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. Master table for material groups, providing classification and organizational data.\n2. Interconnected with tables for clients, sales divisions, valuation classes, purchasing value keys, and material masters.\n3. Used for material management, procurement, and asset accounting.",
+    "timestamp": "2025-02-13T13:43:02.783928",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

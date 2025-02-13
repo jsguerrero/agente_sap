@@ -1,0 +1,573 @@
+{
+  "name": "CABN",
+  "description": "Characteristic",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATINN",
+      "description": "Internal characteristic",
+      "data_element": "ATINN",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ADZHL",
+      "description": "Internal counter for archiving objects via engin. chg. mgmt",
+      "data_element": "ADZHL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ATNAM",
+      "description": "Characteristic Name",
+      "data_element": "ATNAM",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATIDN",
+      "description": "Object identification",
+      "data_element": "ATIDN",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFOR",
+      "description": "Data type of characteristic",
+      "data_element": "ATFOR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZST",
+      "description": "Number of Characters",
+      "data_element": "ANZST",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZDZ",
+      "description": "Number of Decimal Places",
+      "data_element": "ANZDZ",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ATVOR",
+      "description": "Value with Plus or Minus Sign",
+      "data_element": "ATVOR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATSCH",
+      "description": "Value with template",
+      "data_element": "ATSCH",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATKLE",
+      "description": "Case Sensitive",
+      "data_element": "ATKLE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATKON",
+      "description": "Name of Conversion Routine",
+      "data_element": "ATKON",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ATEND",
+      "description": "Aggregating characteristic",
+      "data_element": "ATEND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATAEN",
+      "description": "Balance characteristic",
+      "data_element": "ATAEN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATKLA",
+      "description": "Chars Group",
+      "data_element": "ATKLA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ATERF",
+      "description": "Entry Required",
+      "data_element": "ATERF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATEIN",
+      "description": "Single value",
+      "data_element": "ATEIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATAME",
+      "description": "Multilingual characteristic",
+      "data_element": "ATAME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATWME",
+      "description": "Values in more than one language",
+      "data_element": "ATWME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSEHI",
+      "description": "Unit of Measurement",
+      "data_element": "MSEHI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ATDIM",
+      "description": "Exponent display",
+      "data_element": "ATDIM",
+      "type": "INT2",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ATGLO",
+      "description": "Indicator: Whether You Can Make an Entry for Ref. Chars",
+      "data_element": "ATGLO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATGLA",
+      "description": "Indicator: restrictable characteristic",
+      "data_element": "ATGLA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATINT",
+      "description": "Interval Values Allowed",
+      "data_element": "ATINT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATUNS",
+      "description": "Entry Required in Configuration",
+      "data_element": "ATUNS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATSON",
+      "description": "Indicator: Additional Values",
+      "data_element": "ATSON",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATTAB",
+      "description": "Table Name",
+      "data_element": "ATTAB",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFEL",
+      "description": "Field Name",
+      "data_element": "ATFEL",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATTEI",
+      "description": "Field Name for Unit",
+      "data_element": "ATTEI",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATPRT",
+      "description": "Check table",
+      "data_element": "ATPRT",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATPRR",
+      "description": "Name of Check Report Program",
+      "data_element": "ATPRR",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "ATPRF",
+      "description": "Function Module for Checking Values",
+      "data_element": "ATPRF",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ATWRD",
+      "description": "Display Allowed Values Defined in Characteristic",
+      "data_element": "ATWRD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFOD",
+      "description": "Unformatted Entry Control",
+      "data_element": "ATFOD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATHIE",
+      "description": "Explode value hierarchy",
+      "data_element": "ATHIE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATDEX",
+      "description": "Exponent Display Format",
+      "data_element": "ATDEX",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATFGA",
+      "description": "Indicator: formatted editing",
+      "data_element": "ATFGA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATVSC",
+      "description": "Indicator: Display Template When Assigning Values",
+      "data_element": "ATVSC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANAME",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ADATU",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VDATU",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ATXAC",
+      "description": "Indicator for Multiple Table Assignments",
+      "data_element": "ATXAC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATYAC",
+      "description": "Indicator: Align Characteristic Values to the Right",
+      "data_element": "ATYAC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATMST",
+      "description": "Status of a characteristic",
+      "data_element": "ATMST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATWSO",
+      "description": "Display of Allowed Values",
+      "data_element": "ATWSO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATBSO",
+      "description": "Display of values assigned to a characteristic",
+      "data_element": "ATBSO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHV",
+      "description": "Technical status from",
+      "data_element": "TECHV",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LKENZ",
+      "description": "Deletion Indicator",
+      "data_element": "LKENZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATWRI",
+      "description": "Indicator: Keep Sequence in Value Assignment",
+      "data_element": "ATWRI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKAR",
+      "description": "Document Type",
+      "data_element": "DOKAR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKNR",
+      "description": "Document number",
+      "data_element": "DOKNR",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKVR",
+      "description": "Document Version",
+      "data_element": "DOKVR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DOKTL",
+      "description": "Document Part",
+      "data_element": "DOKTL_D",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KNOBJ",
+      "description": "Number of Object with Assigned Dependencies",
+      "data_element": "KNOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ATINP",
+      "description": "No Entry Can be Made for Characteristic",
+      "data_element": "ATINP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATVIE",
+      "description": "Characteristic Not to be Displayed",
+      "data_element": "ATVIE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KATALOGART",
+      "description": "Catalog",
+      "data_element": "QKATART_CL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSWAHLMGE",
+      "description": "Selected Set",
+      "data_element": "QAUSWAHLMG_CL",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ATHKA",
+      "description": "Indicator: display node in a value hierarchy",
+      "data_element": "ATHKA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATHKO",
+      "description": "Indicator: nodes are selectable",
+      "data_element": "ATHKO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLINT",
+      "description": "Internal Class Number",
+      "data_element": "CLINT",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ATTOL",
+      "description": "Indicator for Allowed Tolerances",
+      "data_element": "ATTOL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATZUS",
+      "description": "Indicator: Values Can Be Assigned to Ref. Characteristics",
+      "data_element": "ATZUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATVPL",
+      "description": "Relevant to Planning",
+      "data_element": "ATVPL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATAUTH",
+      "description": "Authorization Group for Characteristics Maintenance",
+      "data_element": "ATAUTH",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "COUNTRYGRP",
+      "description": "Characteristic is Country-Dependent",
+      "data_element": "COUNTRYGRP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The CABN table serves as a central repository for the characteristics associated with various objects in the SAP system. It contains detailed information about each characteristic, including its name, type, data format, and other attributes. This information is crucial for defining and managing the characteristics used in the system for data analysis and reporting purposes. **Foreign Key Relationships:** None (based on provided foreign keys) **Common Use Cases:** * Defining and maintaining the characteristics used in the system\n* Extracting characteristics and their values for reporting and analysis\n* Configuring the system to manage characteristics with specific requirements",
+    "timestamp": "2025-02-13T13:43:25.277140",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

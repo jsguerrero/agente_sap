@@ -1,0 +1,301 @@
+{
+  "name": "MKOL",
+  "description": "Special Stocks from Vendor",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Deletion Flag for All Data on a Consignment Stock",
+      "data_element": "LVOKL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LAEDA",
+      "description": "Date of Last Change",
+      "data_element": "LAEDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPERS",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SLABS",
+      "description": "Unrestricted-Use Consignment Stock",
+      "data_element": "KLABS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SINSM",
+      "description": "Consignment Stock in Quality Inspection",
+      "data_element": "KINSM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SEINM",
+      "description": "Restricted-Use Consignment Stock",
+      "data_element": "KEINM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SSPEM",
+      "description": "Blocked Consignment Stock",
+      "data_element": "KSPEM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SVMLA",
+      "description": "Unrestricted-use consignment stock, previous period",
+      "data_element": "KVLAB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SVMIN",
+      "description": "Consignment stock in quality inspection, previous period",
+      "data_element": "KVINS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SVMEI",
+      "description": "Restricted-use consignment stock in the previous period",
+      "data_element": "KVEIN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SVMSP",
+      "description": "Blocked consignment stock, previous period",
+      "data_element": "KVSPE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KZISL",
+      "description": "Physical inventory indicator for whse stock in current year",
+      "data_element": "KZILL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZISQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in current year",
+      "data_element": "KZILQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZISE",
+      "description": "Physical inventory indicator for restricted-use stock",
+      "data_element": "KZILE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZISS",
+      "description": "Physical inventory indicator for blocked stock",
+      "data_element": "KZILS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVSL",
+      "description": "Physical inventory indicator for stock in previous year",
+      "data_element": "KZVLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVSQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+      "data_element": "KZVLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVSE",
+      "description": "Physical inventory ind. for restricted-use stock, prev.pd",
+      "data_element": "KZVLE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVSS",
+      "description": "Phys. inventory indicator for blocked stock in prev. period",
+      "data_element": "KZVLS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MMENG",
+      "description": "Minimum order quantity",
+      "data_element": "MMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AMENG",
+      "description": "Replenishment quantity",
+      "data_element": "AMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KODLL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KOJIN",
+      "description": "Fiscal year of current physical inventory indicator",
+      "data_element": "GJINV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KORUE",
+      "description": "MxxxH rec. already exists for per. before last of Mxxx per.",
+      "data_element": "SBRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The MKOL table stores information about special stocks from vendors. It includes data such as material numbers, plant, storage locations, batch numbers, and special stock indicators. This table is used for managing and tracking special stocks, such as consignment stocks or blocked stocks, and is commonly used in inventory management and logistics processes.",
+    "timestamp": "2025-02-13T13:42:16.026543",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

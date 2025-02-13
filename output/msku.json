@@ -1,0 +1,221 @@
+{
+  "name": "MSKU",
+  "description": "Special Stocks with Customer",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KUSPR",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KULAB",
+      "description": "Valuated Unrestricted-Use Stock",
+      "data_element": "LABST",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KUINS",
+      "description": "Stock in Quality Inspection",
+      "data_element": "INSME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KUVLA",
+      "description": "Valuated unrestricted-use stock in previous period",
+      "data_element": "VMLAB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KUVIN",
+      "description": "Stock in Quality Inspection in Previous Period",
+      "data_element": "VMINS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KUILL",
+      "description": "Physical inventory indicator for whse stock in current year",
+      "data_element": "KZILL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUILQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in current year",
+      "data_element": "KZILQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUVLL",
+      "description": "Physical inventory indicator for stock in previous year",
+      "data_element": "KZVLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUVLQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+      "data_element": "KZVLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUFLL",
+      "description": "Physical inventory indicator for stock in following year",
+      "data_element": "KZFLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUFLQ",
+      "description": "Physical inventory indicator, quality insp.stck, follow.yr.",
+      "data_element": "KZFLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUDLL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KUEIN",
+      "description": "Total Stock of All Restricted Batches",
+      "data_element": "EINME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KUVEI",
+      "description": "Restricted-Use Stock in Previous Period",
+      "data_element": "VMEIN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KUJIN",
+      "description": "Fiscal year of current physical inventory indicator",
+      "data_element": "GJINV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KURUE",
+      "description": "MxxxH rec. already exists for per. before last of Mxxx per.",
+      "data_element": "SBRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KUUML",
+      "description": "Stock in Transfer for Customer Consignment (Plant to Plant)",
+      "data_element": "UMLME_W",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The MSKU table stores information about special customer-specific stock. It is used to track stock at the plant level, including special stock indicators, valuations, and physical inventory statuses. The table does not have any foreign key relationships with other tables. Common use cases include inventory management, stock valuation, and quality control.",
+    "timestamp": "2025-02-13T13:41:20.286786",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

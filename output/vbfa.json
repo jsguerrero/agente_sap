@@ -1,0 +1,357 @@
+{
+  "name": "VBFA",
+  "description": "Sales Document Flow",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELV",
+      "description": "Preceding sales and distribution document",
+      "data_element": "VBELN_VON",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNV",
+      "description": "Preceding item of an SD document",
+      "data_element": "POSNR_VON",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Subsequent sales and distribution document",
+      "data_element": "VBELN_NACH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNN",
+      "description": "Subsequent item of an SD document",
+      "data_element": "POSNR_NACH",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYP_N",
+      "description": "Document category of subsequent document",
+      "data_element": "VBTYP_N",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RFMNG",
+      "description": "Referenced quantity in base unit of measure",
+      "data_element": "RFMNG",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RFWRT",
+      "description": "Reference value",
+      "data_element": "RFWRT",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERS",
+      "description": "Statistics currency",
+      "data_element": "WAERS_V",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYP_V",
+      "description": "Document category of preceding SD document",
+      "data_element": "VBTYP_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLMIN",
+      "description": "Quantity is calculated positively, negatively or not at all",
+      "data_element": "PLMIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAQUI",
+      "description": "ID: MM-WM transfer order confirmed",
+      "data_element": "TAQUI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERZET",
+      "description": "Entry time",
+      "data_element": "ERZET",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BDART",
+      "description": "Requirement type",
+      "data_element": "BDART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PLART",
+      "description": "Planning type",
+      "data_element": "PLART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STUFE",
+      "description": "Level of the document flow record",
+      "data_element": "STUFE_VBFA",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LGNUM",
+      "description": "Warehouse Number / Warehouse Complex",
+      "data_element": "LGNUM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FKTYP",
+      "description": "Billing category",
+      "data_element": "FKTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BRGEW",
+      "description": "Gross weight",
+      "data_element": "BRGEW_15",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "GEWEI",
+      "description": "Weight Unit",
+      "data_element": "GEWEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VOLUM",
+      "description": "Volume",
+      "data_element": "VOLUM_15",
+      "type": "QUAN",
+      "length": "15",
+      "decimals": "3"
+    },
+    {
+      "name": "VOLEH",
+      "description": "Volume unit",
+      "data_element": "VOLEH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FPLNR",
+      "description": "Billing plan number / invoicing plan number",
+      "data_element": "FPLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FPLTR",
+      "description": "Item for billing plan/invoice plan/payment cards",
+      "data_element": "FPLTR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RFMNG_FLO",
+      "description": "Referenced quantity in sales unit (float)",
+      "data_element": "RFMNG_FLTV",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "RFMNG_FLT",
+      "description": "Referenced quantity in base unit of measure (float)",
+      "data_element": "RFMNG_FLT",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "VRKME",
+      "description": "Sales unit",
+      "data_element": "VRKME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ABGES",
+      "description": "Guaranteed (factor between 0 and 1)",
+      "data_element": "ABGES_CM",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SONUM",
+      "description": "Special Stock Number",
+      "data_element": "LVS_SONUM",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBEF",
+      "description": "Indicator Inventory Management active",
+      "data_element": "LVS_KZBEF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NTGEW",
+      "description": "Net Weight",
+      "data_element": "NTGEW",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LOGSYS",
+      "description": "Logical system",
+      "data_element": "LOGSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WBSTA",
+      "description": "Goods movement status",
+      "data_element": "WBSTA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CMETH",
+      "description": "Quantity Conversion Method",
+      "data_element": "OIB_CMETH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MJAHR",
+      "description": "Material Document Year",
+      "data_element": "MJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYPEXT_V",
+      "description": "Extension of SD document category of preceding document",
+      "data_element": "TDD_VBTYP_EXT_V",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYPEXT_N",
+      "description": "Extension of Subsequent SD Document Category",
+      "data_element": "TDD_VBTYP_EXT_N",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of table VBFA is to record sales document flow information, including preceding and subsequent documents, quantities, values, and other data. \n2. It is linked to other tables such as VBAK and VBAP through the fields VBELV, POSNV, VBELN, and POSNN. \n3. Common use cases include tracking the flow of sales documents, analyzing sales performance, and generating reports.",
+    "timestamp": "2025-02-13T13:42:52.819019",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

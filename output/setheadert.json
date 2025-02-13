@@ -1,0 +1,118 @@
+{
+  "name": "SETHEADERT",
+  "description": "Short Description of Sets",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DESCRIPT",
+      "description": "Short description of a set",
+      "data_element": "SETTEXT",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "SETHEADERT",
+      "field": "LANGU",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "LANGU",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "MANDT",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "SETCLASS",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "SETCLASS",
+      "check_table": "SETCLS",
+      "check_field": "Set Classes"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "SETNAME",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "SETCLASS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "SETNAME",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "SUBCLASS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "SETNAME",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "SETNAME",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETHEADERT",
+      "field": "SETNAME",
+      "foreign_key_table": "SETHEADERT",
+      "foreign_key_field": "MANDT",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. This table stores the short descriptions of sets.\n2. It has relationships with the tables SETCLS, SETHEADER, and T000.\n3. This table can be used to retrieve information about sets, such as their names, descriptions, and classes.",
+    "timestamp": "2025-02-13T13:42:39.479118",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

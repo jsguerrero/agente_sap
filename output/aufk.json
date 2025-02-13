@@ -1,0 +1,997 @@
+{
+  "name": "AUFK",
+  "description": "Order master data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUART",
+      "description": "Order Type",
+      "data_element": "AUFART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTYP",
+      "description": "Order category",
+      "data_element": "AUFTYP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "REFNR",
+      "description": "Reference order number",
+      "data_element": "AUFREFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Entered by",
+      "data_element": "AUFERFNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Created on",
+      "data_element": "AUFERFDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Last changed by",
+      "data_element": "AUFAENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Change date for Order Master",
+      "data_element": "AUFAEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KTEXT",
+      "description": "Description",
+      "data_element": "AUFTEXT",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "LTEXT",
+      "description": "Long Text Exists",
+      "data_element": "AUFLTEXT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CCKEY",
+      "description": "Cost collector key",
+      "data_element": "CCKEY",
+      "type": "CHAR",
+      "length": "23",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTV",
+      "description": "Responsible cost center",
+      "data_element": "AUFKOSTV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STORT",
+      "description": "Location",
+      "data_element": "AUFSTORT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SOWRK",
+      "description": "Location plant",
+      "data_element": "AUFSOWRK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ASTKZ",
+      "description": "Identifier for statistical order",
+      "data_element": "AUFSTKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Order Currency",
+      "data_element": "AUFWAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ASTNR",
+      "description": "Order status",
+      "data_element": "AUFASTNR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STDAT",
+      "description": "Date of last status change",
+      "data_element": "AUFSTDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ESTNR",
+      "description": "Status reached so far",
+      "data_element": "AUFESTNR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PHAS0",
+      "description": "Phase \"Order created\"",
+      "data_element": "AUFPHAS0",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PHAS1",
+      "description": "Phase \"Order released\"",
+      "data_element": "AUFPHAS1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PHAS2",
+      "description": "Phase \"order completed\"",
+      "data_element": "AUFPHAS2",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PHAS3",
+      "description": "Phase \"order closed\"",
+      "data_element": "AUFPHAS3",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PDAT1",
+      "description": "Planned release date",
+      "data_element": "AUFPDAT1",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PDAT2",
+      "description": "Planned completion date",
+      "data_element": "AUFPDAT2",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PDAT3",
+      "description": "Planned closing date",
+      "data_element": "AUFPDAT3",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IDAT1",
+      "description": "Release date",
+      "data_element": "AUFIDAT1",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IDAT2",
+      "description": "Technical completion date",
+      "data_element": "AUFIDAT2",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IDAT3",
+      "description": "Close date",
+      "data_element": "AUFIDAT3",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJID",
+      "description": "Object ID",
+      "data_element": "CCOBJID",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VOGRP",
+      "description": "Group of disallowed transactions",
+      "data_element": "AUFSPSET",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEKZ",
+      "description": "Deletion flag",
+      "data_element": "AUFLOEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PLGKZ",
+      "description": "Identifier for planning with line items",
+      "data_element": "PLGKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KVEWE",
+      "description": "Usage of the condition table",
+      "data_element": "KVEWE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPPL",
+      "description": "Application",
+      "data_element": "KAPPL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Costing Sheet",
+      "data_element": "AUFKALSM",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSCHL",
+      "description": "Overhead key",
+      "data_element": "AUFZSCHL",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ABKRS",
+      "description": "Processing group",
+      "data_element": "AUFABKRS",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTAR",
+      "description": "Settlement cost element",
+      "data_element": "AUFKSTAR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost center for basic settlement",
+      "data_element": "AUFKOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKNR",
+      "description": "G/L account for basic settlement",
+      "data_element": "AUFSAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNM",
+      "description": "Allocation set",
+      "data_element": "AUFSETNM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CYCLE",
+      "description": "Cost center to which costs are actually posted",
+      "data_element": "ST_KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SDATE",
+      "description": "Start Date",
+      "data_element": "SDATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SEQNR",
+      "description": "Sequence number",
+      "data_element": "AUFSEQNR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "USER0",
+      "description": "Applicant",
+      "data_element": "AUFUSER0",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "USER1",
+      "description": "Applicant's telephone number",
+      "data_element": "AUFUSER1",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "USER2",
+      "description": "Person responsible",
+      "data_element": "AUFUSER2",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "USER3",
+      "description": "Telephone number of person in charge",
+      "data_element": "AUFUSER3",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "USER4",
+      "description": "Estimated total costs of order",
+      "data_element": "AUFUSER4",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "USER5",
+      "description": "Application Date",
+      "data_element": "AUFUSER5",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USER6",
+      "description": "Department",
+      "data_element": "AUFUSER6",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "USER7",
+      "description": "Work Start",
+      "data_element": "AUFUSER7",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USER8",
+      "description": "End of Work",
+      "data_element": "AUFUSER8",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USER9",
+      "description": "Identifier for work permit issued",
+      "data_element": "AUFUSER9",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSPEL",
+      "description": "Work breakdown structure element (WBS element)",
+      "data_element": "PS_PSP_ELE",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AWSLS",
+      "description": "Variance Key",
+      "data_element": "AWSLS",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ABGSL",
+      "description": "Results Analysis Key",
+      "data_element": "ABGR_SCHL",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "FUNC_AREA",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "SCOPE",
+      "description": "Object Class",
+      "data_element": "SCOPE_CV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PLINT",
+      "description": "Indicator for Integrated Planning",
+      "data_element": "PLINT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KDAUF",
+      "description": "Sales Order Number",
+      "data_element": "KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDPOS",
+      "description": "Item Number in Sales Order",
+      "data_element": "KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFEX",
+      "description": "External order number",
+      "data_element": "AUFEX",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "IVPRO",
+      "description": "Investment measure profile",
+      "data_element": "IM_PROFIL",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYSTEM",
+      "description": "Logical System",
+      "data_element": "LOGSYSTEM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FLG_MLTPS",
+      "description": "Order with multiple items",
+      "data_element": "CO_MLTPS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABUKR",
+      "description": "Requesting company code",
+      "data_element": "IM_ABUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AKSTL",
+      "description": "Requesting cost center",
+      "data_element": "PS_AKSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SIZECL",
+      "description": "Scale of investment objects",
+      "data_element": "IM_SIZECL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "IZWEK",
+      "description": "Reason for investment",
+      "data_element": "IZWEK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "UMWKZ",
+      "description": "Reason for environmental investment",
+      "data_element": "AM_UMWKZ",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTEMPF",
+      "description": "Indicator: Direct cost collector",
+      "data_element": "CO_KSTEMPF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZSCHM",
+      "description": "Interest Profile for Project/Order Interest Calculation",
+      "data_element": "PS_ZSCHM",
+      "type": "CHAR",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "PKOSA",
+      "description": "Cost collector for production process PROCNR",
+      "data_element": "PKOSA_D",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANFAUFNR",
+      "description": "Requesting order",
+      "data_element": "AUFANFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PROCNR",
+      "description": "Production Process",
+      "data_element": "CKML_F_PROCNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PROTY",
+      "description": "Process Category (Procurement/Consumption)",
+      "data_element": "CKML_PROZESS_TYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RSORD",
+      "description": "Refurbishment order indicator (PM)",
+      "data_element": "RSORD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEMOT",
+      "description": "Accounting Indicator",
+      "data_element": "BEMOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRNRA",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERFZEIT",
+      "description": "Time created",
+      "data_element": "CO_INS_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AEZEIT",
+      "description": "Changed at",
+      "data_element": "CO_CHG_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CSTG_VRNT",
+      "description": "Costing Variant",
+      "data_element": "CK_KLVAR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "COSTESTNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VERAA_USER",
+      "description": "Person Responsible for CO Internal Order",
+      "data_element": "VERAA_USER",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "DUMMY_CI_AUFK",
+      "description": "Single-Character Indicator",
+      "data_element": "CHAR1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Joint Venture",
+      "data_element": "JV_NAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RECID",
+      "description": "Recovery Indicator",
+      "data_element": "JV_RECIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ETYPE",
+      "description": "Equity type",
+      "data_element": "JV_ETYPE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OTYPE",
+      "description": "Joint Venture Object Type",
+      "data_element": "JV_OTYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "JV_JIBCL",
+      "description": "JIB/JIBE Class",
+      "data_element": "JV_JIBCL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "JV_JIBSA",
+      "description": "JIB/JIBE Subclass A",
+      "data_element": "JV_JIBSA",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "JV_OCO",
+      "description": "JV original cost object",
+      "data_element": "JV_OR_CO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CPD_UPDAT",
+      "description": "Time Stamp",
+      "data_element": "/CPD/PFP_TSTMP",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "/CUM/INDCU",
+      "description": "CU: Order is Used for Compatible Units",
+      "data_element": "/CUM/INDCU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CUM/CMNUM",
+      "description": "CU: Construction Measure Number",
+      "data_element": "/CUM/CMNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "/CUM/AUEST",
+      "description": "CU: Automatic Copy of Estimated Costs",
+      "data_element": "/CUM/AUEST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CUM/DESNUM",
+      "description": "CU: Design Number",
+      "data_element": "/CUM/DESNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/PL_STRU_ID",
+      "description": "Resource planning nodes",
+      "data_element": "/MRSS/T_PLAN_STRUCT_ID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/PL_MAN_TYP",
+      "description": "Assignment to resource planner or contact person",
+      "data_element": "/MRSS/T_MANAGER_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/ORDER_PROB",
+      "description": "Order probability in percent",
+      "data_element": "/MRSS/T_ORDER_PROB",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/ACT_TYPE",
+      "description": "Process variant",
+      "data_element": "/MRSS/T_ACTIVITY_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/INIT_DONE",
+      "description": "Internal initialization carried out once",
+      "data_element": "/MRSS/T_INIT_DONE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/DATACHANGE",
+      "description": "Data was changed in the controls on the user screen",
+      "data_element": "/MRSS/T_USCREENCTL_DATACHANGED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/SALES_ORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/MRSS/NW_BOOKED",
+      "description": "Network Set to \"Booked\"",
+      "data_element": "/MRSS/T_NW_BOOKED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VAPLZ",
+      "description": "Main work center for maintenance tasks",
+      "data_element": "GEWRK",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "WAWRK",
+      "description": "Plant associated with main work center",
+      "data_element": "WERGW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FERC_IND",
+      "description": "Regulatory indicator",
+      "data_element": "FE_IND",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFK_STATUS",
+      "description": "Status Combination",
+      "data_element": "ACTCMB_DELE",
+      "type": "INT1",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYP",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CLAIM_CONTROL",
+      "description": "Claim creation control indicator",
+      "data_element": "WTYSC_CLAIM_CONTROL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDATE_NEEDED",
+      "description": "Claim inconsistency with order indicator",
+      "data_element": "WTYSC_UPDATE_NEEDED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDATE_CONTROL",
+      "description": "Claim update trigger point from service order",
+      "data_element": "WTYSC_UPDATE_CONTROL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** **Purpose:** Table AUFK stores master data for orders, including order information, status, and financial data. **Key Relationships:** No foreign keys are provided in the schema, indicating no direct relationships with other tables. **Use Cases:**\n* Order creation and management\n* Order status monitoring\n* Cost and revenue tracking",
+    "timestamp": "2025-02-13T13:44:36.788925",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

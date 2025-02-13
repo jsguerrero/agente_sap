@@ -1,0 +1,285 @@
+{
+  "name": "MCH1",
+  "description": "Batches (if Batch Management Cross-Plant)",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Deletion Flag for All Data in a Batch",
+      "data_element": "LVOC1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LAEDA",
+      "description": "Date of Last Change",
+      "data_element": "LAEDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VERAB",
+      "description": "Availability date",
+      "data_element": "VERAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VFDAT",
+      "description": "Shelf Life Expiration or Best-Before Date",
+      "data_element": "VFDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUSCH",
+      "description": "Batch status key",
+      "data_element": "DZUSCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUSTD",
+      "description": "Batch in Restricted-Use Stock",
+      "data_element": "DZUSTD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEDT",
+      "description": "Date of last status change",
+      "data_element": "DZAEDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Vendor Account Number",
+      "data_element": "ELIFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LICHA",
+      "description": "Vendor Batch Number",
+      "data_element": "LICHN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "VLCHA",
+      "description": "Original batch number (deactivated)",
+      "data_element": "VLCHN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VLWRK",
+      "description": "Original plant  (deactivated)",
+      "data_element": "VLWRK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VLMAT",
+      "description": "Original material    (deactivated)",
+      "data_element": "VLMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "CHAME",
+      "description": "Unit of issue for batch (deactivated)",
+      "data_element": "CHAME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LWEDT",
+      "description": "Date of last goods receipt",
+      "data_element": "LWEDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT1",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT2",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT3",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT4",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT5",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FVDT6",
+      "description": "Date for unrestricted use",
+      "data_element": "FVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKL",
+      "description": "Country of origin of the material",
+      "data_element": "HERKL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HERKR",
+      "description": "Region of origin of material (non-preferential origin)",
+      "data_element": "HERKR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MTVER",
+      "description": "Export/import material group",
+      "data_element": "MTVER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "QNDAT",
+      "description": "Next Inspection Date",
+      "data_element": "QNPDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HSDAT",
+      "description": "Date of Manufacture",
+      "data_element": "HSDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ_BM",
+      "description": "Internal object no.: Batch classification",
+      "data_element": "CUOBJ_BM",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "DEACT_BM",
+      "description": "Batch is no longer active",
+      "data_element": "DEACT_BM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BATCH_TYPE",
+      "description": "Type of Batch",
+      "data_element": "BATCH_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "Maintains batch information for materials in SAP's Batch Management module. Stores data such as batch number, material number, creation date, and availability date. No foreign key relationships exist in the provided table structure.",
+    "timestamp": "2025-02-13T13:43:04.875906",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

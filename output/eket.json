@@ -1,0 +1,597 @@
+{
+  "name": "EKET",
+  "description": "Scheduling Agreement Schedule Lines",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ETENR",
+      "description": "Delivery Schedule Line Counter",
+      "data_element": "EETEN",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EINDT",
+      "description": "Item Delivery Date",
+      "data_element": "EINDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SLFDT",
+      "description": "Statistics-Relevant Delivery Date",
+      "data_element": "SLFDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LPEIN",
+      "description": "Category of Delivery Date",
+      "data_element": "LPEIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Scheduled Quantity",
+      "data_element": "ETMEN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AMENG",
+      "description": "Previous Quantity (Delivery Schedule Lines)",
+      "data_element": "VOMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "WEMNG",
+      "description": "Quantity of Goods Received",
+      "data_element": "WEEMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "WAMNG",
+      "description": "Issued Quantity",
+      "data_element": "WAMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "UZEIT",
+      "description": "Delivery Date Time-Spot",
+      "data_element": "LZEIT",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "BANFN",
+      "description": "Purchase Requisition Number",
+      "data_element": "BANFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BNFPO",
+      "description": "Item Number of Purchase Requisition",
+      "data_element": "BNFPO",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ESTKZ",
+      "description": "Creation Indicator (Purchase Requisition/Schedule Lines)",
+      "data_element": "ESTKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QUNUM",
+      "description": "Number of Quota Arrangement",
+      "data_element": "QUNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "QUPOS",
+      "description": "Quota Arrangement Item",
+      "data_element": "QUPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MAHNZ",
+      "description": "No. of Reminders/Expediters for Schedule Line",
+      "data_element": "MAHNZE",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BEDAT",
+      "description": "Order date of schedule line",
+      "data_element": "ETBDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RSNUM",
+      "description": "Number of Reservation/Dependent Requirement",
+      "data_element": "RSNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SERNR",
+      "description": "BOM explosion number",
+      "data_element": "SERNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FIXKZ",
+      "description": "Schedule Line is \"Fixed\"",
+      "data_element": "ETFIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GLMNG",
+      "description": "Quantity Delivered (Stock Transfer)",
+      "data_element": "GLMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DABMG",
+      "description": "Quantity Reduced (MRP)",
+      "data_element": "DABMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LICHA",
+      "description": "Vendor Batch Number",
+      "data_element": "LICHN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "CHKOM",
+      "description": "Components",
+      "data_element": "CHKOM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERID",
+      "description": "Production Version",
+      "data_element": "VERID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABART",
+      "description": "Scheduling agreement release type",
+      "data_element": "MEABART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MNG02",
+      "description": "Committed Quantity",
+      "data_element": "MNG06",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DAT01",
+      "description": "Committed Date",
+      "data_element": "DAT05",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ALTDT",
+      "description": "Previous delivery date",
+      "data_element": "ALTDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AULWE",
+      "description": "Route Schedule",
+      "data_element": "AULWE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MBDAT",
+      "description": "Material Staging/Availability Date",
+      "data_element": "MBDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MBUHR",
+      "description": "Material Staging Time (Local, Relating to a Plant)",
+      "data_element": "MBUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LDDAT",
+      "description": "Loading Date",
+      "data_element": "LDDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LDUHR",
+      "description": "Loading Time (Local Time Relating to a Shipping Point)",
+      "data_element": "LDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TDDAT",
+      "description": "Transportation Planning Date",
+      "data_element": "TDDAT_D",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TDUHR",
+      "description": "Transp. Planning Time (Local, Relating to a Shipping Point)",
+      "data_element": "TDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "WADAT",
+      "description": "Goods Issue Date",
+      "data_element": "WADAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "WAUHR",
+      "description": "Time of Goods Issue (Local, Relating to a Plant)",
+      "data_element": "WAUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ELDAT",
+      "description": "Goods Receipt End Date",
+      "data_element": "ELDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ELUHR",
+      "description": "Goods Receipt End Time (Local, Relating to a Plant)",
+      "data_element": "ELUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZSN",
+      "description": "Number of serial numbers",
+      "data_element": "ANZSN",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NODISP",
+      "description": "Ind: Reserv. not applicable to MRP;Purc. req. not created",
+      "data_element": "NODISP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GEO_ROUTE",
+      "description": "Description of a Geographical Route",
+      "data_element": "/SPE/DE_ROUTE_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ROUTE_GTS",
+      "description": "Route Code for SAP Global Trade Services",
+      "data_element": "/SPE/DE_ROUTE_GTS_CODE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GTS_IND",
+      "description": "Goods Traffic Type",
+      "data_element": "/SPE/DE_LEG_GTS_CODE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TSP",
+      "description": "Forwarding agent",
+      "data_element": "SPDNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CD_LOCNO",
+      "description": "Location number in APO",
+      "data_element": "APOLOCNO",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "CD_LOCTYPE",
+      "description": "APO location type",
+      "data_element": "APOLOCTYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERDATE",
+      "description": "Handover Date at the Handover Location",
+      "data_element": "HANDOVER_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERTIME",
+      "description": "Handover time at the handover location",
+      "data_element": "HANDOVER_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/MENGE",
+      "description": "Schedule Line Quantity in Base/Parallel Unit of Measure",
+      "data_element": "/CWM/ETMEN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/DABMG",
+      "description": "MRP Reduced Quantity in Base/Parallel UoM",
+      "data_element": "/CWM/DABMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/WEMNG",
+      "description": "Goods Receipt Quantity in Base or Parallel Unit of Measure",
+      "data_element": "/CWM/WEMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KEY_ID",
+      "description": "Unique Number of Budget",
+      "data_element": "WRF_BUDG_KEY_ID",
+      "type": "NUMC",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_VALUE",
+      "description": "Required Budget",
+      "data_element": "WRF_POTB_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "OTB_CURR",
+      "description": "OTB Currency",
+      "data_element": "WRF_POTB_CURRENCY",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_RES_VALUE",
+      "description": "Reserved Budget for OTB-Relevant Purchasing Document",
+      "data_element": "WRF_POTB_RES_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "OTB_SPEC_VALUE",
+      "description": "Special Release Budget",
+      "data_element": "WRF_POTB_SPECIAL_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "SPR_RSN_PROFILE",
+      "description": "Reason Profile for OTB Special Release",
+      "data_element": "WRF_POTB_SPR_RSN_PROFILE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDG_TYPE",
+      "description": "Budget Type",
+      "data_element": "WRF_BUDG_TYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_STATUS",
+      "description": "OTB Check Status",
+      "data_element": "WRF_POTB_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_REASON",
+      "description": "Reason Indicator for OTB Check Status",
+      "data_element": "WRF_POTB_STATUS_REASON",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CHECK_TYPE",
+      "description": "Type of OTB Check",
+      "data_element": "WRF_BUDG_OTB_CHECK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DL_ID",
+      "description": "Date Line ID (GUID)",
+      "data_element": "WRF_PSCD_DL_ID",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVER_DATE",
+      "description": "Transfer Date",
+      "data_element": "WRF_PSCD_HANDOVER_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NO_SCEM",
+      "description": "Purchase Order Not Transferred to SCEM",
+      "data_element": "WRF_PSCD_NO_SCEM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DNG_DATE",
+      "description": "Creation Date of Reminder Message Record",
+      "data_element": "WRF_PCTR_DNG_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DNG_TIME",
+      "description": "Creation Time of Reminder Message Record",
+      "data_element": "WRF_PCTR_DNG_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CNCL_ANCMNT_DONE",
+      "description": "Cancellation Threat Made",
+      "data_element": "WRF_PCTR_CNCL_ANCMT_DONE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATESHIFT_NUMBER",
+      "description": "Number of Current Date Shifts",
+      "data_element": "WRF_PCTR_DATESHIFT_NUMBER",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The EKET table stores scheduling agreement schedule lines. It is used to manage the delivery of goods or services under a scheduling agreement. The table contains fields for the purchasing document number, item number, delivery schedule line counter, item delivery date, scheduled quantity, and other relevant information. The EKET table is typically used to create and manage scheduling agreements and to track the delivery of goods or services under those agreements. It is also used to generate purchase orders and other documents related to the procurement process.",
+    "timestamp": "2025-02-13T13:40:21.384738",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

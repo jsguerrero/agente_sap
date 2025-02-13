@@ -1,0 +1,102 @@
+{
+  "name": "T024",
+  "description": "Purchasing Groups",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP",
+      "description": "Purchasing Group",
+      "data_element": "EKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EKNAM",
+      "description": "Description of purchasing group",
+      "data_element": "EKNAM",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "EKTEL",
+      "description": "Telephone number of purchasing group (buyer group)",
+      "data_element": "EKTEL",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LDEST",
+      "description": "Spool: Output device",
+      "data_element": "RSPOPNAME",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TELFX",
+      "description": "Fax number of purchasing (buyer) group",
+      "data_element": "EKTFX",
+      "type": "CHAR",
+      "length": "31",
+      "decimals": "0"
+    },
+    {
+      "name": "TEL_NUMBER",
+      "description": "Telephone no.: dialling code+number",
+      "data_element": "AD_TLNMBR",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "TEL_EXTENS",
+      "description": "Telephone no.: Extension",
+      "data_element": "AD_TLXTNS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SMTP_ADDR",
+      "description": "E-Mail Address",
+      "data_element": "AD_SMTPADR",
+      "type": "CHAR",
+      "length": "241",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T024",
+      "field": "LDEST",
+      "foreign_key_table": "T024",
+      "foreign_key_field": "LDEST",
+      "check_table": "TSP03",
+      "check_field": "Spool: Printer declaration"
+    },
+    {
+      "table": "T024",
+      "field": "MANDT",
+      "foreign_key_table": "T024",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. The T024 table in SAP is designed to store data related to purchasing groups within an organization.\n2. It has foreign key relationships with the T024 table itself and the T000 table for maintaining client-specific information.\n3. Key use cases include managing purchasing group details, defining communication channels for these groups, and facilitating procurement processes.",
+    "timestamp": "2025-02-13T13:46:39.467164",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "name": "CKMLHD",
+  "description": "Material Ledger: Header Record",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KALNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "MLAST",
+      "description": "Material Price Determination: Control",
+      "data_element": "CK_ML_ABST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XABRECH",
+      "description": "Movements have Occurred Since the Last Price Determination",
+      "data_element": "CK_XABRECH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABRECHDAT",
+      "description": "Date of Last Successful Price Determination",
+      "data_element": "CK_ABRDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XABRERR",
+      "description": "Obsolete",
+      "data_element": "CKML_D_NOTUSED_CHAR1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABRECHUHR",
+      "description": "Time of Last Sucessful Price Determination",
+      "data_element": "CK_ABRUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation Area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBWS",
+      "description": "Valuation of Special Stock",
+      "data_element": "KZBWS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XOBEW",
+      "description": "Vendor Stock Valuation Indicator",
+      "data_element": "XOBEW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Item number of the SD document",
+      "data_element": "POSNR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PSPNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The Material Ledger Header Record (CKMLHD) table stores key information related to material costing and valuation within the Material Ledger (ML) module. It provides a central repository for header-level data, including details such as material number, valuation area, valuation type, and last successful price determination details. This table is commonly used for:\n- Accessing material costing data for reporting and analysis\n- Maintaining material valuation settings\n- Tracking price determination history and status",
+    "timestamp": "2025-02-13T13:42:03.520834",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

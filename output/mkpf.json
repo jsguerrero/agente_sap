@@ -1,0 +1,293 @@
+{
+  "name": "MKPF",
+  "description": "Header: Material Document",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MBLNR",
+      "description": "Number of Material Document",
+      "data_element": "MBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MJAHR",
+      "description": "Material Document Year",
+      "data_element": "MJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VGART",
+      "description": "Transaction/Event Type",
+      "data_element": "VGART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BLART",
+      "description": "Document Type",
+      "data_element": "BLART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BLAUM",
+      "description": "Document type of revaluation document",
+      "data_element": "BLAUM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUDT",
+      "description": "Day On Which Accounting Document Was Entered",
+      "data_element": "CPUDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUTM",
+      "description": "Time of Entry",
+      "data_element": "CPUTM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USNAM",
+      "description": "User name",
+      "data_element": "USNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "TCODE",
+      "description": "Not More Closely Defined Area, Possibly Used for Patchlevels",
+      "data_element": "CHAR4",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BKTXT",
+      "description": "Document Header Text",
+      "data_element": "BKTXT",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "FRATH",
+      "description": "Unplanned delivery costs",
+      "data_element": "FRATH",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "FRBNR",
+      "description": "Number of Bill of Lading at Time of Goods Receipt",
+      "data_element": "FRBNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "WEVER",
+      "description": "Version for Printing GR/GI Slip",
+      "data_element": "WEVER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XABLN",
+      "description": "Goods Receipt/Issue Slip Number",
+      "data_element": "XABLN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AWSYS",
+      "description": "Logical System",
+      "data_element": "LOGSYSTEM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BLA2D",
+      "description": "Doc. type for additional doc. in purchase account management",
+      "data_element": "BLA2D",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TCODE2",
+      "description": "Transaction Code",
+      "data_element": "TCODE",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BFWMS",
+      "description": "Control posting for external WMS",
+      "data_element": "BFWMS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXNUM",
+      "description": "Number of foreign trade data in MM and SD documents",
+      "data_element": "EXNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_BUDAT_UHR",
+      "description": "Time of Goods Issue (Local, Relating to a Plant)",
+      "data_element": "WAUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_BUDAT_ZONE",
+      "description": "Time Zone",
+      "data_element": "TZNZONE",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LE_VBELN",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_LOGSYS",
+      "description": "Logical System of EWM Material Document",
+      "data_element": "/SPE/_LOGSYS_MD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_MDNUM_EWM",
+      "description": "Number of Material Document in EWM",
+      "data_element": "/SPE/MDNUM_EWM",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "GTS_CUSREF_NO",
+      "description": "Customs Reference Number for Scrapping",
+      "data_element": "/SAPSLL/SCREF_SPI",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "FLS_RSTO",
+      "description": "Store Return with Inbound and Outbound Delivery",
+      "data_element": "FLS_RSTO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSR_ACTIVE",
+      "description": "Advanced Returns Management Active",
+      "data_element": "MSR_ACTIVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFSNR",
+      "description": "Number of External Delivery Note",
+      "data_element": "LFSNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_BLTIME",
+      "description": "Posting time in the document",
+      "data_element": "OIB_BLTIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The purpose of the MKPF table is to store header data for material documents in the SAP system. It contains information such as document number, document type, posting date, and other relevant details. This table is commonly used in conjunction with other tables, such as the MSEG table which stores item-level data for material documents, to provide a comprehensive view of material movements within the system.",
+    "timestamp": "2025-02-13T13:46:08.558345",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

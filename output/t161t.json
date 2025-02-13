@@ -1,0 +1,53 @@
+{
+  "name": "T161T",
+  "description": "Texts for Purchasing Document Types",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BSART",
+      "description": "Purchasing Document Type",
+      "data_element": "ESART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTYP",
+      "description": "Purchasing Document Category",
+      "data_element": "BSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BATXT",
+      "description": "Short Description of Purchasing Document Type",
+      "data_element": "BATXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Purpose:** Stores short descriptions of purchasing document types in multiple languages. **Key Relationships:** None. **Common Use Cases:**\n- Displaying short descriptions of purchasing document types in various screens and reports.",
+    "timestamp": "2025-02-13T13:46:41.192065",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

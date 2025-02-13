@@ -1,0 +1,789 @@
+{
+  "name": "KNVV",
+  "description": "Customer Master Sales Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BEGRU",
+      "description": "Authorization Group",
+      "data_element": "BEGRU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEVM",
+      "description": "Deletion flag for customer (sales level)",
+      "data_element": "LOEVM_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERSG",
+      "description": "Customer Statistics Group",
+      "data_element": "STGKU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFSD",
+      "description": "Customer order block (sales area)",
+      "data_element": "AUFSD_V",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KALKS",
+      "description": "Pricing procedure assigned to this customer",
+      "data_element": "KALKS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KDGRP",
+      "description": "Customer group",
+      "data_element": "KDGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BZIRK",
+      "description": "Sales district",
+      "data_element": "BZIRK",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KONDA",
+      "description": "Price group (customer)",
+      "data_element": "KONDA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PLTYP",
+      "description": "Price list type",
+      "data_element": "PLTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AWAHR",
+      "description": "Order probability of the item",
+      "data_element": "AWAHR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO1",
+      "description": "Incoterms (Part 1)",
+      "data_element": "INCO1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO2",
+      "description": "Incoterms (Part 2)",
+      "data_element": "INCO2",
+      "type": "CHAR",
+      "length": "28",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFSD",
+      "description": "Customer delivery block (sales area)",
+      "data_element": "LIFSD_V",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTLF",
+      "description": "Complete delivery defined for each sales order?",
+      "data_element": "AUTLF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANTLF",
+      "description": "Maximum Number of Partial Deliveries Allowed Per Item",
+      "data_element": "ANTLF",
+      "type": "DEC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZTLF",
+      "description": "Partial delivery at item level",
+      "data_element": "KZTLF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZAZU",
+      "description": "Order Combination Indicator",
+      "data_element": "KZAZU_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CHSPL",
+      "description": "Batch split allowed",
+      "data_element": "CHSPL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LPRIO",
+      "description": "Delivery Priority",
+      "data_element": "LPRIO",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "EIKTO",
+      "description": "Shipper's (Our) Account Number at the Customer or Vendor",
+      "data_element": "EIKTO",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VSBED",
+      "description": "Shipping Conditions",
+      "data_element": "VSBED",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FAKSD",
+      "description": "Billing block for customer (sales and distribution)",
+      "data_element": "FAKSD_V",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MRNKZ",
+      "description": "Manual invoice maintenance",
+      "data_element": "MRNKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PERFK",
+      "description": "Invoice dates (calendar identification)",
+      "data_element": "PERFK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PERRL",
+      "description": "Invoice list schedule (calendar identification)",
+      "data_element": "PERRL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KVAKZ",
+      "description": "Cost estimate indicator (inactive)",
+      "data_element": "KVAKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KVAWT",
+      "description": "Value limit for cost estimate (inactive)",
+      "data_element": "KVAWT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency",
+      "data_element": "WAERS_V02D",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KLABC",
+      "description": "Customer classification (ABC analysis)",
+      "data_element": "KLABC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KTGRD",
+      "description": "Account assignment group for this customer",
+      "data_element": "KTGRD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZTERM",
+      "description": "Terms of Payment Key",
+      "data_element": "DZTERM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VWERK",
+      "description": "Delivering Plant (Own or External)",
+      "data_element": "DWERK_EXT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VKGRP",
+      "description": "Sales Group",
+      "data_element": "VKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VKBUR",
+      "description": "Sales Office",
+      "data_element": "VKBUR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VSORT",
+      "description": "Item proposal",
+      "data_element": "VSORT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR1",
+      "description": "Customer group 1",
+      "data_element": "KVGR1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR2",
+      "description": "Customer group 2",
+      "data_element": "KVGR2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR3",
+      "description": "Customer group 3",
+      "data_element": "KVGR3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR4",
+      "description": "Customer group 4",
+      "data_element": "KVGR4",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR5",
+      "description": "Customer group 5",
+      "data_element": "KVGR5",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BOKRE",
+      "description": "Indicator: Customer Is Rebate-Relevant",
+      "data_element": "BOKRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BOIDT",
+      "description": "Start of validity per.for the rebate index for the customer",
+      "data_element": "BOIDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KURST",
+      "description": "Exchange Rate Type",
+      "data_element": "KURST",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PRFRE",
+      "description": "Relevant for price determination ID",
+      "data_element": "PRFRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT1",
+      "description": "ID for product attribute 1",
+      "data_element": "KUAT1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT2",
+      "description": "ID for product attribute 2",
+      "data_element": "KUAT2",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT3",
+      "description": "ID for product attribute 3",
+      "data_element": "KUAT3",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT4",
+      "description": "ID for product attribute 4",
+      "data_element": "KUAT4",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT5",
+      "description": "ID for product attribute 5",
+      "data_element": "KUAT5",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT6",
+      "description": "ID for product attribute 6",
+      "data_element": "KUAT6",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT7",
+      "description": "ID for product attribute 7",
+      "data_element": "KUAT7",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT8",
+      "description": "ID for product attribute 8",
+      "data_element": "KUAT8",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRAT9",
+      "description": "ID for product attribute 9",
+      "data_element": "KUAT9",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRATA",
+      "description": "ID for product attribute 10",
+      "data_element": "KUATA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KABSS",
+      "description": "Customer payment guarantee procedure",
+      "data_element": "KABSSCH_CM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KKBER",
+      "description": "Credit control area",
+      "data_element": "KKBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CASSD",
+      "description": "Sales block for customer (sales area)",
+      "data_element": "CASSD_V",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RDOFF",
+      "description": "Switch off rounding?",
+      "data_element": "RDOFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AGREL",
+      "description": "Indicator: Relevant for agency business",
+      "data_element": "AGREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MEGRU",
+      "description": "Unit of Measure Group",
+      "data_element": "MEGRU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UEBTO",
+      "description": "Overdelivery Tolerance Limit",
+      "data_element": "UEBTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "UNTTO",
+      "description": "Underdelivery Tolerance Limit",
+      "data_element": "UNTTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "UEBTK",
+      "description": "Unlimited overdelivery allowed",
+      "data_element": "UEBTK_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PVKSM",
+      "description": "Customer procedure for product proposal",
+      "data_element": "PVKSM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PODKZ",
+      "description": "Relevant for POD processing",
+      "data_element": "PODKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PODTG",
+      "description": "Timeframe for Confirmation of POD",
+      "data_element": "PODTG",
+      "type": "DEC",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "BLIND",
+      "description": "Index Structure Active for Subsequent Settlement (in AB)",
+      "data_element": "BLIND_SD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CARRIER_NOTIF",
+      "description": "Carrier is to be notified",
+      "data_element": "/SPE/CARRIER_NOTIF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/EMLGPFAND",
+      "description": "Deposit on Empties",
+      "data_element": "/BEV1/EMGPFAND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV1/EMLGFORTS",
+      "description": "Indicator for Empties Update",
+      "data_element": "/BEV1/EMGFORTS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/CUST_DIS",
+      "description": "Rate (condition amount or percentage) where no scale exists",
+      "data_element": "KBETR_KOND",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "/XLSO/COMP_NAME",
+      "description": "Name 1",
+      "data_element": "NAME1_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/INDUSTRY",
+      "description": "Industry key",
+      "data_element": "BRSCH",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/H_NUMBER",
+      "description": "House Number",
+      "data_element": "AD_HSNM1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/STREET",
+      "description": "Street",
+      "data_element": "AD_STREET",
+      "type": "CHAR",
+      "length": "60",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/POST_CODE",
+      "description": "Postal Code",
+      "data_element": "PSTLZ",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/CITY",
+      "description": "City",
+      "data_element": "ORT01_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/REGION",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/COUNTRY",
+      "description": "Country Key",
+      "data_element": "LAND1_GP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/INACTIVE",
+      "description": "Single-Character Indicator",
+      "data_element": "CHAR1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_MOT",
+      "description": "IS-OIL MAP external details mode of transport",
+      "data_element": "OIC_MOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OILASTOR",
+      "description": "Last order number",
+      "data_element": "OID_LASTOR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_HOBIND",
+      "description": "Head office / branch indicator",
+      "data_element": "OIC_HOBIND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIABTNR",
+      "description": "Contact person department",
+      "data_element": "ABTNR_PA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPAFKT",
+      "description": "Contact person function",
+      "data_element": "PAFKT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIGROUPNAM",
+      "description": "TD:customer compatibility group",
+      "data_element": "OIG_CCG",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYP",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIINEX",
+      "description": "Code for internal or external excise duty rate determination",
+      "data_element": "OIH_INEX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPFLIC",
+      "description": "IS-OIL partner function for tax exemption license",
+      "data_element": "OIH_PFLIC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHCGROUP",
+      "description": "Customer tax group",
+      "data_element": "OIH_J1B_CTXGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. **Purpose:** Maintain customer data relevant to sales and distribution processes, including sales organization, customer group, pricing information, and delivery and billing preferences. 2. **Foreign Key Relationships:** None provided in the table definition. 3. **Common Use Cases:**\n   - Managing customer master data\n   - Assigning customers to sales organizations and distribution channels\n   - Determining pricing and delivery terms\n   - Processing sales orders, deliveries, and invoices",
+    "timestamp": "2025-02-13T13:45:06.934249",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "MAKT",
+  "description": "Material Descriptions",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAKTX",
+      "description": "Material Description (Short Text)",
+      "data_element": "MAKTX",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MAKTG",
+      "description": "Material description in upper case for matchcodes",
+      "data_element": "MAKTG",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "MAKT",
+      "field": "MANDT",
+      "foreign_key_table": "MAKT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "MAKT",
+      "field": "MATNR",
+      "foreign_key_table": "MAKT",
+      "foreign_key_field": "MANDT",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    },
+    {
+      "table": "MAKT",
+      "field": "MATNR",
+      "foreign_key_table": "MAKT",
+      "foreign_key_field": "MATNR",
+      "check_table": "MARA",
+      "check_field": "General Material Data"
+    },
+    {
+      "table": "MAKT",
+      "field": "SPRAS",
+      "foreign_key_table": "MAKT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The MAKT table stores material descriptions in multiple languages. It is linked to the MARA (General Material Data) table via the MATNR field and to the T000 (Clients) and T002 (Language Keys) tables via the MANDT and SPRAS fields, respectively. This table is used for displaying material descriptions in various languages and for search operations based on material description.",
+    "timestamp": "2025-02-13T13:44:32.417036",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

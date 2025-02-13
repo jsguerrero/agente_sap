@@ -1,0 +1,533 @@
+{
+  "name": "T005",
+  "description": "Countries",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDK",
+      "description": "Vehicle country key",
+      "data_element": "LANDK",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LNPLZ",
+      "description": "Postal code length",
+      "data_element": "LNPLZ_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRPLZ",
+      "description": "Rule for the postal code field check",
+      "data_element": "PRUEF_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRS",
+      "description": "Formatting routine key for printing addresses",
+      "data_element": "ADDRS_005",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XPLZS",
+      "description": "Flag: Street address postal code required entry?",
+      "data_element": "XPLZS_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XPLPF",
+      "description": "Flag: PO Box postal code required?",
+      "data_element": "XPLPF_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XLAND",
+      "description": "Country version flag",
+      "data_element": "XLAND_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XADDR",
+      "description": "Flag: Print country name in foreign addresses?",
+      "data_element": "XADDR_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NMFMT",
+      "description": "Standard name format",
+      "data_element": "NMFMT_005",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XREGS",
+      "description": "Flag: City file address check",
+      "data_element": "XREGS_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XPLST",
+      "description": "Flag: Street-specific postal code? (City file)",
+      "data_element": "XPLST_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INTCA",
+      "description": "Country ISO code",
+      "data_element": "INTCA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "INTCA3",
+      "description": "ISO country code 3 char",
+      "data_element": "INTCA3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INTCN3",
+      "description": "ISO Country Code Numeric 3-Characters",
+      "data_element": "INTCN3",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XEGLD",
+      "description": "Indicator: European Union Member?",
+      "data_element": "XEGLD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSKFN",
+      "description": "Indicator: Discount base amount is the net value",
+      "data_element": "XSKFN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XMWSN",
+      "description": "Indicator: Base amount for tax is net of discount ?",
+      "data_element": "XMWSN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNBKN",
+      "description": "Bank account number length",
+      "data_element": "LNBKN_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRBKN",
+      "description": "Rule for checking bank account number field",
+      "data_element": "PRBKN_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNBLZ",
+      "description": "Bank number length",
+      "data_element": "LNBLZ_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRBLZ",
+      "description": "Rule for checking bank number field",
+      "data_element": "PRBLZ_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNPSK",
+      "description": "Post office bank current account number length",
+      "data_element": "LNPSK_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRPSK",
+      "description": "Rule for checking postal check account number field",
+      "data_element": "PRPSK_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XPRBK",
+      "description": "Indicator: Use check module for bank fields ?",
+      "data_element": "XPRBK_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BNKEY",
+      "description": "Name of the bank key",
+      "data_element": "BNKEY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNBKS",
+      "description": "Length of Bank Key",
+      "data_element": "LNBKS_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRBKS",
+      "description": "Rule for checking bank key field",
+      "data_element": "PRBKS_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XPRSO",
+      "description": "Indicator: Use check module for tax fields etc. ?",
+      "data_element": "XPRSO_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRUIN",
+      "description": "Rule for checking VAT registration number field",
+      "data_element": "PRUIN_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UINLN",
+      "description": "VAT registration number length",
+      "data_element": "UINLN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LNST1",
+      "description": "Permitted Input Length for Tax Numbre 1",
+      "data_element": "LNST1_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRST1",
+      "description": "Rule for checking tax code 1 field",
+      "data_element": "PRST1_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNST2",
+      "description": "Permitted Input Length for Tax Number 2",
+      "data_element": "LNST2_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRST2",
+      "description": "Rule for checking tax code 2 field",
+      "data_element": "PRST2_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNST3",
+      "description": "Permitted Input Length for Tax Number 3",
+      "data_element": "LNST3_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRST3",
+      "description": "Rule for checking tax code 3 field",
+      "data_element": "PRST3_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNST4",
+      "description": "Permitted Input Length for Tax Number 4",
+      "data_element": "LNST4_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRST4",
+      "description": "Rule for checking tax code 4 field",
+      "data_element": "PRST4_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LNST5",
+      "description": "Permitted Input Length for Tax Number 5",
+      "data_element": "LNST5_005",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRST5",
+      "description": "Rule for checking tax code 5 field",
+      "data_element": "PRST5_005",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDD",
+      "description": "DUEVO: Nationality",
+      "data_element": "DUSTA",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Procedure (Pricing, Output Control, Acct. Det., Costing,...)",
+      "data_element": "KALSM_D",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDA",
+      "description": "Alternative Country Key",
+      "data_element": "LANDA",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WECHF",
+      "description": "Payment period for bill of exchange",
+      "data_element": "WECHF",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LKVRZ",
+      "description": "Short Name for Foreign Trade Statistics",
+      "data_element": "LKVRZ",
+      "type": "CHAR",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "INTCN",
+      "description": "Intrastat Code",
+      "data_element": "INTCN",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XDEZP",
+      "description": "Decimal point format",
+      "data_element": "XDEZP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATFM",
+      "description": "Date Format",
+      "data_element": "DATFM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURIN",
+      "description": "Currency Key of the Index-Based Currency",
+      "data_element": "CURIN",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "CURHA",
+      "description": "Currency Key of the Hard Currency",
+      "data_element": "CURHA",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Country currency",
+      "data_element": "WAERS_005",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KURST",
+      "description": "Exchange Rate Type for Translation into Country Currency",
+      "data_element": "KURST_005",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AFAPL",
+      "description": "Chart of depreciaton for asset valuation",
+      "data_element": "AFAPL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GWGWRT",
+      "description": "Maximum low-value asset amount",
+      "data_element": "GWGWRT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "UMRWRT",
+      "description": "Net book value for changeover of depreciation method",
+      "data_element": "UMRWRT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KZRBWB",
+      "description": "Indicator post net book value for retirement",
+      "data_element": "KZRBWB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XANZUM",
+      "description": "Indicator transfer down payments from previous years",
+      "data_element": "XANZUM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CTNCONCEPT",
+      "description": "Withholding tax certificate numbering: Concepts",
+      "data_element": "CTNCONCEPT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZSRV",
+      "description": "Taxes at individual service level",
+      "data_element": "KZSRV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XXINVE",
+      "description": "Indicator: Display Capital Goods Indicator?",
+      "data_element": "XXINVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SUREG",
+      "description": "Super region per country",
+      "data_element": "PRQ_SUREG",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDGRP_VP",
+      "description": "Country grouping for shipping schedule",
+      "data_element": "LANDGRP_VP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of table T005 is to store country-specific data for various SAP modules, such as financials, logistics, and human resources.\n2. There are no foreign key relationships defined for table T005 in the provided structure.\n3. Common use cases include:\n   - Determining postal code formatting and validation rules for different countries\n   - Setting up country-specific tax and accounting rules\n   - Configuring country-specific address formats and printing routines",
+    "timestamp": "2025-02-13T13:44:47.976186",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

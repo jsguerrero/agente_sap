@@ -1,0 +1,557 @@
+{
+  "name": "EKKN",
+  "description": "Account Assignment in Purchasing Document",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEKZ",
+      "description": "Deletion Indicator: Purchasing Document Account Assignment",
+      "data_element": "KLOEK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KFLAG",
+      "description": "Change flag: Purchasing (currently not used)",
+      "data_element": "EFLAG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VPROZ",
+      "description": "Distribution Percentage in Case of Multiple Account Assgt",
+      "data_element": "VPROZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "NETWR",
+      "description": "Net Order Value in PO Currency",
+      "data_element": "BWERT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SAKTO",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PROJN",
+      "description": "Old: Project number : No longer used --> PS_POSNR",
+      "data_element": "PROJN",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN_CO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP",
+      "description": "Sales Document Item",
+      "data_element": "POSNR_CO",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VETEN",
+      "description": "Delivery Schedule Line Number",
+      "data_element": "ETENR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBRB",
+      "description": "Gross requirements indicator",
+      "data_element": "KZBRB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN1",
+      "description": "Main Asset Number",
+      "data_element": "ANLN1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN2",
+      "description": "Asset Subnumber",
+      "data_element": "ANLN2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "WEMPF",
+      "description": "Goods Recipient/Ship-To Party",
+      "data_element": "WEMPF",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ABLAD",
+      "description": "Unloading Point",
+      "data_element": "ABLAD",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XBKST",
+      "description": "Posting to cost center?",
+      "data_element": "XBKST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBAUF",
+      "description": "Post To Order",
+      "data_element": "XBAUF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBPRO",
+      "description": "Post to project",
+      "data_element": "XBPRO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EREKZ",
+      "description": "Final Invoice Indicator",
+      "data_element": "EREKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTRG",
+      "description": "Cost Object",
+      "data_element": "KSTRG",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PAOBJNR",
+      "description": "Profitability Segment Number (CO-PA)",
+      "data_element": "RKEOBJNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSP_PNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR",
+      "description": "Network Number for Account Assignment",
+      "data_element": "NPLNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "IMKEY",
+      "description": "Internal Key for Real Estate Object",
+      "data_element": "IMKEY",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VPTNR",
+      "description": "Partner account number",
+      "data_element": "JV_PART",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FIPOS",
+      "description": "Commitment Item",
+      "data_element": "FIPOS",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "RECID",
+      "description": "Recovery Indicator",
+      "data_element": "JV_RECIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FISTL",
+      "description": "Funds Center",
+      "data_element": "FISTL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "GEBER",
+      "description": "Fund",
+      "data_element": "BP_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FKBER",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "DABRZ",
+      "description": "Reference Date for Settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL_ORD",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZL_ORD",
+      "description": "General counter for order",
+      "data_element": "CO_APLZL",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "NAVNW",
+      "description": "Non-deductible input tax",
+      "data_element": "NAVNW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KBLNR",
+      "description": "Document Number for Earmarked Funds",
+      "data_element": "KBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLPOS",
+      "description": "Earmarked Funds: Document Item",
+      "data_element": "KBLPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LSTAR",
+      "description": "Activity Type",
+      "data_element": "LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PRZNR",
+      "description": "Business Process",
+      "data_element": "CO_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "GRANT_NBR",
+      "description": "Grant",
+      "data_element": "GM_GRANT_NBR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDGET_PD",
+      "description": "FM: Budget Period",
+      "data_element": "FM_BUDGET_PERIOD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FM_SPLIT_BATCH",
+      "description": "Batch to group results from an PSM assignment distribution",
+      "data_element": "FMSP_SPLIT_BATCH",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "FM_SPLIT_BEGRU",
+      "description": "Authorization group for PSM account assignment distribution",
+      "data_element": "FMSP_SPLIT_AUTG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AA_FINAL_IND",
+      "description": "Final Account Assignment Indicator",
+      "data_element": "AA_FINAL_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AA_FINAL_REASON",
+      "description": "Final Account Assignment Reason Code",
+      "data_element": "AA_FINAL_REASON",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AA_FINAL_QTY",
+      "description": "Final Account Assignment Quantity",
+      "data_element": "AA_FINAL_QTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AA_FINAL_QTY_F",
+      "description": "Final Account Assignment Quantity (Floating Point Number)",
+      "data_element": "AA_FINAL_QTY_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "MENGE_F",
+      "description": "Quantity (Floating Point Number - Internal Field)",
+      "data_element": "MENGE_F",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "EGRUP",
+      "description": "Equity group",
+      "data_element": "JV_EGROUP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Joint Venture",
+      "data_element": "JV_NAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TCOBJNR",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "DATEOFSERVICE",
+      "description": "Date of Service",
+      "data_element": "VVBEACTDATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NOTAXCORR",
+      "description": "Do Not Consider Item in Input Tax Correction",
+      "data_element": "VVREITNOTAXCORR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIFFOPTRATE",
+      "description": "Real estate option rate",
+      "data_element": "POPTSATZ",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "6"
+    },
+    {
+      "name": "HASDIFFOPTRATE",
+      "description": "Use Different Option Rate",
+      "data_element": "VVREITUSEDIFFOPTRATE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "- Purpose: The EKKN table in SAP is used to store information about account assignments in purchasing documents. It provides details about the various cost objects that are associated with a particular purchase order line item, such as cost centers, profit centers, and funds. \n- Common Use Cases: \n  - This table is commonly used in various business processes, such as budgeting, cost controlling, and project management. It can also be used for reporting purposes to gain insights into the financial aspects of purchasing activities within an organization.",
+    "timestamp": "2025-02-13T13:40:53.795887",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

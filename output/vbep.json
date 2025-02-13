@@ -1,0 +1,501 @@
+{
+  "name": "VBEP",
+  "description": "Sales Document: Schedule Line Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales Document",
+      "data_element": "VBELN_VA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Sales Document Item",
+      "data_element": "POSNR_VA",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ETENR",
+      "description": "Delivery Schedule Line Number",
+      "data_element": "ETENR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ETTYP",
+      "description": "Schedule line category",
+      "data_element": "ETTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LFREL",
+      "description": "Item is relevant for delivery",
+      "data_element": "LFREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EDATU",
+      "description": "Schedule line date",
+      "data_element": "EDATU",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "EZEIT",
+      "description": "Arrival time",
+      "data_element": "EZEIT_VBEP",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "WMENG",
+      "description": "Order quantity in sales units",
+      "data_element": "WMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BMENG",
+      "description": "Confirmed Quantity",
+      "data_element": "BMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VRKME",
+      "description": "Sales unit",
+      "data_element": "VRKME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LMENG",
+      "description": "Required quantity for mat.management in stockkeeping units",
+      "data_element": "LMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BDDAT",
+      "description": "Requirement date (deadline for procurement)",
+      "data_element": "BDDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BDART",
+      "description": "Requirement type",
+      "data_element": "BDART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PLART",
+      "description": "Planning type",
+      "data_element": "PLART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELE",
+      "description": "Business document number",
+      "data_element": "VBELE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNE",
+      "description": "Business item number",
+      "data_element": "POSNE",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ETENE",
+      "description": "Schedule line",
+      "data_element": "ETENE",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RSDAT",
+      "description": "Earliest possible reservation date",
+      "data_element": "RSDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IDNNR",
+      "description": "Maintenance request",
+      "data_element": "IDNNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BANFN",
+      "description": "Purchase Requisition Number",
+      "data_element": "BANFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BSART",
+      "description": "Order Type (Purchasing)",
+      "data_element": "BSART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTYP",
+      "description": "Purchasing Document Category",
+      "data_element": "BSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEPOS",
+      "description": "Confirmation status of schedule line (incl.ALE)",
+      "data_element": "WEPOS_A",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REPOS",
+      "description": "Invoice Receipt Indicator",
+      "data_element": "REPOS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LRGDT",
+      "description": "Return date for returnable packaging",
+      "data_element": "LRGDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PRGRS",
+      "description": "Date type (day, week, month, interval)",
+      "data_element": "PRGRS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TDDAT",
+      "description": "Transportation Planning Date",
+      "data_element": "TDDAT_D",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MBDAT",
+      "description": "Material Staging/Availability Date",
+      "data_element": "MBDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LDDAT",
+      "description": "Loading Date",
+      "data_element": "LDDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "WADAT",
+      "description": "Goods Issue Date",
+      "data_element": "WADAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CMENG",
+      "description": "Corrected quantity in sales unit",
+      "data_element": "CMENG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LIFSP",
+      "description": "Schedule line blocked for delivery",
+      "data_element": "LIFSP_EP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "GRSTR",
+      "description": "Group definition of structure data",
+      "data_element": "GRSTR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ABART",
+      "description": "Release type",
+      "data_element": "ABART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABRUF",
+      "description": "Forecast Delivery schedule number",
+      "data_element": "ABRUF",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ROMS1",
+      "description": "Committed quantity",
+      "data_element": "DCQNT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMS2",
+      "description": "Size 2",
+      "data_element": "ROMS2",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMS3",
+      "description": "Size 3",
+      "data_element": "ROMS3",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ROMEI",
+      "description": "Unit of measure for sizes 1 to 3",
+      "data_element": "ROMEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RFORM",
+      "description": "Formula key",
+      "data_element": "RFORM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "UMVKZ",
+      "description": "Numerator (factor) for conversion of sales quantity into SKU",
+      "data_element": "UMVKZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "UMVKN",
+      "description": "Denominator (Divisor) for Conversion of Sales Qty into SKU",
+      "data_element": "UMVKN",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VERFP",
+      "description": "Availability confirmed automatically",
+      "data_element": "VERFP_MAS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BNFPO",
+      "description": "Item Number of Purchase Requisition",
+      "data_element": "BNFPO",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ETART",
+      "description": "Schedule line type EDI",
+      "data_element": "EDI_ETTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNUM",
+      "description": "Planned order number",
+      "data_element": "PLNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SERNR",
+      "description": "BOM explosion number",
+      "data_element": "SERNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AESKD",
+      "description": "Customer Engineering Change Status",
+      "data_element": "AESKD",
+      "type": "CHAR",
+      "length": "17",
+      "decimals": "0"
+    },
+    {
+      "name": "ABGES",
+      "description": "Guaranteed (factor between 0 and 1)",
+      "data_element": "ABGES_CM",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "MBUHR",
+      "description": "Material Staging Time (Local, Relating to a Plant)",
+      "data_element": "MBUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TDUHR",
+      "description": "Transp. Planning Time (Local, Relating to a Shipping Point)",
+      "data_element": "TDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LDUHR",
+      "description": "Loading Time (Local Time Relating to a Shipping Point)",
+      "data_element": "LDUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "WAUHR",
+      "description": "Time of Goods Issue (Local, Relating to a Plant)",
+      "data_element": "WAUHR",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AULWE",
+      "description": "Route Schedule",
+      "data_element": "AULWE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERDATE",
+      "description": "Handover Date at the Handover Location",
+      "data_element": "HANDOVER_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERTIME",
+      "description": "Handover time at the handover location",
+      "data_element": "HANDOVER_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MBDAT_DRS",
+      "description": "Material Availability Date Third-Party Order Planning",
+      "data_element": "MBDAT_DRS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The VBEP table stores schedule line data for sales orders in SAP. It is used to manage delivery schedules, track order quantities, and monitor delivery progress. VBEP is linked to other tables such as VBFA (sales order item data) and LIKP (delivery header data) through foreign key relationships. Common use cases include managing order scheduling, tracking inventory levels, and processing deliveries.",
+    "timestamp": "2025-02-13T13:40:57.067875",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

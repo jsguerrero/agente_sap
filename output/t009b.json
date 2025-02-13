@@ -1,0 +1,94 @@
+{
+  "name": "T009B",
+  "description": "Fiscal year variant periods",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PERIV",
+      "description": "Fiscal Year Variant",
+      "data_element": "PERIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BDATJ",
+      "description": "Posting Date YYYY",
+      "data_element": "BDATJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUMON",
+      "description": "Posting date calendar month",
+      "data_element": "BUMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BUTAG",
+      "description": "Calendar day from the posting date",
+      "data_element": "BUTAG",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "POPER",
+      "description": "Posting period",
+      "data_element": "POPER",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RELJR",
+      "description": "Year shift relative to the current year",
+      "data_element": "RELJR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T009B",
+      "field": "MANDT",
+      "foreign_key_table": "T009B",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "T009B",
+      "field": "PERIV",
+      "foreign_key_table": "T009B",
+      "foreign_key_field": "PERIV",
+      "check_table": "T009",
+      "check_field": "Fiscal Year Variants"
+    },
+    {
+      "table": "T009B",
+      "field": "PERIV",
+      "foreign_key_table": "T009B",
+      "foreign_key_field": "MANDT",
+      "check_table": "T009",
+      "check_field": "Fiscal Year Variants"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. Main purpose of the table: Store fiscal year variants and their associated periods.\n2. Key relationships with other tables: This table has foreign key relationships with T000 (Clients) and T009 (Fiscal Year Variants) tables.\n3. Common use cases: Defining posting periods and calendars for financial reporting purposes.",
+    "timestamp": "2025-02-13T13:45:56.255252",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

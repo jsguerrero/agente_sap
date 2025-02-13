@@ -1,0 +1,565 @@
+{
+  "name": "PRCD_ELEMENTS",
+  "description": "PRCD_ELEMENTS is a standard SAP Table which is used to store Pricing Elements data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP PRCD_ELEMENTS table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: A - Application table (master and transaction data)\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type or numeric)\nDictionary Type: Transparent table\nDatabase Table: PRCD_ELEMENTS\n\n\nPRCD_ELEMENTS table structure field list\nBelow is the full PRCD_ELEMENTS field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nCLIENT\tClient\tMANDT\tCLNT\t3(0)\t\t\tMANDT\t\t\t\nKNUMV\tNumber of the Document Condition\tKNUMV\tCHAR\t10(0)\t\t\tKNUMV\t\t\t\nKPOSN\tCondition item number\tKPOSN\tNUMC\t6(0)\t\t\tNUM6\t\t\t\nSTUNR\tStep Number\tSTUNR\tNUMC\t3(0)\tAssigned to domain\t\tSTUNR\t\t\t\nZAEHK\tCondition Counter\tVFPRC_COND_COUNT\tNUMC\t3(0)\t\t\tZAEHK\t\t\t\nKAPPL\tApplication\tKAPPL\tCHAR\t2(0)\tAssigned to domain\t\tKAPPL\tKAP\t\t\nKSCHL\tCondition type\tKSCHA\tCHAR\t4(0)\tAssigned to domain\t\tKSCHL\tVKS\t\t\nKDATU\tTimestamp for Pricing\tVFPRC_TIMESTAMP\tCHAR\t14(0)\t\t\tTIMESTAMP\t\t\t\nKRECH\tCalculation Type for Condition\tKRECH_LONG\tCHAR\t3(0)\t\t\tKRECH3\t\t\t\nKAWRT\tCondition Basis Value\tVFPRC_ELEMENT_BASE_VALUE\tDEC\t24(9)\t\t\tVFPRC_DEC_VALUE\t\t\t\nKBETR\tRate (Amount or Percentage)\tVFPRC_ELEMENT_AMOUNT\tDEC\t24(9)\t\t\tVFPRC_DEC_VALUE\t\t\t\nWAERS\tCurrency Key\tWAERS\tCUKY\t5(0)\tAssigned to domain\t\tWAERS\tFWS\t\t\nKKURS\tCondition exchange rate for conversion to local currency\tKKURS\tDEC\t9(5)\t\tEXCRT\tKKURS\t\t\t\nKPEIN\tCondition Pricing Unit\tKPEIN\tDEC\t5(0)\t\t\tKPEIN\t\t\t\nKMEIN\tCondition Unit in the Document\tKVMEI\tUNIT\t3(0)\tAssigned to domain\tCUNIT\tMEINS\t\t\t\nKUMZA\tNumerator for Converting to Base UoM\tVFPRC_NUMERATOR\tDEC\t10(0)\t\t\tVFPRC_NUMERATOR\t\t\t\nKUMNE\tDenominator for Converting to Base UoM\tVFPRC_DENOMINATOR\tDEC\t10(0)\t\t\tVFPRC_DENOMINATOR\t\t\t\nKNTYP\tCondition Category (Examples: Tax, Freight, Price, Cost)\tKNTYP\tCHAR\t1(0)\t\t\tKNTYP\t\t\t\nKSTAT\tCondition is used for statistics\tKSTAT\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nKNPRS\tScale Type\tSTFKZ\tCHAR\t1(0)\t\t\tSTFKZ\t\t\t\nKRUEK\tCondition is Relevant for Accrual (e.g. Freight)\tKRUEK\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nKRELI\tCondition for Invoice List\tKRELI\tCHAR\t1(0)\t\t\tKRELI\t\t\t\nKHERK\tOrigin of the Condition\tKHERK\tCHAR\t1(0)\t\t\tKHERK\t\t\t\nKGRPE\tGroup Condition\tKGRPE\tCHAR\t1(0)\t\t\tKGRPE\t\t\t\nKOLNR\tAccess sequence - Access number\tKOLNR\tNUMC\t3(0)\tAssigned to domain\t\tKOLNR_LONG\t\t\t\nKNUMH\tNumber of the Condition Record\tKNUMH\tCHAR\t10(0)\t\t\tKNUMH\t\t\t\nKOPOS\tSequential Number of the Condition\tKOPOS_LONG\tNUMC\t3(0)\t\t\tNUM03\t\t\t\nKVSL1\tAccount Key\tKVSL1\tCHAR\t3(0)\tAssigned to domain\t\tKVSCHL\t\t\t\nSAKN1\tG/L Account Number\tSAKNR\tCHAR\t10(0)\t\tALPHA\tSAKNR\tSAK\tC_SAKNR\tSAKNR\nMWSK1\tTax on sales/purchases code\tMWSKZ\tCHAR\t2(0)\tAssigned to domain\t\tMWSKZ\t\t\t\nKVSL2\tAccount Key - Accruals / Provisions\tKVSL2\tCHAR\t3(0)\tAssigned to domain\t\tKVSCHL\t\t\t\nSAKN2\tNumber of Accruals Account\tSAKNR_ACCR\tCHAR\t10(0)\t\tALPHA\tSAKNR\tSAK\tSAKO\tSAKNR\nMWSK2\tWithholding Tax Code\tWT_WITHCD\tCHAR\t2(0)\tAssigned to domain\t\tWT_WITHCD\t\t\t\nLIFNR\tAccount Number of Vendor or Creditor\tLIFNR\tCHAR\t10(0)\t\tALPHA\tLIFNR\tLIF\tKRED_C\tLIFNR\nKDIFF\tRounding-Off Difference of the Condition\tKDIFF\tCURR\t5(2)\t\t\tVFPRC_CURR_VALUE5\t\t\t\nKWERT\tCondition Value\tVFPRC_ELEMENT_VALUE\tCURR\t15(2)\t\t\tWERTV8\t\t\t\nWAERK\tSD document currency\tWAERK\tCUKY\t5(0)\tAssigned to domain\t\tWAERS\tFWS\t\t\nKSTEU\tCondition Control\tKSTEU\tCHAR\t1(0)\t\t\tKSTEU\t\t\t\nKINAK\tCondition is Inactive\tKINAK\tCHAR\t1(0)\t\t\tKINAK\t\t\t\nKOAID\tCondition Class\tKOAID\tCHAR\t1(0)\t\t\tKOAID\t\t\t\nZAEKO\tCondition Counter (Header)\tVFPRC_COND_COUNT_HEAD\tNUMC\t3(0)\t\t\tZAEHK\t\t\t\nKFAKTOR\tFactor for Condition Base Value\tKFAKTOR\tFLTP\t16(16)\t\t\tFLTP\t\t\t\nKDUPL\tStructure Condition\tKDUPL\tCHAR\t1(0)\t\t\tKDUPL\t\t\t\nKFAKTOR1\tFactor for Condition Basis (Period)\tKFAKTOR1\tFLTP\t16(16)\t\t\tFLTP\t\t\t\nKZBZG\tScale Basis Indicator\tKZBZG_LONG\tCHAR\t3(0)\t\t\tKZBZG_LONG\t\t\t\nKSTBS\tScale Basis Value\tVFRPC_SCALE_BASE_VALUE\tDEC\t24(9)\t\t\tVFPRC_DEC_VALUE\t\t\t\nKONMS\tCondition Scale Unit of Measure\tKONMS\tUNIT\t3(0)\tAssigned to domain\tCUNIT\tMEINS\t\t\t\nKONWS\tScale Currency\tKONWS\tCUKY\t5(0)\tAssigned to domain\t\tWAERS\tFWS\t\t\nKWAEH\tCondition Currency (for Cumulation Fields)\tKWAEH\tCUKY\t5(0)\tAssigned to domain\t\tWAERS\tFWS\t\t\nKWERT_K\tCondition Value\tVFPRC_ELEMENT_VALUE\tCURR\t15(2)\t\t\tWERTV8\t\t\t\nKFKIV\tCondition for Intercompany Billing\tKFKIV\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nKMPRS\tCondition Changed Manually\tKMPRS\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nPRSQU\tPrice Source\tPRSQU1\tCHAR\t1(0)\t\t\tPRSQU\t\t\t\nTXJLV\tTax jurisdiction code level\tTXJCD_LEVEL\tCHAR\t1(0)\t\t\tCHAR1\t\t\t\nKBFLAG\tBit encrypted flags in Pricing\tKBFLAG\tRAW\t2(0)\t\t\tKBFLAG\t\t\t\nKOUPD\tCondition Update\tKOUPD\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nKMXAW\tIndicator for Maximum Condition Basis Value\tKMXAW\tCHAR\t1(0)\t\t\tKMXWR\t\t\t\nKMXWR\tIndicator for Maximum Condition Amount\tKMXWR\tCHAR\t1(0)\t\t\tKMXWR\t\t\t\nKAWRT_K\tCondition Basis Value\tVFPRC_ELEMENT_BASE_VALUE\tDEC\t24(9)\t\t\tVFPRC_DEC_VALUE\t\t\t\nKUNNR\tCustomer number (rebate recipient)\tKUNNR_KO\tCHAR\t10(0)\tAssigned to domain\tALPHA\tKUNNR\tKUN\t\t\nKVARC\tCondition Used for Variant Configuration\tKVARC\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nVARCOND\tVariant Condition\tVARCOND\tCHAR\t26(0)\tAssigned to domain\t\tVARCON\t\t\t\nKTREL\tRelevance for Account Assignment\tKTREL\tCHAR\t1(0)\t\t\tKTREL\t\t\t\nMDFLG\tIndicator: Matrix Maintenance\tMDFLG\tCHAR\t1(0)\t\t\tMDFLG\t\t\t\n_DATAAGING\tData Filter Value for Data Aging\tDATA_TEMPERATURE\tDATS\t8(0)\t\t\tDATA_TEMPERATURE\t\t\t\nCPF_GUID\tIdentifier of CPF Formula in Document\tCPF_GUID\tCHAR\t32(0)\t\t\tSYSUUID_C\t\t\t\nKAQTY\tAdjusted Quantity\tKAQTY\tDEC\t31(14)\t\t\tQUAN31\t\t\t\nVAL_ZERO\tProcess conditions with value equal to zero\tVAL_ZERO\tCHAR\t1(0)\t\t\tVAL_ZERO\t\t\t\nIS_ACCT_DETN_RELEVANT\tStatistical and Relevant for Account Determination\tIS_ACCT_DETN_RELEVANT\tCHAR\t1(0)\t\t\tXFELD",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the Document Condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KPOSN",
+      "description": "Condition item number",
+      "data_element": "KPOSN",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "STUNR",
+      "description": "Step Number",
+      "data_element": "STUNR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEHK",
+      "description": "Condition Counter",
+      "data_element": "VFPRC_COND_COUNT",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPPL",
+      "description": "Application",
+      "data_element": "KAPPL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KSCHL",
+      "description": "Condition type",
+      "data_element": "KSCHA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KDATU",
+      "description": "Timestamp for Pricing",
+      "data_element": "VFPRC_TIMESTAMP",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "KRECH",
+      "description": "Calculation Type for Condition",
+      "data_element": "KRECH_LONG",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KAWRT",
+      "description": "Condition Basis Value",
+      "data_element": "VFPRC_ELEMENT_BASE_VALUE",
+      "type": "DEC",
+      "length": "24",
+      "decimals": "9"
+    },
+    {
+      "name": "KBETR",
+      "description": "Rate (Amount or Percentage)",
+      "data_element": "VFPRC_ELEMENT_AMOUNT",
+      "type": "DEC",
+      "length": "24",
+      "decimals": "9"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KKURS",
+      "description": "Condition exchange rate for conversion to local currency",
+      "data_element": "KKURS",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "KPEIN",
+      "description": "Condition Pricing Unit",
+      "data_element": "KPEIN",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KMEIN",
+      "description": "Condition Unit in the Document",
+      "data_element": "KVMEI",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KUMZA",
+      "description": "Numerator for Converting to Base UoM",
+      "data_element": "VFPRC_NUMERATOR",
+      "type": "DEC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUMNE",
+      "description": "Denominator for Converting to Base UoM",
+      "data_element": "VFPRC_DENOMINATOR",
+      "type": "DEC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KNTYP",
+      "description": "Condition Category (Examples: Tax, Freight, Price, Cost)",
+      "data_element": "KNTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTAT",
+      "description": "Condition is used for statistics",
+      "data_element": "KSTAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNPRS",
+      "description": "Scale Type",
+      "data_element": "STFKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KRUEK",
+      "description": "Condition is Relevant for Accrual (e.g. Freight)",
+      "data_element": "KRUEK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KRELI",
+      "description": "Condition for Invoice List",
+      "data_element": "KRELI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KHERK",
+      "description": "Origin of the Condition",
+      "data_element": "KHERK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KGRPE",
+      "description": "Group Condition",
+      "data_element": "KGRPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOLNR",
+      "description": "Access sequence - Access number",
+      "data_element": "KOLNR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMH",
+      "description": "Number of the Condition Record",
+      "data_element": "KNUMH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KOPOS",
+      "description": "Sequential Number of the Condition",
+      "data_element": "KOPOS_LONG",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVSL1",
+      "description": "Account Key",
+      "data_element": "KVSL1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKN1",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSK1",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KVSL2",
+      "description": "Account Key - Accruals / Provisions",
+      "data_element": "KVSL2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKN2",
+      "description": "Number of Accruals Account",
+      "data_element": "SAKNR_ACCR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSK2",
+      "description": "Withholding Tax Code",
+      "data_element": "WT_WITHCD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDIFF",
+      "description": "Rounding-Off Difference of the Condition",
+      "data_element": "KDIFF",
+      "type": "CURR",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "KWERT",
+      "description": "Condition Value",
+      "data_element": "VFPRC_ELEMENT_VALUE",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERK",
+      "description": "SD document currency",
+      "data_element": "WAERK",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTEU",
+      "description": "Condition Control",
+      "data_element": "KSTEU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KINAK",
+      "description": "Condition is Inactive",
+      "data_element": "KINAK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOAID",
+      "description": "Condition Class",
+      "data_element": "KOAID",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEKO",
+      "description": "Condition Counter (Header)",
+      "data_element": "VFPRC_COND_COUNT_HEAD",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KFAKTOR",
+      "description": "Factor for Condition Base Value",
+      "data_element": "KFAKTOR",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "KDUPL",
+      "description": "Structure Condition",
+      "data_element": "KDUPL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KFAKTOR1",
+      "description": "Factor for Condition Basis (Period)",
+      "data_element": "KFAKTOR1",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "KZBZG",
+      "description": "Scale Basis Indicator",
+      "data_element": "KZBZG_LONG",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTBS",
+      "description": "Scale Basis Value",
+      "data_element": "VFRPC_SCALE_BASE_VALUE",
+      "type": "DEC",
+      "length": "24",
+      "decimals": "9"
+    },
+    {
+      "name": "KONMS",
+      "description": "Condition Scale Unit of Measure",
+      "data_element": "KONMS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KONWS",
+      "description": "Scale Currency",
+      "data_element": "KONWS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KWAEH",
+      "description": "Condition Currency (for Cumulation Fields)",
+      "data_element": "KWAEH",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KWERT_K",
+      "description": "Condition Value",
+      "data_element": "VFPRC_ELEMENT_VALUE",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "KFKIV",
+      "description": "Condition for Intercompany Billing",
+      "data_element": "KFKIV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KMPRS",
+      "description": "Condition Changed Manually",
+      "data_element": "KMPRS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRSQU",
+      "description": "Price Source",
+      "data_element": "PRSQU1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJLV",
+      "description": "Tax jurisdiction code level",
+      "data_element": "TXJCD_LEVEL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KBFLAG",
+      "description": "Bit encrypted flags in Pricing",
+      "data_element": "KBFLAG",
+      "type": "RAW",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KOUPD",
+      "description": "Condition Update",
+      "data_element": "KOUPD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KMXAW",
+      "description": "Indicator for Maximum Condition Basis Value",
+      "data_element": "KMXAW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KMXWR",
+      "description": "Indicator for Maximum Condition Amount",
+      "data_element": "KMXWR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KAWRT_K",
+      "description": "Condition Basis Value",
+      "data_element": "VFPRC_ELEMENT_BASE_VALUE",
+      "type": "DEC",
+      "length": "24",
+      "decimals": "9"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer number (rebate recipient)",
+      "data_element": "KUNNR_KO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KVARC",
+      "description": "Condition Used for Variant Configuration",
+      "data_element": "KVARC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VARCOND",
+      "description": "Variant Condition",
+      "data_element": "VARCOND",
+      "type": "CHAR",
+      "length": "26",
+      "decimals": "0"
+    },
+    {
+      "name": "KTREL",
+      "description": "Relevance for Account Assignment",
+      "data_element": "KTREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MDFLG",
+      "description": "Indicator: Matrix Maintenance",
+      "data_element": "MDFLG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "_DATAAGING",
+      "description": "Data Filter Value for Data Aging",
+      "data_element": "DATA_TEMPERATURE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPF_GUID",
+      "description": "Identifier of CPF Formula in Document",
+      "data_element": "CPF_GUID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "KAQTY",
+      "description": "Adjusted Quantity",
+      "data_element": "KAQTY",
+      "type": "DEC",
+      "length": "31",
+      "decimals": "14"
+    },
+    {
+      "name": "VAL_ZERO",
+      "description": "Process conditions with value equal to zero",
+      "data_element": "VAL_ZERO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "IS_ACCT_DETN_RELEVANT",
+      "description": "Statistical and Relevant for Account Determination",
+      "data_element": "IS_ACCT_DETN_RELEVANT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Purpose: To store data related to a specific entity or concept within the SAP system.\n2. Key Relationships: None specified in the provided information.\n3. Common Use Cases: Data storage, retrieval, and analysis for various business processes and applications.",
+    "timestamp": "2025-02-13T13:43:37.022346",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "TVV4T",
+  "description": "Customer group 4: Description",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR4",
+      "description": "Customer group 4",
+      "data_element": "KVGR4",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BEZEI",
+      "description": "Description",
+      "data_element": "BEZEI20",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TVV4T",
+      "field": "KVGR4",
+      "foreign_key_table": "TVV4T",
+      "foreign_key_field": "MANDT",
+      "check_table": "TVV4",
+      "check_field": "Customer Group 4"
+    },
+    {
+      "table": "TVV4T",
+      "field": "KVGR4",
+      "foreign_key_table": "TVV4T",
+      "foreign_key_field": "KVGR4",
+      "check_table": "TVV4",
+      "check_field": "Customer Group 4"
+    },
+    {
+      "table": "TVV4T",
+      "field": "MANDT",
+      "foreign_key_table": "TVV4T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "TVV4T",
+      "field": "SPRAS",
+      "foreign_key_table": "TVV4T",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The TVV4T table stores descriptions for customer group 4. It is related to the TVV4 table through the KVGR4 field and to the T000 and T002 tables through the MANDT and SPRAS fields, respectively. Common use cases include retrieving customer group 4 descriptions based on language and client.",
+    "timestamp": "2025-02-13T13:46:14.719200",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

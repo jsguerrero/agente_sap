@@ -1,0 +1,285 @@
+{
+  "name": "STKO",
+  "description": "BOM Header",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STLTY",
+      "description": "BOM category",
+      "data_element": "STLTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STLNR",
+      "description": "Bill of material",
+      "data_element": "STNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAL",
+      "description": "Alternative BOM",
+      "data_element": "STALT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STKOZ",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHV",
+      "description": "Technical status from",
+      "data_element": "TECHV",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AENNR",
+      "description": "Change Number",
+      "data_element": "AENNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LKENZ",
+      "description": "Deletion Indicator",
+      "data_element": "LKENZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEKZ",
+      "description": "Deletion flag for BOMs",
+      "data_element": "LOKNZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VGKZL",
+      "description": "Previous header counter",
+      "data_element": "VGKZL",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANDAT",
+      "description": "Date record created on",
+      "data_element": "ANDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANNAM",
+      "description": "User who created record",
+      "data_element": "ANNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BMEIN",
+      "description": "Base unit of measure for BOM",
+      "data_element": "BASME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BMENG",
+      "description": "Base quantity",
+      "data_element": "BASMN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "CADKZ",
+      "description": "CAD Indicator",
+      "data_element": "CADKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LABOR",
+      "description": "Laboratory/design office",
+      "data_element": "LABOR",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LTXSP",
+      "description": "Long Text Language, for Creation of a Change Document",
+      "data_element": "LTXSP_CP",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STKTX",
+      "description": "Alternative BOM Text",
+      "data_element": "STKTX",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "STLST",
+      "description": "BOM status",
+      "data_element": "STLST",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WRKAN",
+      "description": "Plant where BOM or alternative/variant created",
+      "data_element": "WRKAN",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DVDAT",
+      "description": "Date of last date shift",
+      "data_element": "DVDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DVNAM",
+      "description": "Name of the user who carried out the date shift",
+      "data_element": "DVNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEHLP",
+      "description": "Date Shift Hierarchy Indicator",
+      "data_element": "CC_AEHLP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ALEKZ",
+      "description": "ALE indicator",
+      "data_element": "CS_ALEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GUIDX",
+      "description": "Global identification of a BOM header change status",
+      "data_element": "CS_GUIDB",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_OWNING_SYSTEM",
+      "description": "Owning System",
+      "data_element": "Y_OWNING_SYSTEM",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_MAINTAINED_BY",
+      "description": "Maintained By",
+      "data_element": "Y_MAINTAINED_BY",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_MBOMBYTECH",
+      "description": "Technology R&D Approver",
+      "data_element": "Y_MBOMBYTECH",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_MBOMBYPE",
+      "description": "Production Engineering",
+      "data_element": "Y_MBOMBYPE",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_PDMLINKID_H",
+      "description": "PDMLink Header ID",
+      "data_element": "Y_PDMLINKID_H",
+      "type": "CHAR",
+      "length": "36",
+      "decimals": "0"
+    },
+    {
+      "name": "YY_COMMONID",
+      "description": "BOMCommonID",
+      "data_element": "Y_COMMONID",
+      "type": "CHAR",
+      "length": "36",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The STKO table in SAP is used to store header information for bills of materials (BOMs). It includes data such as the BOM category, status, base unit of measure, and creation and change information. STKO is typically used in conjunction with other tables, such as STPO (BOM item data) and STAS (BOM status), to manage and track BOMs in the system.",
+    "timestamp": "2025-02-13T13:41:15.422938",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

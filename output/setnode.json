@@ -1,0 +1,174 @@
+{
+  "name": "SETNODE",
+  "description": "Lower-level sets in sets",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "LINEID",
+      "description": "Set line counter",
+      "data_element": "SETLINE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBSETCLS",
+      "description": "Class of a subordinate set",
+      "data_element": "SUBSETCLS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBSETSCLS",
+      "description": "Subclass of a subordinate set",
+      "data_element": "SUBSETSCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBSETNAME",
+      "description": "Subordinate set ID",
+      "data_element": "SUBSETNAME",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "SEQNR",
+      "description": "Sequential number of set line",
+      "data_element": "SETLNSEQNR",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "SETNODE",
+      "field": "MANDT",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SETCLASS",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SETCLASS",
+      "check_table": "SETCLS",
+      "check_field": "Set Classes"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "MANDT",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SETCLASS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SUBCLASS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SETNAME",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SUBSETCLS",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SUBSETCLS",
+      "check_table": "SETCLS",
+      "check_field": "Set Classes"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SUBSETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "MANDT",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SUBSETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SUBSETCLS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SUBSETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SUBSETSCLS",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    },
+    {
+      "table": "SETNODE",
+      "field": "SUBSETNAME",
+      "foreign_key_table": "SETNODE",
+      "foreign_key_field": "SUBSETNAME",
+      "check_table": "SETHEADER",
+      "check_field": "Set Header and Directory"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The SETNODE table stores information about lower-level sets within sets. It is related to the SETCLS table for set classes, the SETHEADER table for set header and directory, and itself for subordinate sets. Common use cases include managing set hierarchies and organizing data into sets and subsets.",
+    "timestamp": "2025-02-13T13:42:57.290236",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

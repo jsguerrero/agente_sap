@@ -1,0 +1,357 @@
+{
+  "name": "T881",
+  "description": "Ledger Master",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger",
+      "data_element": "RLDNR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "GCURR",
+      "description": "Currency key of the ledger currency",
+      "data_element": "GCURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "CLASS",
+      "description": "Ledger class",
+      "data_element": "LDCLS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TYP",
+      "description": "Type of ledger (client in which it is to be maintained)",
+      "data_element": "LEDGER_TYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TRCUR",
+      "description": "Store transaction currency",
+      "data_element": "TRCUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LCCUR",
+      "description": "Store second currency",
+      "data_element": "LCCUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RCCUR",
+      "description": "Store third currency",
+      "data_element": "RCCUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OCCUR",
+      "description": "Manage fourth currency",
+      "data_element": "OCCUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QUANT",
+      "description": "Store quantities",
+      "data_element": "QUANT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ATQNT",
+      "description": "Store additional quantities",
+      "data_element": "ATQNT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAB",
+      "description": "Totals Table",
+      "data_element": "GLTAB",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "RCOPY",
+      "description": "Maintenance by Copying Allowed",
+      "data_element": "RCOPY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SHKZ",
+      "description": "Maintain debits/credits indicator",
+      "data_element": "SHKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GLSIP",
+      "description": "Write line items",
+      "data_element": "GLSIP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VORTRAG",
+      "description": "Set up balance carry forward",
+      "data_element": "VORTR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DLDNR",
+      "description": "Average balance ledger",
+      "data_element": "RLDNR1",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XDLDNR",
+      "description": "Store average in the same ledger",
+      "data_element": "XDLDNR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CURT1",
+      "description": "Currency type of the local currency (HSL)",
+      "data_element": "CURT_HSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURT2",
+      "description": "Currency type of the group currency (KSL)",
+      "data_element": "CURT_KSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CURT3",
+      "description": "Currency type of currency 4",
+      "data_element": "CURT_OSL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "V2POST",
+      "description": "Delay the ledger update",
+      "data_element": "V2POST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LCTYP",
+      "description": "Type of consolidation",
+      "data_element": "LC_TYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FIX",
+      "description": "Indicator: Standard ledger",
+      "data_element": "G_LD_FIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "POST",
+      "description": "Postings can be made to ledger",
+      "data_element": "G_POST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ROLLUP",
+      "description": "Rollup allowed to the ledger",
+      "data_element": "G_ROLLUP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DEPLD",
+      "description": "Is the ledger an additional ledger?",
+      "data_element": "G_ZUSATZLD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "APPL",
+      "description": "Owner application",
+      "data_element": "GLXAPPL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBAPPL",
+      "description": "Subapplication",
+      "data_element": "GLXSUBAPPL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KOMP",
+      "description": "Component",
+      "data_element": "GLXKOMP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GZLEDGER",
+      "description": "Indicator: Ledger cannot be reset (delete)",
+      "data_element": "GZLEDGER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXIT",
+      "description": "Exit no. (S..: standard exits, U..: user exits)",
+      "data_element": "EXIT_NR_LD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KLDNR",
+      "description": "Export ledger",
+      "data_element": "G_KLDNR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYS",
+      "description": "Logical system",
+      "data_element": "LOGSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUTYP",
+      "description": "Valuation",
+      "data_element": "G_VALUTYP",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GCOMPRESS",
+      "description": "Summarize data",
+      "data_element": "G_COMPRESS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPLITMETHD",
+      "description": "Document Splitting Method",
+      "data_element": "SPLITMETHD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_DET_POPER",
+      "description": "Date with which the posting period is determined",
+      "data_element": "GLX_DATE_FOR_POS",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GLFLEX",
+      "description": "1-Character Indicator: Type of Ledger",
+      "data_element": "FAGL_TYPE_GLFLEX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XLEADING",
+      "description": "Indicator: Leading Ledger",
+      "data_element": "FAGL_FLAG_LEADING",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ORIENT_LEDGER",
+      "description": "Reference Ledger for General Ledger Accounting",
+      "data_element": "FAGL_ORIENTATION_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AVG_ROLLUP",
+      "description": "Indicator: Rollup Ledger for Daily Average Balances",
+      "data_element": "FAGL_TYPE_AVG_ROLLUP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCASH_LEDGER",
+      "description": "Cash Ledger Indicator",
+      "data_element": "FAGL_CASH_LEDGER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T881 table stores master data for ledgers in SAP's General Ledger Accounting (FI-GL). It contains information about the currency, class, type, and other attributes of each ledger. This table is used by various FI-GL modules to determine the accounting rules and settings for a particular ledger.",
+    "timestamp": "2025-02-13T13:41:53.684241",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

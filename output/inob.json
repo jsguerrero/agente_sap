@@ -1,0 +1,198 @@
+{
+  "name": "INOB",
+  "description": "Link between Internal Number and Object",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KLART",
+      "description": "Class Type",
+      "data_element": "KLASSENART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OBTAB",
+      "description": "Name of database table for object",
+      "data_element": "TABELLE",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJEK",
+      "description": "Key of Object to be Classified",
+      "data_element": "CUOBN",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "ROBTAB",
+      "description": "Name of database table of configurable object",
+      "data_element": "RTABELLE",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ROBJEK",
+      "description": "Key of configurable object",
+      "data_element": "RCUOBN",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "CLINT",
+      "description": "Internal Class Number of Configurable Object",
+      "data_element": "RCLINT",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STATU",
+      "description": "Classification status",
+      "data_element": "CLSTATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CUCOZHL",
+      "description": "Internal counter",
+      "data_element": "CUCOZHL",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PARENT",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ROOT",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "EXPERTE",
+      "description": "User as expert",
+      "data_element": "EXPRT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "DATUV",
+      "description": "Valid-From Date",
+      "data_element": "DATUV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHS",
+      "description": "Parameter Variant/Standard Variant",
+      "data_element": "TECHS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "INOB",
+      "field": "CLINT",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "MANDT",
+      "check_table": "KLAH",
+      "check_field": "Class Header Data"
+    },
+    {
+      "table": "INOB",
+      "field": "CLINT",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "CLINT",
+      "check_table": "KLAH",
+      "check_field": "Class Header Data"
+    },
+    {
+      "table": "INOB",
+      "field": "KLART",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "KLART",
+      "check_table": "TCLA",
+      "check_field": "Class Types"
+    },
+    {
+      "table": "INOB",
+      "field": "KLART",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCLA",
+      "check_field": "Class Types"
+    },
+    {
+      "table": "INOB",
+      "field": "MANDT",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "INOB",
+      "field": "OBTAB",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "OBTAB",
+      "check_table": "TCLO",
+      "check_field": "Key Fields of Objects"
+    },
+    {
+      "table": "INOB",
+      "field": "ROBTAB",
+      "foreign_key_table": "INOB",
+      "foreign_key_field": "ROBTAB",
+      "check_table": "TCLO",
+      "check_field": "Key Fields of Objects"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The INOB table stores the link between internal object numbers and classification data. It is related to tables such as KLAH (Class Header Data), TCLA (Class Types), TCLO (Key Fields of Objects), and T000 (Clients), enabling classification and configuration management. Common use cases include object classification, variant configuration, and technical object management.",
+    "timestamp": "2025-02-13T13:41:17.896129",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

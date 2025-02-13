@@ -1,0 +1,133 @@
+{
+  "name": "SETHANAHIER0101",
+  "description": "Hierarchy table for Cost Center Groups",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "HIERBASE",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "SUCC",
+      "description": "Node number in hierarchy table",
+      "data_element": "SETHANANODE",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRED",
+      "description": "Node number in hierarchy table",
+      "data_element": "SETHANANODE",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HLEVEL",
+      "description": "Level of the entry",
+      "data_element": "SETLEV",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SETID",
+      "description": "Identification of a set",
+      "data_element": "SETID",
+      "type": "CHAR",
+      "length": "34",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "VCOUNT",
+      "description": "Counter: Value table",
+      "data_element": "SETCNTVAL",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SEARCHFLD",
+      "description": "Search help field for set",
+      "data_element": "SETSEARCH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OLD_LINE",
+      "description": "Set line counter",
+      "data_element": "SETLINE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUE_FROM",
+      "description": "From Value",
+      "data_element": "SETVALMIN",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "VALUE_TO",
+      "description": "To value",
+      "data_element": "SETVALMAX",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "- Primary purpose: Stores hierarchical data for cost center groups, enabling grouping and organization of cost centers.\n- Key relationships: None (no foreign keys provided).\n- Common use cases: Defining cost center hierarchy, assigning cost centers to groups, analyzing cost data by group.",
+    "timestamp": "2025-02-13T13:41:48.772754",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

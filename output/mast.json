@@ -1,0 +1,117 @@
+{
+  "name": "MAST",
+  "description": "Material to BOM Link",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAN",
+      "description": "BOM Usage",
+      "data_element": "STLAN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STLNR",
+      "description": "Bill of material",
+      "data_element": "STNUM",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "STLAL",
+      "description": "Alternative BOM",
+      "data_element": "STALT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOSVN",
+      "description": "From Lot Size",
+      "data_element": "LOSVN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LOSBS",
+      "description": "To Lot Size",
+      "data_element": "LOSBS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ANDAT",
+      "description": "Date record created on",
+      "data_element": "ANDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANNAM",
+      "description": "User who created record",
+      "data_element": "ANNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AENAM",
+      "description": "Name of Person Who Changed Object",
+      "data_element": "AENAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CSLTY",
+      "description": "Indicator: configured material (material variant)",
+      "data_element": "CSLTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The MAST table stores the link between materials and bills of material (BOMs). It is used to manage the BOMs that are used to produce a particular material. The table has foreign key relationships with the MARA (material master) and STKO (BOM header) tables. Common use cases include creating, maintaining, and retrieving BOMs for materials.",
+    "timestamp": "2025-02-13T13:44:42.167689",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

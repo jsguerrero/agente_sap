@@ -1,0 +1,61 @@
+{
+  "name": "T009",
+  "description": "Fiscal Year Variants",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PERIV",
+      "description": "Fiscal Year Variant",
+      "data_element": "PERIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XKALE",
+      "description": "Indicator: Determine periods like calendar year ?",
+      "data_element": "XKALE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XJABH",
+      "description": "Indicator: Fiscal year variants year-dependent ?",
+      "data_element": "XJABH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZBP",
+      "description": "Number of posting periods",
+      "data_element": "ANZBP",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZSP",
+      "description": "Number of special periods",
+      "data_element": "ANZSP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The T009 table stores fiscal year variants, which define the posting and special periods used in a client. It is used to configure the fiscal calendar for each client.",
+    "timestamp": "2025-02-13T13:42:13.439261",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "T179",
+  "description": "Materials: Product Hierarchies",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PRODH",
+      "description": "Product hierarchy",
+      "data_element": "PRODH_D",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "STUFE",
+      "description": "Number of the level in the product hierarchy",
+      "data_element": "PRODH_STUF",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of the T179 table is to store information about product hierarchies.\n2. The table does not have any foreign key relationships with other tables.\n3. Common use cases include retrieving information about product hierarchies.",
+    "timestamp": "2025-02-13T13:41:08.299198",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "TSPAT",
+  "description": "Organizational Unit: Sales Divisions: Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VTEXT",
+      "description": "Name",
+      "data_element": "VTXTK",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TSPAT",
+      "field": "SPART",
+      "foreign_key_table": "TSPAT",
+      "foreign_key_field": "SPART",
+      "check_table": "TSPA",
+      "check_field": "Organizational Unit: Sales Divisions"
+    },
+    {
+      "table": "TSPAT",
+      "field": "SPART",
+      "foreign_key_table": "TSPAT",
+      "foreign_key_field": "MANDT",
+      "check_table": "TSPA",
+      "check_field": "Organizational Unit: Sales Divisions"
+    },
+    {
+      "table": "TSPAT",
+      "field": "SPRAS",
+      "foreign_key_table": "TSPAT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "Primary purpose of table TSPAT is to store and manage the display of sales division names in various languages.\nIt is linked to table TSPA via foreign key constraints involving fields SPART and MANDT. Additionally, TSPAT has a foreign key relationship with table T002 via field SPRAS.",
+    "timestamp": "2025-02-13T13:43:21.365905",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

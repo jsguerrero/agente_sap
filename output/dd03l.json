@@ -1,0 +1,253 @@
+{
+  "name": "DD03L",
+  "description": "Table Fields",
+  "fields": [
+    {
+      "name": "TABNAME",
+      "description": "Table Name",
+      "data_element": "TABNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "FIELDNAME",
+      "description": "Field Name",
+      "data_element": "FIELDNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "AS4LOCAL",
+      "description": "Activation Status of a Repository Object",
+      "data_element": "AS4LOCAL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AS4VERS",
+      "description": "Version of the entry (not used)",
+      "data_element": "AS4VERS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "POSITION",
+      "description": "Position of the field in the table",
+      "data_element": "TABFDPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KEYFLAG",
+      "description": "Identifies a key field of a table",
+      "data_element": "KEYFLAG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MANDATORY",
+      "description": "Flag: Field is required (not blank)",
+      "data_element": "MANDATORY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ROLLNAME",
+      "description": "Data element (semantic domain)",
+      "data_element": "ROLLNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "CHECKTABLE",
+      "description": "Check table name of the foreign key",
+      "data_element": "CHECKTABLE",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ADMINFIELD",
+      "description": "Nesting depth for includes",
+      "data_element": "ADMINFIELD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INTTYPE",
+      "description": "ABAP data type (C,D,N,...)",
+      "data_element": "INTTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INTLEN",
+      "description": "Internal Length in Bytes",
+      "data_element": "INTLEN",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "REFTABLE",
+      "description": "Table for reference field",
+      "data_element": "REFTABLE",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "PRECFIELD",
+      "description": "Name of included table",
+      "data_element": "PRECFIELD",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "REFFIELD",
+      "description": "Reference field for currency and qty fields",
+      "data_element": "REFFIELD",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "CONROUT",
+      "description": "Check or generating module for fields",
+      "data_element": "CONROUT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "NOTNULL",
+      "description": "Indicator that NOT NULL is forced for this field",
+      "data_element": "NOTNULL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DATATYPE",
+      "description": "Data Type in ABAP Dictionary",
+      "data_element": "DATATYPE_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LENG",
+      "description": "Length (No. of Characters)",
+      "data_element": "DDLENG",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "DECIMALS",
+      "description": "Number of Decimal Places",
+      "data_element": "DECIMALS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "DOMNAME",
+      "description": "Domain name",
+      "data_element": "DOMNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "SHLPORIGIN",
+      "description": "Origin of an Input Help",
+      "data_element": "SHLPORIGIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TABLETYPE",
+      "description": "DD: Flag if it is a table",
+      "data_element": "DDTABTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DEPTH",
+      "description": "DD: Depth for structured types",
+      "data_element": "TYPEDEPTH",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "COMPTYPE",
+      "description": "DD: Component Type",
+      "data_element": "COMPTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REFTYPE",
+      "description": "Type of Object Referenced",
+      "data_element": "DDREFTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGUFLAG",
+      "description": "DD: Indicator for a Language Field",
+      "data_element": "DDLANGUFLG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DBPOSITION",
+      "description": "Position of the field in the table",
+      "data_element": "TABFDPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANONYMOUS",
+      "description": "Anonymization Indicator (for User Fields)",
+      "data_element": "DDANONYM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OUTPUTSTYLE",
+      "description": "DD: Output Style (Output Style) for Decfloat Types",
+      "data_element": "OUTPUTSTYLE",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The DD03L table contains metadata about the fields in SAP database tables, including their technical attributes and relationships.\n2. It is used for various purposes such as data dictionary reporting, database administration, and application development.",
+    "timestamp": "2025-02-13T13:45:22.221592",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

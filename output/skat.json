@@ -1,0 +1,126 @@
+{
+  "name": "SKAT",
+  "description": "G/L Account Master Record (Chart of Accounts: Description)",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOPL",
+      "description": "Chart of Accounts",
+      "data_element": "KTOPL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKNR",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TXT20",
+      "description": "G/L account short text",
+      "data_element": "TXT20_SKAT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "TXT50",
+      "description": "G/L Account Long Text",
+      "data_element": "TXT50_SKAT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "MCOD1",
+      "description": "Search Term for Matchcode Search",
+      "data_element": "MCDS1",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "SKAT",
+      "field": "KTOPL",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T004",
+      "check_field": "Directory of Charts of Accounts"
+    },
+    {
+      "table": "SKAT",
+      "field": "KTOPL",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "KTOPL",
+      "check_table": "T004",
+      "check_field": "Directory of Charts of Accounts"
+    },
+    {
+      "table": "SKAT",
+      "field": "MANDT",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "SKAT",
+      "field": "SAKNR",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "MANDT",
+      "check_table": "SKA1",
+      "check_field": "G/L Account Master (Chart of Accounts)"
+    },
+    {
+      "table": "SKAT",
+      "field": "SAKNR",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "KTOPL",
+      "check_table": "SKA1",
+      "check_field": "G/L Account Master (Chart of Accounts)"
+    },
+    {
+      "table": "SKAT",
+      "field": "SAKNR",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "SAKNR",
+      "check_table": "SKA1",
+      "check_field": "G/L Account Master (Chart of Accounts)"
+    },
+    {
+      "table": "SKAT",
+      "field": "SPRAS",
+      "foreign_key_table": "SKAT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The SKAT table stores master data for general ledger (G/L) accounts within a specific chart of accounts. It provides descriptive information such as account short and long text, and search terms for matchcode searches. SKAT is linked to other tables such as SKA1 and T004 to provide comprehensive G/L account information and ensure data consistency across the system.",
+    "timestamp": "2025-02-13T13:42:33.240773",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

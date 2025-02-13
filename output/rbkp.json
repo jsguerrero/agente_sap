@@ -1,0 +1,1157 @@
+{
+  "name": "RBKP",
+  "description": "Document Header: Invoice Receipt",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Document Number of an Invoice Document",
+      "data_element": "RE_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BLART",
+      "description": "Document Type",
+      "data_element": "BLART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USNAM",
+      "description": "User name",
+      "data_element": "USNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "TCODE",
+      "description": "Transaction Code",
+      "data_element": "TCODE",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUDT",
+      "description": "Day On Which Accounting Document Was Entered",
+      "data_element": "CPUDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUTM",
+      "description": "Time of Entry",
+      "data_element": "CPUTM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VGART",
+      "description": "Transaction Type in AG08 (Internal Document Type)",
+      "data_element": "M8VGA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Different Invoicing Party",
+      "data_element": "LIFRE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KURSF",
+      "description": "Exchange rate",
+      "data_element": "KURSF",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "RMWWR",
+      "description": "Gross invoice amount in document currency",
+      "data_element": "RMWWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BEZNK",
+      "description": "Unplanned delivery costs",
+      "data_element": "BEZNK",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WMWST1",
+      "description": "Tax Amount in Document Currency with +/- Sign",
+      "data_element": "FWSTEV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSKZ1",
+      "description": "Tax code",
+      "data_element": "MWSKZ_MRM1",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WMWST2",
+      "description": "Obsolete: tax amount in document currency - do NOT use!",
+      "data_element": "FWSTEV_OLD",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSKZ2",
+      "description": "Obsolete: sales tax code",
+      "data_element": "MWSKZ_MRMO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ZTERM",
+      "description": "Terms of Payment Key",
+      "data_element": "DZTERM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1T",
+      "description": "Cash discount days 1",
+      "data_element": "DZBD1T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1P",
+      "description": "Cash Discount Percentage 1",
+      "data_element": "DZBD1P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "ZBD2T",
+      "description": "Cash discount days 2",
+      "data_element": "DZBD2T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD2P",
+      "description": "Cash Discount Percentage 2",
+      "data_element": "DZBD2P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "ZBD3T",
+      "description": "Net Payment Terms Period",
+      "data_element": "DZBD3T",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WSKTO",
+      "description": "Cash discount amount in document currency",
+      "data_element": "WSKTO",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XRECH",
+      "description": "Indicator: post invoice",
+      "data_element": "XRECH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BKTXT",
+      "description": "Document Header Text",
+      "data_element": "BKTXT",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "SAPRL",
+      "description": "SAP Release",
+      "data_element": "SAPRL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYS",
+      "description": "Logical system",
+      "data_element": "LOGSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XMWST",
+      "description": "Calculate tax automatically",
+      "data_element": "XMWST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STBLG",
+      "description": "Reversal document number",
+      "data_element": "RE_STBLG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STJAH",
+      "description": "Fiscal year of reversal document",
+      "data_element": "RE_STJAH",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ_BNK",
+      "description": "Tax Code",
+      "data_element": "MWSKZ_MRM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD_BNK",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "IVTYP",
+      "description": "Origin of a Logistics Invoice Verification Document",
+      "data_element": "IVTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XRBTX",
+      "description": "Indicator: more than one tax code",
+      "data_element": "XRBTX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REPART",
+      "description": "Indicator: Invoice Verification Type",
+      "data_element": "REPART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RBSTAT",
+      "description": "Invoice document status",
+      "data_element": "RBSTAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMVE",
+      "description": "Document condition - own conditions",
+      "data_element": "KNUMVE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMVL",
+      "description": "Document condition - vendor error",
+      "data_element": "KNUMVL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ARKUEN",
+      "description": "Automatic Invoice Reduction Amount (Net)",
+      "data_element": "ARKUEN",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ARKUEMW",
+      "description": "Sales Tax Portion of Automatic Invoice Reduction Amount",
+      "data_element": "ARKUEMW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MAKZN",
+      "description": "Manually accepted net difference amount",
+      "data_element": "MAKZN",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MAKZMW",
+      "description": "Tax Amount Accepted Manually",
+      "data_element": "MAKZMW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LIEFFN",
+      "description": "Vendor error (exclusive of tax)",
+      "data_element": "LIEFFN",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LIEFFMW",
+      "description": "Tax in vendor error",
+      "data_element": "LIEFFMW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XAUTAKZ",
+      "description": "Indicates automatically accepted invoices",
+      "data_element": "XAUTAKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ESRNR",
+      "description": "ISR Subscriber Number",
+      "data_element": "ESRNR",
+      "type": "CHAR",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "ESRPZ",
+      "description": "ISR Check Digit",
+      "data_element": "ESRPZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ESRRE",
+      "description": "ISR Reference Number",
+      "data_element": "ESRRE",
+      "type": "CHAR",
+      "length": "27",
+      "decimals": "0"
+    },
+    {
+      "name": "QSSHB",
+      "description": "Withholding Tax Base Amount",
+      "data_element": "QSSHB",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "QSFBT",
+      "description": "Withholding Tax-Exempt Amount (in Document Currency)",
+      "data_element": "QSFBT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "QSSKZ",
+      "description": "Withholding Tax Code",
+      "data_element": "QSSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DIEKZ",
+      "description": "Service Indicator (Foreign Payment)",
+      "data_element": "DIEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDL",
+      "description": "Supplying Country",
+      "data_element": "LANDL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LZBKZ",
+      "description": "State Central Bank Indicator",
+      "data_element": "LZBKZ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TXKRS",
+      "description": "Exchange Rate for Taxes",
+      "data_element": "TXKRS_BKPF",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "EMPFB",
+      "description": "Payee/Payer",
+      "data_element": "EMPFB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BVTYP",
+      "description": "Partner Bank Type",
+      "data_element": "BVTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HBKID",
+      "description": "Short Key for a House Bank",
+      "data_element": "HBKID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUONR",
+      "description": "Assignment Number",
+      "data_element": "DZUONR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "ZLSPR",
+      "description": "Payment Block Key",
+      "data_element": "DZLSPR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZLSCH",
+      "description": "Payment Method",
+      "data_element": "DZLSCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZFBDT",
+      "description": "Baseline Date for Due Date Calculation",
+      "data_element": "DZFBDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KIDNO",
+      "description": "Payment Reference",
+      "data_element": "KIDNO",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZG",
+      "description": "Invoice Reference: Document Number for Invoice Reference",
+      "data_element": "AWREF_REB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZJ",
+      "description": "Fiscal Year of the Relevant Invoice (for Credit Memo)",
+      "data_element": "REBZJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XINVE",
+      "description": "Indicator: Capital Goods Affected?",
+      "data_element": "XINVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EGMLD",
+      "description": "Reporting Country for Delivery of Goods within the EU",
+      "data_element": "EGMLD_BSEZ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XEGDR",
+      "description": "Indicator: Triangular deal within the EU ?",
+      "data_element": "XEGDR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VATDATE",
+      "description": "Tax Reporting Date",
+      "data_element": "VATDATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HKONT",
+      "description": "General Ledger Account",
+      "data_element": "HKONT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1BNFTYPE",
+      "description": "Nota Fiscal Type",
+      "data_element": "J_1BNFTYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BRNCH",
+      "description": "Branch Number",
+      "data_element": "J_1ABRNCH",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ERFPR",
+      "description": "Entry profile: Logistics Invoice Verification",
+      "data_element": "ERFPR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SECCO",
+      "description": "Section Code",
+      "data_element": "SECCO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME1",
+      "description": "Name 1",
+      "data_element": "NAME1_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME2",
+      "description": "Name 2",
+      "data_element": "NAME2_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME3",
+      "description": "Name 3",
+      "data_element": "NAME3_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME4",
+      "description": "Name 4",
+      "data_element": "NAME4_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTLZ",
+      "description": "Postal Code",
+      "data_element": "PSTLZ",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ORT01",
+      "description": "City",
+      "data_element": "ORT01_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1_GP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STRAS",
+      "description": "House number and street",
+      "data_element": "STRAS_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "PFACH",
+      "description": "PO Box",
+      "data_element": "PFACH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTL2",
+      "description": "P.O. Box Postal Code",
+      "data_element": "PSTL2",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSKTO",
+      "description": "Account Number of Bank Account At Post Office",
+      "data_element": "PSKTO",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "BANKN",
+      "description": "Bank account number",
+      "data_element": "BANKN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BANKL",
+      "description": "Bank number",
+      "data_element": "BANKL",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "BANKS",
+      "description": "Bank country key",
+      "data_element": "BANKS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STCD1",
+      "description": "Tax Number 1",
+      "data_element": "STCD1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "STCD2",
+      "description": "Tax Number 2",
+      "data_element": "STCD2",
+      "type": "CHAR",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "STKZU",
+      "description": "Liable for VAT",
+      "data_element": "STKZU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STKZA",
+      "description": "Indicator: Business Partner Subject to Equalization Tax?",
+      "data_element": "STKZA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REGIO",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BKONT",
+      "description": "Bank Control Key",
+      "data_element": "BKONT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTAWS",
+      "description": "Instruction key for data medium exchange",
+      "data_element": "DTAWS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DTAMS",
+      "description": "Indicator for Data Medium Exchange",
+      "data_element": "DTAMS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Character field of length 1",
+      "data_element": "CHAR_LG_01",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCPDK",
+      "description": "Indicator: Is the account a one-time account?",
+      "data_element": "XCPDK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EMPFG",
+      "description": "Payee code",
+      "data_element": "EMPFG",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "FITYP",
+      "description": "Tax type",
+      "data_element": "J_1AFITP_D",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STCDT",
+      "description": "Tax Number Type",
+      "data_element": "J_1ATOID",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STKZN",
+      "description": "Natural Person",
+      "data_element": "STKZN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STCD3",
+      "description": "Tax Number 3",
+      "data_element": "STCD3",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "STCD4",
+      "description": "Tax Number 4",
+      "data_element": "STCD4",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BKREF",
+      "description": "Reference specifications for bank details",
+      "data_element": "BKREF",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1KFREPRE",
+      "description": "Name of Representative",
+      "data_element": "REPRES",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1KFTBUS",
+      "description": "Type of Business",
+      "data_element": "GESTYP",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1KFTIND",
+      "description": "Type of Industry",
+      "data_element": "INDTYP",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ANRED",
+      "description": "Title",
+      "data_element": "ANRED",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG",
+      "description": "VAT Registration Number",
+      "data_element": "STCEG",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAME",
+      "description": "Entered by external system user",
+      "data_element": "ERNAME",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "REINDAT",
+      "description": "Invoice Receipt Date",
+      "data_element": "REINDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "UZAWE",
+      "description": "Payment Method Supplement",
+      "data_element": "UZAWE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FDLEV",
+      "description": "Planning level",
+      "data_element": "FDLEV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FDTAG",
+      "description": "Planning date",
+      "data_element": "FDTAG",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBFIX",
+      "description": "Fixed Payment Terms",
+      "data_element": "DZBFIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGKZ",
+      "description": "Indicator: Release Required",
+      "data_element": "DFRGKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERFNAM",
+      "description": "Name of the Processor Who Entered the Object",
+      "data_element": "ERFNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BUPLA",
+      "description": "Business Place",
+      "data_element": "BUPLA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FILKD",
+      "description": "Account Number of the Branch",
+      "data_element": "FILKD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LOTKZ",
+      "description": "Lot Number for Documents",
+      "data_element": "LOTKZ",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "INV_TRAN",
+      "description": "Transaction in Logistics Invoice Verification",
+      "data_element": "INV_TRAN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PREPAY_STATUS",
+      "description": "Prepayment Status",
+      "data_element": "WRF_PREPAY_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PREPAY_AWKEY",
+      "description": "Invoice Document Number Created for Prepayment",
+      "data_element": "WRF_PREPAY_AWKEY",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "ASSIGN_STATUS",
+      "description": "Is the invoice in the assignment test process?",
+      "data_element": "WRF_MRM_ASSIGN_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ASSIGN_NEXT_DATE",
+      "description": "Date of Next Assignment Test",
+      "data_element": "WRF_MRM_ASSIGN_NEXT_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ASSIGN_END_DATE",
+      "description": "End Date of Assignment Test Period",
+      "data_element": "WRF_MRM_ASSIGN_END_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "COPY_BY_BELNR",
+      "description": "Invoice Document Number of Original Invoice",
+      "data_element": "COPY_BY_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "COPY_BY_YEAR",
+      "description": "Fiscal Year of Original Invoice",
+      "data_element": "COPY_BY_YEAR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "COPY_TO_BELNR",
+      "description": "Invoice Document Number of Copied Invoice",
+      "data_element": "COPY_TO_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "COPY_TO_YEAR",
+      "description": "Fiscal Year of Copied Invoice",
+      "data_element": "COPY_TO_YEAR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "COPY_USER",
+      "description": "User That Reversed and Copied the Invoice",
+      "data_element": "COPY_USER",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KURSX",
+      "description": "Market Data Exchange Rate",
+      "data_element": "GLE_FXR_DTE_RATEX28",
+      "type": "DEC",
+      "length": "28",
+      "decimals": "14"
+    },
+    {
+      "name": "WWERT",
+      "description": "Translation Date",
+      "data_element": "WWERT_D",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XREF3",
+      "description": "Reference key for line item",
+      "data_element": "XREF3",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. **Purpose of the Table:** The \"Document Header: Invoice Receipt\" (RBKP) table in SAP contains essential header data for invoice receipt documents in the finance module. It stores information such as document number, fiscal year, invoice date, vendor number, payment terms, document currency, and various totals related to the invoice. 2. **Key Relationships:** No foreign key relationships are defined in the provided table structure. 3. **Common Use Cases:** This table is commonly used for:\n    - Retrieving invoice receipt header data for reporting and analysis\n    - Processing incoming invoices and matching them to purchase orders\n    - Calculating and posting invoice amounts to the general ledger",
+    "timestamp": "2025-02-13T13:45:27.449681",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "name": "CKMLCR",
+  "description": "Material Ledger: Period Totals Records Values",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KALNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BDATJ",
+      "description": "Posting Date YYYY",
+      "data_element": "BDATJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "POPER",
+      "description": "Posting period",
+      "data_element": "POPER",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "UNTPER",
+      "description": "Value Structure Type",
+      "data_element": "CK_UNTPER",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CURTP",
+      "description": "Currency Type and Valuation View",
+      "data_element": "CURTP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PEINH",
+      "description": "Price unit",
+      "data_element": "CK_PEINH_1",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STPRS",
+      "description": "Standard price",
+      "data_element": "CK_STPRS_1",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "PVPRS",
+      "description": "Periodic unit price",
+      "data_element": "CK_PVPRS_1",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "SALK3",
+      "description": "Value of total valuated stock",
+      "data_element": "CK_SALK3_1",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "SALKV",
+      "description": "Value based on the periodic unit price (only with pr.ctrl S)",
+      "data_element": "CK_SALKV_1",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUUMB_O",
+      "description": "Revaluation Amount",
+      "data_element": "CK_ZUUMB_1",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ABPRD_O",
+      "description": "Beginning Inventory: Single-Level Price Differences",
+      "data_element": "CK_ABPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ABKDM_O",
+      "description": "Beginning Inventory: Single-Level Exchange Rate Differences",
+      "data_element": "CK_ABKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUPRD_O",
+      "description": "Receipts: Single-level price differences",
+      "data_element": "CK_ZUABW_1",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUKDM_O",
+      "description": "Receipts: Single-level exchange rate differences",
+      "data_element": "CK_ZUKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPPRD_O",
+      "description": "Other receipts/issues: Single-level price differences",
+      "data_element": "CK_VPPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPKDM_O",
+      "description": "Other receipts/issues:Single-level exchange rate differences",
+      "data_element": "CK_VPKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPPBPRD_O",
+      "description": "Inputs: Price Differences from Subsequent Adjustments",
+      "data_element": "CK_VPPBPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPPBKDM_O",
+      "description": "Inputs: Exchange Rate Differences from Sub. Adjustments",
+      "data_element": "CK_VPPBKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNPRD_O",
+      "description": "1-Level Price Differences from Issues not Affecting the Pric",
+      "data_element": "CK_VNPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNKDM_O",
+      "description": "Outward movement not affecting price: 1-lvl exch.rate diff.",
+      "data_element": "CK_VNKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EKPRD_O",
+      "description": "Receipts: Price Differences from Purchase Orders (From-Val.)",
+      "data_element": "CK_EKPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EKKDM_O",
+      "description": "Receipts: Exchange Rate Differences from POs (From-Value)",
+      "data_element": "CK_EKKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "PBPRD_O",
+      "description": "Receipts: Price differences from adjustments (from value)",
+      "data_element": "CK_PBPRD",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "PBKDM_O",
+      "description": "Receipts: Exchange Rate Differences from Adjustments",
+      "data_element": "CK_PBKDM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNPRD_EA",
+      "description": "Single-level adjustment to consumption from price difference",
+      "data_element": "CK_VNPRDEA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNKDM_EA",
+      "description": "Single-level adjustment to consumption from ExRt differences",
+      "data_element": "CK_VNKDMEA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EBPRD_EA",
+      "description": "Single-Level Adjustm. to End. Inv. Due to Price Differences",
+      "data_element": "CK_EBPRDEA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EBKDM_EA",
+      "description": "Single-level Adjustment to Ending Inv. Due to Exch.Rate Diff",
+      "data_element": "CK_EBKDMEA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUUMB_A",
+      "description": "Revaluation Amount (Not Allocated)",
+      "data_element": "CK_ZUUMB_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUPRD_A",
+      "description": "Receipts: Single-Level Price Differences (Not Allocated)",
+      "data_element": "CK_ZUABW_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUKDM_A",
+      "description": "Receipts: Single-Level Exch Rate Differences (Not Allocated)",
+      "data_element": "CK_ZUKDM_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EKPRD_A",
+      "description": "Receipts: Price Differences Settled from POs (From-Value)",
+      "data_element": "CK_EKPRD_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EKKDM_A",
+      "description": "Receipts: Settld Exch.Rate Differences from POs (From-Value)",
+      "data_element": "CK_EKKDM_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "PBPRD_A",
+      "description": "Receipts: Pr. Diff. Settled from Sub. Adjust. (from value)",
+      "data_element": "CK_PBPRD_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "PBKDM_A",
+      "description": "Receipts: ExRtDiff. settled frm sub.adjustments (from value)",
+      "data_element": "CK_PBKDM_A",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ABPRD_MO",
+      "description": "Beginning Inventory: Price Differences from Lower Levels",
+      "data_element": "CK_ABPRDMO",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ABKDM_MO",
+      "description": "Beginning Inventory: Exch.Rate Differences from Lower Levels",
+      "data_element": "CK_ABKDMMO",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUPRD_MO",
+      "description": "Receipts: Price Differences from Lower Levels",
+      "data_element": "CK_ZUPRDMO",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUKDM_MO",
+      "description": "Receipts: Exchange rate differences from lower level",
+      "data_element": "CK_ZUKDMMO",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNPRD_MA",
+      "description": "Multilevel adjustment to consumption from price differences",
+      "data_element": "CK_VNPRDMA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNKDM_MA",
+      "description": "Multilevel adjustment to consumption from exch. rt. diff.",
+      "data_element": "CK_VNKDMMA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EBPRD_MA",
+      "description": "Multilevel Adjustment to End. Inv. Due to Price Differences",
+      "data_element": "CK_EBPRDMA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EBKDM_MA",
+      "description": "Multilevel Adjustment to Ending Inv. Due to Exch. Rate Diff.",
+      "data_element": "CK_EBKDMMA",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ABSALK3",
+      "description": "Beginning Inventory Value at Time of Period Closing Program",
+      "data_element": "CKML_ABSALK3",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "ZUKDM_OST",
+      "description": "Receipts: Non-Inventory Relevant Exchange Rate Differences",
+      "data_element": "CK_ZUKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "EKKDM_OST",
+      "description": "Receipts: Non Inv.-Rel.ERDs from Purchase Orders (Fr.Value)",
+      "data_element": "CK_EKKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "PBKDM_OST",
+      "description": "Receipts: Non Inv-Rel. ERDs from Sub. Adjustment (Fr. Value)",
+      "data_element": "CK_PBKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPKDM_OST",
+      "description": "Other Receipts/Withdrawals: Non Inventory-Rel. ERDs",
+      "data_element": "CK_VPKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VPPBKDM_OST",
+      "description": "Receipts: Non Inv-Rel. ERDs from Sub. Adjustment (Fr.Value)",
+      "data_element": "CK_VPPBKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "VNKDM_OST",
+      "description": "Non Inventory-Relevant ERDs from non Price-Affecting Issues",
+      "data_element": "CK_VNKDM_OST",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The CKMLCR table stores period totals for material ledger values. It provides a comprehensive view of material valuation changes over time, enabling the tracking of inventory movements and associated costs. This table is commonly used for financial reporting, inventory analysis, and cost accounting purposes.",
+    "timestamp": "2025-02-13T13:46:23.205550",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

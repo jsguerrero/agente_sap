@@ -1,0 +1,718 @@
+{
+  "name": "CEPC",
+  "description": "Profit Center Master Data Table",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATBI",
+      "description": "Valid To Date",
+      "data_element": "DATBI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DATAB",
+      "description": "Valid-From Date",
+      "data_element": "DATAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created on",
+      "data_element": "ERFDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "USNAM",
+      "description": "Entered by",
+      "data_element": "ERFNM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "MERKMAL",
+      "description": "Field name of CO-PA characteristic",
+      "data_element": "FDMERKMAL",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ABTEI",
+      "description": "Department",
+      "data_element": "ABTEIL",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VERAK",
+      "description": "Person Responsible for Profit Center",
+      "data_element": "VERAPC",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "VERAK_USER",
+      "description": "User Responsible for the Profit Center",
+      "data_element": "VERAPC_USER",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "NPRCTR",
+      "description": "Successor profit center",
+      "data_element": "NPRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANRED",
+      "description": "Title",
+      "data_element": "ANRED",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME1",
+      "description": "Name 1",
+      "data_element": "NAME1_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME2",
+      "description": "Name 2",
+      "data_element": "NAME2_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME3",
+      "description": "Name 3",
+      "data_element": "NAME3_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME4",
+      "description": "Name 4",
+      "data_element": "NAME4_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "ORT01",
+      "description": "City",
+      "data_element": "ORT01_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "ORT02",
+      "description": "District",
+      "data_element": "ORT02_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "STRAS",
+      "description": "House number and street",
+      "data_element": "STRAS_GP",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "PFACH",
+      "description": "PO Box",
+      "data_element": "PFACH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTLZ",
+      "description": "Postal Code",
+      "data_element": "PSTLZ",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTL2",
+      "description": "P.O. Box Postal Code",
+      "data_element": "PSTL2",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TELBX",
+      "description": "Telebox number",
+      "data_element": "TELBX",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "TELF1",
+      "description": "First telephone number",
+      "data_element": "TELF1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TELF2",
+      "description": "Second telephone number",
+      "data_element": "TELF2",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TELFX",
+      "description": "Fax Number",
+      "data_element": "TELFX",
+      "type": "CHAR",
+      "length": "31",
+      "decimals": "0"
+    },
+    {
+      "name": "TELTX",
+      "description": "Teletex number",
+      "data_element": "TELTX",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "TELX1",
+      "description": "Telex number",
+      "data_element": "TELX1",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "DATLT",
+      "description": "Data communication line no.",
+      "data_element": "DATLT",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "DRNAM",
+      "description": "Printer name for profit center",
+      "data_element": "PCDNAM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KHINR",
+      "description": "Profit center area",
+      "data_element": "PHINR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Joint Venture",
+      "data_element": "JV_NAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RECID",
+      "description": "Recovery Indicator",
+      "data_element": "JV_RECIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ETYPE",
+      "description": "Equity type",
+      "data_element": "JV_ETYPE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "REGIO",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVEWE",
+      "description": "Usage of the condition table",
+      "data_element": "KVEWE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KAPPL",
+      "description": "Application",
+      "data_element": "KAPPL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Procedure (Pricing, Output Control, Acct. Det., Costing,...)",
+      "data_element": "KALSM_D",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYSTEM",
+      "description": "Logical System",
+      "data_element": "LOGSYSTEM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LOCK_IND",
+      "description": "Lock indicator",
+      "data_element": "LOCK_IND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PCA_TEMPLATE",
+      "description": "Template for Formula Planning in Profit Centers",
+      "data_element": "PCA_TEMPLATE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SEGMENT",
+      "description": "Segment for Segmental Reporting",
+      "data_element": "FB_SEGMENT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "CEPC",
+      "field": "BUKRS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T001",
+      "check_field": "Company Codes"
+    },
+    {
+      "table": "CEPC",
+      "field": "BUKRS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "BUKRS",
+      "check_table": "T001",
+      "check_field": "Company Codes"
+    },
+    {
+      "table": "CEPC",
+      "field": "ETYPE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T8JE",
+      "check_field": "Investment Type"
+    },
+    {
+      "table": "CEPC",
+      "field": "ETYPE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "BUKRS",
+      "check_table": "T8JE",
+      "check_field": "Investment Type"
+    },
+    {
+      "table": "CEPC",
+      "field": "ETYPE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "ETYPE",
+      "check_table": "T8JE",
+      "check_field": "Investment Type"
+    },
+    {
+      "table": "CEPC",
+      "field": "KALSM",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KALSM",
+      "check_table": "T683",
+      "check_field": "Pricing procedures"
+    },
+    {
+      "table": "CEPC",
+      "field": "KALSM",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T683",
+      "check_field": "Pricing procedures"
+    },
+    {
+      "table": "CEPC",
+      "field": "KALSM",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KVEWE",
+      "check_table": "T683",
+      "check_field": "Pricing procedures"
+    },
+    {
+      "table": "CEPC",
+      "field": "KALSM",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KAPPL",
+      "check_table": "T683",
+      "check_field": "Pricing procedures"
+    },
+    {
+      "table": "CEPC",
+      "field": "KAPPL",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KAPPL",
+      "check_table": "T681A",
+      "check_field": "Conditions: Applications"
+    },
+    {
+      "table": "CEPC",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "CEPC",
+      "field": "KOKRS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KOKRS",
+      "check_table": "TKA01",
+      "check_field": "Controlling Areas"
+    },
+    {
+      "table": "CEPC",
+      "field": "KVEWE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KVEWE",
+      "check_table": "T681V",
+      "check_field": "Conditions: Usages"
+    },
+    {
+      "table": "CEPC",
+      "field": "LAND1",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T005",
+      "check_field": "Countries"
+    },
+    {
+      "table": "CEPC",
+      "field": "LAND1",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "LAND1",
+      "check_table": "T005",
+      "check_field": "Countries"
+    },
+    {
+      "table": "CEPC",
+      "field": "LOGSYSTEM",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "LOGSYSTEM",
+      "check_table": "TBDLS",
+      "check_field": "Logical system"
+    },
+    {
+      "table": "CEPC",
+      "field": "MANDT",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "CEPC",
+      "field": "PCA_TEMPLATE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "COTPL",
+      "check_field": "CO-ABC Template Master Data"
+    },
+    {
+      "table": "CEPC",
+      "field": "PCA_TEMPLATE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KOKRS",
+      "check_table": "COTPL",
+      "check_field": "CO-ABC Template Master Data"
+    },
+    {
+      "table": "CEPC",
+      "field": "PCA_TEMPLATE",
+      "foreign_key_table": "'PCA'",
+      "foreign_key_field": "",
+      "check_table": "COTPL",
+      "check_field": "CO-ABC Template Master Data"
+    },
+    {
+      "table": "CEPC",
+      "field": "PCA_TEMPLATE",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "PCA_TEMPLATE",
+      "check_table": "COTPL",
+      "check_field": "CO-ABC Template Master Data"
+    },
+    {
+      "table": "CEPC",
+      "field": "RECID",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "RECID",
+      "check_table": "T8JJ",
+      "check_field": "Recovery Indicator"
+    },
+    {
+      "table": "CEPC",
+      "field": "RECID",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T8JJ",
+      "check_field": "Recovery Indicator"
+    },
+    {
+      "table": "CEPC",
+      "field": "RECID",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "BUKRS",
+      "check_table": "T8JJ",
+      "check_field": "Recovery Indicator"
+    },
+    {
+      "table": "CEPC",
+      "field": "REGIO",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T005S",
+      "check_field": "Taxes: Region (Province) Key"
+    },
+    {
+      "table": "CEPC",
+      "field": "REGIO",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "LAND1",
+      "check_table": "T005S",
+      "check_field": "Taxes: Region (Province) Key"
+    },
+    {
+      "table": "CEPC",
+      "field": "REGIO",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "REGIO",
+      "check_table": "T005S",
+      "check_field": "Taxes: Region (Province) Key"
+    },
+    {
+      "table": "CEPC",
+      "field": "SEGMENT",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "FAGL_SEGM",
+      "check_field": "Master Data for Segments"
+    },
+    {
+      "table": "CEPC",
+      "field": "SEGMENT",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "SEGMENT",
+      "check_table": "FAGL_SEGM",
+      "check_field": "Master Data for Segments"
+    },
+    {
+      "table": "CEPC",
+      "field": "SPRAS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "CEPC",
+      "field": "TXJCD",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "KALSM",
+      "check_table": "TTXJ",
+      "check_field": "Check Table for Tax Jurisdiction"
+    },
+    {
+      "table": "CEPC",
+      "field": "TXJCD",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "TXJCD",
+      "check_table": "TTXJ",
+      "check_field": "Check Table for Tax Jurisdiction"
+    },
+    {
+      "table": "CEPC",
+      "field": "TXJCD",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "TTXJ",
+      "check_field": "Check Table for Tax Jurisdiction"
+    },
+    {
+      "table": "CEPC",
+      "field": "VERAK_USER",
+      "foreign_key_table": "*",
+      "foreign_key_field": "",
+      "check_table": "USR02",
+      "check_field": "Logon Data (Kernel-Side Use)"
+    },
+    {
+      "table": "CEPC",
+      "field": "VERAK_USER",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "VERAK_USER",
+      "check_table": "USR02",
+      "check_field": "Logon Data (Kernel-Side Use)"
+    },
+    {
+      "table": "CEPC",
+      "field": "VNAME",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "T8JV",
+      "check_field": "Joint Venture"
+    },
+    {
+      "table": "CEPC",
+      "field": "VNAME",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "BUKRS",
+      "check_table": "T8JV",
+      "check_field": "Joint Venture"
+    },
+    {
+      "table": "CEPC",
+      "field": "VNAME",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "VNAME",
+      "check_table": "T8JV",
+      "check_field": "Joint Venture"
+    },
+    {
+      "table": "CEPC",
+      "field": "WAERS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "CEPC",
+      "field": "WAERS",
+      "foreign_key_table": "CEPC",
+      "foreign_key_field": "WAERS",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Purpose and Key Relationships:** The CEPC table stores master data for profit centers. It maintains relationships with several other tables, including: controlling areas (TKA01), company codes (T001), and joint ventures (T8JV). **Use Cases:** * Manage profit center information\n* Track profit center hierarchy\n* Integrate with financial and operational systems",
+    "timestamp": "2025-02-13T13:40:05.358888",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

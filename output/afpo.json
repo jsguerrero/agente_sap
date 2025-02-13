@@ -1,0 +1,773 @@
+{
+  "name": "AFPO",
+  "description": "Order item",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Order Item Number",
+      "data_element": "CO_POSNR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSOBS",
+      "description": "Special procurement type",
+      "data_element": "SOBES",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QUNUM",
+      "description": "Number of Quota Arrangement",
+      "data_element": "QUNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "QUPOS",
+      "description": "Quota Arrangement Item",
+      "data_element": "QUPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PROJN",
+      "description": "Work breakdown structure element (WBS element)",
+      "data_element": "PS_PSP_ELE",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PLNUM",
+      "description": "Planned order number",
+      "data_element": "PLNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STRMP",
+      "description": "Start date of the planned order",
+      "data_element": "CO_STRMP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ETRMP",
+      "description": "Opening date of the planned order",
+      "data_element": "CO_ETRMP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KDAUF",
+      "description": "Sales order number",
+      "data_element": "CO_KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDPOS",
+      "description": "Sales order item",
+      "data_element": "CO_KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KDEIN",
+      "description": "Delivery Schedule for Sales Order",
+      "data_element": "KDEIN",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BESKZ",
+      "description": "Procurement Type",
+      "data_element": "BESKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PSAMG",
+      "description": "Scrap quantity in item",
+      "data_element": "CO_PSAMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "PSMNG",
+      "description": "Order item quantity",
+      "data_element": "CO_PSMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "WEMNG",
+      "description": "Quantity of goods received for the order item",
+      "data_element": "CO_WEMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "IAMNG",
+      "description": "Expected surplus/deficit for goods receipt",
+      "data_element": "CO_IAMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "AMEIN",
+      "description": "Unit of measure for in-house production",
+      "data_element": "CO_AUFME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "LAGME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number for Order",
+      "data_element": "CO_MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "PAMNG",
+      "description": "Fixed quantity of scrap from production",
+      "data_element": "AVMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "PGMNG",
+      "description": "Total planned order quantity",
+      "data_element": "GSMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KNTTP",
+      "description": "Account Assignment Category",
+      "data_element": "KNTTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TPAUF",
+      "description": "Indicator: Partial conversion",
+      "data_element": "TPAUF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LTRMI",
+      "description": "Actual delivery/finish date",
+      "data_element": "CO_LTRMI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LTRMP",
+      "description": "Delivery date from planned order",
+      "data_element": "CO_LTRMP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KALNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "UEBTO",
+      "description": "Overdelivery Tolerance Limit",
+      "data_element": "UEBTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "UEBTK",
+      "description": "Indicator: Unlimited Overdelivery Allowed",
+      "data_element": "UEBTK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UNTTO",
+      "description": "Underdelivery Tolerance Limit",
+      "data_element": "UNTTO",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "1"
+    },
+    {
+      "name": "INSMK",
+      "description": "Stock Type",
+      "data_element": "INSMK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEPOS",
+      "description": "Goods Receipt Indicator",
+      "data_element": "WEPOS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTTY",
+      "description": "Valuation Category",
+      "data_element": "BWTTY_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PWERK",
+      "description": "Planning plant for the order",
+      "data_element": "CO_PWERK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UMREZ",
+      "description": "Numerator for Conversion to Base Units of Measure",
+      "data_element": "UMREZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "UMREN",
+      "description": "Denominator for conversion to base units of measure",
+      "data_element": "UMREN",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "WEBAZ",
+      "description": "Goods receipt processing time in days",
+      "data_element": "PLWEZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ELIKZ",
+      "description": "\"Delivery Completed\" Indicator",
+      "data_element": "ELIKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SAFNR",
+      "description": "Run schedule header number",
+      "data_element": "SA_AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VERID",
+      "description": "Production Version",
+      "data_element": "VERID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SERNR",
+      "description": "BOM explosion number",
+      "data_element": "SERNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHS",
+      "description": "Parameter Variant/Standard Variant",
+      "data_element": "TECHS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "DWERK",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DAUTY",
+      "description": "Order category",
+      "data_element": "AUFTYP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DAUAT",
+      "description": "Order Type",
+      "data_element": "AUFART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DGLTP",
+      "description": "Basic finish date",
+      "data_element": "CO_GLTRP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DGLTS",
+      "description": "Scheduled finish",
+      "data_element": "CO_GLTRS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "DFREI",
+      "description": "Indicator: Order released/partially released (for MRP)",
+      "data_element": "CO_FREI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DNREL",
+      "description": "Indicator: Order item not relevant for MRP",
+      "data_element": "CO_DNREL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VERTO",
+      "description": "MRP Distribution Key",
+      "data_element": "SA_VERTL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVBR",
+      "description": "Consumption Posting",
+      "data_element": "KZVBR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEWRT",
+      "description": "Value of goods received in local currency",
+      "data_element": "WEWRT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WEUNB",
+      "description": "Goods Receipt, Non-Valuated",
+      "data_element": "WEUNB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABLAD",
+      "description": "Unloading Point",
+      "data_element": "ABLAD",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "WEMPF",
+      "description": "Goods Recipient/Ship-To Party",
+      "data_element": "WEMPF",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WEAED",
+      "description": "Indicator: Goods receipt indicator can be changed",
+      "data_element": "CO_WEAE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "KBNKZ",
+      "description": "Kanban Indicator",
+      "data_element": "KBNKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ARSNR",
+      "description": "Settlement reservation number",
+      "data_element": "ARSNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ARSPS",
+      "description": "Item number of the settlement reservation",
+      "data_element": "ARSPS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KRSNR",
+      "description": "Number of Reservation/Dependent Requirement",
+      "data_element": "RSNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KRSPS",
+      "description": "Item Number of Reservation/Dependent Requirement",
+      "data_element": "RSPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KCKEY",
+      "description": "Cost collector key",
+      "data_element": "CCKEY",
+      "type": "CHAR",
+      "length": "23",
+      "decimals": "0"
+    },
+    {
+      "name": "RTP01",
+      "description": "Cost collector for repetitive manufacturing",
+      "data_element": "RTP01",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RTP02",
+      "description": "Cost collector for KANBAN",
+      "data_element": "RTP02",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RTP03",
+      "description": "Cost collector for valuated sales order stock",
+      "data_element": "RTP03",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RTP04",
+      "description": "Cost collector for external PPC",
+      "data_element": "RTP04",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KSVON",
+      "description": "Cost collector valid from",
+      "data_element": "KSVON",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KSBIS",
+      "description": "Cost collector valid to",
+      "data_element": "KSBIS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNP",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "NDISR",
+      "description": "Ind.: Material in order item is not relevant for MRP",
+      "data_element": "CO_NDISR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VFMNG",
+      "description": "Committed quantity for order acc. to ATP check components",
+      "data_element": "CO_VFMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "GSBTR",
+      "description": "Overall commitment date",
+      "data_element": "CO_GSBTR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KZAVC",
+      "description": "Indicator for type of availability check",
+      "data_element": "KZAVC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBWS",
+      "description": "Valuation of Special Stock",
+      "data_element": "KZBWS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XLOEK",
+      "description": "Deletion flag",
+      "data_element": "AUFLOEKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SERNP",
+      "description": "Serial Number Profile",
+      "data_element": "SERAIL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ANZSN",
+      "description": "Number of serial numbers",
+      "data_element": "ANZSN",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJTYPE",
+      "description": "Change indicator",
+      "data_element": "OCM_OBJ_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CH_PROC",
+      "description": "Process that has lead to the change of an object",
+      "data_element": "OCM_CH_PROC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FXPRU",
+      "description": "Fixed-Price Co-Product",
+      "data_element": "CK_FIXPRKU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ_ROOT",
+      "description": "Configuration (internal object number)",
+      "data_element": "CUOBJ",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BERID",
+      "description": "MRP Area",
+      "data_element": "BERID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TECHS_COPY",
+      "description": "Parameter Variant/Standard Variant",
+      "data_element": "TECHS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR2",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MILL_OC_AUFNR_U",
+      "description": "Number of original order",
+      "data_element": "MILL_OC_AUFNR_U",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "MILL_OC_RUMNG",
+      "description": "Confirmed Quantity for Item",
+      "data_element": "MILL_OC_RUMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MILL_OC_SORT",
+      "description": "Item Sequence",
+      "data_element": "MILL_OC_SORT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYPI",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "AFPO is a SAP table containing detailed information about production order items. It stores data on material quantities, delivery dates, and other production-related parameters. It is commonly used to track the progress of production orders and to manage inventory levels.",
+    "timestamp": "2025-02-13T13:44:57.825678",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

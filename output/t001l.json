@@ -1,0 +1,189 @@
+{
+  "name": "T001L",
+  "description": "Storage Locations",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGOBE",
+      "description": "Description of Storage Location",
+      "data_element": "LGOBE",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XLONG",
+      "description": "Negative stocks allowed in storage location",
+      "data_element": "XLONG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBUFX",
+      "description": "Freezing book inventory bal. allowed in stor. loc.",
+      "data_element": "XBUFX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DISKZ",
+      "description": "Storage location MRP indicator",
+      "data_element": "DISKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLGO",
+      "description": "Storage location authorization for goods movements active",
+      "data_element": "XBLGO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XRESS",
+      "description": "Storage location is allocated to resource (storage resource)",
+      "data_element": "XRESS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XHUPF",
+      "description": "Handling unit requirement",
+      "data_element": "XHUPF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PARLG",
+      "description": "Partner storage location of the handling unit",
+      "data_element": "PARLG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VSTEL",
+      "description": "Shipping Point/Receiving Point",
+      "data_element": "VSTEL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Vendor Account Number",
+      "data_element": "ELIFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Account Number of Customer",
+      "data_element": "EKUNN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MESBS",
+      "description": "Business System of MES",
+      "data_element": "MB_MES_BUSINESS_SYSTEM",
+      "type": "CHAR",
+      "length": "60",
+      "decimals": "0"
+    },
+    {
+      "name": "MESST",
+      "description": "Type of inventory management for production storage location",
+      "data_element": "MB_MES_STORLOC_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LICNO",
+      "description": "License number for untaxed stock",
+      "data_element": "OIH_LICNO",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIG_ITRFL",
+      "description": "TD in-transit flag",
+      "data_element": "OIG_ITRFL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_TNKASSIGN",
+      "description": "Silo Managament: Tank assignment indicator",
+      "data_element": "OIB_TNKASSIGN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Purpose:** Stores master data for storage locations, including their descriptions, authorization settings, and inventory management parameters. **Relationships:** None (based on the provided foreign keys). **Use Cases:**\n- Create and maintain storage location master data for material storage.\n- Control access to storage locations through authorization settings.\n- Manage inventory levels and movements within storage locations.\n- Integrate with other systems, such as MES (Manufacturing Execution Systems) and OIG (Outbound In-Transit Management).",
+    "timestamp": "2025-02-13T13:44:50.477158",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

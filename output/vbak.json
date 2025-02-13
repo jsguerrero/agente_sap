@@ -1,0 +1,1989 @@
+{
+  "name": "VBAK",
+  "description": "Sales Document: Header Data",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales Document",
+      "data_element": "VBELN_VA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERZET",
+      "description": "Entry time",
+      "data_element": "ERZET",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANGDT",
+      "description": "Quotation/Inquiry is valid from",
+      "data_element": "ANGDT_V",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BNDDT",
+      "description": "Date until which bid/quotation is binding (valid-to date)",
+      "data_element": "BNDDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUDAT",
+      "description": "Document Date (Date Received/Sent)",
+      "data_element": "AUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VBTYP",
+      "description": "SD document category",
+      "data_element": "VBTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TRVOG",
+      "description": "Transaction group",
+      "data_element": "TRVOG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUART",
+      "description": "Sales Document Type",
+      "data_element": "AUART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGRU",
+      "description": "Order reason (reason for the business transaction)",
+      "data_element": "AUGRU",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GWLDT",
+      "description": "Warranty Date",
+      "data_element": "GWLDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBMI",
+      "description": "Collective number (SD)",
+      "data_element": "SUBMI_SD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFSK",
+      "description": "Delivery block (document header)",
+      "data_element": "LIFSK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FAKSK",
+      "description": "Billing block in SD document",
+      "data_element": "FAKSK",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NETWR",
+      "description": "Net Value of the Sales Order in Document Currency",
+      "data_element": "NETWR_AK",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERK",
+      "description": "SD Document Currency",
+      "data_element": "WAERK",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VKGRP",
+      "description": "Sales Group",
+      "data_element": "VKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VKBUR",
+      "description": "Sales Office",
+      "data_element": "VKBUR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GSKST",
+      "description": "Business area from cost center",
+      "data_element": "GSKST",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GUEBG",
+      "description": "Valid-from date (outline agreements, product proposals)",
+      "data_element": "GUEBG",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GUEEN",
+      "description": "Valid-to date (outline agreements, product proposals)",
+      "data_element": "GUEEN",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VDATU",
+      "description": "Requested delivery date",
+      "data_element": "EDATU_VBAK",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VPRGR",
+      "description": "Proposed date type",
+      "data_element": "PRGRS_VBAK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTLF",
+      "description": "Complete delivery defined for each sales order?",
+      "data_element": "AUTLF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBKLA",
+      "description": "Original system with release and transaction control",
+      "data_element": "VBKLA",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "VBKLT",
+      "description": "SD document indicator",
+      "data_element": "VBKLT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Sales and Distribution: Pricing Procedure in Pricing",
+      "data_element": "KALSMASD",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "VSBED",
+      "description": "Shipping Conditions",
+      "data_element": "VSBED",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FKARA",
+      "description": "Proposed billing type for an order-related billing document",
+      "data_element": "FKARA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AWAHR",
+      "description": "Sales probability",
+      "data_element": "AWAHR_AK",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KTEXT",
+      "description": "Search term for product proposal",
+      "data_element": "KTEXT_V",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTNK",
+      "description": "Customer purchase order number",
+      "data_element": "BSTNK",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "BSARK",
+      "description": "Customer purchase order type",
+      "data_element": "BSARK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTDK",
+      "description": "Customer purchase order date",
+      "data_element": "BSTDK",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTZD",
+      "description": "Purchase order number supplement",
+      "data_element": "BSTZD",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "IHREZ",
+      "description": "Your Reference",
+      "data_element": "IHREZ",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BNAME",
+      "description": "Name of orderer",
+      "data_element": "BNAME_V",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "TELF1",
+      "description": "Telephone Number",
+      "data_element": "TELF1_VP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "MAHZA",
+      "description": "Number of contacts from the customer",
+      "data_element": "MAHZA",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MAHDT",
+      "description": "Last customer contact date",
+      "data_element": "MAHDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Sold-to party",
+      "data_element": "KUNAG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STAFO",
+      "description": "Update group for statistics update",
+      "data_element": "STAFO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "STWAE",
+      "description": "Statistics currency",
+      "data_element": "STWAE",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR1",
+      "description": "Customer group 1",
+      "data_element": "KVGR1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR2",
+      "description": "Customer group 2",
+      "data_element": "KVGR2",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR3",
+      "description": "Customer group 3",
+      "data_element": "KVGR3",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR4",
+      "description": "Customer group 4",
+      "data_element": "KVGR4",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KVGR5",
+      "description": "Customer group 5",
+      "data_element": "KVGR5",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMA",
+      "description": "Agreement (various conditions grouped together)",
+      "data_element": "KNUMA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSP_PNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KURST",
+      "description": "Exchange Rate Type",
+      "data_element": "KURST",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KKBER",
+      "description": "Credit control area",
+      "data_element": "KKBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KNKLI",
+      "description": "Customer's account number with credit limit reference",
+      "data_element": "KNKLI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GRUPP",
+      "description": "Customer Credit Group",
+      "data_element": "GRUPP_CM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SBGRP",
+      "description": "Credit representative group for credit management",
+      "data_element": "SBGRP_CM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CTLPC",
+      "description": "Credit management: Risk category",
+      "data_element": "CTLPC_CM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CMWAE",
+      "description": "Currency key of credit control area",
+      "data_element": "WAERS_CM",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "CMFRE",
+      "description": "Release date of the document determined by credit management",
+      "data_element": "CMFRE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CMNUP",
+      "description": "Date of next credit check of document",
+      "data_element": "CMNUP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CMNGV",
+      "description": "Next date",
+      "data_element": "CMNGV",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AMTBL",
+      "description": "Released credit value of the document",
+      "data_element": "AMTBL_CM",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "HITYP_PR",
+      "description": "Hierarchy type for pricing",
+      "data_element": "HITYP_PR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABRVW",
+      "description": "Usage Indicator",
+      "data_element": "ABRVW",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ABDIS",
+      "description": "MRP for delivery schedule types",
+      "data_element": "ABDIS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VGBEL",
+      "description": "Document number of the reference document",
+      "data_element": "VGBEL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR",
+      "description": "Object number at header level",
+      "data_element": "OBJKO",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS_VF",
+      "description": "Company code to be billed",
+      "data_element": "BUKRS_VF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK1",
+      "description": "Alternative tax classification",
+      "data_element": "TAXK1_AK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK2",
+      "description": "Tax classification 2 for customer",
+      "data_element": "TAXK2",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK3",
+      "description": "Tax classification 3 for customer",
+      "data_element": "TAXK3",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK4",
+      "description": "Tax Classification 4 Customer",
+      "data_element": "TAXK4",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK5",
+      "description": "Tax classification 5 for customer",
+      "data_element": "TAXK5",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK6",
+      "description": "Tax classification 6 for customer",
+      "data_element": "TAXK6",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK7",
+      "description": "Tax classification 7 for customer",
+      "data_element": "TAXK7",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK8",
+      "description": "Tax classification 8 for customer",
+      "data_element": "TAXK8",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TAXK9",
+      "description": "Tax classification 9 for customer",
+      "data_element": "TAXK9",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR_V1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUONR",
+      "description": "Assignment number",
+      "data_element": "ORDNR_V",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "VGTYP",
+      "description": "Document category of preceding SD document",
+      "data_element": "VBTYP_V",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM_CH",
+      "description": "Search procedure for batch determination",
+      "data_element": "KALSMA_CH",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AGRZR",
+      "description": "Accrual period for order-related billing docs.to be accrued",
+      "data_element": "AGRZR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "QMNUM",
+      "description": "Notification No",
+      "data_element": "QMNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN_GRP",
+      "description": "Mster contract number",
+      "data_element": "VBELN_GRP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SCHEME_GRP",
+      "description": "Referencing requirement: Procedure",
+      "data_element": "SCHEME_GRP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABRUF_PART",
+      "description": "Check partner authorizations",
+      "data_element": "ABRUF_PART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABHOD",
+      "description": "Pick up date",
+      "data_element": "ABHOD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ABHOV",
+      "description": "Pick up time",
+      "data_element": "ABHOZ",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ABHOB",
+      "description": "Pick up time",
+      "data_element": "ABHOZ",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RPLNR",
+      "description": "Number of payment card plan type",
+      "data_element": "RPLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VZEIT",
+      "description": "Proposed schedule line time (local with ref. to sales org.)",
+      "data_element": "EZEIT_VBAK",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG_L",
+      "description": "Tax Destination Country",
+      "data_element": "LAND1TX",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDTX",
+      "description": "Tax departure country",
+      "data_element": "LANDTX",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XEGDR",
+      "description": "Indicator: Triangular deal within the EU ?",
+      "data_element": "XEGDR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ENQUEUE_GRP",
+      "description": "Block master contr. until all lower level contracts updated",
+      "data_element": "ENQUEUE_GRP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DAT_FZAU",
+      "description": "Cml delivery order qty date",
+      "data_element": "DAT_FZAU",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FMBDAT",
+      "description": "Material Staging/Availability Date",
+      "data_element": "MBDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VSNMR_V",
+      "description": "Sales document version number",
+      "data_element": "VSNMR_V",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDLE",
+      "description": "International unique key for VBAK-VBELN",
+      "data_element": "TSEGGUID_VBAK",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "PROLI",
+      "description": "Dangerous Goods Management Profile in SD Documents",
+      "data_element": "ADGE_PROLI",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CONT_DG",
+      "description": "Indicator: Document contains dangerous goods",
+      "data_element": "ADGE_NCDG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CRM_GUID",
+      "description": "Character field, length 70",
+      "data_element": "CHAR70",
+      "type": "CHAR",
+      "length": "70",
+      "decimals": "0"
+    },
+    {
+      "name": "UPD_TMSTMP",
+      "description": "UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun)",
+      "data_element": "TIMESTAMPL",
+      "type": "DEC",
+      "length": "21",
+      "decimals": "7"
+    },
+    {
+      "name": "MSR_ID",
+      "description": "Process Identification Number",
+      "data_element": "MSR_PROCESS_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TM_CTRL_KEY",
+      "description": "Control Key for Document Transfer to TM",
+      "data_element": "TM_CTRL_KEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERLOC",
+      "description": "Location for a physical handover of goods",
+      "data_element": "HANDOVER_LOC",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/SO_VALD_FM",
+      "description": "Field of type DATS",
+      "data_element": "DATS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/SO_VALD_TO",
+      "description": "Field of type DATS",
+      "data_element": "DATS",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/PAYMENT_OP",
+      "description": "Payment Method",
+      "data_element": "/XLSO/E_PAY_METHOD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/TRANS_CTXT",
+      "description": "Transaction Context GUID",
+      "data_element": "/XLSO/E_TRANS_CTXT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/CATALOG_ID",
+      "description": "Product catalog number",
+      "data_element": "WMINR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "/XLSO/VARIANT_ID",
+      "description": "Product catalog variant",
+      "data_element": "WMVARD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PSM_BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "PSM_BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SWENR",
+      "description": "Business  Entity Number",
+      "data_element": "HB_SWENR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SMENR",
+      "description": "Number of Sales Unit",
+      "data_element": "HB_SMENR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PHASE",
+      "description": "Sales Phase",
+      "data_element": "HB_SPHSE",
+      "type": "CHAR",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "MTLAUR",
+      "description": "Marker for Low Income Housing",
+      "data_element": "HB_MTLAUR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STAGE",
+      "description": "Construction Stage",
+      "data_element": "HB_STAGE",
+      "type": "INT4",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HB_CONT_REASON",
+      "description": "Contingency  data",
+      "data_element": "HB_CONT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HB_EXPDATE",
+      "description": "Expiration date",
+      "data_element": "HB_EXP",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HB_RESDATE",
+      "description": "Resolution date",
+      "data_element": "HB_RES",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MILL_APPL_ID",
+      "description": "Application ID Category for Configuration",
+      "data_element": "MILL_APPL_ID",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_EXTBOL",
+      "description": "External bill of lading",
+      "data_element": "OID_EXTBOL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_MISCDL",
+      "description": "Miscellaneous delivery number",
+      "data_element": "OID_MISCDL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_SHP",
+      "description": "Message type for contract restrictions ship-to party",
+      "data_element": "OIDMSG_SHP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDSTS_SHP",
+      "description": "Status of contract restriction for ship-to party",
+      "data_element": "OIDSTS_SHP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPIPEVAL",
+      "description": "Validation indicator for pipeline fields (X=ON, blank=OFF)",
+      "data_element": "OID_PIPEV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCITYC",
+      "description": "Destination city code",
+      "data_element": "OIC_DCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCOUNC",
+      "description": "Destination county code",
+      "data_element": "OIC_DCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DREGIO",
+      "description": "Destination region",
+      "data_element": "OIC_DREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DLAND1",
+      "description": "Destination country",
+      "data_element": "OIC_DLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCITYC",
+      "description": "Origin city code",
+      "data_element": "OIC_OCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCOUNC",
+      "description": "Origin county code",
+      "data_element": "OIC_OCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OREGIO",
+      "description": "Origin region",
+      "data_element": "OIC_OREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OLAND1",
+      "description": "Origin country",
+      "data_element": "OIC_OLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PORGIN",
+      "description": "Tax origin",
+      "data_element": "OIC_PORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PDESTN",
+      "description": "Tax destination",
+      "data_element": "OIC_PDESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PTRIP",
+      "description": "Pipeline trip number (external)",
+      "data_element": "OIC_PTRIP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PBATCH",
+      "description": "Pipeline operator�s external batch number",
+      "data_element": "OIC_PBATCH",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_MOT",
+      "description": "IS-OIL MAP external details mode of transport",
+      "data_element": "OIC_MOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_AORGIN",
+      "description": "Alternate origin",
+      "data_element": "OIC_AORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_ADESTN",
+      "description": "Alternate destination",
+      "data_element": "OIC_ADESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_TRUCKN",
+      "description": "Truck number",
+      "data_element": "OIC_TRUCKN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIA_BASELO",
+      "description": "Base location",
+      "data_element": "OIA_BASELO",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIINEX",
+      "description": "Code for internal or external excise duty rate determination",
+      "data_element": "OIH_INEX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIISOIL",
+      "description": "Sales order created by IS-Oil: X=Yes   BLANK=No",
+      "data_element": "OID_ISOIL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPTRFNC",
+      "description": "Partner function",
+      "data_element": "OID_PTRFNC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPARTNR",
+      "description": "Customer name (sold-to party or ship-to party)",
+      "data_element": "OID_PARTNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OILASTOR",
+      "description": "Last order number",
+      "data_element": "OID_LASTOR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDRC",
+      "description": "Differential Reference Code (DRC)",
+      "data_element": "OIC_DRC",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGNUM",
+      "description": "Exchange agreement number",
+      "data_element": "OIA_EXGNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGTYP",
+      "description": "Exchange type",
+      "data_element": "OIA_EXGTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OICHEADOFF",
+      "description": "Head office account number (in branch accounts)",
+      "data_element": "KNRZE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPBL",
+      "description": "Business location identifier (IS-Oil MRN)",
+      "data_element": "OIF_PBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDRESTR",
+      "description": "Contract restrictions flag",
+      "data_element": "OIDRESTR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_PRD",
+      "description": "Message type for product with contract restrictions",
+      "data_element": "OIDMSG_PRD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_QTY",
+      "description": "Message type for contract restrictions quantity",
+      "data_element": "OIDMSG_QTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_UOM",
+      "description": "Message type for contract restrictions unit of measure",
+      "data_element": "OIDMSG_UOM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_DAT",
+      "description": "Message type for contract restrictions validity period",
+      "data_element": "OIDMSG_DAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDMSG_TRM",
+      "description": "Message type for contract restrictions payment terms",
+      "data_element": "OIDMSG_TRM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OICNTPER",
+      "description": "Contact person",
+      "data_element": "OID_CNTPER",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "OICNTNTE",
+      "description": "Contact note",
+      "data_element": "OID_CNTNTE",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "OICNTPHO",
+      "description": "Contact tel. number",
+      "data_element": "OID_CNTPHO",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_SORTL",
+      "description": "Descending sort key for sales orders (converted date)",
+      "data_element": "OID_SORTL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_SORT2",
+      "description": "Descending sort key for sales orders (converted time)",
+      "data_element": "OID_SORT2",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OICFKARTDI",
+      "description": "Differential invoice billing type proposal",
+      "data_element": "OICFKARTDI",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIAEVGTYPE",
+      "description": "Evergreen type",
+      "data_element": "OIA_EVTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_CT_TYPE_CD",
+      "description": "Contract Type",
+      "data_element": "OIU_CT_TYPE_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_CUST_VEND_CD",
+      "description": "Customer/Vendor Indicator",
+      "data_element": "OIU_CUST_VEND_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_APPR_FL",
+      "description": "Approval indicator",
+      "data_element": "OIU_APPL_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_APPR_DT",
+      "description": "Approval Date",
+      "data_element": "OIU_APPR_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EXEC_DT",
+      "description": "Contract Execution Date",
+      "data_element": "OIU_EXEC_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_STD_CT_FL",
+      "description": "Standard Contract Flag",
+      "data_element": "OIU_STD_CT_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_PREV_CT_NO",
+      "description": "Old / Previous Contract Number",
+      "data_element": "OIU_PREV_CT_NO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_GPLT_COMPANY",
+      "description": "Gas Plant Company",
+      "data_element": "OIU_GPLT_BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_GPLT_VNAME",
+      "description": "Gas Plant Venture",
+      "data_element": "OIU_GPLT_VNAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_GPLT_DOI_NO",
+      "description": "Gasplant DOI No",
+      "data_element": "OIU_GPLT_DOI_NO",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_MK_REP_NO",
+      "description": "Marketing Representative No",
+      "data_element": "OIU_MK_REP_NO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_MK_REP_ISQ",
+      "description": "Marketing Representative Interest Sequence No",
+      "data_element": "OIU_MK_REP_ISQ_NO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_DEST_SALE_CD",
+      "description": "Plant Destination Of Product Sale Codes",
+      "data_element": "OIU_DEST_SALE_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_LIFE_LSE_FL",
+      "description": "Life Lease Flag",
+      "data_element": "OIU_LIFE_LSE_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_INV_NO",
+      "description": "Contract Invoice Number",
+      "data_element": "OIU_INV_NO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_INV_FL",
+      "description": "Invoice Flag",
+      "data_element": "OIU_INV_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_OBLIG_DT",
+      "description": "Obligation Date",
+      "data_element": "OIU_OBLIG_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_DESK_CD",
+      "description": "Desk Codes",
+      "data_element": "OIU_DESK_CD",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EIA_GINA_CD",
+      "description": "Energy Information Agency Report Code",
+      "data_element": "OIU_EIA_GINA_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_CT_STATUS_CD",
+      "description": "Contract Status Code",
+      "data_element": "OIU_CT_STATUS_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_SPOT_TERM_CD",
+      "description": "Spot/Term",
+      "data_element": "OIU_SPOT_TERM_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_STNDEDQ_CD",
+      "description": "Varying/Equ Daily Qu",
+      "data_element": "OIU_STNDEDQ_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_IOTR_FL",
+      "description": "Price includes Tax Reimbursement.",
+      "data_element": "OIU_IOTR_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_INTRA_INTER",
+      "description": "Boundary (Intra/Inter) Codes",
+      "data_element": "OIU_INTRA_INTER_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EXRES_SPLT",
+      "description": "Excess Residue Return (Before/After) Lease Plant Split Code",
+      "data_element": "OIU_EXRES_SPLT_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EVGN_FL",
+      "description": "Evergreen Flag",
+      "data_element": "OIU_EVGN_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EVGNPD_BAS",
+      "description": "Evergreen Period Basis",
+      "data_element": "OIU_EVGNPD_BAS_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EVGN_PERD_QY",
+      "description": "Evergreen Period Duration",
+      "data_element": "OIU_EVGN_PERD_QY",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_PREIM_TM_CD",
+      "description": "Primary Term Basis",
+      "data_element": "OIU_PREIM_TM_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_PRIM_TM_QY",
+      "description": "Primary Term Length",
+      "data_element": "OIU_PRIM_TM_QY",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_SEC_TM_CD",
+      "description": "Secondary Term Basis",
+      "data_element": "OIU_SEC_TM_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_SEC_TM_QY",
+      "description": "Secondary Term Length",
+      "data_element": "OIU_SEC_TM_QY",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_EXP_NOTIF_DT",
+      "description": "Expiration Notification Date",
+      "data_element": "OIU_EXP_NOTIF_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_INTIT_RDT_DT",
+      "description": "Initial Redetermination Date",
+      "data_element": "OIU_INTIT_RDT_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_NEXT_RDT_DT",
+      "description": "Next redetermination date",
+      "data_element": "OIU_NEXT_RDT_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_RTC_DT",
+      "description": "Right to cancel date",
+      "data_element": "OIU_RTC_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_RDT_N_PERD",
+      "description": "Re-determination Notification Period (in Days)",
+      "data_element": "OIU_RDT_N_PERD_QY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIU_RDT_REFQ_CD",
+      "description": "Redetermination Frequency Code",
+      "data_element": "OIU_RDT_REFQ_CD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_RTF_CD",
+      "description": "Ratification Date",
+      "data_element": "OIU_RTF_DT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_IMB_PRVSN_FL",
+      "description": "Imbalance Provision Flag",
+      "data_element": "OIU_IMB_PRVSN_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_FFEE_RMB_FL",
+      "description": "Filing Fee Reimbursement Flag",
+      "data_element": "OIU_FFEE_RMB_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_FIRM_INTRPT",
+      "description": "Firm/Interruptable Code",
+      "data_element": "OIU_FIRM_INTRPT_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_BAL_BAS_CD",
+      "description": "Balancing Basis Code",
+      "data_element": "OIU_BAL_BAS_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_PNTY_BAS_CD",
+      "description": "Penalty Basis Code",
+      "data_element": "OIU_PNTY_BAS_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_TRANSP_BA",
+      "description": "Transportation Basis Code",
+      "data_element": "OIU_TRANSP_BAS_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_DLY_MAX_T_QY",
+      "description": "Daily Maximum Transport Quantity",
+      "data_element": "OIU_DLY_MAX_T_QY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIU_PRCS_FL",
+      "description": "Processing Flag",
+      "data_element": "OIU_PRCS_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_SPR_FL",
+      "description": "Separation Flag",
+      "data_element": "OIU_SPR_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_DEHYD_FL",
+      "description": "Dehydration Flag",
+      "data_element": "OIU_DEHYD_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_COMPR_FL",
+      "description": "Compression Flag",
+      "data_element": "OIU_COMPR_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_PYMT_METH_CD",
+      "description": "Payment Method Code",
+      "data_element": "OIU_PYMT_METH_CD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_CON_MATNR",
+      "description": "Contaminant material",
+      "data_element": "OIU_CON_MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_CON_MAX_QY",
+      "description": "Contaminant Percent",
+      "data_element": "OIU_CON_MAX_QY",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_AFFIL_FL",
+      "description": "Affiliate Flag",
+      "data_element": "OIU_AFFIL_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_MMS_TYPE_CD",
+      "description": "Production:  MMS-2014 - Sales Type Code",
+      "data_element": "OIUREP_MMS_2014_SALES_TYPE_CD",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIU_MMS_ETPAY_FL",
+      "description": "MMS-2014:  Contracts with Estimated Payment",
+      "data_element": "OIUREP_MMS_2014_CT_EST_PAY_FL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIUH_CT_NO",
+      "description": "Contract Number",
+      "data_element": "OIUH_CT_NO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "TAS",
+      "description": "Treasury Account Symbol",
+      "data_element": "FMFG_TAS",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "BETC",
+      "description": "Business Event Type Code",
+      "data_element": "FMFG_BETC",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MOD_ALLOW",
+      "description": "Modification Allowed",
+      "data_element": "FMFG_MOD_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CANCEL_ALLOW",
+      "description": "Cancellation Allowed",
+      "data_element": "FMFG_CANCEL_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PAY_METHOD",
+      "description": "List of the Payment Methods to be Considered",
+      "data_element": "DZWELS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BPN",
+      "description": "Business Partner Number",
+      "data_element": "FMFG_BPN",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "REP_FREQ",
+      "description": "Reporting Frequency",
+      "data_element": "FMFG_REP_FREQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYSB",
+      "description": "Logical system with which document was created",
+      "data_element": "LOGSYSB",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KALCD",
+      "description": "Procedure for Campaign Determination",
+      "data_element": "KALCD",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MULTI",
+      "description": "Multiple Campaigns/Trade Promotions Active Indicator",
+      "data_element": "CMPC_MULT_CAMPAIGN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPPAYM",
+      "description": "Payment Form for Special Payment Method",
+      "data_element": "SPPAYM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WTYSC_CLM_HDR",
+      "description": "Claim header",
+      "data_element": "WTYSC_CLM_HDR",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "Primary table for storing sales document header data, including basic information such as sales organization, sales office, distribution channel, division, sales group, and payment terms. No direct foreign key relationships are indicated in the provided structure. Common use cases include creating and managing sales orders, processing customer orders, and generating invoices.",
+    "timestamp": "2025-02-13T13:43:16.086923",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

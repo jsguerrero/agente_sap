@@ -1,0 +1,77 @@
+{
+  "name": "HRRP_DIRECTORY",
+  "description": "HRRP_DIRECTORY is a standard SAP Table which is used to store Hierarchy directory data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP HRRP_DIRECTORY table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: A - Application table (master and transaction data)\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type or numeric)\nDictionary Type: Transparent table\nDatabase Table: HRRP_DIRECTORY\n\n\nHRRP_DIRECTORY table structure field list\nBelow is the full HRRP_DIRECTORY field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nMANDT\tClient\tMANDT\tCLNT\t3(0)\tT000\t\tMANDT\t\t\t\nHRYID\tHierarchy ID\tHRYID\tCHAR\t42(0)\t\t\tDHRYID\t\t\t\nHRYVER\tHierarchy version\tHRYVERSN\tNUMC\t15(0)\t\t\t\t\t\t\nHRYVALTO\tValid To Date\tDATBI\tDATS\t8(0)\t\t\tDATUM\t\t\t\nHRYVALFROM\tValid-From Date\tDATAB\tDATS\t8(0)\t\t\tDATUM\t\t\t\nHRYTYP\tHierarchy Type\tHRYTYPE\tCHAR\t4(0)\tHRRP_TYP\t\tHRYTYP\t\t\t\nUPDTIME\tLast Updated at (Timestamp)\tHRYUPDTIME\tDEC\t15(0)\t\t\t\t\t\t\nUPDUSER\tLast Changed By\tUPNAM\tCHAR\t12(0)\t\t\tUSNAM",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYID",
+      "description": "Hierarchy ID",
+      "data_element": "HRYID",
+      "type": "CHAR",
+      "length": "42",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVER",
+      "description": "Hierarchy version",
+      "data_element": "HRYVERSN",
+      "type": "NUMC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVALTO",
+      "description": "Valid To Date",
+      "data_element": "DATBI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYVALFROM",
+      "description": "Valid-From Date",
+      "data_element": "DATAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "HRYTYP",
+      "description": "Hierarchy Type",
+      "data_element": "HRYTYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDTIME",
+      "description": "Last Updated at (Timestamp)",
+      "data_element": "HRYUPDTIME",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDUSER",
+      "description": "Last Changed By",
+      "data_element": "UPNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of this table is to store general information about a specific entity or concept within the SAP system.\n2. The table does not have any foreign key relationships defined, so it is not directly related to any other table.\n3. This table can be used in various scenarios to store and retrieve data related to the entity or concept it represents.",
+    "timestamp": "2025-02-13T13:41:29.430117",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

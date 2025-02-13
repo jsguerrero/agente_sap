@@ -1,0 +1,213 @@
+{
+  "name": "VBPA",
+  "description": "Sales Document: Partner",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Sales and Distribution Document Number",
+      "data_element": "VBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "POSNR",
+      "description": "Item number of the SD document",
+      "data_element": "POSNR",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PARVW",
+      "description": "Partner Function",
+      "data_element": "PARVW",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PERNR",
+      "description": "Personnel Number",
+      "data_element": "PERNR_D",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PARNR",
+      "description": "Number of contact person",
+      "data_element": "PARNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRNR",
+      "description": "Address",
+      "data_element": "ADRNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ABLAD",
+      "description": "Unloading Point",
+      "data_element": "ABLAD",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRDA",
+      "description": "Address indicator",
+      "data_element": "ADRDA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XCPDK",
+      "description": "Indicator: Is the account a one-time account?",
+      "data_element": "XCPDK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HITYP",
+      "description": "Customer hierarchy type",
+      "data_element": "HITYP_KH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PRFRE",
+      "description": "Relevant for price determination ID",
+      "data_element": "PRFRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BOKRE",
+      "description": "Indicator: Customer Is Rebate-Relevant",
+      "data_element": "BOKRE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "HISTUNR",
+      "description": "Level number within hierarchy",
+      "data_element": "HISTUNR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KNREF",
+      "description": "Customer description of partner (plant, storage location)",
+      "data_element": "KNREF",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "LZONE",
+      "description": "Transportation zone to or from which the goods are delivered",
+      "data_element": "LZONE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HZUOR",
+      "description": "Assignment to Hierarchy",
+      "data_element": "HZUOR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG",
+      "description": "VAT Registration Number",
+      "data_element": "STCEG",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "PARVW_FF",
+      "description": "Indicator 'further partners in this function' (VBPA2)",
+      "data_element": "PARTNER_FF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRNP",
+      "description": "Person number",
+      "data_element": "AD_PERSNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KALE",
+      "description": "Maintain appointments in calendar",
+      "data_element": "KALE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPBL",
+      "description": "Business location identifier (IS-Oil MRN)",
+      "data_element": "OIF_PBLNRP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The VBPA table stores partner information related to sales documents, such as customers, vendors, employees, and contact persons.\n2. It is linked to other tables through foreign keys, including VBAK (sales document header), VBKD (sales document item), and KNA1 (customer master).\n3. Common use cases include retrieving partner data for sales orders, invoices, and deliveries.",
+    "timestamp": "2025-02-13T13:44:54.912667",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

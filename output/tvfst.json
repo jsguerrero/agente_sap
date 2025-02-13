@@ -1,0 +1,70 @@
+{
+  "name": "TVFST",
+  "description": "Billing : Blocking Reason Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FAKSP",
+      "description": "Block",
+      "data_element": "FAKSP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VTEXT",
+      "description": "Description",
+      "data_element": "BEZEI_FAKSP",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TVFST",
+      "field": "FAKSP",
+      "foreign_key_table": "TVFST",
+      "foreign_key_field": "MANDT",
+      "check_table": "TVFS",
+      "check_field": "Billing: Reasons for Blocking"
+    },
+    {
+      "table": "TVFST",
+      "field": "FAKSP",
+      "foreign_key_table": "TVFST",
+      "foreign_key_field": "FAKSP",
+      "check_table": "TVFS",
+      "check_field": "Billing: Reasons for Blocking"
+    },
+    {
+      "table": "TVFST",
+      "field": "SPRAS",
+      "foreign_key_table": "TVFST",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. The TVFST table stores billing blocking reason texts in multiple languages.\n2. It has relationships with TVFS for blocking reasons and T002 for language keys.\n3. Common use cases include retrieving blocking reason descriptions by block code and language.",
+    "timestamp": "2025-02-13T13:42:37.508551",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

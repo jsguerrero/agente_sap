@@ -1,0 +1,221 @@
+{
+  "name": "MSLB",
+  "description": "Special Stocks with Vendor",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LBSPR",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LBLAB",
+      "description": "Valuated Unrestricted-Use Stock",
+      "data_element": "LABST",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBINS",
+      "description": "Stock in Quality Inspection",
+      "data_element": "INSME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBVLA",
+      "description": "Valuated unrestricted-use stock in previous period",
+      "data_element": "VMLAB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBVIN",
+      "description": "Stock in Quality Inspection in Previous Period",
+      "data_element": "VMINS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBILL",
+      "description": "Physical inventory indicator for whse stock in current year",
+      "data_element": "KZILL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBILQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in current year",
+      "data_element": "KZILQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBVLL",
+      "description": "Physical inventory indicator for stock in previous year",
+      "data_element": "KZVLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBVLQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+      "data_element": "KZVLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBFLL",
+      "description": "Physical inventory indicator for stock in following year",
+      "data_element": "KZFLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBFLQ",
+      "description": "Physical inventory indicator, quality insp.stck, follow.yr.",
+      "data_element": "KZFLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBDLL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LBEIN",
+      "description": "Total Stock of All Restricted Batches",
+      "data_element": "EINME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBVEI",
+      "description": "Restricted-Use Stock in Previous Period",
+      "data_element": "VMEIN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LBJIN",
+      "description": "Fiscal year of current physical inventory indicator",
+      "data_element": "GJINV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LBRUE",
+      "description": "MxxxH rec. already exists for per. before last of Mxxx per.",
+      "data_element": "SBRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LBUML",
+      "description": "Stock in Transfer for Subcontracting (Plant to Plant)",
+      "data_element": "UMLME_O",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The MSLB table stores stock quantity data for special stocks with vendors. It tracks physical inventory indicators, stock in quality inspection, and other special stock-related information. This data is used for inventory management and reporting purposes. **Key Relationships:** None (based on the provided foreign key information). **Common Use Cases:** * Maintaining special stock inventories\n* Physical inventory processing\n* Stock analysis and reporting",
+    "timestamp": "2025-02-13T13:42:49.636477",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

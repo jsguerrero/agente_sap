@@ -1,0 +1,45 @@
+{
+  "name": "FINSC_LEDGER_T",
+  "description": "FINSC_LEDGER_T is a standard SAP Table which is used to store Unified Journal Entry Ledger data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP FINSC_LEDGER_T table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: G - Customising table which is protected against SAP Update\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type)\nDictionary Type: Transparent table\nDatabase Table: FINSC_LEDGER_T\n\n\nFINSC_LEDGER_T table structure field list\nBelow is the full FINSC_LEDGER_T field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nMANDT\tClient\tMANDT\tCLNT\t3(0)\tAssigned to domain\t\tMANDT\t\t\t\nLANGU\tLanguage Key\tSPRAS\tLANG\t1(0)\tAssigned to domain\tISOLA\tSPRAS\tSPR\tH_T002\tSPRAS\nRLDNR\tLedger in General Ledger Accounting\tFINS_LEDGER\tCHAR\t2(0)\tFINSC_LEDGER\tALPHA\tFINS_LEDGER\tGLN_FLEX\tFAGL_RLDNR\tRLDNR\nNAME\tLedger Name\tLDTXT\tCHAR\t30(0)\t\t\tTEXT30",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger in General Ledger Accounting",
+      "data_element": "FINS_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME",
+      "description": "Ledger Name",
+      "data_element": "LDTXT",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Main purpose of the table: Stores general data\n2. Key relationships with other tables (based on provided foreign keys): None provided\n3. Common use cases: Data storage, data management, data retrieval",
+    "timestamp": "2025-02-13T13:40:45.773818",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

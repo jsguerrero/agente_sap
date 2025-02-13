@@ -1,0 +1,381 @@
+{
+  "name": "T161",
+  "description": "Purchasing Document Types",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTYP",
+      "description": "Purchasing Document Category",
+      "data_element": "BSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BSART",
+      "description": "Purchasing Document Type",
+      "data_element": "ESART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSAKZ",
+      "description": "Control indicator for purchasing document type",
+      "data_element": "BSAKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PINCR",
+      "description": "Item Number Interval",
+      "data_element": "PINCR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKI",
+      "description": "Number range in the case of internal number assignment",
+      "data_element": "NUMKI",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKE",
+      "description": "Number range in the case of external number assignment",
+      "data_element": "NUMKE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BREFN",
+      "description": "Field Selection Key",
+      "data_element": "BREFN",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "REFBA",
+      "description": "Reference document type",
+      "data_element": "RFBSA",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABVOR",
+      "description": "Prepopulate Standard Release Order Quantity in Contract",
+      "data_element": "ABVOR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STAFO",
+      "description": "Update group for statistics update",
+      "data_element": "STAFO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "UPINC",
+      "description": "Item Number Interval for Subitems",
+      "data_element": "UPINC",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "STAKO",
+      "description": "Document with time-dependent conditions",
+      "data_element": "STAKO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PARGR",
+      "description": "Partner Determination Procedure",
+      "data_element": "PARGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKA",
+      "description": "Number range in case of internal number assignment for ALE",
+      "data_element": "NUMKA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HITYP",
+      "description": "Hierarchy category: vendor hierarchy",
+      "data_element": "HITYP_LH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LPHIS",
+      "description": "Indicator for scheduling agreement release documentation",
+      "data_element": "LPHIS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GSFRG",
+      "description": "Overall release of purchase requisitions",
+      "data_element": "GSFRG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VARIANTE",
+      "description": "Layout",
+      "data_element": "TC_VAR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SHENQ",
+      "description": "Only shared lock in case of contract release order",
+      "data_element": "SHENQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZALE",
+      "description": "Distributed contract (ALE)",
+      "data_element": "KZALE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ABGEBOT",
+      "description": "Competitive bidding procedure using global percentage bids",
+      "data_element": "ABGEBOT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KORNR",
+      "description": "Correction of miscellaneous provisions",
+      "data_element": "KORNR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMLIF",
+      "description": "Stock transfer: Take vendor data into account",
+      "data_element": "UMLIF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KOETT",
+      "description": "Contract with delivery schedule",
+      "data_element": "KOETT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AR_OBJECT",
+      "description": "Document type",
+      "data_element": "SAEOBJART",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KOAKO",
+      "description": "Contract allowed as release order against contract",
+      "data_element": "KOAKO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OICSEGI",
+      "description": "Quantity schedule creation permitted",
+      "data_element": "OIA_CSEGI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIRFQREQ",
+      "description": "Precedence for RFQ or default requisition for TDP PO",
+      "data_element": "OIH_RFQREQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WVVKZ",
+      "description": "Indicator for Further Processing of Summarized Documents",
+      "data_element": "WVVKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XLOKZ",
+      "description": "Cross-System Transit",
+      "data_element": "XLOKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CP_AKTIVE",
+      "description": "Commitment Plan is Active",
+      "data_element": "CP_ACTIVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CPTYPE",
+      "description": "Category of Commitment Plan",
+      "data_element": "CP_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FLS_RSTO",
+      "description": "Store Return with Inbound and Outbound Delivery",
+      "data_element": "FLS_RSTO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MSR_ACTIVE",
+      "description": "Advanced Returns Management Active",
+      "data_element": "MSR_ACTIVE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RDP_PROFILE",
+      "description": "Risk Distribution Plan Profile",
+      "data_element": "LOGTRM_RDP_PROFILE",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NUMKC",
+      "description": "Number Range for SRM Central Contract",
+      "data_element": "NUMKC",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/CEACT",
+      "description": "Fast Data Entry of Characteristics Is Active",
+      "data_element": "/SAPMP/CEACT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/PDACT",
+      "description": "Activate Inheritance",
+      "data_element": "/SAPMP/PDACT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/PPROT",
+      "description": "Log of Characteristic Value Inheritance",
+      "data_element": "/SAPMP/PPROT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/PUSER",
+      "description": "Inheritance: Overwrite User Values",
+      "data_element": "/SAPMP/PUSER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/PAUSW",
+      "description": "Inheritance of Characteristics Selection List",
+      "data_element": "/SAPMP/PAUSW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/ATNAM",
+      "description": "Characteristic name",
+      "data_element": "MILL_SE_ATNAM1",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "/SAPMP/GAUF",
+      "description": "Global/Local Group May Be Undone",
+      "data_element": "/SAPMP/GAUF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TOLSL",
+      "description": "Tolerance Key for Overdraw Tolerance",
+      "data_element": "METOLSL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MILL_OMKZ",
+      "description": "Mill: Use reference characteristics in Purchasing",
+      "data_element": "MILL_MM_OMKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The T161 table in SAP is used to store purchasing document types and their associated control settings.\n2. It does not have any foreign key relationships with other tables.\n3. Common use cases include defining the document type for purchase orders, contracts, and requests for quotation.",
+    "timestamp": "2025-02-13T13:42:41.989666",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

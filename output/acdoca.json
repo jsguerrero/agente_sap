@@ -1,0 +1,3717 @@
+{
+  "name": "ACDOCA",
+  "description": "ACDOCA is a standard SAP Table which is used to store Universal Journal Entry Line Items data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system\n\nEven using an S/4 Hana system you can still view further information about the SAP ACDOCA table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).\n\nDelivery Class: A - Application table (master and transaction data)\nDisplay/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions\nEnhancement category: Can be enhanced (character-type or numeric)\nDictionary Type: Transparent table\nDatabase Table: ACDOCA\n\n\nACDOCA table structure field list\nBelow is the full ACDOCA field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field\n\n\nField\tDescription\tData Element\tData Type\tlength (Dec)\tCheck table\tConversion Routine\tDomain Name\tMemoryID\tSHLP\tSHLP Field\nRCLNT\tClient\tMANDT\tCLNT\t3(0)\tT000\t\tMANDT\t\t\t\nRLDNR\tLedger in General Ledger Accounting\tFINS_LEDGER\tCHAR\t2(0)\tFINSC_LEDGER\tALPHA\tFINS_LEDGER\tGLN_FLEX\tFAGL_RLDNR\tRLDNR\nRBUKRS\tCompany Code\tBUKRS\tCHAR\t4(0)\tT001\t\tBUKRS\tBUK\tC_T001\tBUKRS\nGJAHR\tFiscal Year\tGJAHR\tNUMC\t4(0)\t\tGJAHR\tGJAHR\tGJR\t\t\nBELNR\tAccounting Document Number\tBELNR_D\tCHAR\t10(0)\t\tALPHA\tBELNR\tBLN\t\t\nDOCLN\tSix-Character Posting Item for Ledger\tDOCLN6\tCHAR\t6(0)\t\t\tDOCLN6\t\t\t\nRYEAR\tGeneral Ledger Fiscal Year\tGJAHR_POS\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nDOCNR_LD\tLedger specific Accounting Document Number\tFINS_DOCNR_LD\tCHAR\t10(0)\t\tALPHA\tBELNR\t\t\t\nRRCTY\tRecord Type\tRRCTY\tCHAR\t1(0)\t\t\tRRCTY\t\t\t\nRMVCT\tTransaction type\tRMVCT\tCHAR\t3(0)\tT856\t\tRMVCT\t\t\t\nVORGN\tTransaction Type for General Ledger\tVORGN\tCHAR\t4(0)\t\t\tVORGN\t\t\t\nVRGNG\tCO Business Transaction\tCO_VORGANG\tCHAR\t4(0)\tTJ01\t\tJ_VORGANG\t\t\t\nBTTYPE\tBusiness Transaction Type\tFINS_BTTYPE\tCHAR\t4(0)\tFINSC_BTTYPE\t\tFINS_BTTYPE\t\t\t\nAWTYP\tReference procedure\tAWTYP\tCHAR\t5(0)\tTTYP\t\tAWTYP\t\t\t\nAWSYS\tLogical system of source document\tAWSYS\tCHAR\t10(0)\tTBDLS\tALPHA\tLOGSYS\t\t\t\nAWORG\tReference Organizational Units\tAWORG\tCHAR\t10(0)\t\t\tAWORG\t\t\t\nAWREF\tReference document number\tAWREF\tCHAR\t10(0)\t\tALPHA\tAWREF\t\t\t\nAWITEM\tReference Document Line Item\tFINS_AWITEM\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nAWITGRP\tGroup of Reference Document Line Items\tFINS_AWITGRP\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nSUBTA\tPartial Document to be balanced to zero\tFINS_SUBTA\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nXREVERSING\tIndicator: Item is reversing another item\tFINS_XREVERSING\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nXREVERSED\tIndicator: Item is reversed\tFINS_XREVERSED\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nXTRUEREV\tIndicator: True reversal (i.e. cancellation)\tFINS_XTRUEREV\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nAWTYP_REV\tReversal: Reference Transaction of Document To Be Reversed\tAWTYP_REV\tCHAR\t5(0)\tTTYP\t\tAWTYP\t\t\t\nAWORG_REV\tReversal: Reverse Document Reference Organization\tAWORG_REV\tCHAR\t10(0)\t\t\tAWORG\t\t\t\nAWREF_REV\tReversal: Reverse Document Reference Document Number\tAWREF_REV\tCHAR\t10(0)\t\tALPHA\tAWREF\t\t\t\nSUBTA_REV\tReversal: Partial Document to be balanced to zero\tFINS_SUBTA_REV\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nXSETTLING\tIndicator: Item is settling or transferring another item\tFINS_XSETTLING\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nXSETTLED\tIndicator: Line item is settled or transferred\tFINS_XSETTLED\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nPREC_AWTYP\tPreceding Document Reference Transaction\tFINS_PREC_AWTYP\tCHAR\t5(0)\tTTYP\t\tAWTYP\t\t\t\nPREC_AWSYS\tLogical System of Preceding Reference Document\tFINS_PREC_AWSYS\tCHAR\t10(0)\tTBDLS\tALPHA\tLOGSYS\t\t\t\nPREC_AWORG\tPreceding Document Reference Organizational Units\tFINS_PREC_AWORG\tCHAR\t10(0)\t\t\tAWORG\t\t\t\nPREC_AWREF\tPreceding Document Reference Document Number\tFINS_PREC_AWREF\tCHAR\t10(0)\t\tALPHA\tAWREF\t\t\t\nPREC_AWITEM\tPreceding Reference Document Line Item\tFINS_PREC_AWITEM\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nPREC_SUBTA\tPreceding Partial Document to be balanced to zero\tFINS_PREC_SUBTA\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nPREC_AWMULT\tID of multiple Preceding Document References\tFINS_PREC_AWMULT_UUID\tRAW\t16(0)\t\t\tSYSUUID\t\t\t\nPREC_BUKRS\tPreceding Journal Entry Company Code\tFINS_PREC_BUKRS\tCHAR\t4(0)\tT001\t\tBUKRS\t\t\t\nPREC_GJAHR\tPreceding Journal Entry Fiscal Year\tFINS_PREC_GJAHR\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nPREC_BELNR\tPreceding Journal Entry Document Number\tFINS_PREC_BELNR\tCHAR\t10(0)\t\tALPHA\tBELNR\t\t\t\nPREC_DOCLN\tPreceding Journal Entry Line Item\tFINS_PREC_DOCLN\tCHAR\t6(0)\t\t\tDOCLN6\t\t\t\nXSECONDARY\tSecondary journal entry\tFINS_SECONDARY_ENTRY\tCHAR\t1(0)\t\t\tBOOLE\t\t\t\nCLOSING_RUN_ID\tFinancial Closing Run ID\tCLS_RUN_ID\tRAW\t16(0)\t\t\tUUID\t\t\t\nSRC_AWTYP\tSource Document Reference Transaction\tFINS_SRC_AWTYP\tCHAR\t5(0)\tTTYP\t\tAWTYP\t\t\t\nSRC_AWSYS\tLogical System of Source Reference Document\tFINS_SRC_AWSYS\tCHAR\t10(0)\tTBDLS\tALPHA\tLOGSYS\t\t\t\nSRC_AWORG\tSource Document Reference Organizational Units\tFINS_SRC_AWORG\tCHAR\t10(0)\t\t\tAWORG\t\t\t\nSRC_AWREF\tSource Document Reference Document Number\tFINS_SRC_AWREF\tCHAR\t10(0)\t\tALPHA\tAWREF\t\t\t\nSRC_AWITEM\tSource Reference Document Line Item\tFINS_SRC_AWITEM\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nSRC_AWSUBIT\tSource Reference Document Sub-Item\tFINS_SRC_AWSUBIT\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nXCOMMITMENT\tIndicator: Commitment\tFINS_XCOMMITMENT\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nOBS_REASON\tReason why this item is obsolete\tFINS_OBSOLETE_ITEM_REASON\tCHAR\t1(0)\t\t\tFINS_OBSOLETE_ITEM_REASON\t\t\t\nRTCUR\tBalance Transaction Currency\tFINS_CURRT\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRWCUR\tTransaction Currency\tFINS_CURRW\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRHCUR\tCompany Code Currency\tFINS_CURRH\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRKCUR\tGlobal Currency\tFINS_CURRK\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nROCUR\tFreely Defined Currency 1\tFINS_CURR1\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRVCUR\tFreely Defined Currency 2\tFINS_CURR2\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRBCUR\tFreely Defined Currency 3\tFINS_CURR3\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRCCUR\tFreely Defined Currency 4\tFINS_CURR4\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRDCUR\tFreely Defined Currency 5\tFINS_CURR5\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRECUR\tFreely Defined Currency 6\tFINS_CURR6\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRFCUR\tFreely Defined Currency 7\tFINS_CURR7\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRGCUR\tFreely Defined Currency 8\tFINS_CURR8\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRCO_OCUR\tCO Object Currency\tFINS_CO_OCUR\tCUKY\t5(0)\tTCURC\t\tWAERS\t\t\t\nRUNIT\tBase Unit of Measure\tMEINS\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nRVUNIT\tUnit of Measure for Valuation Quantity\tRVUNIT\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nRRUNIT\tUnit of Measure for Reference Quantity\tRRUNIT\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nRIUNIT\tUnit of Measure for Inventory Quantity\tFINS_RIUNIT\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nQUNIT1\tAdditional Unit of Measure 1\tFCO_QUNIT1\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nQUNIT2\tAdditional Unit of Measure 2\tFCO_QUNIT2\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nQUNIT3\tAdditional Unit of Measure 3\tFCO_QUNIT3\tUNIT\t3(0)\tT006\tCUNIT\tMEINS\t\t\t\nCO_MEINH\tUnit of Measure for CO Valuation Quantity\tFCO_MEINH\tUNIT\t3(0)\tAssigned to domain\tCUNIT\tMEINS\t\t\t\nRACCT\tAccount Number\tRACCT\tCHAR\t10(0)\tSKB1\tALPHA\tSAKNR\tACC\t\t\nRCNTR\tCost Center\tKOSTL\tCHAR\t10(0)\tCSKS\tALPHA\tKOSTL\tKOS\t\t\nPRCTR\tProfit Center\tPRCTR\tCHAR\t10(0)\tCEPC\tALPHA\tPRCTR\tPRC\tPRCTR_EMPTY\tPRCTR\nRFAREA\tFunctional Area\tFKBER\tCHAR\t16(0)\tTFKB\t\tFKBER\tFBE\t\t\nRBUSA\tBusiness Area\tGSBER\tCHAR\t4(0)\tTGSB\t\tGSBER\tGSB\t\t\nKOKRS\tControlling Area\tKOKRS\tCHAR\t4(0)\tTKA01\t\tCACCD\tCAC\t\t\nSEGMENT\tSegment for Segmental Reporting\tFB_SEGMENT\tCHAR\t10(0)\tFAGL_SEGM\tALPHA\tFB_SEGMENT\t\t\t\nSCNTR\tSender cost center\tSKOST\tCHAR\t10(0)\tCSKS\tALPHA\tKOSTL\tKSK\t\t\nPPRCTR\tPartner Profit Center\tPPRCTR\tCHAR\t10(0)\tCEPC\tALPHA\tPRCTR\tPPC\t\t\nSFAREA\tPartner Functional Area\tSFKBER\tCHAR\t16(0)\tTFKB\t\tFKBER\t\t\t\nSBUSA\tTrading partner's business area\tPARGB\tCHAR\t4(0)\tTGSB\t\tGSBER\tGSB\t\t\nRASSC\tCompany ID of Trading Partner\tRASSC\tCHAR\t6(0)\tT880\tALPHA\tRCOMP\tPGS\t\t\nPSEGMENT\tPartner Segment for Segmental Reporting\tFB_PSEGMENT\tCHAR\t10(0)\tFAGL_SEGM\tALPHA\tFB_SEGMENT\t\t\t\nTSL\tAmount in Balance Transaction Currency\tFINS_VTCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nWSL\tAmount in Transaction Currency\tFINS_VWCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nWSL2\tGroup Valuation Amount in Transaction Currency\tFINS_VWCUR12_2\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nWSL3\tProfit-Center Valuation Amount in Transaction Currency\tFINS_VWCUR12_3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHSL\tAmount in Company Code Currency\tFINS_VHCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSL\tAmount in Global Currency\tFINS_VKCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSL\tAmount in Freely Defined Currency 1\tFINS_VOCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSL\tAmount in Freely Defined Currency 2\tFINS_VVCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nBSL\tAmount in Freely Defined Currency 3\tFINS_VBCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nCSL\tAmount in Freely Defined Currency 4\tFINS_VCCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nDSL\tAmount in Freely Defined Currency 5\tFINS_VDCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nESL\tAmount in Freely Defined Currency 6\tFINS_VECUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nFSL\tAmount in Freely Defined Currency 7\tFINS_VFCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nGSL\tAmount in Freely Defined Currency 8\tFINS_VGCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKFSL\tFixed Amount in Global Currency\tFINS_VGCUR12_FIX\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKFSL2\tGroup Valuation Fixed Amount in Global Currency\tFINS_VGCUR12_FIX2\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKFSL3\tPrCtr Valuation Fixed Amount in Global Currency\tFINS_VGCUR12_FIX3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPSL\tTotal Price Variance in Global Currency\tFINS_VPCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPSL2\tGroup Valuation Total Price Variance in Global Currency\tFINS_VPCUR12_2\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPSL3\tPrCtr Valuation Total Price Variance in Global Currency\tFINS_VPCUR12_3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPFSL\tFixed Price Variance in Global Currency\tFINS_VPFCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPFSL2\tGroup Valuation Fixed Price Variance in Global Currency\tFINS_VPFCUR12_2\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nPFSL3\tPrCtr Valuation Fixed Price Variance in Global Currency\tFINS_VPFCUR12_3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nCO_OSL\tAmount in CO Object Currency\tFINS_VCO_OCUR12\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHSLALT\tAlternative Value in Local Currency\tMLHSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSLALT\tAlternative Value in Group Currency\tMLKSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSLALT\tAlternative Value in Freely Defined Currency 1\tMLOSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSLALT\tAlternative Value in Freely Defined Currency 2\tML4SLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nBSLALT\tAlternative Value in Freely Defined Currency 3\tMLBSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nCSLALT\tAlternative Value in Freely Defined Currency 4\tMLCSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nDSLALT\tAlternative Value in Freely Defined Currency 5\tMLDSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nESLALT\tAlternative Value in Freely Defined Currency 6\tMLESLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nFSLALT\tAlternative Value in Freely Defined Currency 7\tMLFSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nGSLALT\tAlternative Value in Freely Defined Currency 8\tMLGSLALT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHSLEXT\tExternal Value in Local Currency\tMLHSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSLEXT\tExternal Value in Group Currency\tMLKSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSLEXT\tExternal Value in Freely Defined Currency 1\tMLOSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSLEXT\tExternal Value in Freely Defined Currency 2\tML4SLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nBSLEXT\tExternal Value in Freely Defined Currency 3\tMLBSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nCSLEXT\tExternal Value in Freely Defined Currency 4\tMLCSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nDSLEXT\tExternal Value in Freely Defined Currency 5\tMLDSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nESLEXT\tExternal Value in Freely Defined Currency 6\tMLESLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nFSLEXT\tExternal Value in Freely Defined Currency 7\tMLFSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nGSLEXT\tExternal Value in Freely Defined Currency 8\tMLGSLEXT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHVKWRT\tValue at Sales Price in Local Currency\tMLHVKWRT\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nMSL\tQuantity\tQUAN1_12\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nMFSL\tFixed quantity\tQUAN1_12_FIX\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nVMSL\tValuation quantity\tVQUAN1_12\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nVMFSL\tFixed valuation quantity\tVQUAN1_12_FIX\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nRMSL\tReference quantity\tRQUAN1_12\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nQUANT1\tAdditional Quantity 1\tFCO_QUAN1_L\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nQUANT2\tAdditional Quantity 2\tFCO_QUAN2_L\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nQUANT3\tAdditional Quantity 3\tFCO_QUAN3_L\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nCO_MEGBTR\tCO Valuation Quantity\tFCO_MEGBTR\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nCO_MEFBTR\tCO Valuation Quantity Fix\tFCO_MEFBTR\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nHSALK3\tInventory Value in Local Currency\tMLHSALK3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSALK3\tInventory Value in Group Currency\tMLKSALK3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSALK3\tInventory Value in Another Currency\tMLOSALK3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSALK3\tInventory Value in Fourth Currency\tML4SALK3\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHSALKV\tAlternative Inventory Value in Local Currency\tMLHSALKV\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSALKV\tAlternative Inventory Value in Group Currency\tMLKSALKV\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSALKV\tAlternative Inventory Value in Another Currency\tMLOSALKV\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSALKV\tAlternative Inventory Value in Fourth Currency\tML4SALKV\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHPVPRS\tMoving Average Price in Local Currency\tMLHPVPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKPVPRS\tMoving Average Price in Group Currency\tMLKPVPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOPVPRS\tMoving Average Price in Another Currency\tMLOPVPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVPVPRS\tMoving Average Price in Fourth Currency\tML4PVPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHSTPRS\tStandard Price in Local Currency\tMLHSTPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nKSTPRS\tStandard Price in Group Currency\tMLKSTPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nOSTPRS\tStandard Price in Another Currency\tMLOSTPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nVSTPRS\tStandard Price in Fourth Currency\tML4STPRS\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nHVKSAL\tInventory Value at Sales Price in Local Currency\tMLHVKSAL\tCURR\t23(2)\t\t\tWERTV12\t\t\t\nLBKUM\tInventory Quantity\tMLLBKUM\tQUAN\t23(3)\t\t\tMENGV12\t\t\t\nDRCRK\tDebit/Credit Indicator\tSHKZG\tCHAR\t1(0)\t\t\tSHKZG\t\t\t\nPOPER\tPosting period\tPOPER\tNUMC\t3(0)\t\t\tPOPER\tPOPR\t\t\nPERIV\tFiscal Year Variant\tPERIV\tCHAR\t2(0)\tT009\t\tPERIV\t\t\t\nFISCYEARPER\tPeriod/Year\tJAHRPER\tNUMC\t7(0)\t\tPERI7\tJAHRPER\t\t\t\nBUDAT\tPosting Date in the Document\tBUDAT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nBLDAT\tDocument Date in Document\tBLDAT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nBLART\tDocument type\tBLART\tCHAR\t2(0)\tT003\t\tBLART\tBAR\t\t\nBUZEI\tNumber of Line Item Within Accounting Document\tBUZEI\tNUMC\t3(0)\t\t\tBUZEI\tBUZ\t\t\nZUONR\tAssignment number\tDZUONR\tCHAR\t18(0)\t\t\tZUONR\t\t\t\nBSCHL\tPosting Key\tBSCHL\tCHAR\t2(0)\tTBSL\t\tBSCHL\t\t\t\nBSTAT\tDocument Status\tBSTAT_D\tCHAR\t1(0)\t\t\tBSTAT\t\t\t\nLINETYPE\tItem Category\tLINETYPE\tCHAR\t5(0)\tT8G02\t\tLINETYPE\t\t\t\nKTOSL\tTransaction Key\tKTOSL\tCHAR\t3(0)\t\t\tCHAR3\t\t\t\nSLALITTYPE\tSubledger-Specific Line Item Type\tSLALITTYPE\tNUMC\t5(0)\tFINSTS_SLALITTY\t\tSLALITTYPE\t\t\t\nXSPLITMOD\tItem Changed by Document Splitting\tXSPLITMOD\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nUSNAM\tUser Name\tUSNAM\tCHAR\t12(0)\tAssigned to domain\t\tXUBNAME\tUSR\t\t\nTIMESTAMP\tUTC Time Stamp in Short Form (YYYYMMDDhhmmss)\tTIMESTAMP\tDEC\t15(0)\t\t\tTZNTSTMPS\t\t\t\nEPRCTR\tPartner profit center for elimination of internal business\tEPRCTR\tCHAR\t10(0)\tCEPC\tALPHA\tPRCTR\t\t\t\nRHOART\tType of origin object (EC-PCA)\tHOART\tNUMC\t2(0)\t\t\tHOART\tPCH\t\t\nGLACCOUNT_TYPE\tType of a General Ledger Account\tGLACCOUNT_TYPE\tCHAR\t1(0)\t\t\tGLACCOUNT_TYPE\t\t\t\nKTOPL\tChart of Accounts\tKTOPL\tCHAR\t4(0)\tT004\t\tKTOPL\tKPL\tC_KTOPL\tKTOPL\nLOKKT\tAlternative Account Number in Company Code\tALTKT_SKB1\tCHAR\t10(0)\tSKA1\tALPHA\tSAKNR\t\t\t\nKTOP2\tChart of Accounts According to Country Legislation\tKTOP2\tCHAR\t4(0)\tT004\t\tKTOPL\t\t\t\nREBZG\tDocument No. of the Invoice to Which the Transaction Belongs\tREBZG\tCHAR\t10(0)\t\tALPHA\tBELNR\t\t\t\nREBZJ\tFiscal Year of the Relevant Invoice (for Credit Memo)\tREBZJ\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nREBZZ\tLine Item in the Relevant Invoice\tREBZZ\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nREBZT\tFollow-On Document Type\tREBZT\tCHAR\t1(0)\t\t\tREBZT\t\t\t\nRBEST\tCategory of Reference Purchase Order\tCO_RBEST\tNUMC\t3(0)\t\tREFBT\tBELEGTYP\t\t\t\nEBELN\tPurchasing Document Number\tEBELN\tCHAR\t10(0)\tEKKO\tALPHA\tEBELN\tBES\tMEKK_C\tEBELN\nEBELP\tItem Number of Purchasing Document\tEBELP\tNUMC\t5(0)\tEKPO\t\tEBELP\tBSP\t\t\nZEKKN\tSequential Number of Account Assignment\tDZEKKN\tNUMC\t2(0)\t\t\tNUM02\t\t\t\nSGTXT\tItem Text\tSGTXT\tCHAR\t50(0)\t\t\tTEXT50\t\t\t\nKDAUF\tSales Order Number\tKDAUF\tCHAR\t10(0)\tAssigned to domain\tALPHA\tVBELN\tAUN\t\t\nKDPOS\tItem number in Sales Order\tKDPOS\tNUMC\t6(0)\t\t\tNUM06\tKPO\t\t\nMATNR\tMaterial Number\tMATNR\tCHAR\t40(0)\tMARA\tMATN1\tMATNR\tMAT\tS_MAT1\tMATNR\nWERKS\tPlant\tWERKS_D\tCHAR\t4(0)\tT001W\t\tWERKS\tWRK\tH_T001W_C\tWERKS\nLIFNR\tAccount Number of Vendor or Creditor\tLIFNR\tCHAR\t10(0)\tLFA1\tALPHA\tLIFNR\tLIF\tKRED_C\tLIFNR\nKUNNR\tCustomer Number\tKUNNR\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\tKUN\tC_KUNNR\tKUNNR\nFBUDA\tDate on which services are rendered\tFBUDA\tDATS\t8(0)\t\t\tDATUM\t\t\t\nCOCO_NUM\tCondition Contract\tWCB_COCO_NUM\tCHAR\t10(0)\t\tALPHA\tWCB_COCO_NUM\t\t\t\nWWERT\tTranslation date\tWWERT_D\tDATS\t8(0)\t\t\tDATUM\t\t\t\nKOART\tAccount type\tKOART\tCHAR\t1(0)\t\t\tKOART\t\t\t\nUMSKZ\tSpecial G/L Indicator\tUMSKZ\tCHAR\t1(0)\tT074U\t\tUMSKZ\t\t\t\nMWSKZ\tTax on sales/purchases code\tMWSKZ\tCHAR\t2(0)\tT007A\t\tMWSKZ\t\t\t\nHBKID\tShort key for a house bank\tHBKID\tCHAR\t5(0)\tT012\t\tHBKID\t\t\t\nHKTID\tID for account details\tHKTID\tCHAR\t5(0)\tT012K\t\tHKTID\t\t\t\nXOPVW\tIndicator: Open Item Management?\tXOPVW\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nAUGDT\tClearing Date\tAUGDT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nAUGBL\tDocument Number of the Clearing Document\tAUGBL\tCHAR\t10(0)\t\tALPHA\tBELNR\t\t\t\nAUGGJ\tFiscal Year of Clearing Document\tAUGGJ\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nAFABE\tDepreciation Area Real or Derived\tAFABER\tNUMC\t2(0)\tFAAV_DEPR_AREA\t\tAFABE\t\t\t\nANLN1\tMain Asset Number\tANLN1\tCHAR\t12(0)\tANLH\tALPHA\tANLN1\tAN1\t\t\nANLN2\tAsset Subnumber\tANLN2\tCHAR\t4(0)\tANLA\tALPHA\tANLN2\tAN2\t\t\nBZDAT\tAsset Value Date\tBZDAT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nANBWA\tAsset Transaction Type\tANBWA\tCHAR\t3(0)\tTABW\t\tBWASL\t\t\t\nMOVCAT\tTransaction Type Category\tFAA_MOVCAT\tCHAR\t2(0)\tFAAI_MOVCAT\t\tFAA_MOVCAT\t\t\t\nDEPR_PERIOD\tPosting Period of Depreciation\tPERAF\tNUMC\t3(0)\t\t\tPERAF\t\t\t\nANLGR\tGroup Asset\tANLGR\tCHAR\t12(0)\tANLH\tALPHA\tANLN1\tAN1\t\t\nANLGR2\tSubnumber of Group Asset\tANLGR2\tCHAR\t4(0)\tANLA\tALPHA\tANLN2\t\t\t\nSETTLEMENT_RULE\tDistribution Rule Group\tBUREG\tNUMC\t3(0)\t\t\tNUMC3\t\t\t\nANLKL\tAsset Class\tANLKL\tCHAR\t8(0)\tANKA\tALPHA\tANLKL\tANK\tSH_ANLKA\tANLKL\nKTOGR\tAccount Determination\tKTOGR\tCHAR\t8(0)\tT095A\tALPHA\tKTOGR\t\t\t\nPANL1\tMain number partner asset (intercompany transfer)\tPANL1\tCHAR\t12(0)\tANLH\tALPHA\tANLN1\t\t\t\nPANL2\tPartner asset subnumber (intercompany transfer)\tPANL2\tCHAR\t4(0)\tANLA\tALPHA\tANLN2\t\t\t\n.INCLU-_PN\t\t\t\t0(0)\t\t\t\t\t\t\nUBZDT_PN\tOriginal Value Date of Transaction\tUBZDT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nXVABG_PN\tIndicator: Post Complete Retirement\tXVABG\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nPROZS_PN\tAsset retirement: Percentage rate\tPROZS\tDEC\t5(2)\t\t\tPRZ32\t\t\t\nXMANPROPVAL_PN\tIndicator Proportional Values Entered Manually\tXMANPROPVAL\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nKALNR\tCost Estimate Number for Cost Est. w/o Qty Structure\tCK_KALNR\tNUMC\t12(0)\tAssigned to domain\t\tCK_KALNR\tKNR\t\t\nVPRSV\tPrice control indicator\tVPRSV\tCHAR\t1(0)\t\t\tVPRSV\t\t\t\nMLAST\tMaterial Price Determination: Control\tCK_ML_ABST\tCHAR\t1(0)\t\t\tCK_ML_ABST\t\t\t\nKZBWS\tValuation of Special Stock\tMLKZBWS\tCHAR\t1(0)\t\t\tKZBWS\t\t\t\nXOBEW\tVendor Stock Valuation Indicator\tMLXOBEW\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nSOBKZ\tSpecial Stock Indicator\tSOBKZ\tCHAR\t1(0)\tAssigned to domain\t\tSOBKZ\t\t\t\nVTSTAMP\tValuation Time Stamp\tVTIMESTAMPL\tDEC\t21(7)\t\t\tTZNTSTMPL\t\t\t\nMAT_KDAUF\tSales Document Number of Valuated Special Inventory\tMLMAT_KDAUF\tCHAR\t10(0)\t\tALPHA\tVBELN\tAUN\t\t\nMAT_KDPOS\tSales Document Item Number of Valuated Special Inventory\tMLMAT_KDPOS\tNUMC\t6(0)\t\t\tPOSNR\t\t\t\nMAT_PSPNR\tWBS Element (internal) of Valuated Special Inventory\tMLMAT_PSPNR\tNUMC\t8(0)\tAssigned to domain\tABPSP\tPS_POSNR\t\t\t\nMAT_PS_POSID\tWBS Element (external) of Valuated Special Inventory\tMLMAT_PS_POSID\tCHAR\t24(0)\t\tABPSN\tPS_POSID\tPRO\t\t\nMAT_LIFNR\tSupplier of Valuated Special Inventory\tMLMAT_LIFNR\tCHAR\t10(0)\t\tALPHA\tLIFNR\tLIF\tKRED_C\tLIFNR\nBWTAR\tValuation Type\tBWTAR_D\tCHAR\t10(0)\tT149D\t\tBWTAR\tBWT\t\t\nBWKEY\tValuation area\tBWKEY\tCHAR\t4(0)\tT001K\t\tBWKEY\tBWK\t\t\nHPEINH\tPrice Unit in Local Currency\tMLHPEINH\tDEC\t5(0)\t\t\tPACK3\t\t\t\nKPEINH\tPrice Unit in Group Currency\tMLKPEINH\tDEC\t5(0)\t\t\tPACK3\t\t\t\nOPEINH\tPrice Unit in Another Currency\tMLOPEINH\tDEC\t5(0)\t\t\tPACK3\t\t\t\nVPEINH\tPrice Unit in Fourth Currency\tML4PEINH\tDEC\t5(0)\t\t\tPACK3\t\t\t\nMLPTYP\tOriginal Process Category\tML_PTYP_ORG\tCHAR\t4(0)\tCKMLMV009\t\tCKML_PROZESS_TYP\t\t\t\nMLCATEG\tCategory in Material Update Structure\tML_KATEGORIE\tCHAR\t2(0)\t\t\tCKML_KATEGORIE\t\t\t\nQSBVALT\tProcurement Alternative/Process\tML_QSBVALT\tNUMC\t12(0)\tAssigned to domain\t\tCK_KALNR\t\t\t\nQSPROCESS\tProduction Process\tML_QSPROCESS\tNUMC\t12(0)\tAssigned to domain\t\tCK_KALNR\tCKML_PROCNR\t\t\nPERART\tType of Period\tML_PER_ART\tCHAR\t2(0)\t\t\tCK_PER_ART\t\t\t\nMLPOSNR\tItem in Material Ledger Document\tML_MLPOS\tNUMC\t6(0)\t\t\tNUMC6\t\t\t\nINV_MOV_CATEG\tBalance Sheet Valuation: Inventory Movement Category\tFBV_INV_MOV_CATEG\tCHAR\t1(0)\t\t\tFBV_INV_MOV_CATEG\t\t\t\nBUKRS_SENDER\tCompany Code in Sender System\tBUKRS_SENDER\tCHAR\t4(0)\t\t\tCHAR4\tBUK\tC_T001\tBUKRS\nRACCT_SENDER\tGeneral Ledger Account in Sender System\tRACCT_SENDER\tCHAR\t10(0)\t\t\tCHAR10\tSAK\tC_SAKNR\tSAKNR\nACCAS_SENDER\tAccount Assignment in Sender System\tACCAS_SENDER\tCHAR\t30(0)\t\t\tACCAS\t\t\t\nACCASTY_SENDER\tAccount Assignment Type in Sender System\tACCASTY_SENDER\tCHAR\t2(0)\tTBO00\t\tJ_OBART\t\t\t\nOBJNR\tObject number\tJ_OBJNR\tCHAR\t22(0)\tONR00\t\tJ_OBJNR\tONR\t\t\nHRKFT\tCO key subnumber\tCO_SUBKEY\tCHAR\t14(0)\tCOKEY\t\tCO_SUBKEY\t\t\t\nHKGRP\tOrigin Group as Subdivision of Cost Element\tHRKFT\tCHAR\t4(0)\tTKKH1\t\tHRKFT\t\t\t\nPAROB1\tPartner object (always filled)\tPAROB1\tCHAR\t22(0)\tONR00\t\tJ_OBJNR\t\t\t\nPAROBSRC\tSource of PAROB: PAROB1 or type of partner object\tFINS_PAROB_SRC\tCHAR\t1(0)\t\t\tFINS_PAROB_SRC\t\t\t\nUSPOB\tSource Object (Cost Center/Activity Type)\tUSPOB\tCHAR\t22(0)\tONR00\t\tJ_OBJNR\t\t\t\nCO_BELKZ\tCO Debit/Credit Indicator\tFINS_CO_BELKZ\tCHAR\t1(0)\t\tBEKNZ\tFINS_CO_BELKZ\t\t\t\nCO_BEKNZ\tDebit/Credit Indicator (Origin)\tFINS_CO_BEKNZ\tCHAR\t1(0)\t\tBEKNZ\tBEKNZ\t\t\t\nBELTP\tDebit Type\tBP_INOUT\tNUMC\t1(0)\t\t\tBP_INOUT\t\t\t\nMUVFLG\tIndicator: Quantity Is Incomplete\tFCO_MUV_CODE\tNUMC\t1(0)\t\t\tFCO_MUV_CODE\t\t\t\nGKONT\tOffsetting Account Number\tGKONT\tCHAR\t10(0)\t\tALPHA\tGKONT\t\tGKONT\tGKONT\nGKOAR\tOffsetting Account Type\tGKOAR\tCHAR\t1(0)\t\t\tKOART\t\t\t\nERLKZ\tCompletion indicator for line item\tKBLERLKZ\tCHAR\t1(0)\t\t\tCHAR1_X\t\t\t\nPERNR\tPersonnel Number\tPERNR_D\tNUMC\t8(0)\t\t\tPERNR\tPER\t\t\nPAOBJNR\tProfitability Segment Number (CO-PA)\tRKEOBJNR\tNUMC\t10(0)\t\t\tRKEOBJNR\t\t\t\nXPAOBJNR_CO_REL\tIndicator: Profitability segm. relevant for CO compatibility\tFINS_XPAOBJNR_CO_REL\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nSCOPE\tObject Class\tSCOPE_CV\tCHAR\t2(0)\t\tSCOPE\tSCOPE_CV\tPCO\t\t\nLOGSYSO\tLogical System of Object\tLOGSYSO\tCHAR\t10(0)\tTBDLS\tALPHA\tLOGSYS\t\t\t\nPBUKRS\tCompany Code of Partner\tPBUKRS\tCHAR\t4(0)\tT001\t\tBUKRS\tBUK\t\t\nPSCOPE\tPartner object class\tPSCOPE_CV\tCHAR\t2(0)\t\tSCOPE\tSCOPE_CV\t\t\t\nLOGSYSP\tLogical system of partner object\tLOGSYSP\tCHAR\t10(0)\tTBDLS\tALPHA\tLOGSYS\t\t\t\nBWSTRAT\tStrategy for Determining an Allocation Price\tBWSTRAT\tCHAR\t1(0)\t\t\tBWSTRAT\t\t\t\nOBJNR_HK\tObject Number of Origin Object\tOBJNR_HK\tCHAR\t22(0)\tONR00\t\tJ_OBJNR\t\t\t\nAUFNR_ORG\tOrigin Order Number\tAUFNR_HK\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\t\t\t\nUKOSTL\tOrigin cost center\tUSP_KOSTL\tCHAR\t10(0)\tCSKS\tALPHA\tKOSTL\tKOS\t\t\nULSTAR\tOrigin activity\tUSP_LSTAR\tCHAR\t6(0)\tCSLA\t\tLSTAR\tLAR\t\t\nUPRZNR\tSource: Business Process\tUSP_PRZNR\tCHAR\t12(0)\tCBPR\tALPHA\tCO_PRZNR\t\t\t\nUPRCTR\tOrigin Profit Center\tFINS_ORIGIN_PRCTR\tCHAR\t10(0)\tCEPC\tALPHA\tPRCTR\t\t\t\nACCAS\tAccount Assignment\tACCAS\tCHAR\t30(0)\t\t\tACCAS\t\t\t\nACCASTY\tObject Type\tJ_OBART\tCHAR\t2(0)\tTBO00\t\tJ_OBART\t\t\t\nLSTAR\tActivity Type\tLSTAR\tCHAR\t6(0)\tCSLA\t\tLSTAR\tLAR\tLART_EMPTY\tLSTAR\nAUFNR\tOrder Number\tAUFNR\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\tANR\t\t\nAUTYP\tOrder category\tAUFTYP\tNUMC\t2(0)\t\t\tAUFTYP\t\t\t\nPS_PSP_PNR\tWork Breakdown Structure Element (WBS Element)\tPS_PSP_PNR\tNUMC\t8(0)\tAssigned to domain\tABPSP\tPS_POSNR\t\t\t\nPS_POSID\tWork Breakdown Structure Element (WBS Element)\tPS_POSID\tCHAR\t24(0)\t\tABPSN\tPS_POSID\tPRO\t\t\nPS_PRJ_PNR\tProject (internal)\tPS_INTNR\tNUMC\t8(0)\tPROJ\tKONPD\tPS_PSPNR\t\t\t\nPS_PSPID\tProject definition\tPS_PSPID\tCHAR\t24(0)\t\tABPSN\tPS_PSPID\tPSP\tPD_DUMMY\tPSPID\nNPLNR\tNetwork Number for Account Assignment\tNPLNR\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\tNET\t\t\nNPLNR_VORGN\tNetwork activity\tNPVRG\tCHAR\t4(0)\t\tNUMCV\tVORNR\t\t\t\nPRZNR\tBusiness Process\tCO_PRZNR\tCHAR\t12(0)\tCBPR\tALPHA\tCO_PRZNR\tKWP\t\t\nKSTRG\tCost Object\tKSTRG\tCHAR\t12(0)\tCKPH\t\tKSTRG\tKTR\t\t\nBEMOT\tAccounting Indicator\tBEMOT\tCHAR\t2(0)\tTBMOT\t\tBEMOT\t\t\t\nRSRCE\tResource\tCO_RESSOURCE\tCHAR\t10(0)\tCSKR\tALPHA\tCO_RESSOURCE\tRCE\t\t\nQMNUM\tNotification Number\tQMNUM\tCHAR\t12(0)\tQMEL\tALPHA\tQMNUM\tIQM\t\t\nSERVICE_DOC_TYPE\tService Document Type\tFCO_SRVDOC_TYPE\tCHAR\t4(0)\tCRMC_PROC_TYPE\t\tCRM_PROCESS_TYPE\tSVDT_FCO\tFCO_SHLP_SRVDOC_TYPE_EMPTY\tSERVICEDOCUMENTTYPE\nSERVICE_DOC_ID\tService Document ID\tFCO_SRVDOC_ID\tCHAR\t10(0)\tFCO_SRVDOC\tALPHA\tCRM_OBJECT_ID\tSVD_FCO\tFCO_SHLP_SRVDOC_EMPTY\tSERVICEDOCUMENT\nSERVICE_DOC_ITEM_ID\tService Document Item ID\tFCO_SRVDOC_ITEM_ID\tNUMC\t6(0)\tFCO_SRVDOC\t\tFCO_SRVDOC_ITEM_ID\tSVDI_FCO\tFCO_SHLP_SRVDOC_ITEM_EMPTY\tSERVICEDOCUMENTITEM\nSERVICE_CONTRACT_TYPE\tService Contract Type\tFCO_SRVCONTRACT_TYPE\tCHAR\t4(0)\tCRMC_PROC_TYPE\t\tCRM_PROCESS_TYPE\t\t\t\nSERVICE_CONTRACT_ID\tService Contract ID\tFCO_SRVCONTRACT_ID\tCHAR\t10(0)\tFCO_SRVDOC\tALPHA\tCRM_OBJECT_ID\t\t\t\nSERVICE_CONTRACT_ITEM_ID\tService Contract Item ID\tFCO_SRVCONTRACT_ITEM_ID\tNUMC\t6(0)\tFCO_SRVDOC\t\tFCO_SRVDOC_ITEM_ID\t\t\t\nERKRS\tOperating concern\tERKRS\tCHAR\t4(0)\tTKEB\t\tERKRS\tERB\t\t\nPACCAS\tPartner Account Assignment\tPACCAS\tCHAR\t30(0)\t\t\tACCAS\t\t\t\nPACCASTY\tPartner Object Type\tCO_POBART\tCHAR\t2(0)\tTBO00\t\tJ_OBART\t\t\t\nPLSTAR\tPartner activity\tPAR_LSTAR\tCHAR\t6(0)\tCSLA\t\tLSTAR\tLAR\t\t\nPAUFNR\tPartner order number\tPAR_AUFNR\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\tANR\t\t\nPAUTYP\tPartner Order Category\tFCO_PAR_AUFTYP\tNUMC\t2(0)\t\t\tAUFTYP\t\t\t\nPPS_PSP_PNR\tPartner Work Breakdown Structure Element (internal ID)\tFCO_PAR_PSP_PNR\tNUMC\t8(0)\tAssigned to domain\tABPSP\tPS_POSNR\t\t\t\nPPS_POSID\tPartner Work Breakdown Structure Element\tFCO_PAR_POSID\tCHAR\t24(0)\t\tABPSN\tPS_POSID\tPRO\tPR\tPOSID\nPPS_PRJ_PNR\tPartner Project (internal ID)\tFCO_PAR_PRJ_PNR\tNUMC\t8(0)\tPROJ\tKONPD\tPS_PSPNR\t\t\t\nPPS_PSPID\tPartner Project\tFCO_PAR_PSPID\tCHAR\t24(0)\t\tABPSN\tPS_PSPID\tPSP\tPD_DUMMY\tPSPID\nPKDAUF\tNumber of Partner Sales Order\tPAR_KDAUF\tCHAR\t10(0)\tAssigned to domain\tALPHA\tVBELN\t\t\t\nPKDPOS\tPartner Sales Order Item\tPAR_KDPOS\tNUMC\t6(0)\tAssigned to domain\t\tPOSNR\t\t\t\nPPAOBJNR\tPartner profitability segment number (CO-PA)\tRKEPOBJ\tNUMC\t10(0)\t\t\tRKEOBJNR\t\t\t\nPNPLNR\tPartner Project Network\tPAR_NPLN\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\t\t\t\nPNPLNR_VORGN\tPartner Project Network Activity\tPAR_VORNR_AUF\tCHAR\t4(0)\t\tNUMCV\tVORNR\t\t\t\nPPRZNR\tPartner Business Process\tPAR_PRZNR\tCHAR\t12(0)\tCBPR\tALPHA\tCO_PRZNR\t\t\t\nPKSTRG\tPartner Cost Object\tPAR_KSTRG\tCHAR\t12(0)\tCKPH\t\tKSTRG\t\t\t\nPSERVICE_DOC_TYPE\tPartner Service Document Type\tFCO_PSRVDOC_TYPE\tCHAR\t4(0)\tCRMC_PROC_TYPE\t\tCRM_PROCESS_TYPE\t\t\t\nPSERVICE_DOC_ID\tPartner Service Document ID\tFCO_PSRVDOC_ID\tCHAR\t10(0)\tFCO_SRVDOC\tALPHA\tCRM_OBJECT_ID\t\t\t\nPSERVICE_DOC_ITEM_ID\tPartner Service Document Item ID\tFCO_PSRVDOC_ITEM_ID\tNUMC\t6(0)\t\t\t\t\t\t\nCO_ACCASTY_N1\tType of first statistical account assignment\tFINS_ACCASTY_N1\tCHAR\t2(0)\t\t\tFINS_ACCASTY_STAT\t\t\t\nCO_ACCASTY_N2\tType of second statistical account assignment\tFINS_ACCASTY_N2\tCHAR\t2(0)\t\t\tFINS_ACCASTY_STAT\t\t\t\nCO_ACCASTY_N3\tType of third statistical account assignment\tFINS_ACCASTY_N3\tCHAR\t2(0)\t\t\tFINS_ACCASTY_STAT\t\t\t\nCO_ZLENR\tDocument Item Number\tDZLENR\tNUMC\t3(0)\t\t\tNUM3\t\t\t\nCO_BELNR\tDocument Number\tCO_BELNR\tCHAR\t10(0)\tAssigned to domain\tALPHA\tCO_BELNR\tBLN\t\t\nCO_BUZEI\tPosting Row\tCO_BUZEI\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_BUZEI1\tPosting row of CO item in first additional valuation\tFCO_BUZEI1\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_BUZEI2\tPosting row of CO item in second additional valuation\tFCO_BUZEI2\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_BUZEI5\tPosting row of CO item in valuation view 5\tFCO_BUZEI5\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_BUZEI6\tPosting row of CO item in valuation view 6\tFCO_BUZEI6\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_BUZEI7\tPosting row of CO item in valuation view 7\tFCO_BUZEI7\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ\tPosting Row of Reference Document\tCO_REFBZ\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ1\tPosting row of reference document in first add'l valuation\tFCO_REFBZ1\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ2\tPosting row of reference document in second add'l valuation\tFCO_REFBZ2\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ5\tPosting row of reference document in valuation view 5\tFCO_REFBZ5\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ6\tPosting row of reference document in valuation view 6\tFCO_REFBZ6\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nCO_REFBZ7\tPosting row of reference document in valuation view 7\tFCO_REFBZ7\tNUMC\t3(0)\t\t\tBUZEI\t\t\t\nOVERTIMECAT\tOvertime Category\tCATS_OVERTIME_CATEGORY\tCHAR\t4(0)\tAssigned to domain\t\tCATS_OVERTIME_CATEGORY\t\t\t\nWORK_ITEM_ID\tWork Item ID\t/CPD/PFP_WORKITEM_ID\tCHAR\t10(0)\t\t\t/CPD/PFP_WORKITEM_ID\tWRK\t/CPD/SS_WORK_ITEM_C\tWORKITEM\nARBID\tObject ID of the resource\tCR_OBJID\tNUMC\t8(0)\tCRID\t\tCR_OBJID\t\t\t\nVORNR\tOperation/Activity Number\tVORNR\tCHAR\t4(0)\t\tNUMCV\tVORNR\tVGN\t\t\nAUFPS\tOrder item number\tCO_POSNR\tNUMC\t4(0)\t\t\tCO_POSNR\t\t\t\nUVORN\tSuboperation\tUVORN\tCHAR\t4(0)\t\tNUMCV\tVORNR\t\t\t\nEQUNR\tEquipment Number\tEQUNR\tCHAR\t18(0)\tEQUI\tALPHA\tEQUNR\tEQN\tEQUI\tEQUNR\nTPLNR\tFunctional Location\tTPLNR\tCHAR\t30(0)\tIFLOT\tTPLNR\tTPLNR\tIFL\tIFLM\tTPLNR\nISTRU\tAssembly\tISTRU\tCHAR\t40(0)\tMARA\tMATN1\tMATNR\t\t\t\nILART\tMaintenance activity type\tILA\tCHAR\t3(0)\tT353I\t\tILART\t\tH_T350I\tILART\nPLKNZ\tMaintenance order planning indicator\tAUF_PLKNZ\tCHAR\t1(0)\t\t\tAUF_PLKNZ\t\t\t\nARTPR\tPriority Type\tARTPR\tCHAR\t2(0)\tT356A\t\tARTPR\t\t\t\nPRIOK\tPriority\tPRIOK\tCHAR\t1(0)\tT356\t\tPRIOK\tPRIOK\t\t\nMAUFNR\tNumber of Superior Order\tMAUFNR\tCHAR\t12(0)\tAUFK\tALPHA\tAUFNR\tUAF\t\t\nMATKL_MM\tMaterial Group\tFINS_MATKL_MM\tCHAR\t9(0)\tT023\t\tMATKL\t\tS_WBWG\tMATKL\nPLANNED_PARTS_WORK\tPlanned Parts/Work\tFINS_PLANNED_PARTS_WORK\tCHAR\t1(0)\t\t\tBOOLE\t\t\t\nFKART\tBilling Type\tFKART\tCHAR\t4(0)\tTVFK\t\tFKART\t\t\t\nVKORG\tSales Organization\tVKORG\tCHAR\t4(0)\tTVKO\t\tVKORG\tVKO\tC_VKORG\tVKORG\nVTWEG\tDistribution Channel\tVTWEG\tCHAR\t2(0)\tTVTW\t\tVTWEG\tVTW\tC_VTWEG\tVTWEG\nSPART\tDivision\tSPART\tCHAR\t2(0)\tTSPA\t\tSPART\tSPA\tC_SPART\tSPART\nMATNR_COPA\tProduct Sold\tFINS_MATNR_PA\tCHAR\t40(0)\tMARA\tMATN1\tMATNR\tMAT\t\t\nMATKL\tProduct Sold Group\tFINS_MATKL_PA\tCHAR\t9(0)\tT023\t\tMATKL\tMKL\tS_WBWG\tMATKL\nKDGRP\tCustomer Group\tKDGRP\tCHAR\t2(0)\tT151\t\tKDGRP\tVKD\t\t\nLAND1\tCountry Key\tLAND1_GP\tCHAR\t3(0)\tT005\t\tLAND1\t\tC_LAND1\tLAND1\nBRSCH\tIndustry key\tBRSCH\tCHAR\t4(0)\tT016\t\tBRSCH\t\t\t\nBZIRK\tSales District\tBZIRK\tCHAR\t6(0)\tT171\t\tBZIRK\tBZI\t\t\nKUNRE\tBill-to party\tKUNRE\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\tKUN\t\t\nKUNWE\tShip-to party\tKUNWE\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\t\t\t\nKONZS\tGroup key\tKONZS\tCHAR\t10(0)\t\t\tKONZS\t\t\t\n.INCLU-_PA\t\t\t\t0(0)\t\t\t\t\t\t\nACDOC_COPA_EEW_DUMMY_PA\tDummy function in length 1\tDUMMY\tCHAR\t1(0)\t\t\tDUMMY\t\t\t\n.INCLU--AP\t\t\t\t0(0)\t\t\t\t\t\t\nKMVKBU_PA\tSales office\tVKBUR\tCHAR\t4(0)\tTVBUR\t\tVKBUR\tVKB\t\t\nKMVKGR_PA\tSales group\tVKGRP\tCHAR\t3(0)\tTVKGR\t\tVKGRP\tVKG\t\t\nKMBRND_PA\tBrand\tRKESKMBRND\tNUMC\t2(0)\tT2249\t\tRKESKMBRND\t\t\t\nKMCATG_PA\tBusiness field\tRKESKMCATG\tNUMC\t2(0)\tT2248\t\tRKESKMCATG\t\t\t\nKMHI01_PA\tCustomer hierarchy Level 1\tHIEZU01\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\t\t\t\nKMHI02_PA\tCustomer hierarchy Level 2\tHIEZU02\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\t\t\t\nKMHI03_PA\tCustomer hierarchy Level 3\tHIEZU03\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\t\t\t\nKMKDGR_PA\tCustomer Group\tKDGRP\tCHAR\t2(0)\tT151\t\tKDGRP\tVKD\t\t\nKMLAND_PA\tCountry Key\tLAND1_GP\tCHAR\t3(0)\tT005\t\tLAND1\t\tC_LAND1\tLAND1\nKMMAKL_PA\tMaterial Group\tMATKL\tCHAR\t9(0)\tT023\t\tMATKL\tMKL\tS_WBWG\tMATKL\nKMNIEL_PA\tNielsen ID\tNIELS\tCHAR\t2(0)\tTNLS\t\tNIELS\t\t\t\nKMSTGE_PA\tStrategic Business Unit\tRKESKMSTGE\tNUMC\t2(0)\tT2247\t\tRKESKMSTGE\t\t\t\nKMVTNR_PA\tSales employee\tVRTNR\tNUMC\t8(0)\t\t\tPERNR\t\tPREMV\tPERNR\nVKBUR_PA\tSales office\tVKBUR\tCHAR\t4(0)\tTVBUR\t\tVKBUR\tVKB\t\t\nVKGRP_PA\tSales group\tVKGRP\tCHAR\t3(0)\tTVKGR\t\tVKGRP\tVKG\t\t\nWWT13_PA\t\tRKEG_WWT13\tCHAR\t5(0)\tT2500\t\tRKEG_WWT13\t\t\t\nWWZ13_PA\t\tRKEG_WWZ13\tCHAR\t5(0)\tT2501\t\tRKEG_WWZ13\t\t\t\nBONUS_PA\tVolume rebate group\tBONUS\tCHAR\t2(0)\tTVBO\t\tBONUS\t\t\t\nWW001_PA\tUser Characteristic\tRKEG_WW001\tCHAR\t10(0)\tT2502\t\tRKEG_WW001\t\t\t\nWWCON_PA\tContinent\tRKEG_WWCON\tCHAR\t1(0)\tT2503\t\tRKEG_WWCON\t\t\t\nDUMMY_MRKT_SGMNT_EEW_PS\tCustom Fields: Dummy for Use in Extension Includes\tCFD_DUMMY\tCHAR\t1(0)\t\t\t\t\t\t\nRE_BUKRS\tCash Ledger: Company Code for Expense/Revenue\tFAGL_RE_BUKRS\tCHAR\t4(0)\tT001\t\tBUKRS\t\t\t\nRE_ACCOUNT\tCash Ledger: Expense or Revenue Account\tFAGL_RE_ACCOUNT\tCHAR\t10(0)\tSKA1\tALPHA\tSAKNR\t\t\t\nFIKRS\tFinancial Management Area\tFIKRS\tCHAR\t4(0)\tFM01\t\tFIKRS\tFIK\t\t\nFISTL\tFunds Center\tFISTL\tCHAR\t16(0)\tFMFCTR\t\tFISTL\tFIS\t\t\nMEASURE\tFunded Program\tFM_MEASURE\tCHAR\t24(0)\tFMMEASURE\t\tFM_MEASURE\tFM_MEASURE\t\t\nRFUND\tFund\tBP_GEBER\tCHAR\t10(0)\tFMFINCODE\t\tBP_GEBER\tFIC\t\t\nRGRANT_NBR\tGrant\tGM_GRANT_NBR\tCHAR\t20(0)\t\tALPHA\tGM_GRANT_NBR\tGM_GRANT_NBR\tGRANTS_GENERIC\tGRANT_NUMBER\nRBUDGET_PD\tBudget Period\tFM_BUDGET_PERIOD\tCHAR\t10(0)\tFMFUNDBPD\t\tFM_BUDGET_PERIOD\tBUDPER\t\t\nSFUND\tPartner Fund\tBP_P_GEBER\tCHAR\t10(0)\tFMFINCODE\t\tBP_GEBER\tFIC\t\t\nSGRANT_NBR\tPartner Grant\tGM_GRANT_PARTNER\tCHAR\t20(0)\t\tALPHA\tGM_GRANT_NBR\t\tGRANTS_GENERIC\tGRANT_NUMBER\nSBUDGET_PD\tFM: Partner Budget Period\tFM_PBUDGET_PERIOD\tCHAR\t10(0)\tFMFUNDBPD\t\tFM_BUDGET_PERIOD\tBUDPER\t\t\nBDGT_ACCOUNT\tBudget Account\tPSM_BDGT_ACCOUNT\tCHAR\t10(0)\tSKA1\tALPHA\tSAKNR\t\t\t\nBDGT_ACCOUNT_COCODE\tBudget Account Company Code\tPSM_BDGT_ACCOUNT_COCODE\tCHAR\t4(0)\tT001\t\tBUKRS\t\t\t\nBDGT_CNSMPN_DATE\tBudget Consumption Date\tPSM_BDGT_CNSMPN_DATE\tDATS\t8(0)\t\t\tDATUM\t\t\t\nBDGT_CNSMPN_PERIOD\tCC Fiscal Period for Budget Consumption Date\tPSM_BDGT_CNSMPN_PERIOD\tNUMC\t3(0)\t\t\tPOPER\tPOPR\t\t\nBDGT_CNSMPN_YEAR\tCC Fiscal Year for Budget Consumption Date\tPSM_BDGT_CNSMPN_YEAR\tNUMC\t4(0)\t\tGJAHR\tGJAHR\t\t\t\nBDGT_RELEVANT\tBudget-Relevant Indicator\tPSM_BDGT_RELEVANT\tCHAR\t1(0)\t\t\tXFELD\t\t\t\nBDGT_CNSMPN_TYPE\tBudget Consumption Type\tPSM_BDGT_CNSMPN_TYPE\tCHAR\t2(0)\tPSM_D_BDGTCNSTY\t\tPSM_BDGT_CNSMPN_TYPE\t\t\t\nBDGT_CNSMPN_AMOUNT_TYPE\tBudget Consumption Amount Type\tPSM_BDGT_CNSMPN_AMOUNT_TYPE\tCHAR\t4(0)\t\t\tPSM_BDGT_CNSMPN_AMOUNT_TYPE\t\t\t\nVNAME\tJoint venture\tJV_NAME\tCHAR\t6(0)\tT8JV\tALPHA\tJV_NAME\tJVV\t\t\nEGRUP\tEquity group\tJV_EGROUP\tCHAR\t3(0)\tT8JF\tALPHA\tJV_EGROUP\tGJE\t\t\nRECID\tRecovery Indicator\tJV_RECIND\tCHAR\t2(0)\tT8JJ\tALPHA\tJV_RECIND\t\t\t\nVPTNR\tPartner account number\tJV_PART\tCHAR\t10(0)\tKNA1\tALPHA\tKUNNR\t\t\t\nBTYPE\tPayroll Type\tJV_BILIND\tCHAR\t2(0)\tT8JA\tALPHA\tJV_BILIND\t\t\t\nETYPE\tEquity type\tJV_ETYPE\tCHAR\t3(0)\tT8JE\tALPHA\tJV_ETYPE\t\t\t\nPRODPER\tProduction Month (Date to find period and year)\tJV_PRODPER\tDATS\t8(0)\t\t\tJV_PRODPER\t\t\t\nBILLM\tBilling Month\tJV_BILLM\tDATS\t8(0)\t\t\tDATUM\t\t\t\nPOM\tProcessing operational month\tJV_POM\tDATS\t8(0)\t\t\tDATUM\t\t\t\nCBRUNID\tCutback Run ID (Joint Venture Accounting)\tJV_CBRUNID\tDEC\t21(7)\t\t\tTZNTSTMPL\t\t\t\nJVACTIVITY\tJVA Activity (Joint Venture Accounting)\tJV_ACTIVITY\tCHAR\t2(0)\t\t\t\t\t\t\nPVNAME\tPartner Venture (Joint Venture Accounting)\tJV_PVNAME\tCHAR\t6(0)\tAssigned to domain\tALPHA\tJV_NAME\t\t\t\nPEGRUP\tPartner Equity Group (Joint Venture Accounting)\tJV_PEGRUP\tCHAR\t3(0)\tAssigned to domain\tALPHA\tJV_EGROUP\t\t\t\nS_RECIND\tAllocation: Sender Credit Recovery Indicator\tJV_SRECIND\tCHAR\t2(0)\tAssigned to domain\tALPHA\tJV_RECIND\t\t\t\nCBRACCT\tCutback Account (Joint Venture Accounting)\tJV_CBRACCT\tCHAR\t10(0)\tAssigned to domain\tALPHA\tSAKNR\t\t\t\nCBOBJNR\tCutback Cost Object (Joint Venture Accounting)\tJV_CBOBJNR\tCHAR\t22(0)\tAssigned to domain\t\tJ_OBJNR\t\t\t\nSWENR\tBusiness Entity Number\tREBDBENO\tCHAR\t8(0)\t\tSWENR\tREBDBENO\tREBDBENO\tREBDBENO\tSWENR\nSGENR\tNumber of Building\tREBDBUNO\tCHAR\t8(0)\t\tSGENR\tREBDBUNO\tREBDBUNO\tREBDBUNO\tSGENR\nSGRNR\tNumber of Land\tREBDPRNO\tCHAR\t8(0)\t\tSGRNR\tREBDPRNO\tREBDPRNO\tREBDPRNO\tSGRNR\nSMENR\tNumber of Rental Object\tREBDRONO\tCHAR\t8(0)\t\tSMENR\tREBDRONO\tREBDRONO\tREBDRONO\tSMENR\nRECNNR\tContract Number\tRECNNUMBER\tCHAR\t13(0)\t\tALPHA\tRECNNUMBER\tRECNNR\tRECNCN\tRECNNR\nSNKSL\tService Charge Key\tRESCSCKEY\tCHAR\t4(0)\t\tALPHA\tRESCSCKEY\tRESCSCKEY\tRESCSCKEY\tSNKSL\nSEMPSL\tSettlement Unit\tRESCSUID\tCHAR\t5(0)\t\tALPHA\tRESCSUID\tRESCSUID\tRESCSU\tSEMPSL\nDABRZ\tReference date for settlement\tDABRBEZ\tDATS\t8(0)\t\t\tDDAT\t\t\t\nPSWENR\tPartner Business Entity Number\tFINS_PAR_SWENR\tCHAR\t8(0)\t\tSWENR\tREBDBENO\t\tREBDBENO\tSWENR\nPSGENR\tPartner Building Number\tFINS_PAR_SGENR\tCHAR\t8(0)\t\tSGENR\tREBDBUNO\t\tREBDBUNO\tSGENR\nPSGRNR\tPartner Land Number\tFINS_PAR_SGRNR\tCHAR\t8(0)\t\tSGRNR\tREBDPRNO\t\tREBDPRNO\tSGRNR\nPSMENR\tNumber of Partner Rental Unit\tFINS_PAR_SMENR\tCHAR\t8(0)\t\tSMENR\tREBDRONO\t\tREBDRONO\tSMENR\nPRECNNR\tPartner Contract Number\tFINS_PAR_RECNNR\tCHAR\t13(0)\t\tALPHA\tRECNNUMBER\t\tRECNCN\tRECNNR\nPSNKSL\tPartner Service Charge Key\tFINS_PAR_SNKSL\tCHAR\t4(0)\t\tALPHA\tRESCSCKEY\t\tRESCSCKEY\tSNKSL\nPSEMPSL\tPartner Settlement Unit\tFINS_PAR_SEMPSL\tCHAR\t5(0)\t\tALPHA\tRESCSUID\t\tRESCSU\tSEMPSL\nPDABRZ\tPartner Reference Date for Settlement\tFINS_PAR_DABRBEZ\tDATS\t8(0)\t\t\tDDAT\t\t\t\nACROBJTYPE\tType of the Accrual Object\tACR_OBJ_TYPE\tCHAR\t4(0)\tTACR_OBJ_TYPE\t\tACR_OBJ_TYPE\tACR_OBJ_TYPE\t\t\nACROBJ_ID\tIdentifier of the Accrual Object\tACR_OBJ_ID\tCHAR\t32(0)\t\t\tACR_OBJ_ID\t\t\t\nACRSOBJ_ID\tIdentifier of the Accrual Subobject\tACR_SUBOBJ_ID\tCHAR\t32(0)\t\t\tACR_SUBOBJ_ID\t\t\t\nACRITMTYPE\tType of the Item of the Accrual Subobject\tACR_ITEM_TYPE\tCHAR\t11(0)\t\t\tACR_ITEM_TYPE\t\tACR_ITEM_TYPE\tACR_ITEM_TYPE\nACRVALDAT\tAccrual Value Date\tACR_VALUE_DATE\tDATS\t8(0)\t\t\tDATUM\t\t\t\nVALOBJTYPE\tType of the Financial Valuation Object\tVAL_OBJ_TYPE\tCHAR\t4(0)\tFINSC_VAL_TYPE\t\tVAL_OBJ_TYPE\t\t\t\nVALOBJ_ID\tIdentifier of the Financial Valuation Object\tVAL_OBJ_ID\tCHAR\t32(0)\t\t\tVAL_OBJ_ID\t\t\t\nVALSOBJ_ID\tIdentifier of the Financial Valuation Subobject\tVAL_SUBOBJ_ID\tCHAR\t32(0)\t\t\tVAL_SUBOBJ_ID\t\t\t\nNETDT\tNet Due Date\tNETDT\tDATS\t8(0)\t\t\tDATUM\t\t\t\nRISK_CLASS\tRisk Class\tUKM_RISK_CLASS\tCHAR\t3(0)\tUKM_RISK_CL\t\tUKM_RISK_CLASS\t\t\t\nACDOC_EEW_DUMMY\tCustom Fields: Dummy for Use in Extension Includes\tCFD_DUMMY\tCHAR\t1(0)\t\t\t\t\t\t\nDUMMY_INCL_EEW_COBL\tCustom Fields: Dummy for Use in Extension Includes\tCFD_DUMMY\tCHAR\t1(0)\t\t\t\t\t\t\nFUP_ACTION\tFollow-up action for this Universal Journal Entry Line Item\tFINS_ACDOC_FOLLOW_UP_ACTION\tCHAR\t1(0)\t\t\tFINS_FOLLOW_UP_ACTION\t\t\t\nSDM_VERSION\tSDM: Version field for ACDOCA\tFINS_SDM_VERSION_ACDOCA\tCHAR\t2(0)\t\t\tFINS_SDM_VERSION_ACDOCA\t\t\t\nMIG_SOURCE\tSource of a migrated journal entry item\tFINS_ACDOC_MIG_SOURCE\tCHAR\t1(0)\t\t\tFINS_ACDOC_MIG_SOURCE\t\t\t\nMIG_DOCLN\tItem ID of migrated G/L line item\tFINS_MIG_DOCLN\tCHAR\t6(0)\t\t\tDOCLN6\t\t\t\n_DATAAGING\tData Filter Value for Data Aging\tDATA_TEMPERATURE\tDATS\t8(0)\t\t\tDATA_TEMPERATURE",
+  "fields": [
+    {
+      "name": "RCLNT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger in General Ledger Accounting",
+      "data_element": "FINS_LEDGER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RBUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DOCLN",
+      "description": "Six-Character Posting Item for Ledger",
+      "data_element": "DOCLN6",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RYEAR",
+      "description": "General Ledger Fiscal Year",
+      "data_element": "GJAHR_POS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DOCNR_LD",
+      "description": "Ledger specific Accounting Document Number",
+      "data_element": "FINS_DOCNR_LD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RRCTY",
+      "description": "Record Type",
+      "data_element": "RRCTY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RMVCT",
+      "description": "Transaction type",
+      "data_element": "RMVCT",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VORGN",
+      "description": "Transaction Type for General Ledger",
+      "data_element": "VORGN",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VRGNG",
+      "description": "CO Business Transaction",
+      "data_element": "CO_VORGANG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BTTYPE",
+      "description": "Business Transaction Type",
+      "data_element": "FINS_BTTYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AWTYP",
+      "description": "Reference procedure",
+      "data_element": "AWTYP",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AWSYS",
+      "description": "Logical system of source document",
+      "data_element": "AWSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AWORG",
+      "description": "Reference Organizational Units",
+      "data_element": "AWORG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AWREF",
+      "description": "Reference document number",
+      "data_element": "AWREF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AWITEM",
+      "description": "Reference Document Line Item",
+      "data_element": "FINS_AWITEM",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AWITGRP",
+      "description": "Group of Reference Document Line Items",
+      "data_element": "FINS_AWITGRP",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBTA",
+      "description": "Partial Document to be balanced to zero",
+      "data_element": "FINS_SUBTA",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XREVERSING",
+      "description": "Indicator: Item is reversing another item",
+      "data_element": "FINS_XREVERSING",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XREVERSED",
+      "description": "Indicator: Item is reversed",
+      "data_element": "FINS_XREVERSED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XTRUEREV",
+      "description": "Indicator: True reversal (i.e. cancellation)",
+      "data_element": "FINS_XTRUEREV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AWTYP_REV",
+      "description": "Reversal: Reference Transaction of Document To Be Reversed",
+      "data_element": "AWTYP_REV",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AWORG_REV",
+      "description": "Reversal: Reverse Document Reference Organization",
+      "data_element": "AWORG_REV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AWREF_REV",
+      "description": "Reversal: Reverse Document Reference Document Number",
+      "data_element": "AWREF_REV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBTA_REV",
+      "description": "Reversal: Partial Document to be balanced to zero",
+      "data_element": "FINS_SUBTA_REV",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XSETTLING",
+      "description": "Indicator: Item is settling or transferring another item",
+      "data_element": "FINS_XSETTLING",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSETTLED",
+      "description": "Indicator: Line item is settled or transferred",
+      "data_element": "FINS_XSETTLED",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWTYP",
+      "description": "Preceding Document Reference Transaction",
+      "data_element": "FINS_PREC_AWTYP",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWSYS",
+      "description": "Logical System of Preceding Reference Document",
+      "data_element": "FINS_PREC_AWSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWORG",
+      "description": "Preceding Document Reference Organizational Units",
+      "data_element": "FINS_PREC_AWORG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWREF",
+      "description": "Preceding Document Reference Document Number",
+      "data_element": "FINS_PREC_AWREF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWITEM",
+      "description": "Preceding Reference Document Line Item",
+      "data_element": "FINS_PREC_AWITEM",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_SUBTA",
+      "description": "Preceding Partial Document to be balanced to zero",
+      "data_element": "FINS_PREC_SUBTA",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_AWMULT",
+      "description": "ID of multiple Preceding Document References",
+      "data_element": "FINS_PREC_AWMULT_UUID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_BUKRS",
+      "description": "Preceding Journal Entry Company Code",
+      "data_element": "FINS_PREC_BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_GJAHR",
+      "description": "Preceding Journal Entry Fiscal Year",
+      "data_element": "FINS_PREC_GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_BELNR",
+      "description": "Preceding Journal Entry Document Number",
+      "data_element": "FINS_PREC_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PREC_DOCLN",
+      "description": "Preceding Journal Entry Line Item",
+      "data_element": "FINS_PREC_DOCLN",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XSECONDARY",
+      "description": "Secondary journal entry",
+      "data_element": "FINS_SECONDARY_ENTRY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CLOSING_RUN_ID",
+      "description": "Financial Closing Run ID",
+      "data_element": "CLS_RUN_ID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWTYP",
+      "description": "Source Document Reference Transaction",
+      "data_element": "FINS_SRC_AWTYP",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWSYS",
+      "description": "Logical System of Source Reference Document",
+      "data_element": "FINS_SRC_AWSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWORG",
+      "description": "Source Document Reference Organizational Units",
+      "data_element": "FINS_SRC_AWORG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWREF",
+      "description": "Source Document Reference Document Number",
+      "data_element": "FINS_SRC_AWREF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWITEM",
+      "description": "Source Reference Document Line Item",
+      "data_element": "FINS_SRC_AWITEM",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SRC_AWSUBIT",
+      "description": "Source Reference Document Sub-Item",
+      "data_element": "FINS_SRC_AWSUBIT",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XCOMMITMENT",
+      "description": "Indicator: Commitment",
+      "data_element": "FINS_XCOMMITMENT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OBS_REASON",
+      "description": "Reason why this item is obsolete",
+      "data_element": "FINS_OBSOLETE_ITEM_REASON",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RTCUR",
+      "description": "Balance Transaction Currency",
+      "data_element": "FINS_CURRT",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RWCUR",
+      "description": "Transaction Currency",
+      "data_element": "FINS_CURRW",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RHCUR",
+      "description": "Company Code Currency",
+      "data_element": "FINS_CURRH",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RKCUR",
+      "description": "Global Currency",
+      "data_element": "FINS_CURRK",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ROCUR",
+      "description": "Freely Defined Currency 1",
+      "data_element": "FINS_CURR1",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RVCUR",
+      "description": "Freely Defined Currency 2",
+      "data_element": "FINS_CURR2",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RBCUR",
+      "description": "Freely Defined Currency 3",
+      "data_element": "FINS_CURR3",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RCCUR",
+      "description": "Freely Defined Currency 4",
+      "data_element": "FINS_CURR4",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RDCUR",
+      "description": "Freely Defined Currency 5",
+      "data_element": "FINS_CURR5",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RECUR",
+      "description": "Freely Defined Currency 6",
+      "data_element": "FINS_CURR6",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RFCUR",
+      "description": "Freely Defined Currency 7",
+      "data_element": "FINS_CURR7",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RGCUR",
+      "description": "Freely Defined Currency 8",
+      "data_element": "FINS_CURR8",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RCO_OCUR",
+      "description": "CO Object Currency",
+      "data_element": "FINS_CO_OCUR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "RUNIT",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RVUNIT",
+      "description": "Unit of Measure for Valuation Quantity",
+      "data_element": "RVUNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RRUNIT",
+      "description": "Unit of Measure for Reference Quantity",
+      "data_element": "RRUNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RIUNIT",
+      "description": "Unit of Measure for Inventory Quantity",
+      "data_element": "FINS_RIUNIT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "QUNIT1",
+      "description": "Additional Unit of Measure 1",
+      "data_element": "FCO_QUNIT1",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "QUNIT2",
+      "description": "Additional Unit of Measure 2",
+      "data_element": "FCO_QUNIT2",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "QUNIT3",
+      "description": "Additional Unit of Measure 3",
+      "data_element": "FCO_QUNIT3",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_MEINH",
+      "description": "Unit of Measure for CO Valuation Quantity",
+      "data_element": "FCO_MEINH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RACCT",
+      "description": "Account Number",
+      "data_element": "RACCT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RCNTR",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RFAREA",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "RBUSA",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SEGMENT",
+      "description": "Segment for Segmental Reporting",
+      "data_element": "FB_SEGMENT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SCNTR",
+      "description": "Sender cost center",
+      "data_element": "SKOST",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRCTR",
+      "description": "Partner Profit Center",
+      "data_element": "PPRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SFAREA",
+      "description": "Partner Functional Area",
+      "data_element": "SFKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "SBUSA",
+      "description": "Trading partner's business area",
+      "data_element": "PARGB",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RASSC",
+      "description": "Company ID of Trading Partner",
+      "data_element": "RASSC",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PSEGMENT",
+      "description": "Partner Segment for Segmental Reporting",
+      "data_element": "FB_PSEGMENT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TSL",
+      "description": "Amount in Balance Transaction Currency",
+      "data_element": "FINS_VTCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "WSL",
+      "description": "Amount in Transaction Currency",
+      "data_element": "FINS_VWCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "WSL2",
+      "description": "Group Valuation Amount in Transaction Currency",
+      "data_element": "FINS_VWCUR12_2",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "WSL3",
+      "description": "Profit-Center Valuation Amount in Transaction Currency",
+      "data_element": "FINS_VWCUR12_3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HSL",
+      "description": "Amount in Company Code Currency",
+      "data_element": "FINS_VHCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSL",
+      "description": "Amount in Global Currency",
+      "data_element": "FINS_VKCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSL",
+      "description": "Amount in Freely Defined Currency 1",
+      "data_element": "FINS_VOCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSL",
+      "description": "Amount in Freely Defined Currency 2",
+      "data_element": "FINS_VVCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "BSL",
+      "description": "Amount in Freely Defined Currency 3",
+      "data_element": "FINS_VBCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "CSL",
+      "description": "Amount in Freely Defined Currency 4",
+      "data_element": "FINS_VCCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "DSL",
+      "description": "Amount in Freely Defined Currency 5",
+      "data_element": "FINS_VDCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "ESL",
+      "description": "Amount in Freely Defined Currency 6",
+      "data_element": "FINS_VECUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "FSL",
+      "description": "Amount in Freely Defined Currency 7",
+      "data_element": "FINS_VFCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "GSL",
+      "description": "Amount in Freely Defined Currency 8",
+      "data_element": "FINS_VGCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KFSL",
+      "description": "Fixed Amount in Global Currency",
+      "data_element": "FINS_VGCUR12_FIX",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KFSL2",
+      "description": "Group Valuation Fixed Amount in Global Currency",
+      "data_element": "FINS_VGCUR12_FIX2",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KFSL3",
+      "description": "PrCtr Valuation Fixed Amount in Global Currency",
+      "data_element": "FINS_VGCUR12_FIX3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PSL",
+      "description": "Total Price Variance in Global Currency",
+      "data_element": "FINS_VPCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PSL2",
+      "description": "Group Valuation Total Price Variance in Global Currency",
+      "data_element": "FINS_VPCUR12_2",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PSL3",
+      "description": "PrCtr Valuation Total Price Variance in Global Currency",
+      "data_element": "FINS_VPCUR12_3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PFSL",
+      "description": "Fixed Price Variance in Global Currency",
+      "data_element": "FINS_VPFCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PFSL2",
+      "description": "Group Valuation Fixed Price Variance in Global Currency",
+      "data_element": "FINS_VPFCUR12_2",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "PFSL3",
+      "description": "PrCtr Valuation Fixed Price Variance in Global Currency",
+      "data_element": "FINS_VPFCUR12_3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "CO_OSL",
+      "description": "Amount in CO Object Currency",
+      "data_element": "FINS_VCO_OCUR12",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HSLALT",
+      "description": "Alternative Value in Local Currency",
+      "data_element": "MLHSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSLALT",
+      "description": "Alternative Value in Group Currency",
+      "data_element": "MLKSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSLALT",
+      "description": "Alternative Value in Freely Defined Currency 1",
+      "data_element": "MLOSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSLALT",
+      "description": "Alternative Value in Freely Defined Currency 2",
+      "data_element": "ML4SLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "BSLALT",
+      "description": "Alternative Value in Freely Defined Currency 3",
+      "data_element": "MLBSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "CSLALT",
+      "description": "Alternative Value in Freely Defined Currency 4",
+      "data_element": "MLCSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "DSLALT",
+      "description": "Alternative Value in Freely Defined Currency 5",
+      "data_element": "MLDSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "ESLALT",
+      "description": "Alternative Value in Freely Defined Currency 6",
+      "data_element": "MLESLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "FSLALT",
+      "description": "Alternative Value in Freely Defined Currency 7",
+      "data_element": "MLFSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "GSLALT",
+      "description": "Alternative Value in Freely Defined Currency 8",
+      "data_element": "MLGSLALT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HSLEXT",
+      "description": "External Value in Local Currency",
+      "data_element": "MLHSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSLEXT",
+      "description": "External Value in Group Currency",
+      "data_element": "MLKSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSLEXT",
+      "description": "External Value in Freely Defined Currency 1",
+      "data_element": "MLOSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSLEXT",
+      "description": "External Value in Freely Defined Currency 2",
+      "data_element": "ML4SLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "BSLEXT",
+      "description": "External Value in Freely Defined Currency 3",
+      "data_element": "MLBSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "CSLEXT",
+      "description": "External Value in Freely Defined Currency 4",
+      "data_element": "MLCSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "DSLEXT",
+      "description": "External Value in Freely Defined Currency 5",
+      "data_element": "MLDSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "ESLEXT",
+      "description": "External Value in Freely Defined Currency 6",
+      "data_element": "MLESLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "FSLEXT",
+      "description": "External Value in Freely Defined Currency 7",
+      "data_element": "MLFSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "GSLEXT",
+      "description": "External Value in Freely Defined Currency 8",
+      "data_element": "MLGSLEXT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HVKWRT",
+      "description": "Value at Sales Price in Local Currency",
+      "data_element": "MLHVKWRT",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "MSL",
+      "description": "Quantity",
+      "data_element": "QUAN1_12",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "MFSL",
+      "description": "Fixed quantity",
+      "data_element": "QUAN1_12_FIX",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "VMSL",
+      "description": "Valuation quantity",
+      "data_element": "VQUAN1_12",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "VMFSL",
+      "description": "Fixed valuation quantity",
+      "data_element": "VQUAN1_12_FIX",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "RMSL",
+      "description": "Reference quantity",
+      "data_element": "RQUAN1_12",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "QUANT1",
+      "description": "Additional Quantity 1",
+      "data_element": "FCO_QUAN1_L",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "QUANT2",
+      "description": "Additional Quantity 2",
+      "data_element": "FCO_QUAN2_L",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "QUANT3",
+      "description": "Additional Quantity 3",
+      "data_element": "FCO_QUAN3_L",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "CO_MEGBTR",
+      "description": "CO Valuation Quantity",
+      "data_element": "FCO_MEGBTR",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "CO_MEFBTR",
+      "description": "CO Valuation Quantity Fix",
+      "data_element": "FCO_MEFBTR",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "HSALK3",
+      "description": "Inventory Value in Local Currency",
+      "data_element": "MLHSALK3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSALK3",
+      "description": "Inventory Value in Group Currency",
+      "data_element": "MLKSALK3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSALK3",
+      "description": "Inventory Value in Another Currency",
+      "data_element": "MLOSALK3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSALK3",
+      "description": "Inventory Value in Fourth Currency",
+      "data_element": "ML4SALK3",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HSALKV",
+      "description": "Alternative Inventory Value in Local Currency",
+      "data_element": "MLHSALKV",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSALKV",
+      "description": "Alternative Inventory Value in Group Currency",
+      "data_element": "MLKSALKV",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSALKV",
+      "description": "Alternative Inventory Value in Another Currency",
+      "data_element": "MLOSALKV",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSALKV",
+      "description": "Alternative Inventory Value in Fourth Currency",
+      "data_element": "ML4SALKV",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HPVPRS",
+      "description": "Moving Average Price in Local Currency",
+      "data_element": "MLHPVPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KPVPRS",
+      "description": "Moving Average Price in Group Currency",
+      "data_element": "MLKPVPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OPVPRS",
+      "description": "Moving Average Price in Another Currency",
+      "data_element": "MLOPVPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VPVPRS",
+      "description": "Moving Average Price in Fourth Currency",
+      "data_element": "ML4PVPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HSTPRS",
+      "description": "Standard Price in Local Currency",
+      "data_element": "MLHSTPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "KSTPRS",
+      "description": "Standard Price in Group Currency",
+      "data_element": "MLKSTPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "OSTPRS",
+      "description": "Standard Price in Another Currency",
+      "data_element": "MLOSTPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "VSTPRS",
+      "description": "Standard Price in Fourth Currency",
+      "data_element": "ML4STPRS",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "HVKSAL",
+      "description": "Inventory Value at Sales Price in Local Currency",
+      "data_element": "MLHVKSAL",
+      "type": "CURR",
+      "length": "23",
+      "decimals": "2"
+    },
+    {
+      "name": "LBKUM",
+      "description": "Inventory Quantity",
+      "data_element": "MLLBKUM",
+      "type": "QUAN",
+      "length": "23",
+      "decimals": "3"
+    },
+    {
+      "name": "DRCRK",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "POPER",
+      "description": "Posting period",
+      "data_element": "POPER",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PERIV",
+      "description": "Fiscal Year Variant",
+      "data_element": "PERIV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FISCYEARPER",
+      "description": "Period/Year",
+      "data_element": "JAHRPER",
+      "type": "NUMC",
+      "length": "7",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BLART",
+      "description": "Document type",
+      "data_element": "BLART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Number of Line Item Within Accounting Document",
+      "data_element": "BUZEI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUONR",
+      "description": "Assignment number",
+      "data_element": "DZUONR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BSCHL",
+      "description": "Posting Key",
+      "data_element": "BSCHL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTAT",
+      "description": "Document Status",
+      "data_element": "BSTAT_D",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LINETYPE",
+      "description": "Item Category",
+      "data_element": "LINETYPE",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOSL",
+      "description": "Transaction Key",
+      "data_element": "KTOSL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SLALITTYPE",
+      "description": "Subledger-Specific Line Item Type",
+      "data_element": "SLALITTYPE",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "XSPLITMOD",
+      "description": "Item Changed by Document Splitting",
+      "data_element": "XSPLITMOD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "USNAM",
+      "description": "User Name",
+      "data_element": "USNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "TIMESTAMP",
+      "description": "UTC Time Stamp in Short Form (YYYYMMDDhhmmss)",
+      "data_element": "TIMESTAMP",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "EPRCTR",
+      "description": "Partner profit center for elimination of internal business",
+      "data_element": "EPRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RHOART",
+      "description": "Type of origin object (EC-PCA)",
+      "data_element": "HOART",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "GLACCOUNT_TYPE",
+      "description": "Type of a General Ledger Account",
+      "data_element": "GLACCOUNT_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOPL",
+      "description": "Chart of Accounts",
+      "data_element": "KTOPL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LOKKT",
+      "description": "Alternative Account Number in Company Code",
+      "data_element": "ALTKT_SKB1",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOP2",
+      "description": "Chart of Accounts According to Country Legislation",
+      "data_element": "KTOP2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZG",
+      "description": "Document No. of the Invoice to Which the Transaction Belongs",
+      "data_element": "REBZG",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZJ",
+      "description": "Fiscal Year of the Relevant Invoice (for Credit Memo)",
+      "data_element": "REBZJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZZ",
+      "description": "Line Item in the Relevant Invoice",
+      "data_element": "REBZZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "REBZT",
+      "description": "Follow-On Document Type",
+      "data_element": "REBZT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RBEST",
+      "description": "Category of Reference Purchase Order",
+      "data_element": "CO_RBEST",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "KDAUF",
+      "description": "Sales Order Number",
+      "data_element": "KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDPOS",
+      "description": "Item number in Sales Order",
+      "data_element": "KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FBUDA",
+      "description": "Date on which services are rendered",
+      "data_element": "FBUDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "COCO_NUM",
+      "description": "Condition Contract",
+      "data_element": "WCB_COCO_NUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WWERT",
+      "description": "Translation date",
+      "data_element": "WWERT_D",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KOART",
+      "description": "Account type",
+      "data_element": "KOART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMSKZ",
+      "description": "Special G/L Indicator",
+      "data_element": "UMSKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HBKID",
+      "description": "Short key for a house bank",
+      "data_element": "HBKID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "HKTID",
+      "description": "ID for account details",
+      "data_element": "HKTID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "XOPVW",
+      "description": "Indicator: Open Item Management?",
+      "data_element": "XOPVW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGDT",
+      "description": "Clearing Date",
+      "data_element": "AUGDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGBL",
+      "description": "Document Number of the Clearing Document",
+      "data_element": "AUGBL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "AUGGJ",
+      "description": "Fiscal Year of Clearing Document",
+      "data_element": "AUGGJ",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AFABE",
+      "description": "Depreciation Area Real or Derived",
+      "data_element": "AFABER",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN1",
+      "description": "Main Asset Number",
+      "data_element": "ANLN1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN2",
+      "description": "Asset Subnumber",
+      "data_element": "ANLN2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BZDAT",
+      "description": "Asset Value Date",
+      "data_element": "BZDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANBWA",
+      "description": "Asset Transaction Type",
+      "data_element": "ANBWA",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MOVCAT",
+      "description": "Transaction Type Category",
+      "data_element": "FAA_MOVCAT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "DEPR_PERIOD",
+      "description": "Posting Period of Depreciation",
+      "data_element": "PERAF",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLGR",
+      "description": "Group Asset",
+      "data_element": "ANLGR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLGR2",
+      "description": "Subnumber of Group Asset",
+      "data_element": "ANLGR2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SETTLEMENT_RULE",
+      "description": "Distribution Rule Group",
+      "data_element": "BUREG",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLKL",
+      "description": "Asset Class",
+      "data_element": "ANLKL",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KTOGR",
+      "description": "Account Determination",
+      "data_element": "KTOGR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PANL1",
+      "description": "Main number partner asset (intercompany transfer)",
+      "data_element": "PANL1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PANL2",
+      "description": "Partner asset subnumber (intercompany transfer)",
+      "data_element": "PANL2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": ".INCLU-_PN",
+      "description": "",
+      "data_element": "",
+      "type": "",
+      "length": "0",
+      "decimals": "0"
+    },
+    {
+      "name": "UBZDT_PN",
+      "description": "Original Value Date of Transaction",
+      "data_element": "UBZDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XVABG_PN",
+      "description": "Indicator: Post Complete Retirement",
+      "data_element": "XVABG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PROZS_PN",
+      "description": "Asset retirement: Percentage rate",
+      "data_element": "PROZS",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "XMANPROPVAL_PN",
+      "description": "Indicator Proportional Values Entered Manually",
+      "data_element": "XMANPROPVAL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KALNR",
+      "description": "Cost Estimate Number for Cost Est. w/o Qty Structure",
+      "data_element": "CK_KALNR",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MLAST",
+      "description": "Material Price Determination: Control",
+      "data_element": "CK_ML_ABST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBWS",
+      "description": "Valuation of Special Stock",
+      "data_element": "MLKZBWS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XOBEW",
+      "description": "Vendor Stock Valuation Indicator",
+      "data_element": "MLXOBEW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VTSTAMP",
+      "description": "Valuation Time Stamp",
+      "data_element": "VTIMESTAMPL",
+      "type": "DEC",
+      "length": "21",
+      "decimals": "7"
+    },
+    {
+      "name": "MAT_KDAUF",
+      "description": "Sales Document Number of Valuated Special Inventory",
+      "data_element": "MLMAT_KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_KDPOS",
+      "description": "Sales Document Item Number of Valuated Special Inventory",
+      "data_element": "MLMAT_KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_PSPNR",
+      "description": "WBS Element (internal) of Valuated Special Inventory",
+      "data_element": "MLMAT_PSPNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_PS_POSID",
+      "description": "WBS Element (external) of Valuated Special Inventory",
+      "data_element": "MLMAT_PS_POSID",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_LIFNR",
+      "description": "Supplier of Valuated Special Inventory",
+      "data_element": "MLMAT_LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "HPEINH",
+      "description": "Price Unit in Local Currency",
+      "data_element": "MLHPEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "KPEINH",
+      "description": "Price Unit in Group Currency",
+      "data_element": "MLKPEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OPEINH",
+      "description": "Price Unit in Another Currency",
+      "data_element": "MLOPEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "VPEINH",
+      "description": "Price Unit in Fourth Currency",
+      "data_element": "ML4PEINH",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "MLPTYP",
+      "description": "Original Process Category",
+      "data_element": "ML_PTYP_ORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MLCATEG",
+      "description": "Category in Material Update Structure",
+      "data_element": "ML_KATEGORIE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "QSBVALT",
+      "description": "Procurement Alternative/Process",
+      "data_element": "ML_QSBVALT",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "QSPROCESS",
+      "description": "Production Process",
+      "data_element": "ML_QSPROCESS",
+      "type": "NUMC",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PERART",
+      "description": "Type of Period",
+      "data_element": "ML_PER_ART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MLPOSNR",
+      "description": "Item in Material Ledger Document",
+      "data_element": "ML_MLPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "INV_MOV_CATEG",
+      "description": "Balance Sheet Valuation: Inventory Movement Category",
+      "data_element": "FBV_INV_MOV_CATEG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS_SENDER",
+      "description": "Company Code in Sender System",
+      "data_element": "BUKRS_SENDER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RACCT_SENDER",
+      "description": "General Ledger Account in Sender System",
+      "data_element": "RACCT_SENDER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ACCAS_SENDER",
+      "description": "Account Assignment in Sender System",
+      "data_element": "ACCAS_SENDER",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ACCASTY_SENDER",
+      "description": "Account Assignment Type in Sender System",
+      "data_element": "ACCASTY_SENDER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "HRKFT",
+      "description": "CO key subnumber",
+      "data_element": "CO_SUBKEY",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "HKGRP",
+      "description": "Origin Group as Subdivision of Cost Element",
+      "data_element": "HRKFT",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PAROB1",
+      "description": "Partner object (always filled)",
+      "data_element": "PAROB1",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "PAROBSRC",
+      "description": "Source of PAROB: PAROB1 or type of partner object",
+      "data_element": "FINS_PAROB_SRC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "USPOB",
+      "description": "Source Object (Cost Center/Activity Type)",
+      "data_element": "USPOB",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BELKZ",
+      "description": "CO Debit/Credit Indicator",
+      "data_element": "FINS_CO_BELKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BEKNZ",
+      "description": "Debit/Credit Indicator (Origin)",
+      "data_element": "FINS_CO_BEKNZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BELTP",
+      "description": "Debit Type",
+      "data_element": "BP_INOUT",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MUVFLG",
+      "description": "Indicator: Quantity Is Incomplete",
+      "data_element": "FCO_MUV_CODE",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GKONT",
+      "description": "Offsetting Account Number",
+      "data_element": "GKONT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GKOAR",
+      "description": "Offsetting Account Type",
+      "data_element": "GKOAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERLKZ",
+      "description": "Completion indicator for line item",
+      "data_element": "KBLERLKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PERNR",
+      "description": "Personnel Number",
+      "data_element": "PERNR_D",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PAOBJNR",
+      "description": "Profitability Segment Number (CO-PA)",
+      "data_element": "RKEOBJNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XPAOBJNR_CO_REL",
+      "description": "Indicator: Profitability segm. relevant for CO compatibility",
+      "data_element": "FINS_XPAOBJNR_CO_REL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SCOPE",
+      "description": "Object Class",
+      "data_element": "SCOPE_CV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYSO",
+      "description": "Logical System of Object",
+      "data_element": "LOGSYSO",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PBUKRS",
+      "description": "Company Code of Partner",
+      "data_element": "PBUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSCOPE",
+      "description": "Partner object class",
+      "data_element": "PSCOPE_CV",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSYSP",
+      "description": "Logical system of partner object",
+      "data_element": "LOGSYSP",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BWSTRAT",
+      "description": "Strategy for Determining an Allocation Price",
+      "data_element": "BWSTRAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR_HK",
+      "description": "Object Number of Origin Object",
+      "data_element": "OBJNR_HK",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR_ORG",
+      "description": "Origin Order Number",
+      "data_element": "AUFNR_HK",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "UKOSTL",
+      "description": "Origin cost center",
+      "data_element": "USP_KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ULSTAR",
+      "description": "Origin activity",
+      "data_element": "USP_LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "UPRZNR",
+      "description": "Source: Business Process",
+      "data_element": "USP_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "UPRCTR",
+      "description": "Origin Profit Center",
+      "data_element": "FINS_ORIGIN_PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ACCAS",
+      "description": "Account Assignment",
+      "data_element": "ACCAS",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ACCASTY",
+      "description": "Object Type",
+      "data_element": "J_OBART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LSTAR",
+      "description": "Activity Type",
+      "data_element": "LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTYP",
+      "description": "Order category",
+      "data_element": "AUFTYP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSP_PNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_POSID",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_POSID",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PRJ_PNR",
+      "description": "Project (internal)",
+      "data_element": "PS_INTNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSPID",
+      "description": "Project definition",
+      "data_element": "PS_PSPID",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR",
+      "description": "Network Number for Account Assignment",
+      "data_element": "NPLNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR_VORGN",
+      "description": "Network activity",
+      "data_element": "NPVRG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PRZNR",
+      "description": "Business Process",
+      "data_element": "CO_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTRG",
+      "description": "Cost Object",
+      "data_element": "KSTRG",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "BEMOT",
+      "description": "Accounting Indicator",
+      "data_element": "BEMOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RSRCE",
+      "description": "Resource",
+      "data_element": "CO_RESSOURCE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "QMNUM",
+      "description": "Notification Number",
+      "data_element": "QMNUM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_DOC_TYPE",
+      "description": "Service Document Type",
+      "data_element": "FCO_SRVDOC_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_DOC_ID",
+      "description": "Service Document ID",
+      "data_element": "FCO_SRVDOC_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_DOC_ITEM_ID",
+      "description": "Service Document Item ID",
+      "data_element": "FCO_SRVDOC_ITEM_ID",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_CONTRACT_TYPE",
+      "description": "Service Contract Type",
+      "data_element": "FCO_SRVCONTRACT_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_CONTRACT_ID",
+      "description": "Service Contract ID",
+      "data_element": "FCO_SRVCONTRACT_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SERVICE_CONTRACT_ITEM_ID",
+      "description": "Service Contract Item ID",
+      "data_element": "FCO_SRVCONTRACT_ITEM_ID",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ERKRS",
+      "description": "Operating concern",
+      "data_element": "ERKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PACCAS",
+      "description": "Partner Account Assignment",
+      "data_element": "PACCAS",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "PACCASTY",
+      "description": "Partner Object Type",
+      "data_element": "CO_POBART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PLSTAR",
+      "description": "Partner activity",
+      "data_element": "PAR_LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PAUFNR",
+      "description": "Partner order number",
+      "data_element": "PAR_AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PAUTYP",
+      "description": "Partner Order Category",
+      "data_element": "FCO_PAR_AUFTYP",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PPS_PSP_PNR",
+      "description": "Partner Work Breakdown Structure Element (internal ID)",
+      "data_element": "FCO_PAR_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PPS_POSID",
+      "description": "Partner Work Breakdown Structure Element",
+      "data_element": "FCO_PAR_POSID",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "PPS_PRJ_PNR",
+      "description": "Partner Project (internal ID)",
+      "data_element": "FCO_PAR_PRJ_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PPS_PSPID",
+      "description": "Partner Project",
+      "data_element": "FCO_PAR_PSPID",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "PKDAUF",
+      "description": "Number of Partner Sales Order",
+      "data_element": "PAR_KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PKDPOS",
+      "description": "Partner Sales Order Item",
+      "data_element": "PAR_KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PPAOBJNR",
+      "description": "Partner profitability segment number (CO-PA)",
+      "data_element": "RKEPOBJ",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PNPLNR",
+      "description": "Partner Project Network",
+      "data_element": "PAR_NPLN",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PNPLNR_VORGN",
+      "description": "Partner Project Network Activity",
+      "data_element": "PAR_VORNR_AUF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PPRZNR",
+      "description": "Partner Business Process",
+      "data_element": "PAR_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PKSTRG",
+      "description": "Partner Cost Object",
+      "data_element": "PAR_KSTRG",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PSERVICE_DOC_TYPE",
+      "description": "Partner Service Document Type",
+      "data_element": "FCO_PSRVDOC_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSERVICE_DOC_ID",
+      "description": "Partner Service Document ID",
+      "data_element": "FCO_PSRVDOC_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PSERVICE_DOC_ITEM_ID",
+      "description": "Partner Service Document Item ID",
+      "data_element": "FCO_PSRVDOC_ITEM_ID",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_ACCASTY_N1",
+      "description": "Type of first statistical account assignment",
+      "data_element": "FINS_ACCASTY_N1",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_ACCASTY_N2",
+      "description": "Type of second statistical account assignment",
+      "data_element": "FINS_ACCASTY_N2",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_ACCASTY_N3",
+      "description": "Type of third statistical account assignment",
+      "data_element": "FINS_ACCASTY_N3",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_ZLENR",
+      "description": "Document Item Number",
+      "data_element": "DZLENR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BELNR",
+      "description": "Document Number",
+      "data_element": "CO_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI",
+      "description": "Posting Row",
+      "data_element": "CO_BUZEI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI1",
+      "description": "Posting row of CO item in first additional valuation",
+      "data_element": "FCO_BUZEI1",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI2",
+      "description": "Posting row of CO item in second additional valuation",
+      "data_element": "FCO_BUZEI2",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI5",
+      "description": "Posting row of CO item in valuation view 5",
+      "data_element": "FCO_BUZEI5",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI6",
+      "description": "Posting row of CO item in valuation view 6",
+      "data_element": "FCO_BUZEI6",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_BUZEI7",
+      "description": "Posting row of CO item in valuation view 7",
+      "data_element": "FCO_BUZEI7",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ",
+      "description": "Posting Row of Reference Document",
+      "data_element": "CO_REFBZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ1",
+      "description": "Posting row of reference document in first add'l valuation",
+      "data_element": "FCO_REFBZ1",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ2",
+      "description": "Posting row of reference document in second add'l valuation",
+      "data_element": "FCO_REFBZ2",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ5",
+      "description": "Posting row of reference document in valuation view 5",
+      "data_element": "FCO_REFBZ5",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ6",
+      "description": "Posting row of reference document in valuation view 6",
+      "data_element": "FCO_REFBZ6",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CO_REFBZ7",
+      "description": "Posting row of reference document in valuation view 7",
+      "data_element": "FCO_REFBZ7",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OVERTIMECAT",
+      "description": "Overtime Category",
+      "data_element": "CATS_OVERTIME_CATEGORY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WORK_ITEM_ID",
+      "description": "Work Item ID",
+      "data_element": "/CPD/PFP_WORKITEM_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ARBID",
+      "description": "Object ID of the resource",
+      "data_element": "CR_OBJID",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VORNR",
+      "description": "Operation/Activity Number",
+      "data_element": "VORNR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPS",
+      "description": "Order item number",
+      "data_element": "CO_POSNR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UVORN",
+      "description": "Suboperation",
+      "data_element": "UVORN",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EQUNR",
+      "description": "Equipment Number",
+      "data_element": "EQUNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "TPLNR",
+      "description": "Functional Location",
+      "data_element": "TPLNR",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ISTRU",
+      "description": "Assembly",
+      "data_element": "ISTRU",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "ILART",
+      "description": "Maintenance activity type",
+      "data_element": "ILA",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLKNZ",
+      "description": "Maintenance order planning indicator",
+      "data_element": "AUF_PLKNZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ARTPR",
+      "description": "Priority Type",
+      "data_element": "ARTPR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRIOK",
+      "description": "Priority",
+      "data_element": "PRIOK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAUFNR",
+      "description": "Number of Superior Order",
+      "data_element": "MAUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL_MM",
+      "description": "Material Group",
+      "data_element": "FINS_MATKL_MM",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "PLANNED_PARTS_WORK",
+      "description": "Planned Parts/Work",
+      "data_element": "FINS_PLANNED_PARTS_WORK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FKART",
+      "description": "Billing Type",
+      "data_element": "FKART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTWEG",
+      "description": "Distribution Channel",
+      "data_element": "VTWEG",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPART",
+      "description": "Division",
+      "data_element": "SPART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR_COPA",
+      "description": "Product Sold",
+      "data_element": "FINS_MATNR_PA",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "MATKL",
+      "description": "Product Sold Group",
+      "data_element": "FINS_MATKL_PA",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "KDGRP",
+      "description": "Customer Group",
+      "data_element": "KDGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1_GP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BRSCH",
+      "description": "Industry key",
+      "data_element": "BRSCH",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BZIRK",
+      "description": "Sales District",
+      "data_element": "BZIRK",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNRE",
+      "description": "Bill-to party",
+      "data_element": "KUNRE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNWE",
+      "description": "Ship-to party",
+      "data_element": "KUNWE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KONZS",
+      "description": "Group key",
+      "data_element": "KONZS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": ".INCLU-_PA",
+      "description": "",
+      "data_element": "",
+      "type": "",
+      "length": "0",
+      "decimals": "0"
+    },
+    {
+      "name": "ACDOC_COPA_EEW_DUMMY_PA",
+      "description": "Dummy function in length 1",
+      "data_element": "DUMMY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": ".INCLU--AP",
+      "description": "",
+      "data_element": "",
+      "type": "",
+      "length": "0",
+      "decimals": "0"
+    },
+    {
+      "name": "KMVKBU_PA",
+      "description": "Sales office",
+      "data_element": "VKBUR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KMVKGR_PA",
+      "description": "Sales group",
+      "data_element": "VKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KMBRND_PA",
+      "description": "Brand",
+      "data_element": "RKESKMBRND",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KMCATG_PA",
+      "description": "Business field",
+      "data_element": "RKESKMCATG",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KMHI01_PA",
+      "description": "Customer hierarchy Level 1",
+      "data_element": "HIEZU01",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KMHI02_PA",
+      "description": "Customer hierarchy Level 2",
+      "data_element": "HIEZU02",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KMHI03_PA",
+      "description": "Customer hierarchy Level 3",
+      "data_element": "HIEZU03",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KMKDGR_PA",
+      "description": "Customer Group",
+      "data_element": "KDGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KMLAND_PA",
+      "description": "Country Key",
+      "data_element": "LAND1_GP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KMMAKL_PA",
+      "description": "Material Group",
+      "data_element": "MATKL",
+      "type": "CHAR",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "KMNIEL_PA",
+      "description": "Nielsen ID",
+      "data_element": "NIELS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KMSTGE_PA",
+      "description": "Strategic Business Unit",
+      "data_element": "RKESKMSTGE",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "KMVTNR_PA",
+      "description": "Sales employee",
+      "data_element": "VRTNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VKBUR_PA",
+      "description": "Sales office",
+      "data_element": "VKBUR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VKGRP_PA",
+      "description": "Sales group",
+      "data_element": "VKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WWT13_PA",
+      "description": "",
+      "data_element": "RKEG_WWT13",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "WWZ13_PA",
+      "description": "",
+      "data_element": "RKEG_WWZ13",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BONUS_PA",
+      "description": "Volume rebate group",
+      "data_element": "BONUS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "WW001_PA",
+      "description": "User Characteristic",
+      "data_element": "RKEG_WW001",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WWCON_PA",
+      "description": "Continent",
+      "data_element": "RKEG_WWCON",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DUMMY_MRKT_SGMNT_EEW_PS",
+      "description": "Custom Fields: Dummy for Use in Extension Includes",
+      "data_element": "CFD_DUMMY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RE_BUKRS",
+      "description": "Cash Ledger: Company Code for Expense/Revenue",
+      "data_element": "FAGL_RE_BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "RE_ACCOUNT",
+      "description": "Cash Ledger: Expense or Revenue Account",
+      "data_element": "FAGL_RE_ACCOUNT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FIKRS",
+      "description": "Financial Management Area",
+      "data_element": "FIKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FISTL",
+      "description": "Funds Center",
+      "data_element": "FISTL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "MEASURE",
+      "description": "Funded Program",
+      "data_element": "FM_MEASURE",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "RFUND",
+      "description": "Fund",
+      "data_element": "BP_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RGRANT_NBR",
+      "description": "Grant",
+      "data_element": "GM_GRANT_NBR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "RBUDGET_PD",
+      "description": "Budget Period",
+      "data_element": "FM_BUDGET_PERIOD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SFUND",
+      "description": "Partner Fund",
+      "data_element": "BP_P_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SGRANT_NBR",
+      "description": "Partner Grant",
+      "data_element": "GM_GRANT_PARTNER",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "SBUDGET_PD",
+      "description": "FM: Partner Budget Period",
+      "data_element": "FM_PBUDGET_PERIOD",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_ACCOUNT",
+      "description": "Budget Account",
+      "data_element": "PSM_BDGT_ACCOUNT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_ACCOUNT_COCODE",
+      "description": "Budget Account Company Code",
+      "data_element": "PSM_BDGT_ACCOUNT_COCODE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_CNSMPN_DATE",
+      "description": "Budget Consumption Date",
+      "data_element": "PSM_BDGT_CNSMPN_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_CNSMPN_PERIOD",
+      "description": "CC Fiscal Period for Budget Consumption Date",
+      "data_element": "PSM_BDGT_CNSMPN_PERIOD",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_CNSMPN_YEAR",
+      "description": "CC Fiscal Year for Budget Consumption Date",
+      "data_element": "PSM_BDGT_CNSMPN_YEAR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_RELEVANT",
+      "description": "Budget-Relevant Indicator",
+      "data_element": "PSM_BDGT_RELEVANT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_CNSMPN_TYPE",
+      "description": "Budget Consumption Type",
+      "data_element": "PSM_BDGT_CNSMPN_TYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BDGT_CNSMPN_AMOUNT_TYPE",
+      "description": "Budget Consumption Amount Type",
+      "data_element": "PSM_BDGT_CNSMPN_AMOUNT_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VNAME",
+      "description": "Joint venture",
+      "data_element": "JV_NAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "EGRUP",
+      "description": "Equity group",
+      "data_element": "JV_EGROUP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RECID",
+      "description": "Recovery Indicator",
+      "data_element": "JV_RECIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VPTNR",
+      "description": "Partner account number",
+      "data_element": "JV_PART",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BTYPE",
+      "description": "Payroll Type",
+      "data_element": "JV_BILIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ETYPE",
+      "description": "Equity type",
+      "data_element": "JV_ETYPE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PRODPER",
+      "description": "Production Month (Date to find period and year)",
+      "data_element": "JV_PRODPER",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BILLM",
+      "description": "Billing Month",
+      "data_element": "JV_BILLM",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "POM",
+      "description": "Processing operational month",
+      "data_element": "JV_POM",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CBRUNID",
+      "description": "Cutback Run ID (Joint Venture Accounting)",
+      "data_element": "JV_CBRUNID",
+      "type": "DEC",
+      "length": "21",
+      "decimals": "7"
+    },
+    {
+      "name": "JVACTIVITY",
+      "description": "JVA Activity (Joint Venture Accounting)",
+      "data_element": "JV_ACTIVITY",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PVNAME",
+      "description": "Partner Venture (Joint Venture Accounting)",
+      "data_element": "JV_PVNAME",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PEGRUP",
+      "description": "Partner Equity Group (Joint Venture Accounting)",
+      "data_element": "JV_PEGRUP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "S_RECIND",
+      "description": "Allocation: Sender Credit Recovery Indicator",
+      "data_element": "JV_SRECIND",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CBRACCT",
+      "description": "Cutback Account (Joint Venture Accounting)",
+      "data_element": "JV_CBRACCT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CBOBJNR",
+      "description": "Cutback Cost Object (Joint Venture Accounting)",
+      "data_element": "JV_CBOBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "SWENR",
+      "description": "Business Entity Number",
+      "data_element": "REBDBENO",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SGENR",
+      "description": "Number of Building",
+      "data_element": "REBDBUNO",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SGRNR",
+      "description": "Number of Land",
+      "data_element": "REBDPRNO",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SMENR",
+      "description": "Number of Rental Object",
+      "data_element": "REBDRONO",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RECNNR",
+      "description": "Contract Number",
+      "data_element": "RECNNUMBER",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    },
+    {
+      "name": "SNKSL",
+      "description": "Service Charge Key",
+      "data_element": "RESCSCKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SEMPSL",
+      "description": "Settlement Unit",
+      "data_element": "RESCSUID",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "DABRZ",
+      "description": "Reference date for settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PSWENR",
+      "description": "Partner Business Entity Number",
+      "data_element": "FINS_PAR_SWENR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PSGENR",
+      "description": "Partner Building Number",
+      "data_element": "FINS_PAR_SGENR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PSGRNR",
+      "description": "Partner Land Number",
+      "data_element": "FINS_PAR_SGRNR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PSMENR",
+      "description": "Number of Partner Rental Unit",
+      "data_element": "FINS_PAR_SMENR",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PRECNNR",
+      "description": "Partner Contract Number",
+      "data_element": "FINS_PAR_RECNNR",
+      "type": "CHAR",
+      "length": "13",
+      "decimals": "0"
+    },
+    {
+      "name": "PSNKSL",
+      "description": "Partner Service Charge Key",
+      "data_element": "FINS_PAR_SNKSL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSEMPSL",
+      "description": "Partner Settlement Unit",
+      "data_element": "FINS_PAR_SEMPSL",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "PDABRZ",
+      "description": "Partner Reference Date for Settlement",
+      "data_element": "FINS_PAR_DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ACROBJTYPE",
+      "description": "Type of the Accrual Object",
+      "data_element": "ACR_OBJ_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ACROBJ_ID",
+      "description": "Identifier of the Accrual Object",
+      "data_element": "ACR_OBJ_ID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "ACRSOBJ_ID",
+      "description": "Identifier of the Accrual Subobject",
+      "data_element": "ACR_SUBOBJ_ID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "ACRITMTYPE",
+      "description": "Type of the Item of the Accrual Subobject",
+      "data_element": "ACR_ITEM_TYPE",
+      "type": "CHAR",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "ACRVALDAT",
+      "description": "Accrual Value Date",
+      "data_element": "ACR_VALUE_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VALOBJTYPE",
+      "description": "Type of the Financial Valuation Object",
+      "data_element": "VAL_OBJ_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VALOBJ_ID",
+      "description": "Identifier of the Financial Valuation Object",
+      "data_element": "VAL_OBJ_ID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "VALSOBJ_ID",
+      "description": "Identifier of the Financial Valuation Subobject",
+      "data_element": "VAL_SUBOBJ_ID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "NETDT",
+      "description": "Net Due Date",
+      "data_element": "NETDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "RISK_CLASS",
+      "description": "Risk Class",
+      "data_element": "UKM_RISK_CLASS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ACDOC_EEW_DUMMY",
+      "description": "Custom Fields: Dummy for Use in Extension Includes",
+      "data_element": "CFD_DUMMY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DUMMY_INCL_EEW_COBL",
+      "description": "Custom Fields: Dummy for Use in Extension Includes",
+      "data_element": "CFD_DUMMY",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FUP_ACTION",
+      "description": "Follow-up action for this Universal Journal Entry Line Item",
+      "data_element": "FINS_ACDOC_FOLLOW_UP_ACTION",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SDM_VERSION",
+      "description": "SDM: Version field for ACDOCA",
+      "data_element": "FINS_SDM_VERSION_ACDOCA",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MIG_SOURCE",
+      "description": "Source of a migrated journal entry item",
+      "data_element": "FINS_ACDOC_MIG_SOURCE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MIG_DOCLN",
+      "description": "Item ID of migrated G/L line item",
+      "data_element": "FINS_MIG_DOCLN",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "_DATAAGING",
+      "description": "Data Filter Value for Data Aging",
+      "data_element": "DATA_TEMPERATURE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. Purpose: The purpose of the Table table is to store and manage data.\n2. Foreign Key Relationships: None specified\n3. Common Use Cases: Data storage and retrieval, data manipulation",
+    "timestamp": "2025-02-13T13:46:04.051091",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

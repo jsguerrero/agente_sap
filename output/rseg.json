@@ -1,0 +1,757 @@
+{
+  "name": "RSEG",
+  "description": "Document Item: Incoming Invoice",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Document Item in Invoice Document",
+      "data_element": "RBLGP",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BWKEY",
+      "description": "Valuation Area",
+      "data_element": "BWKEY",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WRBTR",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SHKZG",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTME",
+      "description": "Purchase Order Unit of Measure",
+      "data_element": "BSTME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BPMNG",
+      "description": "Quantity in Purchase Order Price Unit",
+      "data_element": "BPMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPRME",
+      "description": "Order Price Unit (Purchasing)",
+      "data_element": "BPRME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LBKUM",
+      "description": "Total Valuated Stock",
+      "data_element": "LBKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VRKUM",
+      "description": "Total valuated stock in the previous posting period",
+      "data_element": "VRKUM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTYP",
+      "description": "Item Category in Purchasing Document",
+      "data_element": "PSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KNTTP",
+      "description": "Account Assignment Category",
+      "data_element": "KNTTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BKLAS",
+      "description": "Valuation Class",
+      "data_element": "BKLAS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EREKZ",
+      "description": "Final Invoice Indicator",
+      "data_element": "EREKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXKBE",
+      "description": "Indicator: update purchase order history",
+      "data_element": "XEKBE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XEKBZ",
+      "description": "Indicator: Update Purchase Order Delivery Costs",
+      "data_element": "XEKBZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TBTKZ",
+      "description": "Indicator: subsequent debit/credit",
+      "data_element": "TBTKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRP",
+      "description": "Blocking reason: price",
+      "data_element": "SPGRP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRM",
+      "description": "Blocking reason: quantity",
+      "data_element": "SPGRM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRT",
+      "description": "Blocking Reason: Date",
+      "data_element": "SPGRT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRG",
+      "description": "Blocking reason: order price quantity",
+      "data_element": "SPGRG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRV",
+      "description": "Blocking reason: project budget",
+      "data_element": "SPGRV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRQ",
+      "description": "Manual Blocking Reason",
+      "data_element": "SPGRQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRS",
+      "description": "Blocking Reason: Item Amount",
+      "data_element": "SPGRS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGRC",
+      "description": "Block.reason: quality",
+      "data_element": "SPGRC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPGREXT",
+      "description": "Blocking Reason Enhancement Fields",
+      "data_element": "SPGREXT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BUSTW",
+      "description": "Posting string for values",
+      "data_element": "BUSTW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "XRUEB",
+      "description": "Indicator: Document is posted to a previous period",
+      "data_element": "XRUEB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BNKAN",
+      "description": "Delivery costs' share of item value",
+      "data_element": "BNK_ANTEIL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KSCHL",
+      "description": "Condition Type",
+      "data_element": "KSCHL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SALK3",
+      "description": "Value of Total Valuated Stock",
+      "data_element": "SALK3",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VMSAL",
+      "description": "Value of total valuated stock in previous period",
+      "data_element": "VMSAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XLIFO",
+      "description": "LIFO/FIFO-Relevant",
+      "data_element": "XLIFO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LFBNR",
+      "description": "Document No. of a Reference Document",
+      "data_element": "LFBNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFPOS",
+      "description": "Item of a Reference Document",
+      "data_element": "LFPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MATBF",
+      "description": "Material in Respect of Which Stock is Managed",
+      "data_element": "MATBF",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "RBMNG",
+      "description": "Qty invoiced in vendor invoice in PO order units",
+      "data_element": "RBMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPRBM",
+      "description": "Qty invoiced in vendor invoice in PO price units",
+      "data_element": "BPRBM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "RBWWR",
+      "description": "Invoice amount in document currency of vendor invoice",
+      "data_element": "RBWWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LFEHL",
+      "description": "Type of vendor error",
+      "data_element": "LFEHL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GRICD",
+      "description": "Activity Code for Gross Income Tax",
+      "data_element": "J_1AGICD_D",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "GRIRG",
+      "description": "Region (State, Province, County)",
+      "data_element": "REGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GITYP",
+      "description": "Distribution Type for Employment Tax",
+      "data_element": "J_1ADTYP_D",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PACKNO",
+      "description": "Package Number of Service",
+      "data_element": "PACKNO_EKBE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INTROW",
+      "description": "Line Number of Service",
+      "data_element": "INTROW_EKBE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "XSKRL",
+      "description": "Indicator: Line item not liable to cash discount?",
+      "data_element": "XSKRL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZMEK",
+      "description": "Correction indicator",
+      "data_element": "KZMEKORR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MRMOK",
+      "description": "Indicator: invoice item processed",
+      "data_element": "MRMOK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STUNR",
+      "description": "Step number",
+      "data_element": "STUNR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZAEHK",
+      "description": "Condition counter",
+      "data_element": "DZAEHK",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "STOCK_POSTING",
+      "description": "Stock Posting of Line from an Incoming Invoice",
+      "data_element": "STOCK_POSTING",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "STOCK_POSTING_PP",
+      "description": "Stock Posting of Line from an Incoming Invoice, Prev. Period",
+      "data_element": "STOCK_POSTING_PP",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "STOCK_POSTING_PY",
+      "description": "Stock Posting of Line from an Incoming Invoice, Prev. Year",
+      "data_element": "STOCK_POSTING_PY",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WEREC",
+      "description": "Clearing Indicator for GR/IR Posting for External Services",
+      "data_element": "MMWEREC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FRBNR",
+      "description": "Number of Bill of Lading at Time of Goods Receipt",
+      "data_element": "FRBNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "XHISTMA",
+      "description": "Update Multiple Account Assignment EKBE_MA, EKBZ_MA",
+      "data_element": "XHISTMA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "COMPLAINT_REASON",
+      "description": "Complaints Reason in an Invoice",
+      "data_element": "COMPLAINT_REASON",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RETAMT_FC",
+      "description": "Retention Amount in Document Currency",
+      "data_element": "RET_AMT_FC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "RETPC",
+      "description": "Retention in Percent",
+      "data_element": "RETPZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "RETDUEDT",
+      "description": "Due Date for Retention",
+      "data_element": "RET_DUE_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XRETTAXNET",
+      "description": "Tax Reduction for Retention",
+      "data_element": "RET_TAXNET",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RE_ACCOUNT",
+      "description": "Cash Ledger: Expense or Revenue Account",
+      "data_element": "FAGL_RE_ACCOUNT",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERP_CONTRACT_ID",
+      "description": "Number of Principal Purchase Agreement",
+      "data_element": "KONNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERP_CONTRACT_ITM",
+      "description": "Item Number of Principal Purchase Agreement",
+      "data_element": "KTPNR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "SRM_CONTRACT_ID",
+      "description": "Central Contract",
+      "data_element": "SRM_CONTRACT_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SRM_CONTRACT_ITM",
+      "description": "Central Contract Item Number",
+      "data_element": "SRM_CONTRACT_ITEM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CONT_PSTYP",
+      "description": "Item Category in Purchasing Document",
+      "data_element": "PSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SRVMAPKEY",
+      "description": "Item Key for eSOA Messages",
+      "data_element": "SRVMAPKEY",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INV_ITM_ORIGIN",
+      "description": "Origin of an Invoice Item",
+      "data_element": "INV_ITM_ORIGIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "INVREL",
+      "description": "Grouping Characteristic for Invoice Verification",
+      "data_element": "INVREL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XDINV",
+      "description": "Indicator for Differential Invoicing",
+      "data_element": "XDINV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DIFF_AMOUNT",
+      "description": "Difference Amount (in Document Currency)",
+      "data_element": "DIFFERENCE_AMOUNT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XCPRF",
+      "description": "Checkbox for Commodity Repricing in Invoice Verification",
+      "data_element": "XCPRF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LICNO",
+      "description": "Internal License Number",
+      "data_element": "J_1ILICNO",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEILE",
+      "description": "Item Number",
+      "data_element": "J_1IZEILE",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical description:** The RSEG table in SAP stores detailed information about individual line items in incoming invoices. It tracks data such as document number, accounting document number, quantity, amount, tax, and other relevant details. **Common use cases:** * Invoice processing\n* Payment processing\n* Financial reporting\n* Inventory management",
+    "timestamp": "2025-02-13T13:44:40.022749",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

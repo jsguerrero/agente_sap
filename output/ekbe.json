@@ -1,0 +1,733 @@
+{
+  "name": "EKBE",
+  "description": "History per Purchasing Document",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VGABE",
+      "description": "Transaction/event type, purchase order history",
+      "data_element": "VGABE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Material Document Year",
+      "data_element": "MJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Number of Material Document",
+      "data_element": "MBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Item in Material Document",
+      "data_element": "MBLPO",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BEWTP",
+      "description": "PO history category",
+      "data_element": "BEWTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPMNG",
+      "description": "Quantity in purchase order price unit",
+      "data_element": "MENGE_BPR",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DMBTR",
+      "description": "Amount in Local Currency",
+      "data_element": "DMBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBTR",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "AREWR",
+      "description": "GR/IR account clearing value in local currency",
+      "data_element": "AREWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WESBS",
+      "description": "Goods Receipt Blocked Stock in Order Unit",
+      "data_element": "WESBS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPWES",
+      "description": "Quantity in GR blocked stock in order price unit",
+      "data_element": "BPWES",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SHKZG",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ELIKZ",
+      "description": "\"Delivery Completed\" Indicator",
+      "data_element": "ELIKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of a Reference Document",
+      "data_element": "LFBJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFBNR",
+      "description": "Document No. of a Reference Document",
+      "data_element": "LFBNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFPOS",
+      "description": "Item of a Reference Document",
+      "data_element": "LFPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "GRUND",
+      "description": "Reason for Movement",
+      "data_element": "MB_GRBEW",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUDT",
+      "description": "Day On Which Accounting Document Was Entered",
+      "data_element": "CPUDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUTM",
+      "description": "Time of Entry",
+      "data_element": "CPUTM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "REEWR",
+      "description": "Invoice Value Entered (in Local Currency)",
+      "data_element": "REEWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "EVERE",
+      "description": "Compliance with Shipping Instructions",
+      "data_element": "EVERE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "REFWR",
+      "description": "Invoice value in foreign currency",
+      "data_element": "REFWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XWSBR",
+      "description": "Reversal of GR allowed for GR-based IV despite invoice",
+      "data_element": "XWSBR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ETENS",
+      "description": "Sequential Number of Vendor Confirmation",
+      "data_element": "ETENS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LSMNG",
+      "description": "Quantity in Unit of Measure from Delivery Note",
+      "data_element": "LSMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LSMEH",
+      "description": "Unit of Measure From Delivery Note",
+      "data_element": "LSMEH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EMATN",
+      "description": "Material Number",
+      "data_element": "EMATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "AREWW",
+      "description": "Clearing value on GR/IR clearing account (transac. currency)",
+      "data_element": "AREWW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "HSWAE",
+      "description": "Local currency key",
+      "data_element": "HSWAE",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BAMNG",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BLDAT",
+      "description": "Document Date in Document",
+      "data_element": "BLDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XWOFF",
+      "description": "Calculation of val. open",
+      "data_element": "XWOFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XUNPL",
+      "description": "Unplanned Account Assignment from Invoice Verification",
+      "data_element": "XUNPL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SRVPOS",
+      "description": "Service number",
+      "data_element": "SRVPOS",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "PACKNO",
+      "description": "Package Number of Service",
+      "data_element": "PACKNO_EKBE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INTROW",
+      "description": "Line Number of Service",
+      "data_element": "INTROW_EKBE",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BEKKN",
+      "description": "Number of PO Account Assignment",
+      "data_element": "BEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LEMIN",
+      "description": "Returns Indicator",
+      "data_element": "SRVRET",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AREWB",
+      "description": "Clearing Value on GR/IR Account in PO Currency",
+      "data_element": "AREWB",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "REWRB",
+      "description": "Invoice Amount in PO Currency",
+      "data_element": "REWRB",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SAPRL",
+      "description": "SAP Release",
+      "data_element": "SAPRL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE_POP",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPMNG_POP",
+      "description": "Quantity in purchase order price unit",
+      "data_element": "MENGE_BPR",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DMBTR_POP",
+      "description": "Amount in Local Currency",
+      "data_element": "DMBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WRBTR_POP",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "WESBB",
+      "description": "Valuated Goods Receipt Blocked Stock in Order Unit",
+      "data_element": "WESBB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPWEB",
+      "description": "Quantity in Valuated GR Blocked Stock in Order Price Unit",
+      "data_element": "BPWEB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "WEORA",
+      "description": "Acceptance At Origin",
+      "data_element": "WEORA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AREWR_POP",
+      "description": "GR/IR account clearing value in local currency",
+      "data_element": "AREWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "KUDIF",
+      "description": "Exchange Rate Difference Amount",
+      "data_element": "KUDIF",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "RETAMT_FC",
+      "description": "Retention Amount in Document Currency",
+      "data_element": "RET_AMT_FC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "RETAMT_LC",
+      "description": "Retention Amount in Company Code Currency",
+      "data_element": "RET_AMT_LC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "RETAMTP_FC",
+      "description": "Posted Retention Amount in Document Currency",
+      "data_element": "RET_AMT_POST_FC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "RETAMTP_LC",
+      "description": "Posted Security Retention Amount in Company Code Currency",
+      "data_element": "RET_AMT_POST_LC",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "XMACC",
+      "description": "Multiple Account Assignment",
+      "data_element": "XMACC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WKURS",
+      "description": "Exchange Rate",
+      "data_element": "WKURS",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "INV_ITEM_ORIGIN",
+      "description": "Origin of an Invoice Item",
+      "data_element": "INV_ITM_ORIGIN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN_ST",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP_ST",
+      "description": "Delivery Item",
+      "data_element": "POSNR_VL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "FRBNR",
+      "description": "Number of Bill of Lading at Time of Goods Receipt",
+      "data_element": "FRBNR1",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIA_IPMVAT",
+      "description": "VAT on internally-posted material",
+      "data_element": "OIA_IPMVAT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIVATH",
+      "description": "Amount in Local Currency",
+      "data_element": "DMBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIVATF",
+      "description": "Amount in document currency",
+      "data_element": "WRBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIIMATV",
+      "description": "Internal material value",
+      "data_element": "OIA_IMATV",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIMATCYC",
+      "description": "Invoicing cycle for purchase material costs",
+      "data_element": "OIA_MATCYC",
+      "type": "NUMC",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXVAL",
+      "description": "Excise duty value in material inventory account",
+      "data_element": "OIH_TAXVAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OITAXCON",
+      "description": "Excise duty tax from pricing conditions",
+      "data_element": "OIH_TAXCON",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIEDCL",
+      "description": "Excise duty clearing value",
+      "data_element": "OIH_EDCL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "ET_UPD",
+      "description": "Procedure for Updating the Schedule Line Quantity",
+      "data_element": "ET_UPD1",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/BAMNG",
+      "description": "Quantity in Parallel Unit of Measure",
+      "data_element": "/CWM/BAMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/WESBS",
+      "description": "Goods Receipt Blocked Stock in Base/Parallel Unit of Measure",
+      "data_element": "/CWM/WESBS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/TY2TQ",
+      "description": "Type of Parallel Unit of Measure",
+      "data_element": "/CWM/TY2TQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/WESBB",
+      "description": "Val. Goods Receipt Blocked Stock in Basis or Parallel UoM",
+      "data_element": "/CWM/WESBB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "J_SC_DIE_COMP_F",
+      "description": "Depreciation completion flag",
+      "data_element": "/SAPNEA/J_SC_DIE_COMP_F",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The EKBE table stores history of changes to purchasing documents. It is used to track changes to the document header, item data, and account assignment data. The table is used to provide a complete audit trail of all changes to purchasing documents. The EKBE table is linked to the purchasing document header table (EKKO) and the purchasing document item table (EKPO) through the fields EBELN, EBELP, and ZEKKN. Common use cases include:\n- Tracking changes to purchasing documents\n- Auditing changes to purchasing documents\n- Identifying who made changes to purchasing documents\n- Restoring purchasing documents to a previous state",
+    "timestamp": "2025-02-13T13:46:02.519152",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

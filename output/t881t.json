@@ -1,0 +1,70 @@
+{
+  "name": "T881T",
+  "description": "FI-SL Ledger text",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LANGU",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RLDNR",
+      "description": "Ledger",
+      "data_element": "RLDNR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "NAME",
+      "description": "Ledger Name",
+      "data_element": "LDTXT",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "T881T",
+      "field": "LANGU",
+      "foreign_key_table": "T881T",
+      "foreign_key_field": "LANGU",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "T881T",
+      "field": "RLDNR",
+      "foreign_key_table": "T881T",
+      "foreign_key_field": "MANDT",
+      "check_table": "T881",
+      "check_field": "Ledger Master"
+    },
+    {
+      "table": "T881T",
+      "field": "RLDNR",
+      "foreign_key_table": "T881T",
+      "foreign_key_field": "RLDNR",
+      "check_table": "T881",
+      "check_field": "Ledger Master"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "1. The T881T table stores translations for ledger names.\n2. It is related to the T881 table, which contains the master data for ledgers, and to the T002 table, which contains language keys.\n3. Common use cases include retrieving ledger names in different languages and managing ledger translations.",
+    "timestamp": "2025-02-13T13:44:18.035422",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

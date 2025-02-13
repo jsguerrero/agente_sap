@@ -1,0 +1,1229 @@
+{
+  "name": "EKKO",
+  "description": "Purchasing Document Header",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTYP",
+      "description": "Purchasing Document Category",
+      "data_element": "EBSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BSART",
+      "description": "Purchasing Document Type",
+      "data_element": "ESART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSAKZ",
+      "description": "Control indicator for purchasing document type",
+      "data_element": "BSAKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEKZ",
+      "description": "Deletion Indicator in Purchasing Document",
+      "data_element": "ELOEK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "STATU",
+      "description": "Status of Purchasing Document",
+      "data_element": "ESTAK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AEDAT",
+      "description": "Date on Which Record Was Created",
+      "data_element": "ERDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ERNAM",
+      "description": "Name of Person who Created the Object",
+      "data_element": "ERNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PINCR",
+      "description": "Item Number Interval",
+      "data_element": "PINCR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LPONR",
+      "description": "Last Item Number",
+      "data_element": "LPONR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Vendor Account Number",
+      "data_element": "ELIFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZTERM",
+      "description": "Terms of Payment Key",
+      "data_element": "DZTERM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1T",
+      "description": "Cash (Prompt Payment) Discount Days",
+      "data_element": "DZBDET",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD2T",
+      "description": "Cash (Prompt Payment) Discount Days",
+      "data_element": "DZBDET",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD3T",
+      "description": "Cash (Prompt Payment) Discount Days",
+      "data_element": "DZBDET",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ZBD1P",
+      "description": "Cash Discount Percentage 1",
+      "data_element": "DZBD1P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "ZBD2P",
+      "description": "Cash Discount Percentage 2",
+      "data_element": "DZBD2P",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "3"
+    },
+    {
+      "name": "EKORG",
+      "description": "Purchasing Organization",
+      "data_element": "EKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP",
+      "description": "Purchasing Group",
+      "data_element": "BKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "WKURS",
+      "description": "Exchange Rate",
+      "data_element": "WKURS",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "5"
+    },
+    {
+      "name": "KUFIX",
+      "description": "Indicator: Fixing of Exchange Rate",
+      "data_element": "KUFIX",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEDAT",
+      "description": "Purchasing Document Date",
+      "data_element": "EBDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KDATB",
+      "description": "Start of Validity Period",
+      "data_element": "KDATB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KDATE",
+      "description": "End of Validity Period",
+      "data_element": "KDATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BWBDT",
+      "description": "Closing Date for Applications",
+      "data_element": "BWBDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ANGDT",
+      "description": "Deadline for Submission of Bid/Quotation",
+      "data_element": "ANGAB",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BNDDT",
+      "description": "Binding Period for Quotation",
+      "data_element": "EBNDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "GWLDT",
+      "description": "Warranty Date",
+      "data_element": "MM_GWLDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUSNR",
+      "description": "Bid invitation number",
+      "data_element": "AUSCH",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ANGNR",
+      "description": "Quotation Number",
+      "data_element": "ANGNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "IHRAN",
+      "description": "Quotation Submission Date",
+      "data_element": "IHRAN",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "IHREZ",
+      "description": "Your Reference",
+      "data_element": "IHREZ",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "VERKF",
+      "description": "Responsible Salesperson at Vendor's Office",
+      "data_element": "EVERK",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "TELF1",
+      "description": "Vendor's Telephone Number",
+      "data_element": "TELF0",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "LLIEF",
+      "description": "Supplying Vendor",
+      "data_element": "LLIEF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer Number",
+      "data_element": "KUNNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KONNR",
+      "description": "Number of Principal Purchase Agreement",
+      "data_element": "KONNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ABGRU",
+      "description": "Field Not Used",
+      "data_element": "ABDUM",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTLF",
+      "description": "Complete Delivery Stipulated for Each Purchase Order",
+      "data_element": "KMPLF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEAKT",
+      "description": "Indicator: Goods Receipt Message",
+      "data_element": "WEAKT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RESWK",
+      "description": "Supplying (Issuing) Plant in Stock Transport Order",
+      "data_element": "RESWK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LBLIF",
+      "description": "Field not used",
+      "data_element": "LBLIF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO1",
+      "description": "Incoterms (Part 1)",
+      "data_element": "INCO1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "INCO2",
+      "description": "Incoterms (Part 2)",
+      "data_element": "INCO2",
+      "type": "CHAR",
+      "length": "28",
+      "decimals": "0"
+    },
+    {
+      "name": "KTWRT",
+      "description": "Target Value for Header Area per Distribution",
+      "data_element": "KTWRT",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "SUBMI",
+      "description": "Collective Number",
+      "data_element": "SUBMI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KALSM",
+      "description": "Procedure (Pricing, Output Control, Acct. Det., Costing,...)",
+      "data_element": "KALSM_D",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "STAFO",
+      "description": "Update group for statistics update",
+      "data_element": "STAFO",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFRE",
+      "description": "Different Invoicing Party",
+      "data_element": "LIFRE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EXNUM",
+      "description": "Number of foreign trade data in MM and SD documents",
+      "data_element": "EXNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UNSEZ",
+      "description": "Our Reference",
+      "data_element": "UNSEZ",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LOGSY",
+      "description": "Logical System",
+      "data_element": "LOGSYSTEM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UPINC",
+      "description": "Item Number Interval for Subitems",
+      "data_element": "UPINC",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "STAKO",
+      "description": "Document with time-dependent conditions",
+      "data_element": "STAKO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGGR",
+      "description": "Release group",
+      "data_element": "FRGGR",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGSX",
+      "description": "Release Strategy",
+      "data_element": "FRGSX",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGKE",
+      "description": "Release Indicator: Purchasing Document",
+      "data_element": "FRGKE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGZU",
+      "description": "Release status",
+      "data_element": "FRGZU",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FRGRL",
+      "description": "Release Not Yet Completely Effected",
+      "data_element": "FRGRL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LANDS",
+      "description": "Country for Tax Return",
+      "data_element": "LAND1_STML",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LPHIS",
+      "description": "Indicator for scheduling agreement release documentation",
+      "data_element": "LPHIS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRNR",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG_L",
+      "description": "Country of Sales Tax ID Number",
+      "data_element": "STCEG_L",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "STCEG",
+      "description": "VAT Registration Number",
+      "data_element": "STCEG",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "ABSGR",
+      "description": "Reason for Cancellation",
+      "data_element": "ABSGR",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDNR",
+      "description": "Document number for additional",
+      "data_element": "ADDI_BELNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KORNR",
+      "description": "Correction of miscellaneous provisions",
+      "data_element": "KORNR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MEMORY",
+      "description": "Purchase order not yet complete",
+      "data_element": "MEMER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PROCSTAT",
+      "description": "Purchasing document processing state",
+      "data_element": "MEPROCSTATE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "RLWRT",
+      "description": "Total value at time of release",
+      "data_element": "RLWRT",
+      "type": "CURR",
+      "length": "15",
+      "decimals": "2"
+    },
+    {
+      "name": "REVNO",
+      "description": "Version number in Purchasing",
+      "data_element": "REVNO",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "SCMPROC",
+      "description": "SCM Process That Created the Purchase Order",
+      "data_element": "SCMPROC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "REASON_CODE",
+      "description": "Goods Receipt Reason Code",
+      "data_element": "/SAPPSPRO/_GR_REASON_CODE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MEMORYTYPE",
+      "description": "Category of Incompleteness",
+      "data_element": "MEMORYTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RETTP",
+      "description": "Retention Indicator",
+      "data_element": "RETTP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RETPC",
+      "description": "Retention in Percent",
+      "data_element": "RETPZ",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "DPTYP",
+      "description": "Down Payment Indicator",
+      "data_element": "ME_DPTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "DPPCT",
+      "description": "Down Payment Percentage",
+      "data_element": "ME_DPPCNT",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "DPAMT",
+      "description": "Down Payment Amount in Document Currency",
+      "data_element": "ME_DPAMNT",
+      "type": "CURR",
+      "length": "11",
+      "decimals": "2"
+    },
+    {
+      "name": "DPDAT",
+      "description": "Due Date for Down Payment",
+      "data_element": "ME_DPDDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "MSR_ID",
+      "description": "Process Identification Number",
+      "data_element": "MSR_PROCESS_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "HIERARCHY_EXISTS",
+      "description": "Part of a Contract Hierarchy",
+      "data_element": "HIERARCHY_EXISTS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "THRESHOLD_EXISTS",
+      "description": "Threshold Value for Exchange Rates Exists",
+      "data_element": "EX_RATE_THRESHOLD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LEGAL_CONTRACT",
+      "description": "Legal Contract Number",
+      "data_element": "LEGAL_CONTRACT_ID",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "DESCRIPTION",
+      "description": "Contract Name",
+      "data_element": "CONTRACT_DESCRIPTION",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "RELEASE_DATE",
+      "description": "Release Date of Contract",
+      "data_element": "RELEASE_DATE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VSART",
+      "description": "Shipping type",
+      "data_element": "VERSART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HANDOVERLOC",
+      "description": "Location for a physical handover of goods",
+      "data_element": "HANDOVER_LOC",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FORCE_ID",
+      "description": "Internal Key for Force Element",
+      "data_element": "/ISDFPS/FORCE_ID",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "FORCE_CNT",
+      "description": "Internal (Version) Counter",
+      "data_element": "/ISDFPS/FORCE_CNT",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "RELOC_ID",
+      "description": "Relocation ID",
+      "data_element": "/ISDFPS/RELOC_ID",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RELOC_SEQ_ID",
+      "description": "Relocation Step ID",
+      "data_element": "/ISDFPS/RELOC_SEQ_ID",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SOURCE_LOGSYS",
+      "description": "Logical system",
+      "data_element": "LOGSYS",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGNUM",
+      "description": "Exchange agreement number",
+      "data_element": "OIA_EXGNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGTYP",
+      "description": "Exchange type",
+      "data_element": "OIA_EXGTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIAEVGTYPE",
+      "description": "Evergreen type",
+      "data_element": "OIA_EVTYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPIPEVAL",
+      "description": "Validation indicator for pipeline fields (X=ON, blank=OFF)",
+      "data_element": "OID_PIPEV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCITYC",
+      "description": "Destination city code",
+      "data_element": "OIC_DCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCOUNC",
+      "description": "Destination county code",
+      "data_element": "OIC_DCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DREGIO",
+      "description": "Destination region",
+      "data_element": "OIC_DREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DLAND1",
+      "description": "Destination country",
+      "data_element": "OIC_DLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCITYC",
+      "description": "Origin city code",
+      "data_element": "OIC_OCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCOUNC",
+      "description": "Origin county code",
+      "data_element": "OIC_OCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OREGIO",
+      "description": "Origin region",
+      "data_element": "OIC_OREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OLAND1",
+      "description": "Origin country",
+      "data_element": "OIC_OLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PORGIN",
+      "description": "Tax origin",
+      "data_element": "OIC_PORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PDESTN",
+      "description": "Tax destination",
+      "data_element": "OIC_PDESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PTRIP",
+      "description": "Pipeline trip number (external)",
+      "data_element": "OIC_PTRIP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PBATCH",
+      "description": "Pipeline operator�s external batch number",
+      "data_element": "OIC_PBATCH",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_MOT",
+      "description": "IS-OIL MAP external details mode of transport",
+      "data_element": "OIC_MOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_AORGIN",
+      "description": "Alternate origin",
+      "data_element": "OIC_AORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_ADESTN",
+      "description": "Alternate destination",
+      "data_element": "OIC_ADESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_TRUCKN",
+      "description": "Truck number",
+      "data_element": "OIC_TRUCKN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIA_BASELO",
+      "description": "Base location",
+      "data_element": "OIA_BASELO",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_EXTBOL",
+      "description": "External bill of lading",
+      "data_element": "OID_EXTBOL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_MISCDL",
+      "description": "Miscellaneous delivery number",
+      "data_element": "OID_MISCDL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "VZSKZ",
+      "description": "Interest calculation indicator",
+      "data_element": "VZSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "POHF_TYPE",
+      "description": "Document for Seasonal Purchase Order Processing",
+      "data_element": "WRF_POHF_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EQ_EINDT",
+      "description": "Delivery Date Header: All Items Have Same Delivery Date",
+      "data_element": "WRF_POHF_EQ_EINDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "EQ_WERKS",
+      "description": "Plant Header: All Items Have Same Receiving Plant",
+      "data_element": "WRF_POHF_EQ_EWERK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FIXPO",
+      "description": "Firm Deal Indicator",
+      "data_element": "WRF_POHF_FIXPO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP_ALLOW",
+      "description": "Take Account of Purch. Group",
+      "data_element": "WRF_POHF_EKGRP_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS_ALLOW",
+      "description": "Take Account of Plants",
+      "data_element": "WRF_POHF_WERKS_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CONTRACT_ALLOW",
+      "description": "Take Account of Contracts",
+      "data_element": "WRF_POHF_CONTRACT_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTYP_ALLOW",
+      "description": "Take Account of Item Categories",
+      "data_element": "WRF_POHF_PSTYP_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FIXPO_ALLOW",
+      "description": "Take Account of Fixed-Date Purchases Indicator",
+      "data_element": "WRF_POHF_FIXPO_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KEY_ID_ALLOW",
+      "description": "Consider Budget",
+      "data_element": "WRF_POHF_KEY_ID_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUREL_ALLOW",
+      "description": "Take Account of Alloc. Table Relevance",
+      "data_element": "WRF_POHF_AUREL_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DELPER_ALLOW",
+      "description": "Take Account of Dlvy Period",
+      "data_element": "WRF_POHF_DELPER_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EINDT_ALLOW",
+      "description": "Take Account of Delivery Date",
+      "data_element": "WRF_POHF_EINDT_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LTSNR_ALLOW",
+      "description": "Include Vendor Subrange",
+      "data_element": "WRF_POHF_LTSNR_ALLOW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_LEVEL",
+      "description": "OTB Check Level",
+      "data_element": "WRF_POTB_CHECK_LEVEL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_COND_TYPE",
+      "description": "OTB Condition Type",
+      "data_element": "WRF_POTB_COND_TYPE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KEY_ID",
+      "description": "Unique Number of Budget",
+      "data_element": "WRF_BUDG_KEY_ID",
+      "type": "NUMC",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_VALUE",
+      "description": "Required Budget",
+      "data_element": "WRF_POTB_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "OTB_CURR",
+      "description": "OTB Currency",
+      "data_element": "WRF_POTB_CURRENCY",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_RES_VALUE",
+      "description": "Reserved Budget for OTB-Relevant Purchasing Document",
+      "data_element": "WRF_POTB_RES_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "OTB_SPEC_VALUE",
+      "description": "Special Release Budget",
+      "data_element": "WRF_POTB_SPECIAL_VALUE",
+      "type": "CURR",
+      "length": "17",
+      "decimals": "2"
+    },
+    {
+      "name": "SPR_RSN_PROFILE",
+      "description": "Reason Profile for OTB Special Release",
+      "data_element": "WRF_POTB_SPR_RSN_PROFILE",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDG_TYPE",
+      "description": "Budget Type",
+      "data_element": "WRF_BUDG_TYPE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_STATUS",
+      "description": "OTB Check Status",
+      "data_element": "WRF_POTB_STATUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OTB_REASON",
+      "description": "Reason Indicator for OTB Check Status",
+      "data_element": "WRF_POTB_STATUS_REASON",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CHECK_TYPE",
+      "description": "Type of OTB Check",
+      "data_element": "WRF_BUDG_OTB_CHECK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CON_OTB_REQ",
+      "description": "OTB-Relevant Contract",
+      "data_element": "WRF_POTB_CON_REQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CON_PREBOOK_LEV",
+      "description": "OTB Indicator Level for Contracts",
+      "data_element": "WRF_POTB_PREBOOK_LEVEL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CON_DISTR_LEV",
+      "description": "Distribution Using Target Value or Item Data",
+      "data_element": "WRF_POTB_DISTRIB_LEVEL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. **Purpose of the table:** The EKKO table in SAP stores header data for purchase orders. It contains general information about the purchase order, such as the purchase order number, vendor, and date.\n2. **Key relationships to other tables:** The EKKO table has foreign key relationships to the EKPO table (item data for purchase orders) and the LFA1 table (vendor master data).\n3. **Common use cases:** The EKKO table is used to create, change, and display purchase orders. It is also used to generate reports on purchase orders.",
+    "timestamp": "2025-02-13T13:40:17.785348",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

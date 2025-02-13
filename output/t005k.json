@@ -1,0 +1,77 @@
+{
+  "name": "T005K",
+  "description": "Communication: country dialling code",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LAND1",
+      "description": "Country Key",
+      "data_element": "LAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TELEFFROM",
+      "description": "International Dialing Code for Telephone/Fax",
+      "data_element": "SKTELFFROM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TELEFTO",
+      "description": "Country telephone/fax dialling code",
+      "data_element": "SKTELFTO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TELEFRM",
+      "description": "Digit to be deleted for calls from abroad",
+      "data_element": "SKTELFRM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TELEXFROM",
+      "description": "Foreign dialling code for  Telex",
+      "data_element": "SKTELXFROM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TELEXTO",
+      "description": "Foreign dialling code for Telex",
+      "data_element": "SKTELXTO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MOBILE_SMS",
+      "description": "Indicator: Mobile Telephones are SMS-Enabled by Default",
+      "data_element": "AD_MBISSMS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of table T005K is to store country-specific dialing codes for telephone, fax, and telex communication.\n2. This table does not have any foreign key relationships with other tables.\n3. T005K is commonly used in SAP systems to determine the correct dialing code when making international calls or sending faxes or telexes.",
+    "timestamp": "2025-02-13T13:45:48.095364",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

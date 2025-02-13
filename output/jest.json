@@ -1,0 +1,53 @@
+{
+  "name": "JEST",
+  "description": "Individual Object Status",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OBJNR",
+      "description": "Object number",
+      "data_element": "J_OBJNR",
+      "type": "CHAR",
+      "length": "22",
+      "decimals": "0"
+    },
+    {
+      "name": "STAT",
+      "description": "Object status",
+      "data_element": "J_STATUS",
+      "type": "CHAR",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "INACT",
+      "description": "Indicator: Status Is Inactive",
+      "data_element": "J_INACT",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "CHGNR",
+      "description": "Change number",
+      "data_element": "J_CHGNR",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The JEST table stores status information for individual objects in the SAP system. It is primarily used to track the current object statuses, such as active, inactive, or locked. The table does not have any defined foreign key relationships with other tables. Common use cases for the JEST table include: - Retrieving the status of a specific object\n- Updating the status of an object\n- Verifying the status of an object before performing actions",
+    "timestamp": "2025-02-13T13:42:11.580967",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

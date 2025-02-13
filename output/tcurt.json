@@ -1,0 +1,86 @@
+{
+  "name": "TCURT",
+  "description": "Currency Code Names",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS_CURC",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LTEXT",
+      "description": "Long Text",
+      "data_element": "LTEXT",
+      "type": "CHAR",
+      "length": "40",
+      "decimals": "0"
+    },
+    {
+      "name": "KTEXT",
+      "description": "Short text",
+      "data_element": "KTEXT_CURT",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TCURT",
+      "field": "MANDT",
+      "foreign_key_table": "TCURT",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "TCURT",
+      "field": "SPRAS",
+      "foreign_key_table": "TCURT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "TCURT",
+      "field": "WAERS",
+      "foreign_key_table": "TCURT",
+      "foreign_key_field": "WAERS",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURT",
+      "field": "WAERS",
+      "foreign_key_table": "TCURT",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "**Purpose:** The TCURT table stores currency code names in various languages. **Key Relationships:** TCURT relates to TCURC for currency codes, T000 for clients, and T002 for language keys.",
+    "timestamp": "2025-02-13T13:44:02.087275",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

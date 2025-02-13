@@ -1,0 +1,2381 @@
+{
+  "name": "MSEG",
+  "description": "Document Segment: Material",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MBLNR",
+      "description": "Number of Material Document",
+      "data_element": "MBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MJAHR",
+      "description": "Material Document Year",
+      "data_element": "MJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEILE",
+      "description": "Item in Material Document",
+      "data_element": "MBLPO",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LINE_ID",
+      "description": "Unique identification of document line",
+      "data_element": "MB_LINE_ID",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "PARENT_ID",
+      "description": "Identifier of immediately superior line",
+      "data_element": "MB_PARENT_ID",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "LINE_DEPTH",
+      "description": "Hierarchy level of line in document",
+      "data_element": "MB_LINE_DEPTH",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "MAA_URZEI",
+      "description": "Original Line for Account Assignment Item in Material Doc.",
+      "data_element": "MAA_URZEI",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWART",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XAUTO",
+      "description": "Item automatically created",
+      "data_element": "MB_XAUTO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "INSMK",
+      "description": "Stock Type",
+      "data_element": "MB_INSMK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUSCH",
+      "description": "Batch status key",
+      "data_element": "DZUSCH",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUSTD",
+      "description": "Batch in Restricted-Use Stock",
+      "data_element": "DZUSTD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SOBKZ",
+      "description": "Special Stock Indicator",
+      "data_element": "SOBKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Vendor Account Number",
+      "data_element": "ELIFN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Account Number of Customer",
+      "data_element": "EKUNN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDAUF",
+      "description": "Sales Order Number",
+      "data_element": "KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KDPOS",
+      "description": "Item Number in Sales Order",
+      "data_element": "KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "KDEIN",
+      "description": "Delivery Schedule for Sales Order",
+      "data_element": "KDEIN",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PLPLA",
+      "description": "Distribution of Differences",
+      "data_element": "PLPLA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SHKZG",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Currency Key",
+      "data_element": "WAERS",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBTR",
+      "description": "Amount in Local Currency",
+      "data_element": "DMBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BNBTR",
+      "description": "Delivery costs in local currency",
+      "data_element": "BNBTR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BUALT",
+      "description": "Amount posted in alternative price control",
+      "data_element": "BUALT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "SHKUM",
+      "description": "Debit/credit indicator in revaluation",
+      "data_element": "SHKUM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DMBUM",
+      "description": "Revaluation amount on back-posting to a previous period",
+      "data_element": "DMBUM",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "BWTAR",
+      "description": "Valuation Type",
+      "data_element": "BWTAR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "MEINS",
+      "description": "Base Unit of Measure",
+      "data_element": "MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "ERFMG",
+      "description": "Quantity in Unit of Entry",
+      "data_element": "ERFMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ERFME",
+      "description": "Unit of Entry",
+      "data_element": "ERFME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BPMNG",
+      "description": "Quantity in Purchase Order Price Unit",
+      "data_element": "BPMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BPRME",
+      "description": "Order Price Unit (Purchasing)",
+      "data_element": "BBPRM",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchase Order Number",
+      "data_element": "BSTNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "LFBJA",
+      "description": "Fiscal Year of a Reference Document",
+      "data_element": "LFBJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFBNR",
+      "description": "Document No. of a Reference Document",
+      "data_element": "LFBNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LFPOS",
+      "description": "Item of a Reference Document",
+      "data_element": "LFPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SJAHR",
+      "description": "Material Document Year",
+      "data_element": "MJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SMBLN",
+      "description": "Number of Material Document",
+      "data_element": "MBLNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "SMBLP",
+      "description": "Item in Material Document",
+      "data_element": "MBLPO",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ELIKZ",
+      "description": "\"Delivery Completed\" Indicator",
+      "data_element": "ELIKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SGTXT",
+      "description": "Item Text",
+      "data_element": "SGTXT",
+      "type": "CHAR",
+      "length": "50",
+      "decimals": "0"
+    },
+    {
+      "name": "EQUNR",
+      "description": "Equipment Number",
+      "data_element": "EQUNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WEMPF",
+      "description": "Goods Recipient/Ship-To Party",
+      "data_element": "WEMPF",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ABLAD",
+      "description": "Unloading Point",
+      "data_element": "ABLAD",
+      "type": "CHAR",
+      "length": "25",
+      "decimals": "0"
+    },
+    {
+      "name": "GSBER",
+      "description": "Business Area",
+      "data_element": "GSBER",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOKRS",
+      "description": "Controlling Area",
+      "data_element": "KOKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PARGB",
+      "description": "Trading partner's business area",
+      "data_element": "PARGB",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PARBU",
+      "description": "Clearing company code",
+      "data_element": "PARBU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KOSTL",
+      "description": "Cost Center",
+      "data_element": "KOSTL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PROJN",
+      "description": "Old: Project number : No longer used --> PS_POSNR",
+      "data_element": "PROJN",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFNR",
+      "description": "Order Number",
+      "data_element": "AUFNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN1",
+      "description": "Main Asset Number",
+      "data_element": "ANLN1",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "ANLN2",
+      "description": "Asset Subnumber",
+      "data_element": "ANLN2",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XSKST",
+      "description": "Indicator: Statistical posting to cost center",
+      "data_element": "XSKST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSAUF",
+      "description": "Indicator: Posting to order is statistical",
+      "data_element": "XSAUF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSPRO",
+      "description": "Indicator: Posting to project is statistical",
+      "data_element": "XSPRO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XSERG",
+      "description": "Indicator: Posting to prof.analysis is statistical",
+      "data_element": "XSERG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GJAHR",
+      "description": "Fiscal Year",
+      "data_element": "GJAHR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XRUEM",
+      "description": "Allow Posting to Previous Period (Backposting)",
+      "data_element": "XRUEM",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XRUEJ",
+      "description": "Indicator: post to previous year",
+      "data_element": "XRUEJ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company Code",
+      "data_element": "BUKRS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BELNR",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZEI",
+      "description": "Number of Line Item Within Accounting Document",
+      "data_element": "BUZEI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BELUM",
+      "description": "Accounting Document Number",
+      "data_element": "BELNR_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BUZUM",
+      "description": "Number of Line Item Within Accounting Document",
+      "data_element": "BUZEI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "RSNUM",
+      "description": "Number of Reservation/Dependent Requirement",
+      "data_element": "RSNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RSPOS",
+      "description": "Item Number of Reservation/Dependent Requirement",
+      "data_element": "RSPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KZEAR",
+      "description": "Final Issue for This Reservation",
+      "data_element": "KZEAR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PBAMG",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KZSTR",
+      "description": "Transaction/event is relevant to statistics",
+      "data_element": "KZSTR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMMAT",
+      "description": "Receiving/Issuing Material",
+      "data_element": "UMMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "UMWRK",
+      "description": "Receiving/Issuing Plant",
+      "data_element": "UMWRK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UMLGO",
+      "description": "Receiving/Issuing Storage Location",
+      "data_element": "UMLGO",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "UMCHA",
+      "description": "Receiving/Issuing Batch",
+      "data_element": "UMCHA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UMZST",
+      "description": "Status of Transfer Batch",
+      "data_element": "UMZST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMZUS",
+      "description": "Status key of transfer batch",
+      "data_element": "UMZUS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UMBAR",
+      "description": "Valuation Type of Transfer Batch",
+      "data_element": "UMBAR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UMSOK",
+      "description": "Special Stock Indicator for Physical Stock Transfer",
+      "data_element": "UMSOK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBEW",
+      "description": "Movement Indicator",
+      "data_element": "KZBEW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVBR",
+      "description": "Consumption Posting",
+      "data_element": "KZVBR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZZUG",
+      "description": "Receipt Indicator",
+      "data_element": "KZZUG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WEUNB",
+      "description": "Goods Receipt, Non-Valuated",
+      "data_element": "WEUNB",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "PALAN",
+      "description": "WMS Number of pallets",
+      "data_element": "PALAN",
+      "type": "DEC",
+      "length": "11",
+      "decimals": "0"
+    },
+    {
+      "name": "LGNUM",
+      "description": "Warehouse Number / Warehouse Complex",
+      "data_element": "LGNUM",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LGTYP",
+      "description": "Storage Type",
+      "data_element": "LGTYP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LGPLA",
+      "description": "Storage Bin",
+      "data_element": "LGPLA",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BESTQ",
+      "description": "Stock Category in the Warehouse Management System",
+      "data_element": "BESTQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWLVS",
+      "description": "Movement Type for Warehouse Management",
+      "data_element": "BWLVS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "TBNUM",
+      "description": "Transfer Requirement Number",
+      "data_element": "TBNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TBPOS",
+      "description": "Transfer Requirement Item",
+      "data_element": "TBPOS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLVS",
+      "description": "Indicator: posting in warehouse management system",
+      "data_element": "XBLVS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VSCHN",
+      "description": "Ind: interim storage posting for source stor.type and bin",
+      "data_element": "T333_VSCHN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NSCHN",
+      "description": "Ind.: interim storage posting for dest.stor.type and bin",
+      "data_element": "T333_NSCHN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DYPLA",
+      "description": "Indicator: dynamic storage bin",
+      "data_element": "DYPLA",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UBNUM",
+      "description": "Posting Change Number",
+      "data_element": "UBNUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TBPRI",
+      "description": "Transfer Priority",
+      "data_element": "TBPRI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "TANUM",
+      "description": "Transfer Order Number",
+      "data_element": "TANUM",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WEANZ",
+      "description": "Number of GR/GI Slips to Be Printed",
+      "data_element": "WEANZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "GRUND",
+      "description": "Reason for Movement",
+      "data_element": "MB_GRBEW",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EVERS",
+      "description": "Shipping Instructions",
+      "data_element": "EVERS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "EVERE",
+      "description": "Compliance with Shipping Instructions",
+      "data_element": "EVERE",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "IMKEY",
+      "description": "Internal Key for Real Estate Object",
+      "data_element": "IMKEY",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "KSTRG",
+      "description": "Cost Object",
+      "data_element": "KSTRG",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "PAOBJNR",
+      "description": "Profitability Segment Number (CO-PA)",
+      "data_element": "RKEOBJNR",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTR",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "PS_PSP_PNR",
+      "description": "Work Breakdown Structure Element (WBS Element)",
+      "data_element": "PS_PSP_PNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "NPLNR",
+      "description": "Network Number for Account Assignment",
+      "data_element": "NPLNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPL",
+      "description": "Routing number of operations in the order",
+      "data_element": "CO_AUFPL",
+      "type": "NUMC",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "APLZL",
+      "description": "Internal counter",
+      "data_element": "CIM_COUNT",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "AUFPS",
+      "description": "Order Item Number",
+      "data_element": "CO_POSNR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VPTNR",
+      "description": "Partner account number",
+      "data_element": "JV_PART",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FIPOS",
+      "description": "Commitment Item",
+      "data_element": "FIPOS",
+      "type": "CHAR",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "SAKTO",
+      "description": "G/L Account Number",
+      "data_element": "SAKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTMG",
+      "description": "Goods receipt quantity in order unit",
+      "data_element": "MB_BSTMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "BSTME",
+      "description": "Purchase Order Unit of Measure",
+      "data_element": "BSTME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XWSBR",
+      "description": "Reversal of GR allowed for GR-based IV despite invoice",
+      "data_element": "XWSBR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EMLIF",
+      "description": "Vendor to be supplied/who is to receive delivery",
+      "data_element": "EMLIF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EXBWR",
+      "description": "Externally Entered Posting Amount in Local Currency",
+      "data_element": "EXBWR",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VKWRT",
+      "description": "Value at Sales Prices Including Value-Added Tax",
+      "data_element": "VKWRT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "AKTNR",
+      "description": "Promotion",
+      "data_element": "WAKTION",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ZEKKN",
+      "description": "Sequential Number of Account Assignment",
+      "data_element": "DZEKKN",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "VFDAT",
+      "description": "Shelf Life Expiration or Best-Before Date",
+      "data_element": "VFDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CUOBJ_CH",
+      "description": "Internal object number of the batch classification",
+      "data_element": "CUOBJ_CH",
+      "type": "NUMC",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "EXVKW",
+      "description": "Externally Entered Sales Value in Local Currency",
+      "data_element": "EXVKW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "PPRCTR",
+      "description": "Partner Profit Center",
+      "data_element": "PPRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "RSART",
+      "description": "Record type",
+      "data_element": "RSART",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GEBER",
+      "description": "Fund",
+      "data_element": "BP_GEBER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "FISTL",
+      "description": "Funds Center",
+      "data_element": "FISTL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "MATBF",
+      "description": "Material in Respect of Which Stock is Managed",
+      "data_element": "MATBF",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "UMMAB",
+      "description": "Receiving/Issuing Material",
+      "data_element": "UMMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "BUSTM",
+      "description": "Posting string for quantities",
+      "data_element": "BUSTM",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BUSTW",
+      "description": "Posting string for values",
+      "data_element": "BUSTW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGU",
+      "description": "Quantity Updating in Material Master Record",
+      "data_element": "MENGU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "WERTU",
+      "description": "Value Update in Material Master Record",
+      "data_element": "WERTU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LBKUM",
+      "description": "Total valuated stock before the posting",
+      "data_element": "LBKUM_MSEG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SALK3",
+      "description": "Value of total valuated stock before the posting",
+      "data_element": "SALK3_MSEG",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VPRSV",
+      "description": "Price control indicator",
+      "data_element": "VPRSV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "FKBER",
+      "description": "Functional Area",
+      "data_element": "FKBER",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "DABRBZ",
+      "description": "Reference Date for Settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VKWRA",
+      "description": "Value at sales prices excluding value-added tax",
+      "data_element": "VKWRA",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "DABRZ",
+      "description": "Reference Date for Settlement",
+      "data_element": "DABRBEZ",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XBEAU",
+      "description": "Purchase order created at time of goods receipt",
+      "data_element": "XBEAU",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LSMNG",
+      "description": "Quantity in Unit of Measure from Delivery Note",
+      "data_element": "LSMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LSMEH",
+      "description": "Unit of Measure From Delivery Note",
+      "data_element": "LSMEH",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZBWS",
+      "description": "Valuation of Special Stock",
+      "data_element": "KZBWS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "QINSPST",
+      "description": "Status of Goods Receipt Inspection",
+      "data_element": "QINSPST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "URZEI",
+      "description": "Original line in material document",
+      "data_element": "URZEI",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1BEXBASE",
+      "description": "Alternate base amount in document currency",
+      "data_element": "J_1BEXBASE",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "TXJCD",
+      "description": "Tax Jurisdiction",
+      "data_element": "TXJCD",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "EMATN",
+      "description": "Material Number Corresponding to Manufacturer Part Number",
+      "data_element": "EMATN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1AGIRUPD",
+      "description": "Goods issue revaluation performed",
+      "data_element": "J_1AGIRUPD",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VKMWS",
+      "description": "Tax on sales/purchases code",
+      "data_element": "MWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "HSDAT",
+      "description": "Date of Manufacture",
+      "data_element": "HSDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "BERKZ",
+      "description": "Material Staging Indicator for Production Supply",
+      "data_element": "BERKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_KDAUF",
+      "description": "Sales Order Number of Valuated Sales Order Stock",
+      "data_element": "MAT_KDAUF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_KDPOS",
+      "description": "Sales Order Item of Valuated Sales Order Stock",
+      "data_element": "MAT_KDPOS",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MAT_PSPNR",
+      "description": "Valuated Sales Order Stock WBS Element",
+      "data_element": "MAT_PSPNR",
+      "type": "NUMC",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "XWOFF",
+      "description": "Calculation of val. open",
+      "data_element": "XWOFF",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BEMOT",
+      "description": "Accounting Indicator",
+      "data_element": "BEMOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "PRZNR",
+      "description": "Business Process",
+      "data_element": "CO_PRZNR",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "LLIEF",
+      "description": "Supplying Vendor",
+      "data_element": "LLIEF",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "LSTAR",
+      "description": "Activity Type",
+      "data_element": "LSTAR",
+      "type": "CHAR",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "XOBEW",
+      "description": "Vendor Stock Valuation Indicator",
+      "data_element": "XOBEW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GRANT_NBR",
+      "description": "Grant",
+      "data_element": "GM_GRANT_NBR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "ZUSTD_T156M",
+      "description": "Stock Type Modification (Read from Table T156M)",
+      "data_element": "BAMOK_MSEG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "SPE_GTS_STOCK_TY",
+      "description": "GTS Stock Type",
+      "data_element": "/SPE/GTS_STOCK_TYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLNR",
+      "description": "Document Number for Earmarked Funds",
+      "data_element": "KBLNR_FI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KBLPOS",
+      "description": "Earmarked Funds: Document Item",
+      "data_element": "KBLPOS",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "XMACC",
+      "description": "Multiple Account Assignment",
+      "data_element": "XMACC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VGART_MKPF",
+      "description": "Transaction/Event Type",
+      "data_element": "VGART",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "BUDAT_MKPF",
+      "description": "Posting Date in the Document",
+      "data_element": "BUDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUDT_MKPF",
+      "description": "Day On Which Accounting Document Was Entered",
+      "data_element": "CPUDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CPUTM_MKPF",
+      "description": "Time of Entry",
+      "data_element": "CPUTM",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "USNAM_MKPF",
+      "description": "User name",
+      "data_element": "USNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR_MKPF",
+      "description": "Reference Document Number",
+      "data_element": "XBLNR",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TCODE2_MKPF",
+      "description": "Transaction Code",
+      "data_element": "TCODE",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN_IM",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP_IM",
+      "description": "Delivery Item",
+      "data_element": "POSNR_VL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV2/ED_KZ_VER",
+      "description": "Processing Status of Material Document for Excise Duties",
+      "data_element": "/BEV2/EDKZ_VER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV2/ED_USER",
+      "description": "User name",
+      "data_element": "USNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV2/ED_AEDAT",
+      "description": "Changed On",
+      "data_element": "AEDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "/BEV2/ED_AETIM",
+      "description": "System Time",
+      "data_element": "SYUZEIT",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/MENGE",
+      "description": "Quantity in Parallel Unit of Measure",
+      "data_element": "/CWM/MENGE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/MEINS",
+      "description": "Parallel Unit of Measure",
+      "data_element": "/CWM/MEINS",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/ERFMG",
+      "description": "Quantity in Parallel Unit of Entry",
+      "data_element": "/CWM/ERFMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/ERFME",
+      "description": "PUoM Entry Unit of Measure",
+      "data_element": "/CWM/ERFME",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/BUSTW",
+      "description": "Posting string for values",
+      "data_element": "BUSTW",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/SMBLU",
+      "description": "Original line in material document",
+      "data_element": "URZEI",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/FI",
+      "description": "Dummy for B20 int1 (Local Everywhere)",
+      "data_element": "INT1",
+      "type": "INT1",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/TY2TQ",
+      "description": "Type of Parallel Unit of Measure",
+      "data_element": "/CWM/TY2TQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/UMTY2TQ",
+      "description": "Type of Parallel Unit of Measure",
+      "data_element": "/CWM/TY2TQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "DISUB_OWNER",
+      "description": "Owner of stock",
+      "data_element": "OWNER_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OINAVNW",
+      "description": "Non-deductible input tax",
+      "data_element": "NAVNW",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OICONDCOD",
+      "description": "Joint Venture Indicator (Condition Key)",
+      "data_element": "JV_CONDCOD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "CONDI",
+      "description": "Joint Venture Indicator (Condition Key)",
+      "data_element": "JV_CONDCOD",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIKNUMV",
+      "description": "Number of the document condition",
+      "data_element": "KNUMV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGPTR",
+      "description": "Exchange partner (vendor number)",
+      "data_element": "OIA_EXGPTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIMATPST",
+      "description": "Posting rules for material",
+      "data_element": "OIA_MATPST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIMATIE",
+      "description": "Material internal / external posting indicator",
+      "data_element": "OIA_MATIE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGTYP",
+      "description": "Exchange type",
+      "data_element": "OIA_EXGTYP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFEETOT",
+      "description": "Fee total",
+      "data_element": "OIA_FEETOT",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIFEEPST",
+      "description": "Posting rules for fees",
+      "data_element": "OIA_FEEPST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFEEDT",
+      "description": "Fee pricing condition date",
+      "data_element": "OIA_FEEDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIMATREF",
+      "description": "Material group reference for exchange balance reporting",
+      "data_element": "OIA_MATREF",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXGNUM",
+      "description": "Exchange agreement number",
+      "data_element": "OIA_EXGNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OINETCYC",
+      "description": "Netting cycle (FI blocking indicator)",
+      "data_element": "OIA_NETCYC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIJ1BNFFIM",
+      "description": "Control Flag for Nota Fiscal creation (Gain/Loss)",
+      "data_element": "OIH_J1B_NFFI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OITRKNR",
+      "description": "Tracking number",
+      "data_element": "OIH_TRKNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OITRKJR",
+      "description": "Tracking number year",
+      "data_element": "OIH_TRKJR",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEXTNR",
+      "description": "External tracking number",
+      "data_element": "OIH_EXTNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "OIITMNR",
+      "description": "Tracking number item line",
+      "data_element": "OIH_ITMNR",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFTIND",
+      "description": "Final transfer indicator",
+      "data_element": "OIH_FTIND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPRIOP",
+      "description": "Price options for gain calculation",
+      "data_element": "OIH_PRIOP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OITRIND",
+      "description": "Transfer sign for plant-to-plant transfers",
+      "data_element": "OIH_TRIND",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIGHNDL",
+      "description": "Gain handling",
+      "data_element": "OIH_GHNDL",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIUMBAR",
+      "description": "Valuation type of issuing location for two-step transfer",
+      "data_element": "OIH_UMBAR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OISBREL",
+      "description": "Sub product/ base product relevence indicator",
+      "data_element": "OIA_SBREL",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIBASPROD",
+      "description": "Base product number",
+      "data_element": "OIA_SBMAT",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "OIBASVAL",
+      "description": "Base product value",
+      "data_element": "OIA_BASVAL",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "OIGLERF",
+      "description": "Quantity in Unit of Entry",
+      "data_element": "ERFMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIGLSKU",
+      "description": "Quantity",
+      "data_element": "MENGE_D",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIGLBPR",
+      "description": "Quantity in Purchase Order Price Unit",
+      "data_element": "BPMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIGLBST",
+      "description": "Goods receipt quantity in order unit",
+      "data_element": "MB_BSTMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIGLCALC",
+      "description": "Debit/Credit Indicator",
+      "data_element": "SHKZG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIBBSWQTY",
+      "description": "Additional Oil and Gas Quantity",
+      "data_element": "OIB_ADQNT",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "OIASTBW",
+      "description": "Reversal movement type",
+      "data_element": "XSTBW",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIVBELN",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPOSNR",
+      "description": "Delivery Item",
+      "data_element": "POSNR_VL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPIPEVAL",
+      "description": "Validation indicator for pipeline fields (X=ON, blank=OFF)",
+      "data_element": "OID_PIPEV",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCITYC",
+      "description": "Destination city code",
+      "data_element": "OIC_DCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DCOUNC",
+      "description": "Destination county code",
+      "data_element": "OIC_DCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DREGIO",
+      "description": "Destination region",
+      "data_element": "OIC_DREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_DLAND1",
+      "description": "Destination country",
+      "data_element": "OIC_DLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCITYC",
+      "description": "Origin city code",
+      "data_element": "OIC_OCITYC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OCOUNC",
+      "description": "Origin county code",
+      "data_element": "OIC_OCOUNC",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OREGIO",
+      "description": "Origin region",
+      "data_element": "OIC_OREGIO",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_OLAND1",
+      "description": "Origin country",
+      "data_element": "OIC_OLAND1",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PORGIN",
+      "description": "Tax origin",
+      "data_element": "OIC_PORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PDESTN",
+      "description": "Tax destination",
+      "data_element": "OIC_PDESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PTRIP",
+      "description": "Pipeline trip number (external)",
+      "data_element": "OIC_PTRIP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_PBATCH",
+      "description": "Pipeline operator�s external batch number",
+      "data_element": "OIC_PBATCH",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_MOT",
+      "description": "IS-OIL MAP external details mode of transport",
+      "data_element": "OIC_MOT",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_AORGIN",
+      "description": "Alternate origin",
+      "data_element": "OIC_AORGIN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_ADESTN",
+      "description": "Alternate destination",
+      "data_element": "OIC_ADESTN",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIC_TRUCKN",
+      "description": "Truck number",
+      "data_element": "OIC_TRUCKN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIA_BASELO",
+      "description": "Base location",
+      "data_element": "OIA_BASELO",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OICERTF1",
+      "description": "Excise tax external license number",
+      "data_element": "OIH_CERTF1",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDATFM1",
+      "description": "Excise Duty License Valid from Date",
+      "data_element": "OIH_DATFM1",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDATTO1",
+      "description": "Valid to date for excise duty tax certificate",
+      "data_element": "OIH_DATTO1",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LICTP",
+      "description": "License type",
+      "data_element": "OIH_LICTP",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LICIN",
+      "description": "Excise tax internal license number",
+      "data_element": "OIH_LICIN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LCFOL",
+      "description": "Follow-on license for quantity license",
+      "data_element": "OIH_LCFOL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_FOLQTY",
+      "description": "Excise Tax Follow-On License Quantity",
+      "data_element": "OIH_FOLQTY",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OID_EXTBOL",
+      "description": "External bill of lading",
+      "data_element": "OID_EXTBOL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OID_MISCDL",
+      "description": "Miscellaneous delivery number",
+      "data_element": "OID_MISCDL",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "OIBOMHEAD",
+      "description": "BoM header material number",
+      "data_element": "OIA_BOMHM",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_TIMESTAMP",
+      "description": "Tank dip time stamp",
+      "data_element": "OIB_TMSTM",
+      "type": "NUMC",
+      "length": "14",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_GUID_OPEN",
+      "description": "GUID in 'CHAR' Format in Uppercase",
+      "data_element": "GUID_32",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_GUID_CLOSE",
+      "description": "GUID in 'CHAR' Format in Uppercase",
+      "data_element": "GUID_32",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "OIB_SOCNR",
+      "description": "SOC: Storage object characteristic segment number",
+      "data_element": "OII_SOCNR",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXFROM",
+      "description": "Excise duty tax key for 'from' location",
+      "data_element": "OIH_TAXFRO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXTO",
+      "description": "Excise duty tax key for 'to' location",
+      "data_element": "OIH_TAXTO",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIHANTYP",
+      "description": "Excise Duty Handling Type",
+      "data_element": "OIH_HANTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXGRP",
+      "description": "Excise Duty Group",
+      "data_element": "OIH_TAXGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIPRICIE",
+      "description": "ED pricing: external (indicator)",
+      "data_element": "OIH_PRICIE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIINVREC",
+      "description": "Indicator whether ED pricing is external (not used?)",
+      "data_element": "OIH_INVREC",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIOILCON",
+      "description": "Oil content in a material as a percentage",
+      "data_element": "OIH_OILCON",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "OIOILCON2",
+      "description": "Oil content of a material as a percentage (2)",
+      "data_element": "OIH_OILCN2",
+      "type": "DEC",
+      "length": "5",
+      "decimals": "2"
+    },
+    {
+      "name": "OIFUTDT",
+      "description": "Future tax date",
+      "data_element": "OIH_FUTDT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIFUTDT2",
+      "description": "Future tax date 2",
+      "data_element": "OIH_FUTDT2",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIUOMQT",
+      "description": "Base quantity for excise duty rate (e.g.per 1 or 100 UoM)",
+      "data_element": "OIH_UOMQT",
+      "type": "UNIT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "OITAXQT",
+      "description": "Excise duty tax quantity in STBME",
+      "data_element": "OIH_TAXQT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIFUTQT",
+      "description": "Future tax quantity",
+      "data_element": "OIH_FUTQT",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIFUTQT2",
+      "description": "Future tax quantity 2",
+      "data_element": "OIH_FUTQT2",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OITAXGRP2",
+      "description": "Excise Duty Group",
+      "data_element": "OIH_TAXGRP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEDBAL_GI",
+      "description": "Excise Duty Balancing is Required for Mat. (STO)",
+      "data_element": "OIH_EDBAL_GI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OIEDBALM_GI",
+      "description": "Excise Duty Balancing Method Indicator for Mat.  (STO)",
+      "data_element": "OIH_EDBALM_GI",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "OICERTF1_GI",
+      "description": "Excise Tax External License Number Used During GI (STO)",
+      "data_element": "OIH_CERTF1_GI",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDATFM1_GI",
+      "description": "Excise Duty License Valid from Date for Mat. (STO)",
+      "data_element": "OIH_DATFM1_GI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIDATTO1_GI",
+      "description": "Valid To Date for Excise Duty Tax Certificate for Mat. (STO)",
+      "data_element": "OIH_DATTO1_GI",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LICTP_GI",
+      "description": "License Type to Material (STO)",
+      "data_element": "OIH_LICTP_GI",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LICIN_GI",
+      "description": "Excise Tax Internal License Number to Mat. (STO)",
+      "data_element": "OIH_LICIN_GI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_LCFOL_GI",
+      "description": "Follow-On License for Quantity License to Mat. (STO)",
+      "data_element": "OIH_LCFOL_GI",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "OIH_FOLQTY_GI",
+      "description": "Excise Tax Follow-On License Quantity to Mat. (STO)",
+      "data_element": "OIH_FOLQTY_GI",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "OIHANTYP_GI",
+      "description": "Excise Duty Handling Type - Denotes Use of Material",
+      "data_element": "OIH_HANTYP_GI",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "OIO_VSTEL",
+      "description": "Shipping Point/Receiving Point",
+      "data_element": "VSTEL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "OIO_SPROC",
+      "description": "Supply Process",
+      "data_element": "OIO_SPROC",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The MSEG table is used to store line item data for material documents.\n2. It establishes a relationship with the MKPF table which holds the header data for the material document.\n3. The table is commonly used to retrieve information about goods movements, stock levels, and accounting data for specific material documents.",
+    "timestamp": "2025-02-13T13:45:45.889465",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

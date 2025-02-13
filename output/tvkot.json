@@ -1,0 +1,70 @@
+{
+  "name": "TVKOT",
+  "description": "Organizational Unit: Sales Organizations: Texts",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SPRAS",
+      "description": "Language Key",
+      "data_element": "SPRAS",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "VTEXT",
+      "description": "Name",
+      "data_element": "VTXTK",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TVKOT",
+      "field": "SPRAS",
+      "foreign_key_table": "TVKOT",
+      "foreign_key_field": "SPRAS",
+      "check_table": "T002",
+      "check_field": "Language Keys (Component BC-I18)"
+    },
+    {
+      "table": "TVKOT",
+      "field": "VKORG",
+      "foreign_key_table": "TVKOT",
+      "foreign_key_field": "MANDT",
+      "check_table": "TVKO",
+      "check_field": "Organizational Unit: Sales Organizations"
+    },
+    {
+      "table": "TVKOT",
+      "field": "VKORG",
+      "foreign_key_table": "TVKOT",
+      "foreign_key_field": "VKORG",
+      "check_table": "TVKO",
+      "check_field": "Organizational Unit: Sales Organizations"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "Purpose: The TVKOT table stores localized texts for sales organizations. Key relationships:\n- TVKO: Relationship to sales organization master data\n- T002: Relationship to language keys",
+    "timestamp": "2025-02-13T13:42:44.116141",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "name": "MARD",
+  "description": "Storage Location Data for Material",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "MATNR",
+      "description": "Material Number",
+      "data_element": "MATNR",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "PSTAT",
+      "description": "Maintenance status",
+      "data_element": "PSTAT_D",
+      "type": "CHAR",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "LVORM",
+      "description": "Flag Material for Deletion at Storage Location Level",
+      "data_element": "LVOLG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LFGJA",
+      "description": "Fiscal Year of Current Period",
+      "data_element": "LFGJA",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "LFMON",
+      "description": "Current period (posting period)",
+      "data_element": "LFMON",
+      "type": "NUMC",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "SPERR",
+      "description": "Physical Inventory Blocking Indicator",
+      "data_element": "SPERR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LABST",
+      "description": "Valuated Unrestricted-Use Stock",
+      "data_element": "LABST",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "UMLME",
+      "description": "Stock in transfer (from one storage location to another)",
+      "data_element": "UMLMD",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "INSME",
+      "description": "Stock in Quality Inspection",
+      "data_element": "INSME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "EINME",
+      "description": "Total Stock of All Restricted Batches",
+      "data_element": "EINME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "SPEME",
+      "description": "Blocked Stock",
+      "data_element": "SPEME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "RETME",
+      "description": "Blocked Stock Returns",
+      "data_element": "RETME",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMLAB",
+      "description": "Valuated unrestricted-use stock in previous period",
+      "data_element": "VMLAB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMUML",
+      "description": "Stock in Transfer in Previous Period",
+      "data_element": "VMUML",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMINS",
+      "description": "Stock in Quality Inspection in Previous Period",
+      "data_element": "VMINS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMEIN",
+      "description": "Restricted-Use Stock in Previous Period",
+      "data_element": "VMEIN",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMSPE",
+      "description": "Blocked stock of previous period",
+      "data_element": "VMSPE",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "VMRET",
+      "description": "Blocked Stock Returns in Previous Period",
+      "data_element": "VMRET",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KZILL",
+      "description": "Physical inventory indicator for whse stock in current year",
+      "data_element": "KZILL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZILQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in current year",
+      "data_element": "KZILQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZILE",
+      "description": "Physical inventory indicator for restricted-use stock",
+      "data_element": "KZILE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZILS",
+      "description": "Physical inventory indicator for blocked stock",
+      "data_element": "KZILS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVLL",
+      "description": "Physical inventory indicator for stock in previous year",
+      "data_element": "KZVLL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVLQ",
+      "description": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+      "data_element": "KZVLQ",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVLE",
+      "description": "Physical inventory ind. for restricted-use stock, prev.pd",
+      "data_element": "KZVLE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KZVLS",
+      "description": "Phys. inventory indicator for blocked stock in prev. period",
+      "data_element": "KZVLS",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "DISKZ",
+      "description": "Storage location MRP indicator",
+      "data_element": "DISKZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LSOBS",
+      "description": "Special procurement type at storage location level",
+      "data_element": "LSOBS",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LMINB",
+      "description": "Reorder point for storage location MRP",
+      "data_element": "LMINB",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "LBSTF",
+      "description": "Replenishment quantity for storage location MRP",
+      "data_element": "LBSTF",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "HERKL",
+      "description": "Country of origin of the material",
+      "data_element": "HERKL",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EXPPG",
+      "description": "Preference indicator (deactivated)",
+      "data_element": "EXPPG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "EXVER",
+      "description": "Export indicator (deactivated)",
+      "data_element": "EXVER",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "LGPBE",
+      "description": "Storage Bin",
+      "data_element": "LGPBE",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "KLABS",
+      "description": "Unrestricted-Use Consignment Stock",
+      "data_element": "KLABS",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KINSM",
+      "description": "Consignment Stock in Quality Inspection",
+      "data_element": "KINSM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KEINM",
+      "description": "Restricted-Use Consignment Stock",
+      "data_element": "KEINM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "KSPEM",
+      "description": "Blocked Consignment Stock",
+      "data_element": "KSPEM",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DLINL",
+      "description": "Date of Last Posted Count for Unrestricted-Use Stock",
+      "data_element": "DLINL",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "PRCTL",
+      "description": "Profit Center",
+      "data_element": "PRCTR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ERSDA",
+      "description": "Created On",
+      "data_element": "ERSDA",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "VKLAB",
+      "description": "Stock value of a value-only material at sales price",
+      "data_element": "VKLAB",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "VKUML",
+      "description": "Sales value in stock transfer (SLOc to SLoc)",
+      "data_element": "VKUML",
+      "type": "CURR",
+      "length": "13",
+      "decimals": "2"
+    },
+    {
+      "name": "LWMKB",
+      "description": "Picking area for lean WM",
+      "data_element": "MARD_KOBER",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "BSKRF",
+      "description": "Inventory correction factor",
+      "data_element": "BSKRF",
+      "type": "FLTP",
+      "length": "16",
+      "decimals": "16"
+    },
+    {
+      "name": "MDRUE",
+      "description": "MARDH rec. already exists for per. before last of MARD per.",
+      "data_element": "MDRUE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MDJIN",
+      "description": "Fiscal year of current physical inventory indicator",
+      "data_element": "GJINV",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical Description:** The MARD table stores storage location data for materials, including stock quantities, physical inventory indicators, and MRP settings. It is linked to the material master table (MARA) through the material number (MATNR) field. **Common Use Cases:** - Inventory management\n- Physical inventory processing\n- Material requirements planning (MRP)",
+    "timestamp": "2025-02-13T13:46:20.322257",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

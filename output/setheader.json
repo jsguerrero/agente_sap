@@ -1,0 +1,197 @@
+{
+  "name": "SETHEADER",
+  "description": "Set Header and Directory",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "SETCLASS",
+      "description": "Set class",
+      "data_element": "SETCLASS",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "SUBCLASS",
+      "description": "Organizational Unit as Set Subclass",
+      "data_element": "SETSUBCLS",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "SETNAME",
+      "description": "Set Name",
+      "data_element": "SETNAMENEW",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "SETTYPE",
+      "description": "Set type",
+      "data_element": "STYPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XDYNAMIC",
+      "description": "Flag: Dynamic set",
+      "data_element": "SETFLGDYN",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "AUTHGR",
+      "description": "Authorization group",
+      "data_element": "AUTHGR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "XUNIQ",
+      "description": "X flag: Must be unique",
+      "data_element": "SETFLGSUQ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "RVALUE",
+      "description": "Representative value of a set",
+      "data_element": "SETVALREP",
+      "type": "CHAR",
+      "length": "24",
+      "decimals": "0"
+    },
+    {
+      "name": "CREUSER",
+      "description": "Created By",
+      "data_element": "CRNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "CREDATE",
+      "description": "Creation date",
+      "data_element": "CRDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "CRETIME",
+      "description": "Creation Time",
+      "data_element": "CR_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDUSER",
+      "description": "Last Changed By",
+      "data_element": "UPNAM",
+      "type": "CHAR",
+      "length": "12",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDDATE",
+      "description": "Date on which object was last changed",
+      "data_element": "UPDAT",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "UPDTIME",
+      "description": "Time of last change",
+      "data_element": "UP_TIME",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "SAPRL",
+      "description": "Release of SAP System",
+      "data_element": "SYSAPRL",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TABNAME",
+      "description": "Table Name",
+      "data_element": "TABNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "FIELDNAME",
+      "description": "Field Name",
+      "data_element": "FIELDNAME",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "ROLLNAME",
+      "description": "Representative data element in a set",
+      "data_element": "SETDTEL_D",
+      "type": "CHAR",
+      "length": "30",
+      "decimals": "0"
+    },
+    {
+      "name": "SET_OLANGU",
+      "description": "Original Language for Sets (SAP Internal Only)",
+      "data_element": "SET_OLANGU",
+      "type": "LANG",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NO_RWSHEADER",
+      "description": "No Entries Exist in Table RWSHEADER for this Set",
+      "data_element": "SET_NO_RWSHEADER",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NO_RWSLINE",
+      "description": "No Entries Exist in Table RWSLINE for this Set",
+      "data_element": "SET_NO_RWSLINE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "NO_SETLINET",
+      "description": "No Entries Exist in Table SETLINET for this Set",
+      "data_element": "SET_NO_SETLINET",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "**Technical description:** The SETHEADER table stores information about sets, which are collections of data grouped by a common characteristic. The table contains fields such as set name, set type, authorization group, and creation date.\nCommon use cases include creating and managing sets for authorization, data validation, and reporting purposes.",
+    "timestamp": "2025-02-13T13:45:50.178235",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

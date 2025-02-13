@@ -1,0 +1,117 @@
+{
+  "name": "BUT020",
+  "description": "BP: Addresses",
+  "fields": [
+    {
+      "name": "CLIENT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PARTNER",
+      "description": "Business Partner Number",
+      "data_element": "BU_PARTNER",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRNUMBER",
+      "description": "Address number",
+      "data_element": "AD_ADDRNUM",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "XDFADR",
+      "description": "Indicator: Address is standard address",
+      "data_element": "BU_XDFADR",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "ADEXT",
+      "description": "Address number in external system",
+      "data_element": "BU_ADEXT",
+      "type": "CHAR",
+      "length": "20",
+      "decimals": "0"
+    },
+    {
+      "name": "NATION",
+      "description": "Version ID for International Addresses",
+      "data_element": "AD_NATION",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "GUID",
+      "description": "UUID in character form",
+      "data_element": "SYSUUID_C",
+      "type": "CHAR",
+      "length": "32",
+      "decimals": "0"
+    },
+    {
+      "name": "MOVE_ADDR",
+      "description": "Number of Move Target Address for Address Moves",
+      "data_element": "BU_MOVE_ADDR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "DATE_FROM",
+      "description": "Date Obsolete",
+      "data_element": "BU_DATE_OBSOLETE",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDRESS_GUID",
+      "description": "GUID of a Business Partner Address",
+      "data_element": "BU_ADDRESS_GUID",
+      "type": "RAW",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDR_VALID_FROM",
+      "description": "Validity Start of a Business Partner Address",
+      "data_element": "BU_ADDR_VALID_FROM",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDR_VALID_TO",
+      "description": "Validity End of a Business Partner Address",
+      "data_element": "BU_ADDR_VALID_TO",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    },
+    {
+      "name": "ADDR_MOVE_DATE",
+      "description": "Date of Move for Address Moves",
+      "data_element": "BU_ADDR_MOVE_DATE",
+      "type": "DEC",
+      "length": "15",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "This table contains address information for business partners. It is primarily utilized to store and maintain the various addresses associated with a business partner, including standard and external addresses. The table also tracks address validity periods and move target addresses for address moves.",
+    "timestamp": "2025-02-13T13:46:47.286460",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

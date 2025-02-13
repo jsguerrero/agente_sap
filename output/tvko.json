@@ -1,0 +1,237 @@
+{
+  "name": "TVKO",
+  "description": "Organizational Unit: Sales Organizations",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "VKORG",
+      "description": "Sales Organization",
+      "data_element": "VKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "WAERS",
+      "description": "Statistics currency",
+      "data_element": "WAERS_V",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "BUKRS",
+      "description": "Company code of the sales organization",
+      "data_element": "VKBUK",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ADRNR",
+      "description": "Address",
+      "data_element": "ADRNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "TXNAM_ADR",
+      "description": "Text name for form text module short address",
+      "data_element": "TXNAM_ADR",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TXNAM_KOP",
+      "description": "Text name for form text module letter header",
+      "data_element": "TXNAM_KOP",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TXNAM_FUS",
+      "description": "Text name for formula text module footer lines",
+      "data_element": "TXNAM_FUS",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "TXNAM_GRU",
+      "description": "Text name for form text module: Greeting",
+      "data_element": "TXNAM_GRU",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "VKOAU",
+      "description": "Reference sales org.for sales doc.types (by sales area)",
+      "data_element": "VKOAU",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "KUNNR",
+      "description": "Customer number for intercompany billing",
+      "data_element": "KUNIV",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "BOAVO",
+      "description": "Rebate processing active in the sales organization",
+      "data_element": "BOAVO",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VKOKL",
+      "description": "Sales organization calendar",
+      "data_element": "VKOKL",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "EKORG",
+      "description": "Purchasing Organization",
+      "data_element": "EKORG",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EKGRP",
+      "description": "Purchasing Group",
+      "data_element": "EKGRP",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LIFNR",
+      "description": "Account Number of Vendor or Creditor",
+      "data_element": "LIFNR",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "WERKS",
+      "description": "Plant",
+      "data_element": "WERKS_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSART",
+      "description": "Order Type (Purchasing)",
+      "data_element": "BSART",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "BSTYP",
+      "description": "Purchasing Document Category",
+      "data_element": "BSTYP",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "BWART",
+      "description": "Movement Type (Inventory Management)",
+      "data_element": "BWARTWE",
+      "type": "CHAR",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "LGORT",
+      "description": "Storage Location",
+      "data_element": "LGORT_D",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "TXNAM_SDB",
+      "description": "Text names for layout-set module SDS sender",
+      "data_element": "TXNAM_SDB",
+      "type": "CHAR",
+      "length": "16",
+      "decimals": "0"
+    },
+    {
+      "name": "MWSKZ",
+      "description": "Tax code for SD documents",
+      "data_element": "J_1AMWSKZ",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "XSTCEG",
+      "description": "Determining the VAT registration number",
+      "data_element": "XSTCEG",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "J_1ANUTIME",
+      "description": "Time of numbering for deliveries",
+      "data_element": "J_1ANUTIME",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "MAXBI",
+      "description": "Maximum Number of Items in Billing Document",
+      "data_element": "MAXBI",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLAUFZ",
+      "description": "Price protection period",
+      "data_element": "/SAPHT/SW_PLAUFZ",
+      "type": "NUMC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "PLAUEZ",
+      "description": "Unit for price protection",
+      "data_element": "/SAPHT/SW_PLAUEZ",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "The TVKO table stores organizational data for sales organizations in an SAP system. It provides information on each sales organization, such as its address, currency, and associated company code. The table also contains fields for various text modules used in sales documents and settings for intercompany billing and rebate processing.",
+    "timestamp": "2025-02-13T13:41:22.776461",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

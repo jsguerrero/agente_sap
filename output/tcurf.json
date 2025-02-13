@@ -1,0 +1,158 @@
+{
+  "name": "TCURF",
+  "description": "Conversion Factors",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "KURST",
+      "description": "Exchange Rate Type",
+      "data_element": "KURST_CURR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "FCURR",
+      "description": "From currency",
+      "data_element": "FCURR_CURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "TCURR",
+      "description": "To-currency",
+      "data_element": "TCURR_CURR",
+      "type": "CUKY",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "GDATU",
+      "description": "Date from which the entry is valid",
+      "data_element": "GDATU_INVV",
+      "type": "CHAR",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "FFACT",
+      "description": "Ratio for the \"From\" Currency Units",
+      "data_element": "FFACT_CURR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "TFACT",
+      "description": "Ratio for the \"To\" Currency Units",
+      "data_element": "TFACT_CURR",
+      "type": "DEC",
+      "length": "9",
+      "decimals": "0"
+    },
+    {
+      "name": "ABWCT",
+      "description": "Alternative exchange rate type",
+      "data_element": "ABWKT_CURR",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "ABWGA",
+      "description": "Date from which the alternative exchange rate type is valid",
+      "data_element": "ABWGA_CURR",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    }
+  ],
+  "foreign_keys": [
+    {
+      "table": "TCURF",
+      "field": "ABWCT",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "ABWCT",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURF",
+      "field": "ABWCT",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURF",
+      "field": "FCURR",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURF",
+      "field": "FCURR",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "FCURR",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURF",
+      "field": "KURST",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURF",
+      "field": "KURST",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "KURST",
+      "check_table": "TCURV",
+      "check_field": "Exchange rate types for currency translation"
+    },
+    {
+      "table": "TCURF",
+      "field": "MANDT",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "MANDT",
+      "check_table": "T000",
+      "check_field": "Clients"
+    },
+    {
+      "table": "TCURF",
+      "field": "TCURR",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "MANDT",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    },
+    {
+      "table": "TCURF",
+      "field": "TCURR",
+      "foreign_key_table": "TCURF",
+      "foreign_key_field": "TCURR",
+      "check_table": "TCURC",
+      "check_field": "Currency Codes"
+    }
+  ],
+  "agent_feedback": {
+    "analysis": "The TCURF table stores conversion factors for different currencies. It is used to translate currency values between different currencies. It has relationships with other tables, including TCURC (currency codes), TCURV (exchange rate types), and T000 (clients). Common use cases include currency conversion and reporting in various financial and accounting applications.",
+    "timestamp": "2025-02-13T13:43:39.151345",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}

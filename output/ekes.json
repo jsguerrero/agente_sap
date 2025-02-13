@@ -1,0 +1,245 @@
+{
+  "name": "EKES",
+  "description": "Vendor Confirmations",
+  "fields": [
+    {
+      "name": "MANDT",
+      "description": "Client",
+      "data_element": "MANDT",
+      "type": "CLNT",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELN",
+      "description": "Purchasing Document Number",
+      "data_element": "EBELN",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "EBELP",
+      "description": "Item Number of Purchasing Document",
+      "data_element": "EBELP",
+      "type": "NUMC",
+      "length": "5",
+      "decimals": "0"
+    },
+    {
+      "name": "ETENS",
+      "description": "Sequential Number of Vendor Confirmation",
+      "data_element": "ETENS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EBTYP",
+      "description": "Confirmation Category",
+      "data_element": "EBTYP",
+      "type": "CHAR",
+      "length": "2",
+      "decimals": "0"
+    },
+    {
+      "name": "EINDT",
+      "description": "Delivery Date of Vendor Confirmation",
+      "data_element": "BBEIN",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "LPEIN",
+      "description": "Date category of delivery date in vendor confirmation",
+      "data_element": "BBLPE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "UZEIT",
+      "description": "Delivery Date Time-Spot in Vendor Confirmation",
+      "data_element": "BBUZE",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "ERDAT",
+      "description": "Creation Date of Confirmation",
+      "data_element": "BBERD",
+      "type": "DATS",
+      "length": "8",
+      "decimals": "0"
+    },
+    {
+      "name": "EZEIT",
+      "description": "Time at Which Vendor Confirmation was Created",
+      "data_element": "BBEZE",
+      "type": "TIMS",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MENGE",
+      "description": "Quantity as Per Vendor Confirmation",
+      "data_element": "BBMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "DABMG",
+      "description": "Quantity Reduced (MRP)",
+      "data_element": "DABMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "ESTKZ",
+      "description": "Creation Indicator: Vendor Confirmation",
+      "data_element": "BBEST",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "LOEKZ",
+      "description": "Vendor confirmation deletion indicator",
+      "data_element": "BBLOE",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "KZDIS",
+      "description": "Indicator: Confirmation is Relevant to Materials Planning",
+      "data_element": "KZDIS",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "XBLNR",
+      "description": "Reference Document Number (for Dependencies see Long Text)",
+      "data_element": "XBLNR_LONG",
+      "type": "CHAR",
+      "length": "35",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP",
+      "description": "Delivery Item",
+      "data_element": "POSNR_VL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "MPROF",
+      "description": "Manufacturer Part Profile",
+      "data_element": "MPROF",
+      "type": "CHAR",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "EMATN",
+      "description": "Material Number Corresponding to Manufacturer Part Number",
+      "data_element": "EMATN",
+      "type": "CHAR",
+      "length": "18",
+      "decimals": "0"
+    },
+    {
+      "name": "MAHNZ",
+      "description": "Number of Reminders/Expediters",
+      "data_element": "MAHNZ",
+      "type": "DEC",
+      "length": "3",
+      "decimals": "0"
+    },
+    {
+      "name": "CHARG",
+      "description": "Batch Number",
+      "data_element": "CHARG_D",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "UECHA",
+      "description": "Higher-Level Item of Batch Split Item",
+      "data_element": "UECHA",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "REF_ETENS",
+      "description": "Sequential Number of Vendor Confirmation",
+      "data_element": "ETENS",
+      "type": "NUMC",
+      "length": "4",
+      "decimals": "0"
+    },
+    {
+      "name": "IMWRK",
+      "description": "Delivery has Status 'In Plant'",
+      "data_element": "IMWRK",
+      "type": "CHAR",
+      "length": "1",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELN_ST",
+      "description": "Delivery",
+      "data_element": "VBELN_VL",
+      "type": "CHAR",
+      "length": "10",
+      "decimals": "0"
+    },
+    {
+      "name": "VBELP_ST",
+      "description": "Delivery Item",
+      "data_element": "POSNR_VL",
+      "type": "NUMC",
+      "length": "6",
+      "decimals": "0"
+    },
+    {
+      "name": "/CWM/MENGE",
+      "description": "Quantity of Order Confirmation in Base/Parallel UoM",
+      "data_element": "/CWM/BBMNG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    },
+    {
+      "name": "/CWM/DABMG",
+      "description": "MRP Reduced Quantity in Base/Parallel UoM",
+      "data_element": "/CWM/DABMG",
+      "type": "QUAN",
+      "length": "13",
+      "decimals": "3"
+    }
+  ],
+  "foreign_keys": [],
+  "agent_feedback": {
+    "analysis": "1. The purpose of the EKES table is to store details of vendor confirmations for purchase orders.\n2. It is related to the EKPO table (purchase order items) via the EBELN and EBELP fields, and to the LFA1 table (vendors) via the LIFNR field.\n3. Common use cases include:\n * Displaying vendor confirmations in reports\n * Updating vendor confirmations\n * Creating deliveries from vendor confirmations",
+    "timestamp": "2025-02-13T13:45:32.164382",
+    "model": "gemini-pro",
+    "prompt_version": "1.0"
+  }
+}
