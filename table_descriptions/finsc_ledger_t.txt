@@ -1,0 +1,20 @@
+FINSC_LEDGER_T is a standard SAP Table which is used to store Unified Journal Entry Ledger data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP FINSC_LEDGER_T table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: G - Customising table which is protected against SAP Update
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type)
+Dictionary Type: Transparent table
+Database Table: FINSC_LEDGER_T
+
+
+FINSC_LEDGER_T table structure field list
+Below is the full FINSC_LEDGER_T field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+MANDT	Client	MANDT	CLNT	3(0)	Assigned to domain		MANDT			
+LANGU	Language Key	SPRAS	LANG	1(0)	Assigned to domain	ISOLA	SPRAS	SPR	H_T002	SPRAS
+RLDNR	Ledger in General Ledger Accounting	FINS_LEDGER	CHAR	2(0)	FINSC_LEDGER	ALPHA	FINS_LEDGER	GLN_FLEX	FAGL_RLDNR	RLDNR
+NAME	Ledger Name	LDTXT	CHAR	30(0)			TEXT30			

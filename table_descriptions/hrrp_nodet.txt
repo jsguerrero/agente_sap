@@ -1,0 +1,26 @@
+HRRP_NODET is a standard SAP Table which is used to store Hierarchy node texts data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP HRRP_NODET table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: A - Application table (master and transaction data)
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type or numeric)
+Dictionary Type: Transparent table
+Database Table: HRRP_NODET
+
+
+HRRP_NODET table structure field list
+Below is the full HRRP_NODET field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+MANDT	Client	MANDT	CLNT	3(0)	T000		MANDT			
+SPRAS	Language Key	SPRAS	LANG	1(0)	T002	ISOLA	SPRAS	SPR	H_T002	SPRAS
+HRYID	Hierarchy ID	HRYID	CHAR	42(0)	HRRP_DIRECTORY		DHRYID			
+HRYVER	Hierarchy version	HRYVERSN	NUMC	15(0)						
+NODECLS	Node class	NODECLS	CHAR	12(0)						
+HRYNODE	Hierarchy node	HRYNODE	CHAR	50(0)	HRRP_NODE					
+PARNODE	Hierarchy parent node	PARNODE	CHAR	50(0)						
+HRYVALTO	Valid To Date	DATBI	DATS	8(0)			DATUM			
+HRYVALFROM	Valid-From Date	DATAB	DATS	8(0)			DATUM			
+NODETXT	Hierarchy node description	NODETXT	CHAR	50(0)			TEXT50			

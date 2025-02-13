@@ -1,0 +1,30 @@
+FINSC_LEDGER is a standard SAP Table which is used to store Universal Journal Entry Ledger data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP FINSC_LEDGER table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: G - Customising table which is protected against SAP Update
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type)
+Dictionary Type: Transparent table
+Database Table: FINSC_LEDGER
+
+
+FINSC_LEDGER table structure field list
+Below is the full FINSC_LEDGER field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+MANDT	Client	MANDT	CLNT	3(0)			MANDT			
+RLDNR	Ledger in General Ledger Accounting	FINS_LEDGER	CHAR	2(0)		ALPHA	FINS_LEDGER	GLN_FLEX	FAGL_RLDNR	RLDNR
+LEDGER_TYPE	Ledger Type	FINS_LEDGER_TYPE	CHAR	1(0)			FINS_LEDGER_TYPE			
+EXT_LEDGER_TYPE	Extension Ledger Type	FINS_EXT_LEDGER_TYPE	CHAR	1(0)			FINS_EXT_LEDGER_TYPE			
+APPL	Owner application	GLXAPPL	CHAR	2(0)			GLXAPPL	APC		
+SUBAPPL	Subapplication	GLXSUBAPPL	CHAR	3(0)			GLXSUBAPPL	SUC		
+XLEADING	Indicator: Leading Ledger	FAGL_FLAG_LEADING	CHAR	1(0)			XFELD			
+CORE	Underlying Ledger of an Extension Ledger	FINS_CORE_LEDGER	CHAR	2(0)		ALPHA	FINS_LEDGER			
+VALUTYP	Valuation View	FINS_VALUTYP_CHAR	CHAR	1(0)			FINS_VALUTYP_CHAR	VTP		
+VALUSUBTYP	Subtype of Valuation View (for Transfer Prices)	FINS_VALUSUBTYP	CHAR	2(0)	FINSC_VALUSUBTYP		FINS_VALUSUBTYP	VTP		
+MAN_POST_NOT_ALLWD	Manual Postings Not Allowed To Ledger	FINS_MANUAL_POST_NOT_ALLOWED	CHAR	1(0)			XFELD			
+ACC_PRINCIPLE	Accounting Principle of Ledger	ACC_PRINCIPLE_LEDGER	CHAR	4(0)	TACC_PRINCIPLE		ACCOUNTING_PRINCIPLE			
+.INCLU--AP				0(0)						
+XCASH_LEDGER	Cash Ledger Indicator	FAGL_CASH_LEDGER	CHAR	1(0)			BOOLE			

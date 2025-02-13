@@ -1,0 +1,24 @@
+HRRP_DIRECTORY is a standard SAP Table which is used to store Hierarchy directory data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP HRRP_DIRECTORY table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: A - Application table (master and transaction data)
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type or numeric)
+Dictionary Type: Transparent table
+Database Table: HRRP_DIRECTORY
+
+
+HRRP_DIRECTORY table structure field list
+Below is the full HRRP_DIRECTORY field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+MANDT	Client	MANDT	CLNT	3(0)	T000		MANDT			
+HRYID	Hierarchy ID	HRYID	CHAR	42(0)			DHRYID			
+HRYVER	Hierarchy version	HRYVERSN	NUMC	15(0)						
+HRYVALTO	Valid To Date	DATBI	DATS	8(0)			DATUM			
+HRYVALFROM	Valid-From Date	DATAB	DATS	8(0)			DATUM			
+HRYTYP	Hierarchy Type	HRYTYPE	CHAR	4(0)	HRRP_TYP		HRYTYP			
+UPDTIME	Last Updated at (Timestamp)	HRYUPDTIME	DEC	15(0)						
+UPDUSER	Last Changed By	UPNAM	CHAR	12(0)			USNAM			

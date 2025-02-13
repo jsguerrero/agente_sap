@@ -117,13 +117,22 @@ class SAPTableAgent:
             1. Propósito principal de la tabla
             2. Relaciones clave con otras tablas (basado en las foreign keys proporcionadas)
             3. Casos de uso comunes
+            3. Sea clara y concisa
+            4. Sea breve (máximo 2 líneas)
+            5. Use terminología profesional
+            6. Responde en ingles
+            5. No incluya ejemplos específicos en la descripción
             """
             
             response = self.model.generate_content(prompt)
             
+            # Limpiar el texto generado para eliminar encabezados y saltos de línea innecesarios
+            analysis_text = response.text.strip() if response.text else ""
+            analysis_text = analysis_text.replace("**Descripción Técnica**", "").replace("\n\n", " ").strip()
+            
             # Agregar agent_feedback dentro de table_info
             table_info["agent_feedback"] = {
-                "analysis": response.text.strip() if response.text else "",
+                "analysis": analysis_text,
                 "timestamp": datetime.datetime.now().isoformat(),
                 "model": "gemini-pro",
                 "prompt_version": "1.0"
@@ -143,6 +152,8 @@ class SAPTableAgent:
         try:
             results = []
             not_found_tables = []
+            processed_tables = set()  # Para llevar un registro de las tablas procesadas exitosamente
+
             with open(csv_path, 'r', encoding='utf-8') as csvfile:
                 reader = csv.DictReader(csvfile)
                 for row in reader:
@@ -154,8 +165,36 @@ class SAPTableAgent:
                     
                     if result.get("name") == "Table" and not result.get("fields"):
                         logging.warning(f"Tabla no encontrada: {table_name}")
-                        not_found_tables.append([table_name, row.get('description', '')])
-                        continue
+                        
+                        # Intentar obtener la descripción desde un archivo de texto
+                        txt_path = os.path.join('table_descriptions', f'{table_name.lower()}.txt')
+                        try:
+                            with open(txt_path, 'r', encoding='utf-8') as txt_file:
+                                description = txt_file.read().strip()
+                                logging.info(f"Descripción obtenida desde {txt_path}: {description}")
+                                
+                                # Extraer el nombre de la tabla desde la descripción
+                                first_line = description.splitlines()[0]
+                                extracted_table_name = first_line.split()[0]  # Asume que el nombre de la tabla es la primera palabra
+                                result['name'] = extracted_table_name
+                                
+                                result['description'] = description
+                                
+                                # Intentar extraer campos y claves foráneas del texto
+                                fields, foreign_keys = self.extract_fields_and_keys(description)
+                                result['fields'] = fields
+                                result['foreign_keys'] = foreign_keys
+                                
+                                processed_tables.add(table_name)  # Marcar como procesada exitosamente
+                                logging.info(f"Tabla {table_name} procesada exitosamente desde archivo de texto.")
+                                
+                        except FileNotFoundError:
+                            logging.error(f"Archivo de descripción no encontrado para la tabla: {table_name}")
+                            not_found_tables.append([table_name, row.get('description', '')])
+                            continue
+                    else:
+                        processed_tables.add(table_name)  # Marcar como procesada exitosamente
+                        logging.info(f"Tabla {table_name} procesada exitosamente desde URL.")
                     
                     results.append(result)
                     
@@ -170,8 +209,9 @@ class SAPTableAgent:
             }
             self.save_json(consolidated, 'output/__consolidated.json')
             
-            # Guardar lista de tablas no encontradas
+            # Actualizar lista de tablas no encontradas
             if not_found_tables:
+                not_found_tables = [t for t in not_found_tables if t[0] not in processed_tables]
                 not_found_path = os.path.join('output', '__not_found.csv')
                 with open(not_found_path, 'w', newline='', encoding='utf-8') as csvfile:
                     writer = csv.writer(csvfile)
@@ -184,6 +224,39 @@ class SAPTableAgent:
         except Exception as e:
             logging.error(f"Error procesando CSV: {str(e)}")
             return {"error": str(e)}
+
+    def extract_fields_and_keys(self, description):
+        """Extrae campos y claves foráneas de la descripción del texto"""
+        fields = []
+        foreign_keys = []
+        
+        # Dividir el texto en líneas
+        lines = description.splitlines()
+        
+        # Buscar la línea que indica el inicio de la lista de campos
+        start_index = None
+        for i, line in enumerate(lines):
+            if line.startswith("Field\tDescription\tData Element\tData Type"):
+                start_index = i + 1
+                break
+        
+        # Si encontramos el inicio de la lista de campos, procesar las líneas siguientes
+        if start_index is not None:
+            for line in lines[start_index:]:
+                # Dividir la línea en columnas
+                columns = line.split('\t')
+                if len(columns) >= 5:
+                    field = {
+                        "name": columns[0].strip(),
+                        "description": columns[1].strip(),
+                        "data_element": columns[2].strip(),
+                        "type": columns[3].strip(),
+                        "length": columns[4].strip().split('(')[0].strip(),  # Extraer solo la longitud
+                        "decimals": columns[4].strip().split('(')[1].strip(')') if '(' in columns[4] else "0"
+                    }
+                    fields.append(field)
+        
+        return fields, foreign_keys
 
 def cleanup():
     """Función de limpieza para ejecutar antes de cerrar"""

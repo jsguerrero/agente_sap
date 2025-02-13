@@ -1,0 +1,479 @@
+ACDOCA is a standard SAP Table which is used to store Universal Journal Entry Line Items data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP ACDOCA table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: A - Application table (master and transaction data)
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type or numeric)
+Dictionary Type: Transparent table
+Database Table: ACDOCA
+
+
+ACDOCA table structure field list
+Below is the full ACDOCA field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+RCLNT	Client	MANDT	CLNT	3(0)	T000		MANDT			
+RLDNR	Ledger in General Ledger Accounting	FINS_LEDGER	CHAR	2(0)	FINSC_LEDGER	ALPHA	FINS_LEDGER	GLN_FLEX	FAGL_RLDNR	RLDNR
+RBUKRS	Company Code	BUKRS	CHAR	4(0)	T001		BUKRS	BUK	C_T001	BUKRS
+GJAHR	Fiscal Year	GJAHR	NUMC	4(0)		GJAHR	GJAHR	GJR		
+BELNR	Accounting Document Number	BELNR_D	CHAR	10(0)		ALPHA	BELNR	BLN		
+DOCLN	Six-Character Posting Item for Ledger	DOCLN6	CHAR	6(0)			DOCLN6			
+RYEAR	General Ledger Fiscal Year	GJAHR_POS	NUMC	4(0)		GJAHR	GJAHR			
+DOCNR_LD	Ledger specific Accounting Document Number	FINS_DOCNR_LD	CHAR	10(0)		ALPHA	BELNR			
+RRCTY	Record Type	RRCTY	CHAR	1(0)			RRCTY			
+RMVCT	Transaction type	RMVCT	CHAR	3(0)	T856		RMVCT			
+VORGN	Transaction Type for General Ledger	VORGN	CHAR	4(0)			VORGN			
+VRGNG	CO Business Transaction	CO_VORGANG	CHAR	4(0)	TJ01		J_VORGANG			
+BTTYPE	Business Transaction Type	FINS_BTTYPE	CHAR	4(0)	FINSC_BTTYPE		FINS_BTTYPE			
+AWTYP	Reference procedure	AWTYP	CHAR	5(0)	TTYP		AWTYP			
+AWSYS	Logical system of source document	AWSYS	CHAR	10(0)	TBDLS	ALPHA	LOGSYS			
+AWORG	Reference Organizational Units	AWORG	CHAR	10(0)			AWORG			
+AWREF	Reference document number	AWREF	CHAR	10(0)		ALPHA	AWREF			
+AWITEM	Reference Document Line Item	FINS_AWITEM	NUMC	6(0)			NUMC6			
+AWITGRP	Group of Reference Document Line Items	FINS_AWITGRP	NUMC	6(0)			NUMC6			
+SUBTA	Partial Document to be balanced to zero	FINS_SUBTA	NUMC	6(0)			NUMC6			
+XREVERSING	Indicator: Item is reversing another item	FINS_XREVERSING	CHAR	1(0)			XFELD			
+XREVERSED	Indicator: Item is reversed	FINS_XREVERSED	CHAR	1(0)			XFELD			
+XTRUEREV	Indicator: True reversal (i.e. cancellation)	FINS_XTRUEREV	CHAR	1(0)			XFELD			
+AWTYP_REV	Reversal: Reference Transaction of Document To Be Reversed	AWTYP_REV	CHAR	5(0)	TTYP		AWTYP			
+AWORG_REV	Reversal: Reverse Document Reference Organization	AWORG_REV	CHAR	10(0)			AWORG			
+AWREF_REV	Reversal: Reverse Document Reference Document Number	AWREF_REV	CHAR	10(0)		ALPHA	AWREF			
+SUBTA_REV	Reversal: Partial Document to be balanced to zero	FINS_SUBTA_REV	NUMC	6(0)			NUMC6			
+XSETTLING	Indicator: Item is settling or transferring another item	FINS_XSETTLING	CHAR	1(0)			XFELD			
+XSETTLED	Indicator: Line item is settled or transferred	FINS_XSETTLED	CHAR	1(0)			XFELD			
+PREC_AWTYP	Preceding Document Reference Transaction	FINS_PREC_AWTYP	CHAR	5(0)	TTYP		AWTYP			
+PREC_AWSYS	Logical System of Preceding Reference Document	FINS_PREC_AWSYS	CHAR	10(0)	TBDLS	ALPHA	LOGSYS			
+PREC_AWORG	Preceding Document Reference Organizational Units	FINS_PREC_AWORG	CHAR	10(0)			AWORG			
+PREC_AWREF	Preceding Document Reference Document Number	FINS_PREC_AWREF	CHAR	10(0)		ALPHA	AWREF			
+PREC_AWITEM	Preceding Reference Document Line Item	FINS_PREC_AWITEM	NUMC	6(0)			NUMC6			
+PREC_SUBTA	Preceding Partial Document to be balanced to zero	FINS_PREC_SUBTA	NUMC	6(0)			NUMC6			
+PREC_AWMULT	ID of multiple Preceding Document References	FINS_PREC_AWMULT_UUID	RAW	16(0)			SYSUUID			
+PREC_BUKRS	Preceding Journal Entry Company Code	FINS_PREC_BUKRS	CHAR	4(0)	T001		BUKRS			
+PREC_GJAHR	Preceding Journal Entry Fiscal Year	FINS_PREC_GJAHR	NUMC	4(0)		GJAHR	GJAHR			
+PREC_BELNR	Preceding Journal Entry Document Number	FINS_PREC_BELNR	CHAR	10(0)		ALPHA	BELNR			
+PREC_DOCLN	Preceding Journal Entry Line Item	FINS_PREC_DOCLN	CHAR	6(0)			DOCLN6			
+XSECONDARY	Secondary journal entry	FINS_SECONDARY_ENTRY	CHAR	1(0)			BOOLE			
+CLOSING_RUN_ID	Financial Closing Run ID	CLS_RUN_ID	RAW	16(0)			UUID			
+SRC_AWTYP	Source Document Reference Transaction	FINS_SRC_AWTYP	CHAR	5(0)	TTYP		AWTYP			
+SRC_AWSYS	Logical System of Source Reference Document	FINS_SRC_AWSYS	CHAR	10(0)	TBDLS	ALPHA	LOGSYS			
+SRC_AWORG	Source Document Reference Organizational Units	FINS_SRC_AWORG	CHAR	10(0)			AWORG			
+SRC_AWREF	Source Document Reference Document Number	FINS_SRC_AWREF	CHAR	10(0)		ALPHA	AWREF			
+SRC_AWITEM	Source Reference Document Line Item	FINS_SRC_AWITEM	NUMC	6(0)			NUMC6			
+SRC_AWSUBIT	Source Reference Document Sub-Item	FINS_SRC_AWSUBIT	NUMC	6(0)			NUMC6			
+XCOMMITMENT	Indicator: Commitment	FINS_XCOMMITMENT	CHAR	1(0)			XFELD			
+OBS_REASON	Reason why this item is obsolete	FINS_OBSOLETE_ITEM_REASON	CHAR	1(0)			FINS_OBSOLETE_ITEM_REASON			
+RTCUR	Balance Transaction Currency	FINS_CURRT	CUKY	5(0)	TCURC		WAERS			
+RWCUR	Transaction Currency	FINS_CURRW	CUKY	5(0)	TCURC		WAERS			
+RHCUR	Company Code Currency	FINS_CURRH	CUKY	5(0)	TCURC		WAERS			
+RKCUR	Global Currency	FINS_CURRK	CUKY	5(0)	TCURC		WAERS			
+ROCUR	Freely Defined Currency 1	FINS_CURR1	CUKY	5(0)	TCURC		WAERS			
+RVCUR	Freely Defined Currency 2	FINS_CURR2	CUKY	5(0)	TCURC		WAERS			
+RBCUR	Freely Defined Currency 3	FINS_CURR3	CUKY	5(0)	TCURC		WAERS			
+RCCUR	Freely Defined Currency 4	FINS_CURR4	CUKY	5(0)	TCURC		WAERS			
+RDCUR	Freely Defined Currency 5	FINS_CURR5	CUKY	5(0)	TCURC		WAERS			
+RECUR	Freely Defined Currency 6	FINS_CURR6	CUKY	5(0)	TCURC		WAERS			
+RFCUR	Freely Defined Currency 7	FINS_CURR7	CUKY	5(0)	TCURC		WAERS			
+RGCUR	Freely Defined Currency 8	FINS_CURR8	CUKY	5(0)	TCURC		WAERS			
+RCO_OCUR	CO Object Currency	FINS_CO_OCUR	CUKY	5(0)	TCURC		WAERS			
+RUNIT	Base Unit of Measure	MEINS	UNIT	3(0)	T006	CUNIT	MEINS			
+RVUNIT	Unit of Measure for Valuation Quantity	RVUNIT	UNIT	3(0)	T006	CUNIT	MEINS			
+RRUNIT	Unit of Measure for Reference Quantity	RRUNIT	UNIT	3(0)	T006	CUNIT	MEINS			
+RIUNIT	Unit of Measure for Inventory Quantity	FINS_RIUNIT	UNIT	3(0)	T006	CUNIT	MEINS			
+QUNIT1	Additional Unit of Measure 1	FCO_QUNIT1	UNIT	3(0)	T006	CUNIT	MEINS			
+QUNIT2	Additional Unit of Measure 2	FCO_QUNIT2	UNIT	3(0)	T006	CUNIT	MEINS			
+QUNIT3	Additional Unit of Measure 3	FCO_QUNIT3	UNIT	3(0)	T006	CUNIT	MEINS			
+CO_MEINH	Unit of Measure for CO Valuation Quantity	FCO_MEINH	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+RACCT	Account Number	RACCT	CHAR	10(0)	SKB1	ALPHA	SAKNR	ACC		
+RCNTR	Cost Center	KOSTL	CHAR	10(0)	CSKS	ALPHA	KOSTL	KOS		
+PRCTR	Profit Center	PRCTR	CHAR	10(0)	CEPC	ALPHA	PRCTR	PRC	PRCTR_EMPTY	PRCTR
+RFAREA	Functional Area	FKBER	CHAR	16(0)	TFKB		FKBER	FBE		
+RBUSA	Business Area	GSBER	CHAR	4(0)	TGSB		GSBER	GSB		
+KOKRS	Controlling Area	KOKRS	CHAR	4(0)	TKA01		CACCD	CAC		
+SEGMENT	Segment for Segmental Reporting	FB_SEGMENT	CHAR	10(0)	FAGL_SEGM	ALPHA	FB_SEGMENT			
+SCNTR	Sender cost center	SKOST	CHAR	10(0)	CSKS	ALPHA	KOSTL	KSK		
+PPRCTR	Partner Profit Center	PPRCTR	CHAR	10(0)	CEPC	ALPHA	PRCTR	PPC		
+SFAREA	Partner Functional Area	SFKBER	CHAR	16(0)	TFKB		FKBER			
+SBUSA	Trading partner's business area	PARGB	CHAR	4(0)	TGSB		GSBER	GSB		
+RASSC	Company ID of Trading Partner	RASSC	CHAR	6(0)	T880	ALPHA	RCOMP	PGS		
+PSEGMENT	Partner Segment for Segmental Reporting	FB_PSEGMENT	CHAR	10(0)	FAGL_SEGM	ALPHA	FB_SEGMENT			
+TSL	Amount in Balance Transaction Currency	FINS_VTCUR12	CURR	23(2)			WERTV12			
+WSL	Amount in Transaction Currency	FINS_VWCUR12	CURR	23(2)			WERTV12			
+WSL2	Group Valuation Amount in Transaction Currency	FINS_VWCUR12_2	CURR	23(2)			WERTV12			
+WSL3	Profit-Center Valuation Amount in Transaction Currency	FINS_VWCUR12_3	CURR	23(2)			WERTV12			
+HSL	Amount in Company Code Currency	FINS_VHCUR12	CURR	23(2)			WERTV12			
+KSL	Amount in Global Currency	FINS_VKCUR12	CURR	23(2)			WERTV12			
+OSL	Amount in Freely Defined Currency 1	FINS_VOCUR12	CURR	23(2)			WERTV12			
+VSL	Amount in Freely Defined Currency 2	FINS_VVCUR12	CURR	23(2)			WERTV12			
+BSL	Amount in Freely Defined Currency 3	FINS_VBCUR12	CURR	23(2)			WERTV12			
+CSL	Amount in Freely Defined Currency 4	FINS_VCCUR12	CURR	23(2)			WERTV12			
+DSL	Amount in Freely Defined Currency 5	FINS_VDCUR12	CURR	23(2)			WERTV12			
+ESL	Amount in Freely Defined Currency 6	FINS_VECUR12	CURR	23(2)			WERTV12			
+FSL	Amount in Freely Defined Currency 7	FINS_VFCUR12	CURR	23(2)			WERTV12			
+GSL	Amount in Freely Defined Currency 8	FINS_VGCUR12	CURR	23(2)			WERTV12			
+KFSL	Fixed Amount in Global Currency	FINS_VGCUR12_FIX	CURR	23(2)			WERTV12			
+KFSL2	Group Valuation Fixed Amount in Global Currency	FINS_VGCUR12_FIX2	CURR	23(2)			WERTV12			
+KFSL3	PrCtr Valuation Fixed Amount in Global Currency	FINS_VGCUR12_FIX3	CURR	23(2)			WERTV12			
+PSL	Total Price Variance in Global Currency	FINS_VPCUR12	CURR	23(2)			WERTV12			
+PSL2	Group Valuation Total Price Variance in Global Currency	FINS_VPCUR12_2	CURR	23(2)			WERTV12			
+PSL3	PrCtr Valuation Total Price Variance in Global Currency	FINS_VPCUR12_3	CURR	23(2)			WERTV12			
+PFSL	Fixed Price Variance in Global Currency	FINS_VPFCUR12	CURR	23(2)			WERTV12			
+PFSL2	Group Valuation Fixed Price Variance in Global Currency	FINS_VPFCUR12_2	CURR	23(2)			WERTV12			
+PFSL3	PrCtr Valuation Fixed Price Variance in Global Currency	FINS_VPFCUR12_3	CURR	23(2)			WERTV12			
+CO_OSL	Amount in CO Object Currency	FINS_VCO_OCUR12	CURR	23(2)			WERTV12			
+HSLALT	Alternative Value in Local Currency	MLHSLALT	CURR	23(2)			WERTV12			
+KSLALT	Alternative Value in Group Currency	MLKSLALT	CURR	23(2)			WERTV12			
+OSLALT	Alternative Value in Freely Defined Currency 1	MLOSLALT	CURR	23(2)			WERTV12			
+VSLALT	Alternative Value in Freely Defined Currency 2	ML4SLALT	CURR	23(2)			WERTV12			
+BSLALT	Alternative Value in Freely Defined Currency 3	MLBSLALT	CURR	23(2)			WERTV12			
+CSLALT	Alternative Value in Freely Defined Currency 4	MLCSLALT	CURR	23(2)			WERTV12			
+DSLALT	Alternative Value in Freely Defined Currency 5	MLDSLALT	CURR	23(2)			WERTV12			
+ESLALT	Alternative Value in Freely Defined Currency 6	MLESLALT	CURR	23(2)			WERTV12			
+FSLALT	Alternative Value in Freely Defined Currency 7	MLFSLALT	CURR	23(2)			WERTV12			
+GSLALT	Alternative Value in Freely Defined Currency 8	MLGSLALT	CURR	23(2)			WERTV12			
+HSLEXT	External Value in Local Currency	MLHSLEXT	CURR	23(2)			WERTV12			
+KSLEXT	External Value in Group Currency	MLKSLEXT	CURR	23(2)			WERTV12			
+OSLEXT	External Value in Freely Defined Currency 1	MLOSLEXT	CURR	23(2)			WERTV12			
+VSLEXT	External Value in Freely Defined Currency 2	ML4SLEXT	CURR	23(2)			WERTV12			
+BSLEXT	External Value in Freely Defined Currency 3	MLBSLEXT	CURR	23(2)			WERTV12			
+CSLEXT	External Value in Freely Defined Currency 4	MLCSLEXT	CURR	23(2)			WERTV12			
+DSLEXT	External Value in Freely Defined Currency 5	MLDSLEXT	CURR	23(2)			WERTV12			
+ESLEXT	External Value in Freely Defined Currency 6	MLESLEXT	CURR	23(2)			WERTV12			
+FSLEXT	External Value in Freely Defined Currency 7	MLFSLEXT	CURR	23(2)			WERTV12			
+GSLEXT	External Value in Freely Defined Currency 8	MLGSLEXT	CURR	23(2)			WERTV12			
+HVKWRT	Value at Sales Price in Local Currency	MLHVKWRT	CURR	23(2)			WERTV12			
+MSL	Quantity	QUAN1_12	QUAN	23(3)			MENGV12			
+MFSL	Fixed quantity	QUAN1_12_FIX	QUAN	23(3)			MENGV12			
+VMSL	Valuation quantity	VQUAN1_12	QUAN	23(3)			MENGV12			
+VMFSL	Fixed valuation quantity	VQUAN1_12_FIX	QUAN	23(3)			MENGV12			
+RMSL	Reference quantity	RQUAN1_12	QUAN	23(3)			MENGV12			
+QUANT1	Additional Quantity 1	FCO_QUAN1_L	QUAN	23(3)			MENGV12			
+QUANT2	Additional Quantity 2	FCO_QUAN2_L	QUAN	23(3)			MENGV12			
+QUANT3	Additional Quantity 3	FCO_QUAN3_L	QUAN	23(3)			MENGV12			
+CO_MEGBTR	CO Valuation Quantity	FCO_MEGBTR	QUAN	23(3)			MENGV12			
+CO_MEFBTR	CO Valuation Quantity Fix	FCO_MEFBTR	QUAN	23(3)			MENGV12			
+HSALK3	Inventory Value in Local Currency	MLHSALK3	CURR	23(2)			WERTV12			
+KSALK3	Inventory Value in Group Currency	MLKSALK3	CURR	23(2)			WERTV12			
+OSALK3	Inventory Value in Another Currency	MLOSALK3	CURR	23(2)			WERTV12			
+VSALK3	Inventory Value in Fourth Currency	ML4SALK3	CURR	23(2)			WERTV12			
+HSALKV	Alternative Inventory Value in Local Currency	MLHSALKV	CURR	23(2)			WERTV12			
+KSALKV	Alternative Inventory Value in Group Currency	MLKSALKV	CURR	23(2)			WERTV12			
+OSALKV	Alternative Inventory Value in Another Currency	MLOSALKV	CURR	23(2)			WERTV12			
+VSALKV	Alternative Inventory Value in Fourth Currency	ML4SALKV	CURR	23(2)			WERTV12			
+HPVPRS	Moving Average Price in Local Currency	MLHPVPRS	CURR	23(2)			WERTV12			
+KPVPRS	Moving Average Price in Group Currency	MLKPVPRS	CURR	23(2)			WERTV12			
+OPVPRS	Moving Average Price in Another Currency	MLOPVPRS	CURR	23(2)			WERTV12			
+VPVPRS	Moving Average Price in Fourth Currency	ML4PVPRS	CURR	23(2)			WERTV12			
+HSTPRS	Standard Price in Local Currency	MLHSTPRS	CURR	23(2)			WERTV12			
+KSTPRS	Standard Price in Group Currency	MLKSTPRS	CURR	23(2)			WERTV12			
+OSTPRS	Standard Price in Another Currency	MLOSTPRS	CURR	23(2)			WERTV12			
+VSTPRS	Standard Price in Fourth Currency	ML4STPRS	CURR	23(2)			WERTV12			
+HVKSAL	Inventory Value at Sales Price in Local Currency	MLHVKSAL	CURR	23(2)			WERTV12			
+LBKUM	Inventory Quantity	MLLBKUM	QUAN	23(3)			MENGV12			
+DRCRK	Debit/Credit Indicator	SHKZG	CHAR	1(0)			SHKZG			
+POPER	Posting period	POPER	NUMC	3(0)			POPER	POPR		
+PERIV	Fiscal Year Variant	PERIV	CHAR	2(0)	T009		PERIV			
+FISCYEARPER	Period/Year	JAHRPER	NUMC	7(0)		PERI7	JAHRPER			
+BUDAT	Posting Date in the Document	BUDAT	DATS	8(0)			DATUM			
+BLDAT	Document Date in Document	BLDAT	DATS	8(0)			DATUM			
+BLART	Document type	BLART	CHAR	2(0)	T003		BLART	BAR		
+BUZEI	Number of Line Item Within Accounting Document	BUZEI	NUMC	3(0)			BUZEI	BUZ		
+ZUONR	Assignment number	DZUONR	CHAR	18(0)			ZUONR			
+BSCHL	Posting Key	BSCHL	CHAR	2(0)	TBSL		BSCHL			
+BSTAT	Document Status	BSTAT_D	CHAR	1(0)			BSTAT			
+LINETYPE	Item Category	LINETYPE	CHAR	5(0)	T8G02		LINETYPE			
+KTOSL	Transaction Key	KTOSL	CHAR	3(0)			CHAR3			
+SLALITTYPE	Subledger-Specific Line Item Type	SLALITTYPE	NUMC	5(0)	FINSTS_SLALITTY		SLALITTYPE			
+XSPLITMOD	Item Changed by Document Splitting	XSPLITMOD	CHAR	1(0)			XFELD			
+USNAM	User Name	USNAM	CHAR	12(0)	Assigned to domain		XUBNAME	USR		
+TIMESTAMP	UTC Time Stamp in Short Form (YYYYMMDDhhmmss)	TIMESTAMP	DEC	15(0)			TZNTSTMPS			
+EPRCTR	Partner profit center for elimination of internal business	EPRCTR	CHAR	10(0)	CEPC	ALPHA	PRCTR			
+RHOART	Type of origin object (EC-PCA)	HOART	NUMC	2(0)			HOART	PCH		
+GLACCOUNT_TYPE	Type of a General Ledger Account	GLACCOUNT_TYPE	CHAR	1(0)			GLACCOUNT_TYPE			
+KTOPL	Chart of Accounts	KTOPL	CHAR	4(0)	T004		KTOPL	KPL	C_KTOPL	KTOPL
+LOKKT	Alternative Account Number in Company Code	ALTKT_SKB1	CHAR	10(0)	SKA1	ALPHA	SAKNR			
+KTOP2	Chart of Accounts According to Country Legislation	KTOP2	CHAR	4(0)	T004		KTOPL			
+REBZG	Document No. of the Invoice to Which the Transaction Belongs	REBZG	CHAR	10(0)		ALPHA	BELNR			
+REBZJ	Fiscal Year of the Relevant Invoice (for Credit Memo)	REBZJ	NUMC	4(0)		GJAHR	GJAHR			
+REBZZ	Line Item in the Relevant Invoice	REBZZ	NUMC	3(0)			BUZEI			
+REBZT	Follow-On Document Type	REBZT	CHAR	1(0)			REBZT			
+RBEST	Category of Reference Purchase Order	CO_RBEST	NUMC	3(0)		REFBT	BELEGTYP			
+EBELN	Purchasing Document Number	EBELN	CHAR	10(0)	EKKO	ALPHA	EBELN	BES	MEKK_C	EBELN
+EBELP	Item Number of Purchasing Document	EBELP	NUMC	5(0)	EKPO		EBELP	BSP		
+ZEKKN	Sequential Number of Account Assignment	DZEKKN	NUMC	2(0)			NUM02			
+SGTXT	Item Text	SGTXT	CHAR	50(0)			TEXT50			
+KDAUF	Sales Order Number	KDAUF	CHAR	10(0)	Assigned to domain	ALPHA	VBELN	AUN		
+KDPOS	Item number in Sales Order	KDPOS	NUMC	6(0)			NUM06	KPO		
+MATNR	Material Number	MATNR	CHAR	40(0)	MARA	MATN1	MATNR	MAT	S_MAT1	MATNR
+WERKS	Plant	WERKS_D	CHAR	4(0)	T001W		WERKS	WRK	H_T001W_C	WERKS
+LIFNR	Account Number of Vendor or Creditor	LIFNR	CHAR	10(0)	LFA1	ALPHA	LIFNR	LIF	KRED_C	LIFNR
+KUNNR	Customer Number	KUNNR	CHAR	10(0)	KNA1	ALPHA	KUNNR	KUN	C_KUNNR	KUNNR
+FBUDA	Date on which services are rendered	FBUDA	DATS	8(0)			DATUM			
+COCO_NUM	Condition Contract	WCB_COCO_NUM	CHAR	10(0)		ALPHA	WCB_COCO_NUM			
+WWERT	Translation date	WWERT_D	DATS	8(0)			DATUM			
+KOART	Account type	KOART	CHAR	1(0)			KOART			
+UMSKZ	Special G/L Indicator	UMSKZ	CHAR	1(0)	T074U		UMSKZ			
+MWSKZ	Tax on sales/purchases code	MWSKZ	CHAR	2(0)	T007A		MWSKZ			
+HBKID	Short key for a house bank	HBKID	CHAR	5(0)	T012		HBKID			
+HKTID	ID for account details	HKTID	CHAR	5(0)	T012K		HKTID			
+XOPVW	Indicator: Open Item Management?	XOPVW	CHAR	1(0)			XFELD			
+AUGDT	Clearing Date	AUGDT	DATS	8(0)			DATUM			
+AUGBL	Document Number of the Clearing Document	AUGBL	CHAR	10(0)		ALPHA	BELNR			
+AUGGJ	Fiscal Year of Clearing Document	AUGGJ	NUMC	4(0)		GJAHR	GJAHR			
+AFABE	Depreciation Area Real or Derived	AFABER	NUMC	2(0)	FAAV_DEPR_AREA		AFABE			
+ANLN1	Main Asset Number	ANLN1	CHAR	12(0)	ANLH	ALPHA	ANLN1	AN1		
+ANLN2	Asset Subnumber	ANLN2	CHAR	4(0)	ANLA	ALPHA	ANLN2	AN2		
+BZDAT	Asset Value Date	BZDAT	DATS	8(0)			DATUM			
+ANBWA	Asset Transaction Type	ANBWA	CHAR	3(0)	TABW		BWASL			
+MOVCAT	Transaction Type Category	FAA_MOVCAT	CHAR	2(0)	FAAI_MOVCAT		FAA_MOVCAT			
+DEPR_PERIOD	Posting Period of Depreciation	PERAF	NUMC	3(0)			PERAF			
+ANLGR	Group Asset	ANLGR	CHAR	12(0)	ANLH	ALPHA	ANLN1	AN1		
+ANLGR2	Subnumber of Group Asset	ANLGR2	CHAR	4(0)	ANLA	ALPHA	ANLN2			
+SETTLEMENT_RULE	Distribution Rule Group	BUREG	NUMC	3(0)			NUMC3			
+ANLKL	Asset Class	ANLKL	CHAR	8(0)	ANKA	ALPHA	ANLKL	ANK	SH_ANLKA	ANLKL
+KTOGR	Account Determination	KTOGR	CHAR	8(0)	T095A	ALPHA	KTOGR			
+PANL1	Main number partner asset (intercompany transfer)	PANL1	CHAR	12(0)	ANLH	ALPHA	ANLN1			
+PANL2	Partner asset subnumber (intercompany transfer)	PANL2	CHAR	4(0)	ANLA	ALPHA	ANLN2			
+.INCLU-_PN				0(0)						
+UBZDT_PN	Original Value Date of Transaction	UBZDT	DATS	8(0)			DATUM			
+XVABG_PN	Indicator: Post Complete Retirement	XVABG	CHAR	1(0)			XFELD			
+PROZS_PN	Asset retirement: Percentage rate	PROZS	DEC	5(2)			PRZ32			
+XMANPROPVAL_PN	Indicator Proportional Values Entered Manually	XMANPROPVAL	CHAR	1(0)			XFELD			
+KALNR	Cost Estimate Number for Cost Est. w/o Qty Structure	CK_KALNR	NUMC	12(0)	Assigned to domain		CK_KALNR	KNR		
+VPRSV	Price control indicator	VPRSV	CHAR	1(0)			VPRSV			
+MLAST	Material Price Determination: Control	CK_ML_ABST	CHAR	1(0)			CK_ML_ABST			
+KZBWS	Valuation of Special Stock	MLKZBWS	CHAR	1(0)			KZBWS			
+XOBEW	Vendor Stock Valuation Indicator	MLXOBEW	CHAR	1(0)			XFELD			
+SOBKZ	Special Stock Indicator	SOBKZ	CHAR	1(0)	Assigned to domain		SOBKZ			
+VTSTAMP	Valuation Time Stamp	VTIMESTAMPL	DEC	21(7)			TZNTSTMPL			
+MAT_KDAUF	Sales Document Number of Valuated Special Inventory	MLMAT_KDAUF	CHAR	10(0)		ALPHA	VBELN	AUN		
+MAT_KDPOS	Sales Document Item Number of Valuated Special Inventory	MLMAT_KDPOS	NUMC	6(0)			POSNR			
+MAT_PSPNR	WBS Element (internal) of Valuated Special Inventory	MLMAT_PSPNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+MAT_PS_POSID	WBS Element (external) of Valuated Special Inventory	MLMAT_PS_POSID	CHAR	24(0)		ABPSN	PS_POSID	PRO		
+MAT_LIFNR	Supplier of Valuated Special Inventory	MLMAT_LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+BWTAR	Valuation Type	BWTAR_D	CHAR	10(0)	T149D		BWTAR	BWT		
+BWKEY	Valuation area	BWKEY	CHAR	4(0)	T001K		BWKEY	BWK		
+HPEINH	Price Unit in Local Currency	MLHPEINH	DEC	5(0)			PACK3			
+KPEINH	Price Unit in Group Currency	MLKPEINH	DEC	5(0)			PACK3			
+OPEINH	Price Unit in Another Currency	MLOPEINH	DEC	5(0)			PACK3			
+VPEINH	Price Unit in Fourth Currency	ML4PEINH	DEC	5(0)			PACK3			
+MLPTYP	Original Process Category	ML_PTYP_ORG	CHAR	4(0)	CKMLMV009		CKML_PROZESS_TYP			
+MLCATEG	Category in Material Update Structure	ML_KATEGORIE	CHAR	2(0)			CKML_KATEGORIE			
+QSBVALT	Procurement Alternative/Process	ML_QSBVALT	NUMC	12(0)	Assigned to domain		CK_KALNR			
+QSPROCESS	Production Process	ML_QSPROCESS	NUMC	12(0)	Assigned to domain		CK_KALNR	CKML_PROCNR		
+PERART	Type of Period	ML_PER_ART	CHAR	2(0)			CK_PER_ART			
+MLPOSNR	Item in Material Ledger Document	ML_MLPOS	NUMC	6(0)			NUMC6			
+INV_MOV_CATEG	Balance Sheet Valuation: Inventory Movement Category	FBV_INV_MOV_CATEG	CHAR	1(0)			FBV_INV_MOV_CATEG			
+BUKRS_SENDER	Company Code in Sender System	BUKRS_SENDER	CHAR	4(0)			CHAR4	BUK	C_T001	BUKRS
+RACCT_SENDER	General Ledger Account in Sender System	RACCT_SENDER	CHAR	10(0)			CHAR10	SAK	C_SAKNR	SAKNR
+ACCAS_SENDER	Account Assignment in Sender System	ACCAS_SENDER	CHAR	30(0)			ACCAS			
+ACCASTY_SENDER	Account Assignment Type in Sender System	ACCASTY_SENDER	CHAR	2(0)	TBO00		J_OBART			
+OBJNR	Object number	J_OBJNR	CHAR	22(0)	ONR00		J_OBJNR	ONR		
+HRKFT	CO key subnumber	CO_SUBKEY	CHAR	14(0)	COKEY		CO_SUBKEY			
+HKGRP	Origin Group as Subdivision of Cost Element	HRKFT	CHAR	4(0)	TKKH1		HRKFT			
+PAROB1	Partner object (always filled)	PAROB1	CHAR	22(0)	ONR00		J_OBJNR			
+PAROBSRC	Source of PAROB: PAROB1 or type of partner object	FINS_PAROB_SRC	CHAR	1(0)			FINS_PAROB_SRC			
+USPOB	Source Object (Cost Center/Activity Type)	USPOB	CHAR	22(0)	ONR00		J_OBJNR			
+CO_BELKZ	CO Debit/Credit Indicator	FINS_CO_BELKZ	CHAR	1(0)		BEKNZ	FINS_CO_BELKZ			
+CO_BEKNZ	Debit/Credit Indicator (Origin)	FINS_CO_BEKNZ	CHAR	1(0)		BEKNZ	BEKNZ			
+BELTP	Debit Type	BP_INOUT	NUMC	1(0)			BP_INOUT			
+MUVFLG	Indicator: Quantity Is Incomplete	FCO_MUV_CODE	NUMC	1(0)			FCO_MUV_CODE			
+GKONT	Offsetting Account Number	GKONT	CHAR	10(0)		ALPHA	GKONT		GKONT	GKONT
+GKOAR	Offsetting Account Type	GKOAR	CHAR	1(0)			KOART			
+ERLKZ	Completion indicator for line item	KBLERLKZ	CHAR	1(0)			CHAR1_X			
+PERNR	Personnel Number	PERNR_D	NUMC	8(0)			PERNR	PER		
+PAOBJNR	Profitability Segment Number (CO-PA)	RKEOBJNR	NUMC	10(0)			RKEOBJNR			
+XPAOBJNR_CO_REL	Indicator: Profitability segm. relevant for CO compatibility	FINS_XPAOBJNR_CO_REL	CHAR	1(0)			XFELD			
+SCOPE	Object Class	SCOPE_CV	CHAR	2(0)		SCOPE	SCOPE_CV	PCO		
+LOGSYSO	Logical System of Object	LOGSYSO	CHAR	10(0)	TBDLS	ALPHA	LOGSYS			
+PBUKRS	Company Code of Partner	PBUKRS	CHAR	4(0)	T001		BUKRS	BUK		
+PSCOPE	Partner object class	PSCOPE_CV	CHAR	2(0)		SCOPE	SCOPE_CV			
+LOGSYSP	Logical system of partner object	LOGSYSP	CHAR	10(0)	TBDLS	ALPHA	LOGSYS			
+BWSTRAT	Strategy for Determining an Allocation Price	BWSTRAT	CHAR	1(0)			BWSTRAT			
+OBJNR_HK	Object Number of Origin Object	OBJNR_HK	CHAR	22(0)	ONR00		J_OBJNR			
+AUFNR_ORG	Origin Order Number	AUFNR_HK	CHAR	12(0)	AUFK	ALPHA	AUFNR			
+UKOSTL	Origin cost center	USP_KOSTL	CHAR	10(0)	CSKS	ALPHA	KOSTL	KOS		
+ULSTAR	Origin activity	USP_LSTAR	CHAR	6(0)	CSLA		LSTAR	LAR		
+UPRZNR	Source: Business Process	USP_PRZNR	CHAR	12(0)	CBPR	ALPHA	CO_PRZNR			
+UPRCTR	Origin Profit Center	FINS_ORIGIN_PRCTR	CHAR	10(0)	CEPC	ALPHA	PRCTR			
+ACCAS	Account Assignment	ACCAS	CHAR	30(0)			ACCAS			
+ACCASTY	Object Type	J_OBART	CHAR	2(0)	TBO00		J_OBART			
+LSTAR	Activity Type	LSTAR	CHAR	6(0)	CSLA		LSTAR	LAR	LART_EMPTY	LSTAR
+AUFNR	Order Number	AUFNR	CHAR	12(0)	AUFK	ALPHA	AUFNR	ANR		
+AUTYP	Order category	AUFTYP	NUMC	2(0)			AUFTYP			
+PS_PSP_PNR	Work Breakdown Structure Element (WBS Element)	PS_PSP_PNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+PS_POSID	Work Breakdown Structure Element (WBS Element)	PS_POSID	CHAR	24(0)		ABPSN	PS_POSID	PRO		
+PS_PRJ_PNR	Project (internal)	PS_INTNR	NUMC	8(0)	PROJ	KONPD	PS_PSPNR			
+PS_PSPID	Project definition	PS_PSPID	CHAR	24(0)		ABPSN	PS_PSPID	PSP	PD_DUMMY	PSPID
+NPLNR	Network Number for Account Assignment	NPLNR	CHAR	12(0)	AUFK	ALPHA	AUFNR	NET		
+NPLNR_VORGN	Network activity	NPVRG	CHAR	4(0)		NUMCV	VORNR			
+PRZNR	Business Process	CO_PRZNR	CHAR	12(0)	CBPR	ALPHA	CO_PRZNR	KWP		
+KSTRG	Cost Object	KSTRG	CHAR	12(0)	CKPH		KSTRG	KTR		
+BEMOT	Accounting Indicator	BEMOT	CHAR	2(0)	TBMOT		BEMOT			
+RSRCE	Resource	CO_RESSOURCE	CHAR	10(0)	CSKR	ALPHA	CO_RESSOURCE	RCE		
+QMNUM	Notification Number	QMNUM	CHAR	12(0)	QMEL	ALPHA	QMNUM	IQM		
+SERVICE_DOC_TYPE	Service Document Type	FCO_SRVDOC_TYPE	CHAR	4(0)	CRMC_PROC_TYPE		CRM_PROCESS_TYPE	SVDT_FCO	FCO_SHLP_SRVDOC_TYPE_EMPTY	SERVICEDOCUMENTTYPE
+SERVICE_DOC_ID	Service Document ID	FCO_SRVDOC_ID	CHAR	10(0)	FCO_SRVDOC	ALPHA	CRM_OBJECT_ID	SVD_FCO	FCO_SHLP_SRVDOC_EMPTY	SERVICEDOCUMENT
+SERVICE_DOC_ITEM_ID	Service Document Item ID	FCO_SRVDOC_ITEM_ID	NUMC	6(0)	FCO_SRVDOC		FCO_SRVDOC_ITEM_ID	SVDI_FCO	FCO_SHLP_SRVDOC_ITEM_EMPTY	SERVICEDOCUMENTITEM
+SERVICE_CONTRACT_TYPE	Service Contract Type	FCO_SRVCONTRACT_TYPE	CHAR	4(0)	CRMC_PROC_TYPE		CRM_PROCESS_TYPE			
+SERVICE_CONTRACT_ID	Service Contract ID	FCO_SRVCONTRACT_ID	CHAR	10(0)	FCO_SRVDOC	ALPHA	CRM_OBJECT_ID			
+SERVICE_CONTRACT_ITEM_ID	Service Contract Item ID	FCO_SRVCONTRACT_ITEM_ID	NUMC	6(0)	FCO_SRVDOC		FCO_SRVDOC_ITEM_ID			
+ERKRS	Operating concern	ERKRS	CHAR	4(0)	TKEB		ERKRS	ERB		
+PACCAS	Partner Account Assignment	PACCAS	CHAR	30(0)			ACCAS			
+PACCASTY	Partner Object Type	CO_POBART	CHAR	2(0)	TBO00		J_OBART			
+PLSTAR	Partner activity	PAR_LSTAR	CHAR	6(0)	CSLA		LSTAR	LAR		
+PAUFNR	Partner order number	PAR_AUFNR	CHAR	12(0)	AUFK	ALPHA	AUFNR	ANR		
+PAUTYP	Partner Order Category	FCO_PAR_AUFTYP	NUMC	2(0)			AUFTYP			
+PPS_PSP_PNR	Partner Work Breakdown Structure Element (internal ID)	FCO_PAR_PSP_PNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+PPS_POSID	Partner Work Breakdown Structure Element	FCO_PAR_POSID	CHAR	24(0)		ABPSN	PS_POSID	PRO	PR	POSID
+PPS_PRJ_PNR	Partner Project (internal ID)	FCO_PAR_PRJ_PNR	NUMC	8(0)	PROJ	KONPD	PS_PSPNR			
+PPS_PSPID	Partner Project	FCO_PAR_PSPID	CHAR	24(0)		ABPSN	PS_PSPID	PSP	PD_DUMMY	PSPID
+PKDAUF	Number of Partner Sales Order	PAR_KDAUF	CHAR	10(0)	Assigned to domain	ALPHA	VBELN			
+PKDPOS	Partner Sales Order Item	PAR_KDPOS	NUMC	6(0)	Assigned to domain		POSNR			
+PPAOBJNR	Partner profitability segment number (CO-PA)	RKEPOBJ	NUMC	10(0)			RKEOBJNR			
+PNPLNR	Partner Project Network	PAR_NPLN	CHAR	12(0)	AUFK	ALPHA	AUFNR			
+PNPLNR_VORGN	Partner Project Network Activity	PAR_VORNR_AUF	CHAR	4(0)		NUMCV	VORNR			
+PPRZNR	Partner Business Process	PAR_PRZNR	CHAR	12(0)	CBPR	ALPHA	CO_PRZNR			
+PKSTRG	Partner Cost Object	PAR_KSTRG	CHAR	12(0)	CKPH		KSTRG			
+PSERVICE_DOC_TYPE	Partner Service Document Type	FCO_PSRVDOC_TYPE	CHAR	4(0)	CRMC_PROC_TYPE		CRM_PROCESS_TYPE			
+PSERVICE_DOC_ID	Partner Service Document ID	FCO_PSRVDOC_ID	CHAR	10(0)	FCO_SRVDOC	ALPHA	CRM_OBJECT_ID			
+PSERVICE_DOC_ITEM_ID	Partner Service Document Item ID	FCO_PSRVDOC_ITEM_ID	NUMC	6(0)						
+CO_ACCASTY_N1	Type of first statistical account assignment	FINS_ACCASTY_N1	CHAR	2(0)			FINS_ACCASTY_STAT			
+CO_ACCASTY_N2	Type of second statistical account assignment	FINS_ACCASTY_N2	CHAR	2(0)			FINS_ACCASTY_STAT			
+CO_ACCASTY_N3	Type of third statistical account assignment	FINS_ACCASTY_N3	CHAR	2(0)			FINS_ACCASTY_STAT			
+CO_ZLENR	Document Item Number	DZLENR	NUMC	3(0)			NUM3			
+CO_BELNR	Document Number	CO_BELNR	CHAR	10(0)	Assigned to domain	ALPHA	CO_BELNR	BLN		
+CO_BUZEI	Posting Row	CO_BUZEI	NUMC	3(0)			BUZEI			
+CO_BUZEI1	Posting row of CO item in first additional valuation	FCO_BUZEI1	NUMC	3(0)			BUZEI			
+CO_BUZEI2	Posting row of CO item in second additional valuation	FCO_BUZEI2	NUMC	3(0)			BUZEI			
+CO_BUZEI5	Posting row of CO item in valuation view 5	FCO_BUZEI5	NUMC	3(0)			BUZEI			
+CO_BUZEI6	Posting row of CO item in valuation view 6	FCO_BUZEI6	NUMC	3(0)			BUZEI			
+CO_BUZEI7	Posting row of CO item in valuation view 7	FCO_BUZEI7	NUMC	3(0)			BUZEI			
+CO_REFBZ	Posting Row of Reference Document	CO_REFBZ	NUMC	3(0)			BUZEI			
+CO_REFBZ1	Posting row of reference document in first add'l valuation	FCO_REFBZ1	NUMC	3(0)			BUZEI			
+CO_REFBZ2	Posting row of reference document in second add'l valuation	FCO_REFBZ2	NUMC	3(0)			BUZEI			
+CO_REFBZ5	Posting row of reference document in valuation view 5	FCO_REFBZ5	NUMC	3(0)			BUZEI			
+CO_REFBZ6	Posting row of reference document in valuation view 6	FCO_REFBZ6	NUMC	3(0)			BUZEI			
+CO_REFBZ7	Posting row of reference document in valuation view 7	FCO_REFBZ7	NUMC	3(0)			BUZEI			
+OVERTIMECAT	Overtime Category	CATS_OVERTIME_CATEGORY	CHAR	4(0)	Assigned to domain		CATS_OVERTIME_CATEGORY			
+WORK_ITEM_ID	Work Item ID	/CPD/PFP_WORKITEM_ID	CHAR	10(0)			/CPD/PFP_WORKITEM_ID	WRK	/CPD/SS_WORK_ITEM_C	WORKITEM
+ARBID	Object ID of the resource	CR_OBJID	NUMC	8(0)	CRID		CR_OBJID			
+VORNR	Operation/Activity Number	VORNR	CHAR	4(0)		NUMCV	VORNR	VGN		
+AUFPS	Order item number	CO_POSNR	NUMC	4(0)			CO_POSNR			
+UVORN	Suboperation	UVORN	CHAR	4(0)		NUMCV	VORNR			
+EQUNR	Equipment Number	EQUNR	CHAR	18(0)	EQUI	ALPHA	EQUNR	EQN	EQUI	EQUNR
+TPLNR	Functional Location	TPLNR	CHAR	30(0)	IFLOT	TPLNR	TPLNR	IFL	IFLM	TPLNR
+ISTRU	Assembly	ISTRU	CHAR	40(0)	MARA	MATN1	MATNR			
+ILART	Maintenance activity type	ILA	CHAR	3(0)	T353I		ILART		H_T350I	ILART
+PLKNZ	Maintenance order planning indicator	AUF_PLKNZ	CHAR	1(0)			AUF_PLKNZ			
+ARTPR	Priority Type	ARTPR	CHAR	2(0)	T356A		ARTPR			
+PRIOK	Priority	PRIOK	CHAR	1(0)	T356		PRIOK	PRIOK		
+MAUFNR	Number of Superior Order	MAUFNR	CHAR	12(0)	AUFK	ALPHA	AUFNR	UAF		
+MATKL_MM	Material Group	FINS_MATKL_MM	CHAR	9(0)	T023		MATKL		S_WBWG	MATKL
+PLANNED_PARTS_WORK	Planned Parts/Work	FINS_PLANNED_PARTS_WORK	CHAR	1(0)			BOOLE			
+FKART	Billing Type	FKART	CHAR	4(0)	TVFK		FKART			
+VKORG	Sales Organization	VKORG	CHAR	4(0)	TVKO		VKORG	VKO	C_VKORG	VKORG
+VTWEG	Distribution Channel	VTWEG	CHAR	2(0)	TVTW		VTWEG	VTW	C_VTWEG	VTWEG
+SPART	Division	SPART	CHAR	2(0)	TSPA		SPART	SPA	C_SPART	SPART
+MATNR_COPA	Product Sold	FINS_MATNR_PA	CHAR	40(0)	MARA	MATN1	MATNR	MAT		
+MATKL	Product Sold Group	FINS_MATKL_PA	CHAR	9(0)	T023		MATKL	MKL	S_WBWG	MATKL
+KDGRP	Customer Group	KDGRP	CHAR	2(0)	T151		KDGRP	VKD		
+LAND1	Country Key	LAND1_GP	CHAR	3(0)	T005		LAND1		C_LAND1	LAND1
+BRSCH	Industry key	BRSCH	CHAR	4(0)	T016		BRSCH			
+BZIRK	Sales District	BZIRK	CHAR	6(0)	T171		BZIRK	BZI		
+KUNRE	Bill-to party	KUNRE	CHAR	10(0)	KNA1	ALPHA	KUNNR	KUN		
+KUNWE	Ship-to party	KUNWE	CHAR	10(0)	KNA1	ALPHA	KUNNR			
+KONZS	Group key	KONZS	CHAR	10(0)			KONZS			
+.INCLU-_PA				0(0)						
+ACDOC_COPA_EEW_DUMMY_PA	Dummy function in length 1	DUMMY	CHAR	1(0)			DUMMY			
+.INCLU--AP				0(0)						
+KMVKBU_PA	Sales office	VKBUR	CHAR	4(0)	TVBUR		VKBUR	VKB		
+KMVKGR_PA	Sales group	VKGRP	CHAR	3(0)	TVKGR		VKGRP	VKG		
+KMBRND_PA	Brand	RKESKMBRND	NUMC	2(0)	T2249		RKESKMBRND			
+KMCATG_PA	Business field	RKESKMCATG	NUMC	2(0)	T2248		RKESKMCATG			
+KMHI01_PA	Customer hierarchy Level 1	HIEZU01	CHAR	10(0)	KNA1	ALPHA	KUNNR			
+KMHI02_PA	Customer hierarchy Level 2	HIEZU02	CHAR	10(0)	KNA1	ALPHA	KUNNR			
+KMHI03_PA	Customer hierarchy Level 3	HIEZU03	CHAR	10(0)	KNA1	ALPHA	KUNNR			
+KMKDGR_PA	Customer Group	KDGRP	CHAR	2(0)	T151		KDGRP	VKD		
+KMLAND_PA	Country Key	LAND1_GP	CHAR	3(0)	T005		LAND1		C_LAND1	LAND1
+KMMAKL_PA	Material Group	MATKL	CHAR	9(0)	T023		MATKL	MKL	S_WBWG	MATKL
+KMNIEL_PA	Nielsen ID	NIELS	CHAR	2(0)	TNLS		NIELS			
+KMSTGE_PA	Strategic Business Unit	RKESKMSTGE	NUMC	2(0)	T2247		RKESKMSTGE			
+KMVTNR_PA	Sales employee	VRTNR	NUMC	8(0)			PERNR		PREMV	PERNR
+VKBUR_PA	Sales office	VKBUR	CHAR	4(0)	TVBUR		VKBUR	VKB		
+VKGRP_PA	Sales group	VKGRP	CHAR	3(0)	TVKGR		VKGRP	VKG		
+WWT13_PA		RKEG_WWT13	CHAR	5(0)	T2500		RKEG_WWT13			
+WWZ13_PA		RKEG_WWZ13	CHAR	5(0)	T2501		RKEG_WWZ13			
+BONUS_PA	Volume rebate group	BONUS	CHAR	2(0)	TVBO		BONUS			
+WW001_PA	User Characteristic	RKEG_WW001	CHAR	10(0)	T2502		RKEG_WW001			
+WWCON_PA	Continent	RKEG_WWCON	CHAR	1(0)	T2503		RKEG_WWCON			
+DUMMY_MRKT_SGMNT_EEW_PS	Custom Fields: Dummy for Use in Extension Includes	CFD_DUMMY	CHAR	1(0)						
+RE_BUKRS	Cash Ledger: Company Code for Expense/Revenue	FAGL_RE_BUKRS	CHAR	4(0)	T001		BUKRS			
+RE_ACCOUNT	Cash Ledger: Expense or Revenue Account	FAGL_RE_ACCOUNT	CHAR	10(0)	SKA1	ALPHA	SAKNR			
+FIKRS	Financial Management Area	FIKRS	CHAR	4(0)	FM01		FIKRS	FIK		
+FISTL	Funds Center	FISTL	CHAR	16(0)	FMFCTR		FISTL	FIS		
+MEASURE	Funded Program	FM_MEASURE	CHAR	24(0)	FMMEASURE		FM_MEASURE	FM_MEASURE		
+RFUND	Fund	BP_GEBER	CHAR	10(0)	FMFINCODE		BP_GEBER	FIC		
+RGRANT_NBR	Grant	GM_GRANT_NBR	CHAR	20(0)		ALPHA	GM_GRANT_NBR	GM_GRANT_NBR	GRANTS_GENERIC	GRANT_NUMBER
+RBUDGET_PD	Budget Period	FM_BUDGET_PERIOD	CHAR	10(0)	FMFUNDBPD		FM_BUDGET_PERIOD	BUDPER		
+SFUND	Partner Fund	BP_P_GEBER	CHAR	10(0)	FMFINCODE		BP_GEBER	FIC		
+SGRANT_NBR	Partner Grant	GM_GRANT_PARTNER	CHAR	20(0)		ALPHA	GM_GRANT_NBR		GRANTS_GENERIC	GRANT_NUMBER
+SBUDGET_PD	FM: Partner Budget Period	FM_PBUDGET_PERIOD	CHAR	10(0)	FMFUNDBPD		FM_BUDGET_PERIOD	BUDPER		
+BDGT_ACCOUNT	Budget Account	PSM_BDGT_ACCOUNT	CHAR	10(0)	SKA1	ALPHA	SAKNR			
+BDGT_ACCOUNT_COCODE	Budget Account Company Code	PSM_BDGT_ACCOUNT_COCODE	CHAR	4(0)	T001		BUKRS			
+BDGT_CNSMPN_DATE	Budget Consumption Date	PSM_BDGT_CNSMPN_DATE	DATS	8(0)			DATUM			
+BDGT_CNSMPN_PERIOD	CC Fiscal Period for Budget Consumption Date	PSM_BDGT_CNSMPN_PERIOD	NUMC	3(0)			POPER	POPR		
+BDGT_CNSMPN_YEAR	CC Fiscal Year for Budget Consumption Date	PSM_BDGT_CNSMPN_YEAR	NUMC	4(0)		GJAHR	GJAHR			
+BDGT_RELEVANT	Budget-Relevant Indicator	PSM_BDGT_RELEVANT	CHAR	1(0)			XFELD			
+BDGT_CNSMPN_TYPE	Budget Consumption Type	PSM_BDGT_CNSMPN_TYPE	CHAR	2(0)	PSM_D_BDGTCNSTY		PSM_BDGT_CNSMPN_TYPE			
+BDGT_CNSMPN_AMOUNT_TYPE	Budget Consumption Amount Type	PSM_BDGT_CNSMPN_AMOUNT_TYPE	CHAR	4(0)			PSM_BDGT_CNSMPN_AMOUNT_TYPE			
+VNAME	Joint venture	JV_NAME	CHAR	6(0)	T8JV	ALPHA	JV_NAME	JVV		
+EGRUP	Equity group	JV_EGROUP	CHAR	3(0)	T8JF	ALPHA	JV_EGROUP	GJE		
+RECID	Recovery Indicator	JV_RECIND	CHAR	2(0)	T8JJ	ALPHA	JV_RECIND			
+VPTNR	Partner account number	JV_PART	CHAR	10(0)	KNA1	ALPHA	KUNNR			
+BTYPE	Payroll Type	JV_BILIND	CHAR	2(0)	T8JA	ALPHA	JV_BILIND			
+ETYPE	Equity type	JV_ETYPE	CHAR	3(0)	T8JE	ALPHA	JV_ETYPE			
+PRODPER	Production Month (Date to find period and year)	JV_PRODPER	DATS	8(0)			JV_PRODPER			
+BILLM	Billing Month	JV_BILLM	DATS	8(0)			DATUM			
+POM	Processing operational month	JV_POM	DATS	8(0)			DATUM			
+CBRUNID	Cutback Run ID (Joint Venture Accounting)	JV_CBRUNID	DEC	21(7)			TZNTSTMPL			
+JVACTIVITY	JVA Activity (Joint Venture Accounting)	JV_ACTIVITY	CHAR	2(0)						
+PVNAME	Partner Venture (Joint Venture Accounting)	JV_PVNAME	CHAR	6(0)	Assigned to domain	ALPHA	JV_NAME			
+PEGRUP	Partner Equity Group (Joint Venture Accounting)	JV_PEGRUP	CHAR	3(0)	Assigned to domain	ALPHA	JV_EGROUP			
+S_RECIND	Allocation: Sender Credit Recovery Indicator	JV_SRECIND	CHAR	2(0)	Assigned to domain	ALPHA	JV_RECIND			
+CBRACCT	Cutback Account (Joint Venture Accounting)	JV_CBRACCT	CHAR	10(0)	Assigned to domain	ALPHA	SAKNR			
+CBOBJNR	Cutback Cost Object (Joint Venture Accounting)	JV_CBOBJNR	CHAR	22(0)	Assigned to domain		J_OBJNR			
+SWENR	Business Entity Number	REBDBENO	CHAR	8(0)		SWENR	REBDBENO	REBDBENO	REBDBENO	SWENR
+SGENR	Number of Building	REBDBUNO	CHAR	8(0)		SGENR	REBDBUNO	REBDBUNO	REBDBUNO	SGENR
+SGRNR	Number of Land	REBDPRNO	CHAR	8(0)		SGRNR	REBDPRNO	REBDPRNO	REBDPRNO	SGRNR
+SMENR	Number of Rental Object	REBDRONO	CHAR	8(0)		SMENR	REBDRONO	REBDRONO	REBDRONO	SMENR
+RECNNR	Contract Number	RECNNUMBER	CHAR	13(0)		ALPHA	RECNNUMBER	RECNNR	RECNCN	RECNNR
+SNKSL	Service Charge Key	RESCSCKEY	CHAR	4(0)		ALPHA	RESCSCKEY	RESCSCKEY	RESCSCKEY	SNKSL
+SEMPSL	Settlement Unit	RESCSUID	CHAR	5(0)		ALPHA	RESCSUID	RESCSUID	RESCSU	SEMPSL
+DABRZ	Reference date for settlement	DABRBEZ	DATS	8(0)			DDAT			
+PSWENR	Partner Business Entity Number	FINS_PAR_SWENR	CHAR	8(0)		SWENR	REBDBENO		REBDBENO	SWENR
+PSGENR	Partner Building Number	FINS_PAR_SGENR	CHAR	8(0)		SGENR	REBDBUNO		REBDBUNO	SGENR
+PSGRNR	Partner Land Number	FINS_PAR_SGRNR	CHAR	8(0)		SGRNR	REBDPRNO		REBDPRNO	SGRNR
+PSMENR	Number of Partner Rental Unit	FINS_PAR_SMENR	CHAR	8(0)		SMENR	REBDRONO		REBDRONO	SMENR
+PRECNNR	Partner Contract Number	FINS_PAR_RECNNR	CHAR	13(0)		ALPHA	RECNNUMBER		RECNCN	RECNNR
+PSNKSL	Partner Service Charge Key	FINS_PAR_SNKSL	CHAR	4(0)		ALPHA	RESCSCKEY		RESCSCKEY	SNKSL
+PSEMPSL	Partner Settlement Unit	FINS_PAR_SEMPSL	CHAR	5(0)		ALPHA	RESCSUID		RESCSU	SEMPSL
+PDABRZ	Partner Reference Date for Settlement	FINS_PAR_DABRBEZ	DATS	8(0)			DDAT			
+ACROBJTYPE	Type of the Accrual Object	ACR_OBJ_TYPE	CHAR	4(0)	TACR_OBJ_TYPE		ACR_OBJ_TYPE	ACR_OBJ_TYPE		
+ACROBJ_ID	Identifier of the Accrual Object	ACR_OBJ_ID	CHAR	32(0)			ACR_OBJ_ID			
+ACRSOBJ_ID	Identifier of the Accrual Subobject	ACR_SUBOBJ_ID	CHAR	32(0)			ACR_SUBOBJ_ID			
+ACRITMTYPE	Type of the Item of the Accrual Subobject	ACR_ITEM_TYPE	CHAR	11(0)			ACR_ITEM_TYPE		ACR_ITEM_TYPE	ACR_ITEM_TYPE
+ACRVALDAT	Accrual Value Date	ACR_VALUE_DATE	DATS	8(0)			DATUM			
+VALOBJTYPE	Type of the Financial Valuation Object	VAL_OBJ_TYPE	CHAR	4(0)	FINSC_VAL_TYPE		VAL_OBJ_TYPE			
+VALOBJ_ID	Identifier of the Financial Valuation Object	VAL_OBJ_ID	CHAR	32(0)			VAL_OBJ_ID			
+VALSOBJ_ID	Identifier of the Financial Valuation Subobject	VAL_SUBOBJ_ID	CHAR	32(0)			VAL_SUBOBJ_ID			
+NETDT	Net Due Date	NETDT	DATS	8(0)			DATUM			
+RISK_CLASS	Risk Class	UKM_RISK_CLASS	CHAR	3(0)	UKM_RISK_CL		UKM_RISK_CLASS			
+ACDOC_EEW_DUMMY	Custom Fields: Dummy for Use in Extension Includes	CFD_DUMMY	CHAR	1(0)						
+DUMMY_INCL_EEW_COBL	Custom Fields: Dummy for Use in Extension Includes	CFD_DUMMY	CHAR	1(0)						
+FUP_ACTION	Follow-up action for this Universal Journal Entry Line Item	FINS_ACDOC_FOLLOW_UP_ACTION	CHAR	1(0)			FINS_FOLLOW_UP_ACTION			
+SDM_VERSION	SDM: Version field for ACDOCA	FINS_SDM_VERSION_ACDOCA	CHAR	2(0)			FINS_SDM_VERSION_ACDOCA			
+MIG_SOURCE	Source of a migrated journal entry item	FINS_ACDOC_MIG_SOURCE	CHAR	1(0)			FINS_ACDOC_MIG_SOURCE			
+MIG_DOCLN	Item ID of migrated G/L line item	FINS_MIG_DOCLN	CHAR	6(0)			DOCLN6			
+_DATAAGING	Data Filter Value for Data Aging	DATA_TEMPERATURE	DATS	8(0)			DATA_TEMPERATURE	

@@ -1,0 +1,85 @@
+PRCD_ELEMENTS is a standard SAP Table which is used to store Pricing Elements data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP PRCD_ELEMENTS table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: A - Application table (master and transaction data)
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type or numeric)
+Dictionary Type: Transparent table
+Database Table: PRCD_ELEMENTS
+
+
+PRCD_ELEMENTS table structure field list
+Below is the full PRCD_ELEMENTS field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+CLIENT	Client	MANDT	CLNT	3(0)			MANDT			
+KNUMV	Number of the Document Condition	KNUMV	CHAR	10(0)			KNUMV			
+KPOSN	Condition item number	KPOSN	NUMC	6(0)			NUM6			
+STUNR	Step Number	STUNR	NUMC	3(0)	Assigned to domain		STUNR			
+ZAEHK	Condition Counter	VFPRC_COND_COUNT	NUMC	3(0)			ZAEHK			
+KAPPL	Application	KAPPL	CHAR	2(0)	Assigned to domain		KAPPL	KAP		
+KSCHL	Condition type	KSCHA	CHAR	4(0)	Assigned to domain		KSCHL	VKS		
+KDATU	Timestamp for Pricing	VFPRC_TIMESTAMP	CHAR	14(0)			TIMESTAMP			
+KRECH	Calculation Type for Condition	KRECH_LONG	CHAR	3(0)			KRECH3			
+KAWRT	Condition Basis Value	VFPRC_ELEMENT_BASE_VALUE	DEC	24(9)			VFPRC_DEC_VALUE			
+KBETR	Rate (Amount or Percentage)	VFPRC_ELEMENT_AMOUNT	DEC	24(9)			VFPRC_DEC_VALUE			
+WAERS	Currency Key	WAERS	CUKY	5(0)	Assigned to domain		WAERS	FWS		
+KKURS	Condition exchange rate for conversion to local currency	KKURS	DEC	9(5)		EXCRT	KKURS			
+KPEIN	Condition Pricing Unit	KPEIN	DEC	5(0)			KPEIN			
+KMEIN	Condition Unit in the Document	KVMEI	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+KUMZA	Numerator for Converting to Base UoM	VFPRC_NUMERATOR	DEC	10(0)			VFPRC_NUMERATOR			
+KUMNE	Denominator for Converting to Base UoM	VFPRC_DENOMINATOR	DEC	10(0)			VFPRC_DENOMINATOR			
+KNTYP	Condition Category (Examples: Tax, Freight, Price, Cost)	KNTYP	CHAR	1(0)			KNTYP			
+KSTAT	Condition is used for statistics	KSTAT	CHAR	1(0)			XFELD			
+KNPRS	Scale Type	STFKZ	CHAR	1(0)			STFKZ			
+KRUEK	Condition is Relevant for Accrual (e.g. Freight)	KRUEK	CHAR	1(0)			XFELD			
+KRELI	Condition for Invoice List	KRELI	CHAR	1(0)			KRELI			
+KHERK	Origin of the Condition	KHERK	CHAR	1(0)			KHERK			
+KGRPE	Group Condition	KGRPE	CHAR	1(0)			KGRPE			
+KOLNR	Access sequence - Access number	KOLNR	NUMC	3(0)	Assigned to domain		KOLNR_LONG			
+KNUMH	Number of the Condition Record	KNUMH	CHAR	10(0)			KNUMH			
+KOPOS	Sequential Number of the Condition	KOPOS_LONG	NUMC	3(0)			NUM03			
+KVSL1	Account Key	KVSL1	CHAR	3(0)	Assigned to domain		KVSCHL			
+SAKN1	G/L Account Number	SAKNR	CHAR	10(0)		ALPHA	SAKNR	SAK	C_SAKNR	SAKNR
+MWSK1	Tax on sales/purchases code	MWSKZ	CHAR	2(0)	Assigned to domain		MWSKZ			
+KVSL2	Account Key - Accruals / Provisions	KVSL2	CHAR	3(0)	Assigned to domain		KVSCHL			
+SAKN2	Number of Accruals Account	SAKNR_ACCR	CHAR	10(0)		ALPHA	SAKNR	SAK	SAKO	SAKNR
+MWSK2	Withholding Tax Code	WT_WITHCD	CHAR	2(0)	Assigned to domain		WT_WITHCD			
+LIFNR	Account Number of Vendor or Creditor	LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+KDIFF	Rounding-Off Difference of the Condition	KDIFF	CURR	5(2)			VFPRC_CURR_VALUE5			
+KWERT	Condition Value	VFPRC_ELEMENT_VALUE	CURR	15(2)			WERTV8			
+WAERK	SD document currency	WAERK	CUKY	5(0)	Assigned to domain		WAERS	FWS		
+KSTEU	Condition Control	KSTEU	CHAR	1(0)			KSTEU			
+KINAK	Condition is Inactive	KINAK	CHAR	1(0)			KINAK			
+KOAID	Condition Class	KOAID	CHAR	1(0)			KOAID			
+ZAEKO	Condition Counter (Header)	VFPRC_COND_COUNT_HEAD	NUMC	3(0)			ZAEHK			
+KFAKTOR	Factor for Condition Base Value	KFAKTOR	FLTP	16(16)			FLTP			
+KDUPL	Structure Condition	KDUPL	CHAR	1(0)			KDUPL			
+KFAKTOR1	Factor for Condition Basis (Period)	KFAKTOR1	FLTP	16(16)			FLTP			
+KZBZG	Scale Basis Indicator	KZBZG_LONG	CHAR	3(0)			KZBZG_LONG			
+KSTBS	Scale Basis Value	VFRPC_SCALE_BASE_VALUE	DEC	24(9)			VFPRC_DEC_VALUE			
+KONMS	Condition Scale Unit of Measure	KONMS	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+KONWS	Scale Currency	KONWS	CUKY	5(0)	Assigned to domain		WAERS	FWS		
+KWAEH	Condition Currency (for Cumulation Fields)	KWAEH	CUKY	5(0)	Assigned to domain		WAERS	FWS		
+KWERT_K	Condition Value	VFPRC_ELEMENT_VALUE	CURR	15(2)			WERTV8			
+KFKIV	Condition for Intercompany Billing	KFKIV	CHAR	1(0)			XFELD			
+KMPRS	Condition Changed Manually	KMPRS	CHAR	1(0)			XFELD			
+PRSQU	Price Source	PRSQU1	CHAR	1(0)			PRSQU			
+TXJLV	Tax jurisdiction code level	TXJCD_LEVEL	CHAR	1(0)			CHAR1			
+KBFLAG	Bit encrypted flags in Pricing	KBFLAG	RAW	2(0)			KBFLAG			
+KOUPD	Condition Update	KOUPD	CHAR	1(0)			XFELD			
+KMXAW	Indicator for Maximum Condition Basis Value	KMXAW	CHAR	1(0)			KMXWR			
+KMXWR	Indicator for Maximum Condition Amount	KMXWR	CHAR	1(0)			KMXWR			
+KAWRT_K	Condition Basis Value	VFPRC_ELEMENT_BASE_VALUE	DEC	24(9)			VFPRC_DEC_VALUE			
+KUNNR	Customer number (rebate recipient)	KUNNR_KO	CHAR	10(0)	Assigned to domain	ALPHA	KUNNR	KUN		
+KVARC	Condition Used for Variant Configuration	KVARC	CHAR	1(0)			XFELD			
+VARCOND	Variant Condition	VARCOND	CHAR	26(0)	Assigned to domain		VARCON			
+KTREL	Relevance for Account Assignment	KTREL	CHAR	1(0)			KTREL			
+MDFLG	Indicator: Matrix Maintenance	MDFLG	CHAR	1(0)			MDFLG			
+_DATAAGING	Data Filter Value for Data Aging	DATA_TEMPERATURE	DATS	8(0)			DATA_TEMPERATURE			
+CPF_GUID	Identifier of CPF Formula in Document	CPF_GUID	CHAR	32(0)			SYSUUID_C			
+KAQTY	Adjusted Quantity	KAQTY	DEC	31(14)			QUAN31			
+VAL_ZERO	Process conditions with value equal to zero	VAL_ZERO	CHAR	1(0)			VAL_ZERO			
+IS_ACCT_DETN_RELEVANT	Statistical and Relevant for Account Determination	IS_ACCT_DETN_RELEVANT	CHAR	1(0)			XFELD	

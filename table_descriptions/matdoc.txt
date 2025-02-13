@@ -1,0 +1,338 @@
+MATDOC is a standard SAP Table which is used to store Material Documents data and is available within S/4 HANA SAP systems depending on the version and release level. Below is the technical details and the list of fields specifically relevant for an SAP S/4 HANA system
+
+Even using an S/4 Hana system you can still view further information about the SAP MATDOC table and the data within it using standard SAP GUI transactions such as SE11, SE80 or SE16. Or you can use the ADT (ABAP development tools within eclipse).
+
+Delivery Class: A - Application table (master and transaction data)
+Display/Maintenance via SM30: Display/Maintenance Allowed but with Restrictions
+Enhancement category: Can be enhanced (character-type or numeric)
+Dictionary Type: Transparent table
+Database Table: MATDOC
+
+
+MATDOC table structure field list
+Below is the full MATDOC field list that makes up the SAP database table structure, including key fields, description, data type and other technical details of each field
+
+
+Field	Description	Data Element	Data Type	length (Dec)	Check table	Conversion Routine	Domain Name	MemoryID	SHLP	SHLP Field
+MANDT	Client	MANDT	CLNT	3(0)	Assigned to domain		MANDT			
+KEY1	Split GUID, Part 1		RAW	4(0)						
+KEY2	Split GUID, Part 2		RAW	4(0)						
+KEY3	Split GUID, Part 3		RAW	5(0)						
+KEY4	Split GUID, Part 4		RAW	1(0)						
+KEY5	Split GUID, Part 5		RAW	1(0)						
+KEY6	Split GUID, Part 6		RAW	1(0)						
+RECORD_TYPE	Record Type	NSDM_RECORD_TYPE	CHAR	30(0)			NSDM_RECORD_TYPE			
+HEADER_COUNTER	Material Document Counter	NSDM_HEADER_COUNTER	INT4	10(0)			NSDM_HEADER_COUNTER			
+MATBF	Material in Respect of Which Stock is Managed	MATBF	CHAR	40(0)	Assigned to domain	MATN1	MATNR			
+WERKS	Plant	WERKS_D	CHAR	4(0)			WERKS	WRK	H_T001W_C	WERKS
+LGORT_SID	Storage Location (Stock Identifier)	NSDM_LGORT	CHAR	4(0)	Assigned to domain		LGORT	LAG		
+CHARG_SID	Batch Number (Stock Identifier)	NSDM_CHARG	CHAR	10(0)	Assigned to domain		CHARG	CHA		
+LIFNR_SID	Supplier for Special Stock	NSDM_LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+MAT_KDAUF	Sales order number of valuated sales order stock	MAT_KDAUF	CHAR	10(0)		ALPHA	VBELN	AUN		
+MAT_KDPOS	Sales Order Item of Valuated Sales Order Stock	MAT_KDPOS	NUMC	6(0)			NUM06	KPO		
+MAT_PSPNR	Valuated Sales Order Stock WBS Element	MAT_PSPNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+KUNNR_SID	Customer for Special Stock	NSDM_KUNNR	CHAR	10(0)		ALPHA	KUNNR	KUN	C_KUNNR	KUNNR
+SOBKZ	Special Stock Indicator	SOBKZ	CHAR	1(0)	Assigned to domain		SOBKZ			
+LBBSA_SID	Stock Type of Goods Movement (Stock Identifier)	NSDM_LBBSA	CHAR	2(0)			NSDM_LBBSA			
+DISUB_OWNER_SID	Additional Supplier for Special Stock	NSDM_DISUB_OWNER	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+BUKRS	Company Code	BUKRS	CHAR	4(0)			BUKRS	BUK	C_T001	BUKRS
+CHARG_WHS_SG	Batch Number of Warehouse Stock (Stock Identifier)	NSDM_CHARG_WHS	CHAR	10(0)	Assigned to domain		CHARG	CHA		
+MENGU	Quantity Updating in Material Master Record	MENGU	CHAR	1(0)			XFELD			
+WERTU	Value Updating in Material Master Record	WERTU	CHAR	1(0)			XFELD			
+VBOBJ_SG	SD Document Object	NSDM_VBOBJ	CHAR	1(0)			VBOBJ			
+KZBWS	Valuation of Special Stock	KZBWS	CHAR	1(0)			KZBWS			
+BSTAUS_SG	Stock Characteristics	NSDM_BSTAUS	CHAR	1(0)			BSTAUS			
+BSTTYP_SG	Stock Category	NSDM_BSTTYP	CHAR	1(0)			BSTTYP			
+KALNR	Cost Estimate Number - Product Costing	CK_KALNR1	NUMC	12(0)	Assigned to domain		CK_KALNR	KNE		
+BERID	MRP Area	BERID	CHAR	10(0)	Assigned to domain		BERID	BERID		
+WAERS	Currency Key	WAERS	CUKY	5(0)	Assigned to domain		WAERS	FWS		
+DMBTR	Amount in Local Currency	DMBTR_CS	CURR	13(2)			WERT7			
+BNBTR	Delivery costs in local currency	BNBTR	CURR	13(2)			WERT13N			
+BUALT	Amount Posted in Alternative Price Control	BUALT	CURR	13(2)			WERTV7			
+DMBUM	Revaluation amount on back-posting to a previous period	DMBUM	CURR	13(2)			WERT7			
+EXBWR	Externally Entered Posting Amount in Local Currency	EXBWR	CURR	13(2)			WERT7			
+VKWRT	Value at Sales Prices Including Value-Added Tax	VKWRT	CURR	13(2)			WERT7			
+EXVKW	Externally Entered Sales Value in Local Currency	EXVKW	CURR	13(2)			WERT7			
+SALK3	Value of total valuated stock before the posting	SALK3_MSEG	CURR	13(2)			WERT13N			
+VKWRA	Value at Sales Prices Excluding Value Added Tax	VKWRA	CURR	13(2)			WERT7			
+J_1BEXBASE	Alternate base amount in document currency	J_1BEXBASE	CURR	13(2)			WERT7			
+STOCK_VKWRT	Value at Sales Prices Including Value-Added Tax	NSDM_STOCK_VKWRT	CURR	13(2)			WERT7			
+DMBTR_STOCK	Amount in Local Currency with Sign of Stock Quantity	NSDM_DMBTR_STOCK	CURR	13(2)			WERT7V			
+DMBTR_CONS	Amount in Local Currency with Sign of Consumption Quantity	NSDM_DMBTR_CONS	CURR	13(2)			WERT7V			
+MEINS	Base Unit of Measure	MEINS	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+MENGE	Quantity	MENGE_D	QUAN	13(3)			MENG13			
+LBKUM	Total valuated stock before the posting	LBKUM_MSEG	QUAN	13(3)			MENGV13			
+STOCK_QTY	Stock Quantity	NSDM_STOCK_QTY	QUAN	31(14)			NSDM_STOCK_QTY			
+CONSUMPTION_QTY	Consumption Quantity	NSDM_CONSUMPTION_QTY	QUAN	31(14)			NSDM_STOCK_QTY			
+ERFME	Unit of entry	ERFME	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+ERFMG	Quantity in unit of entry	ERFMG	QUAN	13(3)			MENG13			
+BPRME	Order Price Unit (Purchasing)	BPRME	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+BPMNG	Quantity in Purchase Order Price Unit	BPMNG	QUAN	13(3)			MENG13			
+BSTME	Purchase Order Unit of Measure	BSTME	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+BSTMG	Goods receipt quantity in order unit	MB_BSTMG	QUAN	13(3)			MENG13			
+LSMEH	Unit of Measure From Delivery Note	LSMEH	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+LSMNG	Quantity in Unit of Measure from Delivery Note	LSMNG	QUAN	13(3)			MENG13			
+PBAMG	Quantity	MENGE_D	QUAN	13(3)			MENG13			
+.INCLU-_A1				0(0)						
+CURRENCY_A1	Analytical Currency of Warehouse Stock - not used	NSDM_ANALYTIC_CURRENCY	CUKY	5(0)	Assigned to domain		WAERS			
+PRICE_A1	Analytical Price of one Base Unit of Measure - not used	NSDM_ANALYTIC_PRICE	DEC	31(14)			NSDM_STOCK_VALUE			
+PRICE_SOURCE_A1	Indicator for Analytical Value of Price Source - not used	NSDM_PRICE_SOURCE	CHAR	32(0)			NSDM_PRICE_SOURCE			
+STOCK_VALUE_A1	Analytical Value of Warehouse Stock - not used	NSDM_STOCK_VALUE	DEC	31(14)			NSDM_STOCK_VALUE			
+CONS_VALUE_A1	Analytical Value of Consumption Quantity - not used	NSDM_CONSUMPTION_VALUE	DEC	31(14)			NSDM_STOCK_VALUE			
+/CWM/MENGE	Quantity in Parallel Unit of Measure	/CWM/MENGE	QUAN	13(3)			MENG13			
+/CWM/MEINS	Parallel Unit of Measure	/CWM/MEINS	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+/CWM/ERFMG	Quantity in Parallel Unit of Entry	/CWM/ERFMG	QUAN	13(3)			MENG13			
+/CWM/ERFME	PUoM Entry Unit of Measure	/CWM/ERFME	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+/CWM/STOCK_QTY	Stock Quantity in PUoM	/CWM/STOCK_QTY	QUAN	31(14)			/CWM/STOCK_QTY			
+/CWM/CONSUMPTION_QTY	Consumption Quantity in PUoM	/CWM/CONSUMPTION_QTY	QUAN	31(14)			/CWM/STOCK_QTY			
+/CWM/MEINS_SID	Parallel Unit of Measure (Stock Identifier)	/CWM/MEINS_SID	UNIT	3(0)	Assigned to domain	CUNIT	MEINS			
+UMMAB_CID	Receiving/Issuing Material	UMMAT	CHAR	40(0)	Assigned to domain	MATN1	MATNR			
+UMWRK_CID	Plant	WERKS_D	CHAR	4(0)			WERKS	WRK	H_T001W_C	WERKS
+LGORT_CID	Storage Location (Stock Identifier)	NSDM_LGORT	CHAR	4(0)	Assigned to domain		LGORT	LAG		
+CHARG_CID	Batch Number (Stock Identifier)	NSDM_CHARG	CHAR	10(0)	Assigned to domain		CHARG	CHA		
+LIFNR_CID	Supplier for Special Stock	NSDM_LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+MAT_KDAUF_CID	Sales and Distribution Document Number (Stock Identifier)	NSDM_VBELN	CHAR	10(0)		ALPHA	VBELN	AUN		
+MAT_KDPOS_CID	Item Number of the SD Document (Stock Identifier)	NSDM_POSNR	NUMC	6(0)			POSNR			
+MAT_PSPNR_CID	Work Breakdown Structure Element (Stock Identifier)	NSDM_PS_PSP_PNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+KUNNR_CID	Customer for Special Stock	NSDM_KUNNR	CHAR	10(0)		ALPHA	KUNNR	KUN	C_KUNNR	KUNNR
+UMSOK_CID	Special Stock Indicator	SOBKZ	CHAR	1(0)	Assigned to domain		SOBKZ			
+LBBSA_CID	Stock Type of Goods Movement (Stock Identifier)	NSDM_LBBSA	CHAR	2(0)			NSDM_LBBSA			
+DISUB_OWNER_CID	Account Number of Vendor or Creditor	LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+UMBUK_CG	Company Code	BUKRS	CHAR	4(0)			BUKRS	BUK	C_T001	BUKRS
+CHARG_WHS_CG	Batch Number of Warehouse Stock (Stock Identifier)	NSDM_CHARG_WHS	CHAR	10(0)	Assigned to domain		CHARG	CHA		
+UMMEN_CG	Quantity Updating in Material Master Record	MENGU	CHAR	1(0)			XFELD			
+UMWER_CG	Value Updating in Material Master Record	WERTU	CHAR	1(0)			XFELD			
+VBOBJ_CG	SD Document Object	NSDM_VBOBJ	CHAR	1(0)			VBOBJ			
+UMKZBWS_CG	Valuation of Special Stock	KZBWS	CHAR	1(0)			KZBWS			
+BSTAUS_CG	Stock Characteristics	NSDM_BSTAUS	CHAR	1(0)			BSTAUS			
+BSTTYP_CG	Stock Category	NSDM_BSTTYP	CHAR	1(0)			BSTTYP			
+KALNR_CG	Complement Cost Estimate Number - Product Costing	NSDM_UMKALNR	NUMC	12(0)	Assigned to domain		CK_KALNR	KNR		
+BUDAT	Posting Date in the Document	BUDAT	DATS	8(0)			DATUM			
+CPUDT	Day On Which Accounting Document Was Entered	CPUDT	DATS	8(0)			DATUM			
+CPUTM	Time of Entry	CPUTM	TIMS	6(0)			UZEIT			
+YEARDAY_BUDAT	Year-Day-Combination	NSDM_YEARDAY	NUMC	7(0)			NSDM_YEARDAY			
+YEARWEEK_BUDAT	Year-Week-Combination	NSDM_YEARWEEK	NUMC	6(0)			NUM6			
+YEARMONTH_BUDAT	Year-Month-Combination	NSDM_YEARMONTH	NUMC	6(0)			NUM6			
+YEARQUARTER_BUDAT	Year-Quarter-Combination	NSDM_YEARQUARTER	NUMC	5(0)			NUM5			
+YEAR_BUDAT	Year	NSDM_YEAR	NUMC	4(0)						
+QUARTER_BUDAT	Quarter (1 - 4)	NSDM_QUARTER	NUMC	1(0)						
+MONTH_BUDAT	Month (1 - 12)	NSDM_MONTH	NUMC	2(0)						
+WEEK_BUDAT	Calendar Week (1 - 53)	NSDM_WEEK	NUMC	2(0)						
+DAY_BUDAT	Day of Year (1 - 366)	NSDM_DAY	NUMC	3(0)						
+WEEKDAY_BUDAT	Week Day	NSDM_WEEKDAY	NUMC	1(0)			SC_WEEKDAY			
+BLDAT	Document Date in Document	BLDAT	DATS	8(0)			DATUM			
+AEDAT	Date of Last Change	AEDAT	DATS	8(0)			DATUM			
+SPE_BUDAT_UHR	Time of Goods Issue (Local, Relating to a Plant)	WAUHR	TIMS	6(0)			TIME_PLANT			
+SPE_BUDAT_ZONE	Time Zone	TZNZONE	CHAR	6(0)	Assigned to domain		TZNZONE			
+PERIV	Fiscal Year Variant	PERIV	CHAR	2(0)	Assigned to domain		PERIV			
+GJAHR	Fiscal Year	GJAHR	NUMC	4(0)		GJAHR	GJAHR	GJR		
+GJPER	Period/Year	JAHRPER	NUMC	7(0)		PERI7	JAHRPER			
+GJPER_CURR_PER	Period/Year	JAHRPER	NUMC	7(0)		PERI7	JAHRPER			
+VFDAT	Shelf Life Expiration or Best-Before Date	VFDAT	DATS	8(0)			DATUM			
+DABRBZ	Reference date for settlement	DABRBEZ	DATS	8(0)			DDAT			
+DABRZ	Reference date for settlement	DABRBEZ	DATS	8(0)			DDAT			
+HSDAT	Date of Manufacture	HSDAT	DATS	8(0)			DATUM			
+MBLNR	Number of Material Document	MBLNR	CHAR	10(0)		ALPHA	BELNR	MBN		
+MJAHR	Material Document Year	MJAHR	NUMC	4(0)		GJAHR	GJAHR	MJA		
+ZEILE	Item in Material Document	MBLPO	NUMC	4(0)			MBLPO	POS		
+LINE_ID	Unique identification of document line	MB_LINE_ID	NUMC	6(0)			MB_LINE_ID			
+PARENT_ID	Identifier of immediately superior line	MB_PARENT_ID	NUMC	6(0)			MB_LINE_ID			
+LINE_DEPTH	Hierarchy level of line in document	MB_LINE_DEPTH	NUMC	2(0)			MB_LINE_DEPTH			
+MAA_URZEI	Original Line for Account Assignment Item in Material Doc.	MAA_URZEI	NUMC	4(0)			MBLPO	POS		
+KDAUF	Sales Order Number	KDAUF	CHAR	10(0)		ALPHA	VBELN	AUN		
+KDPOS	Item number in Sales Order	KDPOS	NUMC	6(0)			NUM06	KPO		
+KDEIN	Delivery schedule for sales order	KDEIN	NUMC	4(0)			NUM04			
+EBELN	Purchase order number	BSTNR	CHAR	10(0)	Assigned to domain	ALPHA	EBELN	BES		
+EBELP	Item Number of Purchasing Document	EBELP	NUMC	5(0)	Assigned to domain		EBELP	BSP		
+LFBJA	Fiscal Year of a Reference Document	LFBJA	NUMC	4(0)		GJAHR	GJAHR			
+LFBNR	Document No. of a Reference Document	LFBNR	CHAR	10(0)		ALPHA	BELNR			
+LFPOS	Item of a Reference Document	LFPOS	NUMC	4(0)			MBLPO			
+SJAHR	Material Document Year	MJAHR	NUMC	4(0)		GJAHR	GJAHR	MJA		
+SMBLN	Number of Material Document	MBLNR	CHAR	10(0)		ALPHA	BELNR	MBN		
+SMBLP	Item in Material Document	MBLPO	NUMC	4(0)			MBLPO	POS		
+AUFNR	Order Number	AUFNR	CHAR	12(0)	Assigned to domain	ALPHA	AUFNR	ANR		
+ANLN1	Main Asset Number	ANLN1	CHAR	12(0)	Assigned to domain	ALPHA	ANLN1	AN1		
+ANLN2	Asset Subnumber	ANLN2	CHAR	4(0)	Assigned to domain	ALPHA	ANLN2	AN2		
+BELNR	Accounting Document Number	BELNR_D	CHAR	10(0)		ALPHA	BELNR	BLN		
+BUZEI	Number of Line Item Within Accounting Document	BUZEI	NUMC	3(0)			BUZEI	BUZ		
+BELUM	Accounting Document Number	BELNR_D	CHAR	10(0)		ALPHA	BELNR	BLN		
+BUZUM	Number of Line Item Within Accounting Document	BUZEI	NUMC	3(0)			BUZEI	BUZ		
+RSNUM	Number of reservation/dependent requirements	RSNUM	NUMC	10(0)	Assigned to domain		RSNUM	RES		
+RSPOS	Item Number of Reservation / Dependent Requirements	RSPOS	NUMC	4(0)			RSPOS	RPO		
+TBNUM	Transfer Requirement Number	TBNUM	NUMC	10(0)	Assigned to domain		TBNUM	TBN		
+TBPOS	Transfer Requirement Item	TBPOS	NUMC	4(0)			TBPOS	TBP		
+UBNUM	Posting Change Number	UBNUM	NUMC	10(0)			UBNUM	UBN		
+TANUM	Transfer Order Number	TANUM	NUMC	10(0)			TANUM	TAN		
+URZEI	Original line in material document	URZEI	NUMC	4(0)			MBLPO	POS		
+XBLNR	Reference Document Number	XBLNR1	CHAR	16(0)			XBLNR1			
+VBELN_IM	Delivery	VBELN_VL	CHAR	10(0)		ALPHA	VBELN	VL		
+VBELP_IM	Delivery Item	POSNR_VL	NUMC	6(0)			POSNR			
+LE_VBELN	Delivery	VBELN_VL	CHAR	10(0)		ALPHA	VBELN	VL		
+SPE_LOGSYS	Logical System of EWM Material Document	/SPE/_LOGSYS_MD	CHAR	10(0)	Assigned to domain	ALPHA	LOGSYS			
+SPE_MDNUM_EWM	Number of Material Document in EWM	/SPE/MDNUM_EWM	CHAR	16(0)			/SPE/MDNUM_EWM			
+CANCELLED	Item has been Cancelled	NSDM_CANCELLED_IND	CHAR	1(0)			XFELD			
+CANCELLATION_TYPE	Relevance for Analytics	NSDM_CANCELLATION_TYPE	CHAR	1(0)			NSDM_CANCELLATION_TYPE			
+REVERSAL_MOVEMENT	Reversal movement type	XSTBW	CHAR	1(0)			XFELD			
+SERVICE_DOC_TYPE	Service Document Type	FCO_SRVDOC_TYPE	CHAR	4(0)			CRM_PROCESS_TYPE	SVDT_FCO	FCO_SHLP_SRVDOC_TYPE_EMPTY	SERVICEDOCUMENTTYPE
+SERVICE_DOC_ID	Service Document ID	FCO_SRVDOC_ID	CHAR	10(0)		ALPHA	CRM_OBJECT_ID	SVD_FCO	FCO_SHLP_SRVDOC_EMPTY	SERVICEDOCUMENT
+SERVICE_DOC_ITEM_ID	Service Document Item ID	FCO_SRVDOC_ITEM_ID	NUMC	6(0)			FCO_SRVDOC_ITEM_ID	SVDI_FCO	FCO_SHLP_SRVDOC_ITEM_EMPTY	SERVICEDOCUMENTITEM
+EWM_LGNUM	Warehouse Number/Warehouse Complex	/SCWM/LGNUM	CHAR	4(0)			/SCWM/LGNUM	/SCWM/LGN	/SCWM/SH_LGNUM	LGNUM
+EWM_GMDOC	Goods Movement Document	/SCWM/DE_GM_DOC	NUMC	12(0)		ALPH0	/SCWM/TANUM			
+BWART	Movement type (inventory management)	BWART	CHAR	3(0)	Assigned to domain		BWART	BWA		
+XAUTO	Item automatically created	MB_XAUTO	CHAR	1(0)			MB_XAUTO			
+MATNR	Material Number	MATNR	CHAR	40(0)		MATN1	MATNR	MAT	S_MAT1	MATNR
+LGORT	Storage location	LGORT_D	CHAR	4(0)	Assigned to domain		LGORT	LAG		
+CHARG	Batch Number	CHARG_D	CHAR	10(0)	Assigned to domain		CHARG	CHA		
+BWTAR	Valuation Type	BWTAR_D	CHAR	10(0)	Assigned to domain		BWTAR	BWT		
+INSMK	Stock Type	MB_INSMK	CHAR	1(0)			MB_INSMK			
+ZUSCH	Batch status key	DZUSCH	CHAR	1(0)			ZUSCH			
+ZUSTD	Batch in Restricted-Use Stock	DZUSTD	CHAR	1(0)			XFELD			
+LIFNR	Vendor's account number	ELIFN	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+KUNNR	Account number of customer	EKUNN	CHAR	10(0)	Assigned to domain	ALPHA	KUNNR	KUN		
+PLPLA	Distribution of Differences	PLPLA	CHAR	10(0)			PLPLA			
+SHKZG	Debit/Credit Indicator	SHKZG	CHAR	1(0)			SHKZG			
+SHKUM	Debit/credit indicator in revaluation	SHKUM	CHAR	1(0)			SHKZG			
+ELIKZ	'Delivery Completed' Indicator	ELIKZ	CHAR	1(0)			XFELD			
+SGTXT	Item Text	SGTXT	CHAR	50(0)			TEXT50			
+EQUNR	Equipment Number	EQUNR	CHAR	18(0)		ALPHA	EQUNR	EQN	EQUI	EQUNR
+WEMPF	Goods recipient	WEMPF	CHAR	12(0)			WEMPF			
+ABLAD	Unloading Point	ABLAD	CHAR	25(0)			TEXT25			
+GSBER	Business Area	GSBER	CHAR	4(0)	Assigned to domain		GSBER	GSB		
+KOKRS	Controlling Area	KOKRS	CHAR	4(0)	Assigned to domain		CACCD	CAC		
+PARGB	Trading partner's business area	PARGB	CHAR	4(0)	Assigned to domain		GSBER	GSB		
+PARBU	Clearing company code	PARBU	CHAR	4(0)	Assigned to domain		BUKRS			
+KOSTL	Cost Center	KOSTL	CHAR	10(0)	Assigned to domain	ALPHA	KOSTL	KOS		
+PROJN	Old: Project number : No longer used --> PS_POSNR	PROJN	CHAR	16(0)			PROJN			
+XSKST	Indicator: Statistical Posting to Cost Center	XSKST	CHAR	1(0)			XFELD			
+XSAUF	Indicator: Posting to Order Is Statistical	XSAUF	CHAR	1(0)			XFELD			
+XSPRO	Indicator: Posting to Project Is Statistical	XSPRO	CHAR	1(0)			XFELD			
+XSERG	Indicator: Posting to Profitability Analysis Is Statistical	XSERG	CHAR	1(0)			XFELD			
+XRUEM	Allow Posting to Previous Period (Backposting)	XRUEM	CHAR	1(0)			XFELD			
+XRUEJ	Indicator: post to previous year	XRUEJ	CHAR	1(0)			XFELD			
+KZEAR	Final issue for this reservation	KZEAR	CHAR	1(0)			XFELD			
+KZSTR	Transaction/event is relevant to statistics	KZSTR	CHAR	1(0)			KZSTR			
+UMMAT	Receiving/Issuing Material	UMMAT	CHAR	40(0)	Assigned to domain	MATN1	MATNR			
+UMCHA	Receiving/Issuing Batch	UMCHA	CHAR	10(0)	Assigned to domain		CHARG			
+UMLGO	Receiving/issuing storage location	UMLGO	CHAR	4(0)	Assigned to domain		LGORT			
+UMZST	Status of Transfer Batch	UMZST	CHAR	1(0)			ZUSTD			
+UMZUS	Status key of transfer batch	UMZUS	CHAR	1(0)			ZUSCH			
+KZBEW	Movement Indicator	KZBEW	CHAR	1(0)			KZBEW			
+KZVBR	Consumption posting	KZVBR	CHAR	1(0)			KZVBR			
+KZZUG	Receipt Indicator	KZZUG	CHAR	1(0)			KZZUG			
+WEUNB	Goods Receipt, Non-Valuated	WEUNB	CHAR	1(0)			XFELD			
+PALAN	WMS Number of pallets	PALAN	DEC	11(0)			PALAN			
+LGNUM	Warehouse Number / Warehouse Complex	LGNUM	CHAR	3(0)	Assigned to domain		LGNUM	LGN		
+LGTYP	Storage Type	LGTYP	CHAR	3(0)			LGTYP	LGT	H_T301	LGTYP
+LGPLA	Storage Bin	LGPLA	CHAR	10(0)			LGPLA	LGP	LAG1	LGPLA
+BESTQ	Stock Category in the Warehouse Management System	BESTQ	CHAR	1(0)			BESTQ			
+BWLVS	Movement Type for Warehouse Management	BWLVS	NUMC	3(0)	Assigned to domain		BWLVS	BWL		
+XBLVS	Indicator: posting in warehouse management system	XBLVS	CHAR	1(0)			XFELD			
+VSCHN	Ind: interim storage posting for source stor.type and bin	T333_VSCHN	CHAR	1(0)			XFELD			
+NSCHN	Ind.: interim storage posting for dest.stor.type and bin	T333_NSCHN	CHAR	1(0)			XFELD			
+DYPLA	Indicator: dynamic storage bin	DYPLA	CHAR	1(0)			XFELD			
+TBPRI	Transfer Priority	TBPRI	CHAR	1(0)			TBPRI			
+WEANZ	Number of GR/GI Slips to Be Printed	WEANZ	NUMC	3(0)			NUM3			
+GRUND	Reason for Movement	MB_GRBEW	NUMC	4(0)	Assigned to domain		MB_GRBEW			
+EVERS	Shipping Instructions	EVERS	CHAR	2(0)	Assigned to domain		EVERS			
+EVERE	Compliance with Shipping Instructions	EVERE	CHAR	2(0)	Assigned to domain		EVERE			
+IMKEY	Internal Key for Real Estate Object	IMKEY	CHAR	8(0)		IMKEY	IMKEY			
+KSTRG	Cost Object	KSTRG	CHAR	12(0)	Assigned to domain		KSTRG	KTR		
+PAOBJNR	Profitability Segment Number (CO-PA)	RKEOBJNR	NUMC	10(0)			RKEOBJNR			
+PRCTR	Profit Center	PRCTR	CHAR	10(0)		ALPHA	PRCTR	PRC	PRCTR_EMPTY	PRCTR
+PS_PSP_PNR	Work Breakdown Structure Element (WBS Element)	PS_PSP_PNR	NUMC	8(0)	Assigned to domain	ABPSP	PS_POSNR			
+NPLNR	Network Number for Account Assignment	NPLNR	CHAR	12(0)	Assigned to domain	ALPHA	AUFNR	NET		
+AUFPL	Routing number of operations in the order	CO_AUFPL	NUMC	10(0)			AUFPL			
+APLZL	Internal counter	CIM_COUNT	NUMC	8(0)			CIM_COUNT			
+AUFPS	Order item number	CO_POSNR	NUMC	4(0)			CO_POSNR			
+VPTNR	Partner account number	JV_PART	CHAR	10(0)	Assigned to domain	ALPHA	KUNNR			
+FIPOS	Commitment Item	FIPOS	CHAR	14(0)	Assigned to domain	FMCIS	FIPOS	FIP		
+SAKTO	G/L Account Number	SAKNR	CHAR	10(0)		ALPHA	SAKNR	SAK	C_SAKNR	SAKNR
+XWSBR	Reversal of GR allowed for GR-based IV despite invoice	XWSBR	CHAR	1(0)			XFELD			
+EMLIF	Supplier to be Supplied/Who is to Receive Delivery	EMLIF	CHAR	10(0)	Assigned to domain	ALPHA	LIFNR			
+AKTNR	Promotion	WAKTION	CHAR	10(0)	Assigned to domain	ALPHA	WAKTION	WAK		
+ZEKKN	Sequential Number of Account Assignment	DZEKKN	NUMC	2(0)			NUM02			
+CUOBJ_CH	Internal object number of the batch classification	CUOBJ_CH	NUMC	18(0)			CUOBJ			
+PPRCTR	Partner Profit Center	PPRCTR	CHAR	10(0)	Assigned to domain	ALPHA	PRCTR	PPC		
+RSART	Record type	RSART	CHAR	1(0)			RSART			
+GEBER	Fund	BP_GEBER	CHAR	10(0)	Assigned to domain		BP_GEBER	FIC		
+FISTL	Funds Center	FISTL	CHAR	16(0)	Assigned to domain		FISTL	FIS		
+BUSTM	Posting string for quantities	BUSTM	CHAR	4(0)			BUSTM			
+BUSTW	Posting String for Values	BUSTW	CHAR	4(0)			BUSTW			
+VPRSV	Price control indicator	VPRSV	CHAR	1(0)			VPRSV			
+FKBER	Functional Area	FKBER	CHAR	16(0)	Assigned to domain		FKBER	FBE		
+XBEAU	Purchase order created at time of goods receipt	XBEAU	CHAR	1(0)			XFELD			
+QINSPST	Status of Goods Receipt Inspection	QINSPST	CHAR	1(0)			QINSPST			
+MWSKZ	Tax on sales/purchases code	MWSKZ	CHAR	2(0)	Assigned to domain		MWSKZ			
+TXJCD	Tax Jurisdiction	TXJCD	CHAR	15(0)	Assigned to domain		TXJCD	TXJ		
+EMATN	Material number corresponding to manufacturer part number	EMATN	CHAR	40(0)	Assigned to domain	MATN1	MATNR	HTN		
+J_1AGIRUPD	Goods issue revaluation performed	J_1AGIRUPD	CHAR	1(0)			J_1AGIRUPD			
+VKMWS	Tax on sales/purchases code	MWSKZ	CHAR	2(0)	Assigned to domain		MWSKZ			
+BERKZ	Material Staging Indicator for Production Supply	BERKZ	CHAR	1(0)			LVS_BERKZ			
+XWOFF	Calculation of val. open	XWOFF	CHAR	1(0)			XFELD			
+BEMOT	Accounting Indicator	BEMOT	CHAR	2(0)	Assigned to domain		BEMOT			
+PRZNR	Business Process	CO_PRZNR	CHAR	12(0)	Assigned to domain	ALPHA	CO_PRZNR	KWP		
+LLIEF	Goods Supplier	LLIEF	CHAR	10(0)	Assigned to domain	ALPHA	LIFNR	LLI		
+LSTAR	Activity Type	LSTAR	CHAR	6(0)			LSTAR	LAR	LART_EMPTY	LSTAR
+XOBEW	Vendor Stock Valuation Indicator	XOBEW	CHAR	1(0)			XFELD			
+GRANT_NBR	Grant	GM_GRANT_NBR	CHAR	20(0)		ALPHA	GM_GRANT_NBR	GM_GRANT_NBR	GRANTS_GENERIC	GRANT_NUMBER
+ZUSTD_T156M	Stock Type Modification (Read from Table T156M)	BAMOK_MSEG	CHAR	1(0)			BAMOK_MSEG			
+SPE_GTS_STOCK_TY	GTS Stock Type	/SPE/GTS_STOCK_TYPE	CHAR	1(0)			/SPE/GTS_STOCK_TYPE			
+KBLNR	Document number for earmarked funds	KBLNR_FI	CHAR	10(0)	Assigned to domain	ALPHA	KBLNR	KBL		
+KBLPOS	Earmarked Funds: Document Item	KBLPOS	NUMC	3(0)	Assigned to domain		KBLPOS	KBP		
+XMACC	Multiple Account Assignment	XMACC	CHAR	1(0)			CHAR1			
+UMMAB	Receiving/Issuing Material	UMMAT	CHAR	40(0)	Assigned to domain	MATN1	MATNR			
+UMBAR	Valuation Type of Transfer Batch	UMBAR	CHAR	10(0)	Assigned to domain		BWTAR			
+UMWRK	Plant	WERKS_D	CHAR	4(0)			WERKS	WRK	H_T001W_C	WERKS
+UMSOK	Special Stock Indicator	SOBKZ	CHAR	1(0)	Assigned to domain		SOBKZ			
+SGT_SCAT	Stock Segment	SGT_SCAT	CHAR	40(0)			SGT_SRCA	SGT_S	SGT_CAT_FIELD_POPUP	VALUE
+SGT_UMSCAT	Receiving/Issuing Stock Segment	SGT_UMSCAT	CHAR	40(0)			SGT_SRCA	SGT_S	SGT_CAT_FIELD_POPUP	VALUE
+SGT_RCAT	Requirement Segment	SGT_RCAT	CHAR	40(0)			SGT_SRCA	SGT_R	SGT_CAT_FIELD_POPUP	VALUE
+DISUB_OWNER	Account Number of Vendor or Creditor	LIFNR	CHAR	10(0)		ALPHA	LIFNR	LIF	KRED_C	LIFNR
+COMPL_MARK	Completed indicator	COMPL_MARK	CHAR	1(0)			XFELD			
+FZGLS_MARK	Do Not Adjust Cumulative Received Quantity	FZGLS	CHAR	1(0)			XFELD			
+ETANP_MARK	Adjust Open Quantity in Scheduling Agreement Item	ETANP	CHAR	1(0)			XFELD			
+POPUP_MARK	Display Dialog Box	POPUP	CHAR	1(0)			KENZX			
+SERVICEPERFORMER	Service Performer	SERVICEPERFORMER	CHAR	10(0)	Assigned to domain	ALPHA	BU_PARTNER			
+PERNR	Personnel Number	PERNR_D	NUMC	8(0)			PERNR	PER		
+KNTTP_GR	Account Assignment Category	KNTTP	CHAR	1(0)	Assigned to domain		KNTTP	KNT		
+WORK_ITEM_ID	Work Item ID	/CPD/PFP_WORKITEM_ID	CHAR	10(0)			/CPD/PFP_WORKITEM_ID	WRK	/CPD/SS_WORK_ITEM_C	WORKITEM
+FBUDA	Date on which services are rendered	FBUDA	DATS	8(0)			DATUM			
+DUMMY_INCL_EEW_COBL	Custom Fields: Dummy for Use in Extension Includes	CFD_DUMMY	CHAR	1(0)						
+FSH_SEASON_YEAR	Season Year	FSH_SAISJ	CHAR	4(0)			FSH_CJAHR	WMSAISJ		
+FSH_SEASON	Season	FSH_SAISO	CHAR	10(0)			RFM_SAISO	SAISO		
+FSH_COLLECTION	Fashion Collection	FSH_COLLECTION	CHAR	10(0)	Assigned to domain		FSH_COLLECTION			
+FSH_THEME	Fashion Theme	FSH_THEME	CHAR	10(0)			FSH_THEME			
+WRF_CHARSTC1	Characteristic Value 1	WRF_CHARSTC1	CHAR	18(0)			WRF_CHARSTC		WRF_MATNR_CHAR1	COLOR
+WRF_CHARSTC2	Characteristic Value 2	WRF_CHARSTC2	CHAR	18(0)			WRF_CHARSTC		WRF_MATNR_CHAR2	SIZE1
+WRF_CHARSTC3	Characteristic Value 3	WRF_CHARSTC3	CHAR	18(0)			WRF_CHARSTC		WRF_MATNR_CHAR3	SIZE2
+.INCLU--AP				0(0)						
+OINAVNW	Non-deductible input tax	NAVNW	CURR	13(2)			WERT7			
+OICONDCOD	Joint Venture Indicator (Condition Key)	JV_CONDCOD	CHAR	2(0)	Assigned to domain	ALPHA	JV_CONDCOD			
+CONDI	Joint Venture Indicator (Condition Key)	JV_CONDCOD	CHAR	2(0)	Assigned to domain	ALPHA	JV_CONDCOD			
+BLART	Document type	BLART	CHAR	2(0)	Assigned to domain		BLART	BAR		
+BLAUM	Document type of revaluation document	BLAUM	CHAR	2(0)	Assigned to domain		BLART			
+TCODE	Undefined range (can be used for patch levels)	CHAR4	CHAR	4(0)			CHAR4			
+BKTXT	Document Header Text	BKTXT	CHAR	25(0)			TEXT25			
+FRATH	Unplanned delivery costs	FRATH	CURR	13(2)			WERT7			
+FRBNR	Number of Bill of Lading at Time of Goods Receipt	FRBNR1	CHAR	16(0)			XBLNR1			
+WEVER	Version for Printing GR/GI Slip	WEVER	CHAR	1(0)			WEVER	WEV		
+XABLN	Goods Receipt/Issue Slip Number	XABLN	CHAR	10(0)		ALPHA	BELNR			
+AWSYS	Logical System	LOGSYSTEM	CHAR	10(0)	Assigned to domain	ALPHA	LOGSYS			
+BLA2D	Doc. type for additional doc. in purchase account management	BLA2D	CHAR	2(0)	Assigned to domain		BLART			
+BFWMS	Control posting for external WMS	BFWMS	CHAR	1(0)			BFWMS			
+VGART	Transaction/Event Type	VGART	CHAR	2(0)	Assigned to domain		VGART			
+USNAM	User Name	USNAM	CHAR	12(0)	Assigned to domain		XUBNAME	USR		
+TCODE2	Transaction Code	TCODE	CHAR	20(0)	Assigned to domain		TCODE	TCD		
+EXNUM	Number of foreign trade data in MM and SD documents	EXNUM	CHAR	10(0)			EXNUM			
+GTS_CUSREF_NO	Customs Reference Number for Scrapping	/SAPSLL/SCREF_SPI	CHAR	35(0)			CHAR35			
+FLS_RSTO	Store Return with Inbound and Outbound Delivery	FLS_RSTO	CHAR	1(0)			XFELD			
+MSR_ACTIVE	Advanced Returns Management Active	MSR_ACTIVE	CHAR	1(0)			MSR_ACTIVE			
+XCOMPL	Single-Character Flag	CHAR1	CHAR	1(0)			CHAR1			
+.INCLU--AP				0(0)						
+KNUMV	Number of the Document Condition	KNUMV	CHAR	10(0)			KNUMV			
+_DATAAGING	Data Filter Value for Data Aging	DATA_TEMPERATURE	DATS	8(0)			DATA_TEMPERATURE			
+XPRINT	Print via Output Control	XNAPR	CHAR	1(0)			XRADI	NDR		
+LMBMV	Under/Overdelivery	LMBMV	CHAR	1(0)			XFELD			
+PABPM	Percentage variance in order price unit	PABPM	DEC	4(2)			PRZ22			
+XFMAT	Material is a missing part	XFMAT	CHAR	1(0)			XFELD			
+KNBDR	Print kanban card	KNBDR	CHAR	1(0)			KNBDR		
